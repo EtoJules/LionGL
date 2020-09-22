@@ -1,10 +1,9 @@
 #version 330
 
-layout(location = 0) in aPos;
-layout(location = 1) in aColor;
+out vec4 color;
 
-out vec3 oColor;
+in vec3 oColor;
 
 void main() {
-    oColor = aColor;
+    color = vec4(oColor, 1.0f);
 }

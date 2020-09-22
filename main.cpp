@@ -2,6 +2,8 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 
+#include "Shader/Shader.h"
+
 int main()
 {
     glfwInit();
@@ -17,6 +19,7 @@ int main()
         return -1;
     }
     glfwMakeContextCurrent(window);
+    
     if (glewInit() != GLEW_OK)
         std::cout << "Glew error!!! \n";
 
@@ -28,7 +31,7 @@ int main()
         0.0f,  0.5f, 0.0f,  0.0f, 0.0f, 1.0f // top
     };
     unsigned int vertexArray;
-    glGenBuffers(1, &vertexArray);
+    glGenVertexArrays(1, &vertexArray);
     glBindVertexArray(vertexArray);
 
     unsigned int vertexBuffer;
@@ -43,7 +46,7 @@ int main()
     glEnableVertexAttribArray(1);
 
     unsigned int index[] = {
-            0, 1, 3,
+            0, 1, 2,
             1, 2, 3
     };
     unsigned int indexBuffer;
@@ -51,10 +54,15 @@ int main()
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBuffer);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(index), index, GL_STATIC_DRAW);
 
+    Shader shader("resources/shaders/vertex.glsl", "resources/shaders/fragment.glsl");
+    shader.bind();
+
     while (!glfwWindowShouldClose(window))
     {
         glClearColor(0.3f, 0.2f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
+
+        glDrawArrays(GL_TRIANGLES, 0 , 3);
 
         glfwSwapBuffers(window);
         glfwPollEvents();
