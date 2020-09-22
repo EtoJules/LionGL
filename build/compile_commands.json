@@ -11,8 +11,18 @@
 },
 {
   "directory": "/home/andrew/MY/Projects/Graphic/LionGL/build/src",
+  "command": "/bin/g++-9   -I/home/andrew/MY/Projects/Graphic/LionGL/src -I/home/andrew/MY/Projects/Graphic/LionGL/libs -I/home/andrew/MY/Projects/Graphic/LionGL/src/Core  -g   -o CMakeFiles/Sources.dir/Core/VertexBuffer/VertexBuffer.cpp.o -c /home/andrew/MY/Projects/Graphic/LionGL/src/Core/VertexBuffer/VertexBuffer.cpp",
+  "file": "/home/andrew/MY/Projects/Graphic/LionGL/src/Core/VertexBuffer/VertexBuffer.cpp"
+},
+{
+  "directory": "/home/andrew/MY/Projects/Graphic/LionGL/build/src",
   "command": "/bin/g++-9   -I/home/andrew/MY/Projects/Graphic/LionGL/src -I/home/andrew/MY/Projects/Graphic/LionGL/libs -I/home/andrew/MY/Projects/Graphic/LionGL/src/Core  -g   -o CMakeFiles/Sources.dir/Helper/parser.cpp.o -c /home/andrew/MY/Projects/Graphic/LionGL/src/Helper/parser.cpp",
   "file": "/home/andrew/MY/Projects/Graphic/LionGL/src/Helper/parser.cpp"
+},
+{
+  "directory": "/home/andrew/MY/Projects/Graphic/LionGL/build/src",
+  "command": "/bin/g++-9   -I/home/andrew/MY/Projects/Graphic/LionGL/src -I/home/andrew/MY/Projects/Graphic/LionGL/libs -I/home/andrew/MY/Projects/Graphic/LionGL/src/Core  -g   -o CMakeFiles/Sources.dir/Core/Renderer.cpp.o -c /home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer.cpp",
+  "file": "/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer.cpp"
 },
 {
   "directory": "/home/andrew/MY/Projects/Graphic/LionGL/build/libs/glfw-3.3.2/src",

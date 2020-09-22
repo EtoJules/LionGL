@@ -2,7 +2,7 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 
-#include "Shader/Shader.h"
+#include "Renderer.h"
 
 int main()
 {
@@ -34,10 +34,7 @@ int main()
     glGenVertexArrays(1, &vertexArray);
     glBindVertexArray(vertexArray);
 
-    unsigned int vertexBuffer;
-    glGenBuffers(1, &vertexBuffer);
-    glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+    VertexBuffer vertexBuffer(vertices, sizeof(vertices));
 
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
@@ -57,10 +54,10 @@ int main()
     Shader shader("resources/shaders/vertex.glsl", "resources/shaders/fragment.glsl");
     shader.bind();
 
+    Renderer render;
     while (!glfwWindowShouldClose(window))
     {
-        glClearColor(0.3f, 0.2f, 0.3f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
+        render.clear();
 
         glDrawArrays(GL_TRIANGLES, 0 , 3);
 

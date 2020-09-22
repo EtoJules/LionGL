@@ -171,6 +171,33 @@ Sources/fast:
 	cd /home/andrew/MY/Projects/Graphic/LionGL/build && $(MAKE) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/build
 .PHONY : Sources/fast
 
+Core/Renderer.o: Core/Renderer.cpp.o
+
+.PHONY : Core/Renderer.o
+
+# target to build an object file
+Core/Renderer.cpp.o:
+	cd /home/andrew/MY/Projects/Graphic/LionGL/build && $(MAKE) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/Core/Renderer.cpp.o
+.PHONY : Core/Renderer.cpp.o
+
+Core/Renderer.i: Core/Renderer.cpp.i
+
+.PHONY : Core/Renderer.i
+
+# target to preprocess a source file
+Core/Renderer.cpp.i:
+	cd /home/andrew/MY/Projects/Graphic/LionGL/build && $(MAKE) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/Core/Renderer.cpp.i
+.PHONY : Core/Renderer.cpp.i
+
+Core/Renderer.s: Core/Renderer.cpp.s
+
+.PHONY : Core/Renderer.s
+
+# target to generate assembly for a file
+Core/Renderer.cpp.s:
+	cd /home/andrew/MY/Projects/Graphic/LionGL/build && $(MAKE) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/Core/Renderer.cpp.s
+.PHONY : Core/Renderer.cpp.s
+
 Core/Shader/Shader.o: Core/Shader/Shader.cpp.o
 
 .PHONY : Core/Shader/Shader.o
@@ -197,6 +224,33 @@ Core/Shader/Shader.s: Core/Shader/Shader.cpp.s
 Core/Shader/Shader.cpp.s:
 	cd /home/andrew/MY/Projects/Graphic/LionGL/build && $(MAKE) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/Core/Shader/Shader.cpp.s
 .PHONY : Core/Shader/Shader.cpp.s
+
+Core/VertexBuffer/VertexBuffer.o: Core/VertexBuffer/VertexBuffer.cpp.o
+
+.PHONY : Core/VertexBuffer/VertexBuffer.o
+
+# target to build an object file
+Core/VertexBuffer/VertexBuffer.cpp.o:
+	cd /home/andrew/MY/Projects/Graphic/LionGL/build && $(MAKE) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/Core/VertexBuffer/VertexBuffer.cpp.o
+.PHONY : Core/VertexBuffer/VertexBuffer.cpp.o
+
+Core/VertexBuffer/VertexBuffer.i: Core/VertexBuffer/VertexBuffer.cpp.i
+
+.PHONY : Core/VertexBuffer/VertexBuffer.i
+
+# target to preprocess a source file
+Core/VertexBuffer/VertexBuffer.cpp.i:
+	cd /home/andrew/MY/Projects/Graphic/LionGL/build && $(MAKE) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/Core/VertexBuffer/VertexBuffer.cpp.i
+.PHONY : Core/VertexBuffer/VertexBuffer.cpp.i
+
+Core/VertexBuffer/VertexBuffer.s: Core/VertexBuffer/VertexBuffer.cpp.s
+
+.PHONY : Core/VertexBuffer/VertexBuffer.s
+
+# target to generate assembly for a file
+Core/VertexBuffer/VertexBuffer.cpp.s:
+	cd /home/andrew/MY/Projects/Graphic/LionGL/build && $(MAKE) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/Core/VertexBuffer/VertexBuffer.cpp.s
+.PHONY : Core/VertexBuffer/VertexBuffer.cpp.s
 
 Helper/parser.o: Helper/parser.cpp.o
 
@@ -238,9 +292,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Sources"
+	@echo "... Core/Renderer.o"
+	@echo "... Core/Renderer.i"
+	@echo "... Core/Renderer.s"
 	@echo "... Core/Shader/Shader.o"
 	@echo "... Core/Shader/Shader.i"
 	@echo "... Core/Shader/Shader.s"
+	@echo "... Core/VertexBuffer/VertexBuffer.o"
+	@echo "... Core/VertexBuffer/VertexBuffer.i"
+	@echo "... Core/VertexBuffer/VertexBuffer.s"
 	@echo "... Helper/parser.o"
 	@echo "... Helper/parser.i"
 	@echo "... Helper/parser.s"

@@ -168,7 +168,7 @@ CMakeFiles/ClGL.dir/all: libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ClGL.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/MY/Projects/Graphic/LionGL/build/CMakeFiles 24
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/MY/Projects/Graphic/LionGL/build/CMakeFiles 26
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ClGL.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/MY/Projects/Graphic/LionGL/build/CMakeFiles 0
 .PHONY : CMakeFiles/ClGL.dir/rule
@@ -190,12 +190,12 @@ CMakeFiles/ClGL.dir/clean:
 src/CMakeFiles/Sources.dir/all:
 	$(MAKE) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/depend
 	$(MAKE) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/build/CMakeFiles --progress-num=3,4,5 "Built target Sources"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/build/CMakeFiles --progress-num=3,4,5,6,7 "Built target Sources"
 .PHONY : src/CMakeFiles/Sources.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/Sources.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/MY/Projects/Graphic/LionGL/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/MY/Projects/Graphic/LionGL/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/Sources.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/MY/Projects/Graphic/LionGL/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/Sources.dir/rule
@@ -244,7 +244,7 @@ libs/glfw-3.3.2/CMakeFiles/uninstall.dir/clean:
 libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/all:
 	$(MAKE) -f libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/build.make libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) -f libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/build.make libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/build/CMakeFiles --progress-num=12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28 "Built target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/build/CMakeFiles --progress-num=14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30 "Built target glfw"
 .PHONY : libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
@@ -271,7 +271,7 @@ libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/clean:
 libs/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/all: libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/all
 	$(MAKE) -f libs/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/depend
 	$(MAKE) -f libs/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/build/CMakeFiles --progress-num=29,30 "Built target visualinfo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/build/CMakeFiles --progress-num=31,32 "Built target visualinfo"
 .PHONY : libs/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/all
 
 # Build rule for subdir invocation for target.
@@ -298,7 +298,7 @@ libs/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/clean:
 libs/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/all: libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/all
 	$(MAKE) -f libs/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/depend
 	$(MAKE) -f libs/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/build/CMakeFiles --progress-num=10,11 "Built target glewinfo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/build/CMakeFiles --progress-num=12,13 "Built target glewinfo"
 .PHONY : libs/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/all
 
 # Build rule for subdir invocation for target.
@@ -325,7 +325,7 @@ libs/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/clean:
 libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/all:
 	$(MAKE) -f libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/depend
 	$(MAKE) -f libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/build/CMakeFiles --progress-num=8,9 "Built target glew_s"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/build/CMakeFiles --progress-num=10,11 "Built target glew_s"
 .PHONY : libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/all
 
 # Build rule for subdir invocation for target.
@@ -352,7 +352,7 @@ libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/clean:
 libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/all:
 	$(MAKE) -f libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/depend
 	$(MAKE) -f libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/build/CMakeFiles --progress-num=6,7 "Built target glew"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/build/CMakeFiles --progress-num=8,9 "Built target glew"
 .PHONY : libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/all
 
 # Build rule for subdir invocation for target.

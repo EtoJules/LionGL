@@ -6,31 +6,11 @@
 
 #IncludeRegexTransform: 
 
-../src/Helper/parser.h
-string
--
-fstream
--
+/home/andrew/MY/Projects/Graphic/LionGL/src/Core/VertexBuffer/VertexBuffer.cpp
+VertexBuffer.h
+/home/andrew/MY/Projects/Graphic/LionGL/src/Core/VertexBuffer/VertexBuffer.h
 
-/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Shader/Shader.cpp
-Shader.h
-/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Shader/Shader.h
-
-/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Shader/Shader.h
+/home/andrew/MY/Projects/Graphic/LionGL/src/Core/VertexBuffer/VertexBuffer.h
 GL/glew.h
--
-string
--
-Helper/parser.h
-/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Shader/Helper/parser.h
-
-/home/andrew/MY/Projects/Graphic/LionGL/src/Helper/parser.cpp
-parser.h
-/home/andrew/MY/Projects/Graphic/LionGL/src/Helper/parser.h
-
-/home/andrew/MY/Projects/Graphic/LionGL/src/Helper/parser.h
-string
--
-fstream
 -
 

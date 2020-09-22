@@ -3,6 +3,8 @@
 
 CMakeFiles/ClGL.dir/main.cpp.o
  ../libs/glfw-3.3.2/include/GLFW/glfw3.h
+ ../src/Core/Renderer.h
  ../src/Core/Shader/Shader.h
+ ../src/Core/VertexBuffer/VertexBuffer.h
  ../src/Helper/parser.h
  /home/andrew/MY/Projects/Graphic/LionGL/main.cpp

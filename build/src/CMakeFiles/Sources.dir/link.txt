@@ -1,2 +1,2 @@
-/bin/ar qc libSources.a  CMakeFiles/Sources.dir/Core/Shader/Shader.cpp.o CMakeFiles/Sources.dir/Helper/parser.cpp.o
+/bin/ar qc libSources.a  CMakeFiles/Sources.dir/Core/Shader/Shader.cpp.o CMakeFiles/Sources.dir/Core/VertexBuffer/VertexBuffer.cpp.o CMakeFiles/Sources.dir/Helper/parser.cpp.o CMakeFiles/Sources.dir/Core/Renderer.cpp.o
 /bin/ranlib libSources.a
