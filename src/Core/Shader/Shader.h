@@ -3,7 +3,7 @@
 #include <GL/glew.h>
 #include <string>
 
-#include "Helpers/parsers.h"
+#include "Helper/parser.h"
 
 class Shader
 {
