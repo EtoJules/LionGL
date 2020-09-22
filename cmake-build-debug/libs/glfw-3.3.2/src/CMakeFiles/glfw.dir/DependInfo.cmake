@@ -30,6 +30,7 @@ set(CMAKE_TARGET_DEFINITIONS_C
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../libs"
   "../src"
   "../src/Core"
   "../libs/glfw-3.3.2/include"

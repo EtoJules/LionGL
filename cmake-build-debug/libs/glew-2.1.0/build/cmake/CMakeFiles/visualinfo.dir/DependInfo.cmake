@@ -15,6 +15,7 @@ set(CMAKE_TARGET_DEFINITIONS_C
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../libs"
   "../src"
   "../src/Core"
   "../libs/glew-2.1.0/build/cmake/../../include"

@@ -35,6 +35,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-D_GLFW_USE_CONFIG_H"/>
+					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/libs"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/src"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/src/Core"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/libs/glfw-3.3.2/include"/>
@@ -63,6 +64,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-D_GLFW_USE_CONFIG_H"/>
+					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/libs"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/src"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/src/Core"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/libs/glfw-3.3.2/include"/>

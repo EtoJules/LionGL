@@ -45,6 +45,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/libs"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/src"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/src/Core"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/libs/glfw-3.3.2/include"/>
@@ -71,6 +72,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/libs"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/src"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/src/Core"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/libs/glfw-3.3.2/include"/>
@@ -147,6 +149,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-D_GLFW_USE_CONFIG_H"/>
+					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/libs"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/src"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/src/Core"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/libs/glfw-3.3.2/include"/>
@@ -175,6 +178,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-D_GLFW_USE_CONFIG_H"/>
+					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/libs"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/src"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/src/Core"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/libs/glfw-3.3.2/include"/>
@@ -204,6 +208,7 @@
 				<Compiler>
 					<Add option="-DGLEW_BUILD"/>
 					<Add option="-DGLEW_NO_GLU"/>
+					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/libs"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/src"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/src/Core"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/libs/glew-2.1.0/build/cmake/../../include"/>
@@ -231,6 +236,7 @@
 				<Compiler>
 					<Add option="-DGLEW_BUILD"/>
 					<Add option="-DGLEW_NO_GLU"/>
+					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/libs"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/src"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/src/Core"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/libs/glew-2.1.0/build/cmake/../../include"/>
@@ -258,6 +264,7 @@
 				<Compiler>
 					<Add option="-DGLEW_STATIC"/>
 					<Add option="-DGLEW_NO_GLU"/>
+					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/libs"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/src"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/src/Core"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/libs/glew-2.1.0/build/cmake/../../include"/>
@@ -285,6 +292,7 @@
 				<Compiler>
 					<Add option="-DGLEW_STATIC"/>
 					<Add option="-DGLEW_NO_GLU"/>
+					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/libs"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/src"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/src/Core"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/libs/glew-2.1.0/build/cmake/../../include"/>
@@ -311,6 +319,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGLEW_NO_GLU"/>
+					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/libs"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/src"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/src/Core"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/libs/glew-2.1.0/build/cmake/../../include"/>
@@ -337,6 +346,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGLEW_NO_GLU"/>
+					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/libs"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/src"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/src/Core"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/libs/glew-2.1.0/build/cmake/../../include"/>
@@ -363,6 +373,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGLEW_NO_GLU"/>
+					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/libs"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/src"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/src/Core"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/libs/glew-2.1.0/build/cmake/../../include"/>
@@ -389,6 +400,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGLEW_NO_GLU"/>
+					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/libs"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/src"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/src/Core"/>
 					<Add directory="/home/andrew/MY/Projects/С++/ClGL++/libs/glew-2.1.0/build/cmake/../../include"/>

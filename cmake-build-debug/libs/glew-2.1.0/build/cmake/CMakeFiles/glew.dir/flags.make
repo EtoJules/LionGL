@@ -6,5 +6,5 @@ C_FLAGS = -g -fPIC
 
 C_DEFINES = -DGLEW_BUILD -DGLEW_NO_GLU -Dglew_EXPORTS
 
-C_INCLUDES = -I/home/andrew/MY/Projects/С++/ClGL++/src -I/home/andrew/MY/Projects/С++/ClGL++/src/Core -I/home/andrew/MY/Projects/С++/ClGL++/libs/glew-2.1.0/build/cmake/../../include 
+C_INCLUDES = -I/home/andrew/MY/Projects/С++/ClGL++/libs -I/home/andrew/MY/Projects/С++/ClGL++/src -I/home/andrew/MY/Projects/С++/ClGL++/src/Core -I/home/andrew/MY/Projects/С++/ClGL++/libs/glew-2.1.0/build/cmake/../../include 
 
