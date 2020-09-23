@@ -6,15 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/home/andrew/MY/Projects/Graphic/LionGL/src/Core/VertexBuffer/VertexLayout.cpp
-VertexLayout.h
-/home/andrew/MY/Projects/Graphic/LionGL/src/Core/VertexBuffer/VertexLayout.h
-
-/home/andrew/MY/Projects/Graphic/LionGL/src/Core/VertexBuffer/VertexLayout.h
-GL/glew.h
--
-vector
--
-iostream
--
-

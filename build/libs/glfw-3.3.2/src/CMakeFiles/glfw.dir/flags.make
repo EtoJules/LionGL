@@ -6,7 +6,7 @@ C_FLAGS = -g -fPIC   -Wall -std=gnu99
 
 C_DEFINES = -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -I/home/andrew/MY/Projects/Graphic/LionGL/src -I/home/andrew/MY/Projects/Graphic/LionGL/libs -I/home/andrew/MY/Projects/Graphic/LionGL/src/Core -I/home/andrew/MY/Projects/Graphic/LionGL/libs/glfw-3.3.2/include -I/home/andrew/MY/Projects/Graphic/LionGL/libs/glfw-3.3.2/src -I/home/andrew/MY/Projects/Graphic/LionGL/build/libs/glfw-3.3.2/src 
+C_INCLUDES = -I/home/andrew/MY/Projects/Graphic/LionGL/src -I/home/andrew/MY/Projects/Graphic/LionGL/include -I/home/andrew/MY/Projects/Graphic/LionGL/libs -I/home/andrew/MY/Projects/Graphic/LionGL/src/Core -I/home/andrew/MY/Projects/Graphic/LionGL/libs/glfw-3.3.2/include -I/home/andrew/MY/Projects/Graphic/LionGL/libs/glfw-3.3.2/src -I/home/andrew/MY/Projects/Graphic/LionGL/build/libs/glfw-3.3.2/src 
 
 # Custom flags: libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/context.c.o_FLAGS = -Wdeclaration-after-statement
 

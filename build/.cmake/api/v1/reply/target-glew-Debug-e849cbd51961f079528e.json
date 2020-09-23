@@ -66,6 +66,12 @@
 			},
 			{
 				"command" : 3,
+				"file" : 1,
+				"line" : 11,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
 				"file" : 0,
 				"line" : 86,
 				"parent" : 0
@@ -103,14 +109,18 @@
 				},
 				{
 					"backtrace" : 6,
-					"path" : "/home/andrew/MY/Projects/Graphic/LionGL/libs"
+					"path" : "/home/andrew/MY/Projects/Graphic/LionGL/include"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "/home/andrew/MY/Projects/Graphic/LionGL/src/Core"
+					"path" : "/home/andrew/MY/Projects/Graphic/LionGL/libs"
 				},
 				{
 					"backtrace" : 8,
+					"path" : "/home/andrew/MY/Projects/Graphic/LionGL/src/Core"
+				},
+				{
+					"backtrace" : 9,
 					"path" : "/home/andrew/MY/Projects/Graphic/LionGL/libs/glew-2.1.0/build/cmake/../../include"
 				}
 			],

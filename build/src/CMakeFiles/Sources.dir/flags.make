@@ -6,5 +6,5 @@ CXX_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/andrew/MY/Projects/Graphic/LionGL/src -I/home/andrew/MY/Projects/Graphic/LionGL/libs -I/home/andrew/MY/Projects/Graphic/LionGL/src/Core 
+CXX_INCLUDES = -I/home/andrew/MY/Projects/Graphic/LionGL/src -I/home/andrew/MY/Projects/Graphic/LionGL/include -I/home/andrew/MY/Projects/Graphic/LionGL/libs -I/home/andrew/MY/Projects/Graphic/LionGL/src/Core 
 

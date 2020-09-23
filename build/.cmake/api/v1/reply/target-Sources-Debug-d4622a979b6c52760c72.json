@@ -50,6 +50,12 @@
 				"file" : 1,
 				"line" : 10,
 				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 11,
+				"parent" : 2
 			}
 		]
 	},
@@ -70,10 +76,14 @@
 				},
 				{
 					"backtrace" : 4,
-					"path" : "/home/andrew/MY/Projects/Graphic/LionGL/libs"
+					"path" : "/home/andrew/MY/Projects/Graphic/LionGL/include"
 				},
 				{
 					"backtrace" : 5,
+					"path" : "/home/andrew/MY/Projects/Graphic/LionGL/libs"
+				},
+				{
+					"backtrace" : 6,
 					"path" : "/home/andrew/MY/Projects/Graphic/LionGL/src/Core"
 				}
 			],
