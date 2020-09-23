@@ -1,35 +1,41 @@
 #include <GL/glew.h>
-#include <GLFW/glfw3.h>
 #include <iostream>
+#include "SDL2/SDL.h"
 
-#include "Renderer.h"
+#include "Core/Renderer/Renderer.h"
 
 int main()
 {
-    glfwInit();
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-
-    GLFWwindow *window = glfwCreateWindow(800, 600, "LionGL", nullptr, nullptr);
-    if (window == nullptr)
+    if(SDL_Init(SDL_INIT_VIDEO) < 0)
     {
-        std::cout << "Failed to instantiate GLFW window!" << std::endl;
-        glfwTerminate();
+        std::cout << "Failed to initialize the SDL2 library\n";
+        std::cout << "SDL2 Error: " << SDL_GetError() << "\n";
         return -1;
     }
-    glfwMakeContextCurrent(window);
-    
+    SDL_Window *window = SDL_CreateWindow("LionGL",
+                                          SDL_WINDOWPOS_CENTERED,
+                                          SDL_WINDOWPOS_CENTERED,
+                                          800, 600,
+                                          SDL_WINDOW_OPENGL|SDL_WINDOW_RESIZABLE);
+
+    if(!window)
+    {
+        std::cout << "Failed to create window\n";
+        std::cout << "SDL2 Error: " << SDL_GetError() << "\n";
+        return -1;
+    }
+    SDL_GLContext glcontext = SDL_GL_CreateContext(window);
     if (glewInit() != GLEW_OK)
         std::cout << "Glew error!!! \n";
 
+
     float vertices[] =
-    {
-        // positions         // colors
-         0.5f, -0.5f, 0.0f,  1.0f, 0.0f, 0.0f, // bottom right
-        -0.5f, -0.5f, 0.0f,  0.0f, 1.0f, 0.0f, // bottom left
-         0.0f,  0.5f, 0.0f,  0.0f, 0.0f, 1.0f // top
-    };
+            {
+                    // positions         // colors
+                    0.5f, -0.5f, 0.0f,  1.0f, 0.0f, 0.0f, // bottom right
+                    -0.5f, -0.5f, 0.0f,  0.0f, 1.0f, 0.0f, // bottom left
+                    0.0f,  0.5f, 0.0f,  0.0f, 0.0f, 1.0f // top
+            };
 
     VertexArray vertexArray;
     VertexBuffer vertexBuffer(vertices, sizeof(vertices));
@@ -46,18 +52,27 @@ int main()
 
     IndexBuffer indexBuffer(index, sizeof(index));
 
-    Shader shader("resources/shaders/vertex.glsl", "resources/shaders/fragment.glsl");
+    Shader shader("../resources/shaders/vertex.glsl", "../resources/shaders/fragment.glsl");
     shader.bind();
-
     Renderer render;
-    while (!glfwWindowShouldClose(window))
-    {
-        render.clear();
-        render.draw(vertexArray, indexBuffer, shader);
 
-        glfwSwapBuffers(window);
-        glfwPollEvents();
+    bool keep_window_open = true;
+    SDL_Event e;
+    while(keep_window_open)
+    {
+        while(SDL_PollEvent(&e) > 0)
+        {
+            render.clear();
+            render.draw(vertexArray, indexBuffer, shader);
+
+            switch(e.type)
+            {
+                case SDL_QUIT:
+                    keep_window_open = false;
+                    break;
+            }
+            SDL_GL_SwapWindow(window);
+        }
     }
-    glfwTerminate();
     return 0;
 }

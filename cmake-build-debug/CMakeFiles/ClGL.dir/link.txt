@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/ClGL.dir/main.cpp.o  -o ClGL  -lSDL2 src/libSources.a lib/libGLEWd.a /usr/lib/x86_64-linux-gnu/libGL.so /usr/lib/x86_64-linux-gnu/libGLU.so 

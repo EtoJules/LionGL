@@ -1,0 +1,10 @@
+/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/install/strip.dir
+/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/install/local.dir
+/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/install.dir
+/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/list_install_components.dir
+/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/rebuild_cache.dir
+/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/edit_cache.dir
+/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/uninstall.dir
+/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir
+/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir
+/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/SDL2main.dir

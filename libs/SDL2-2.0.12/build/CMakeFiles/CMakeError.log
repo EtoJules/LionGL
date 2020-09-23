@@ -1,0 +1,666 @@
+Performing C SOURCE FILE Test HAVE_GCC_PREFERRED_STACK_BOUNDARY failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8685b/fast && /usr/bin/make -f CMakeFiles/cmTC_8685b.dir/build.make CMakeFiles/cmTC_8685b.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8685b.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DHAVE_GCC_PREFERRED_STACK_BOUNDARY -mpreferred-stack-boundary=2   -o CMakeFiles/cmTC_8685b.dir/src.c.o   -c /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp/src.c
+cc1: error: ‘-mpreferred-stack-boundary=2’ is not between 3 and 12
+make[1]: *** [CMakeFiles/cmTC_8685b.dir/build.make:66: CMakeFiles/cmTC_8685b.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_8685b/fast] Error 2
+
+
+Source file was:
+int x = 0; int main(int argc, char **argv) {}
+Performing C SOURCE FILE Test HAVE_ALTIVEC_H_HDR failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_eb22c/fast && /usr/bin/make -f CMakeFiles/cmTC_eb22c.dir/build.make CMakeFiles/cmTC_eb22c.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eb22c.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DHAVE_ALTIVEC_H_HDR -maltivec   -o CMakeFiles/cmTC_eb22c.dir/src.c.o   -c /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command line option ‘-maltivec’
+make[1]: *** [CMakeFiles/cmTC_eb22c.dir/build.make:66: CMakeFiles/cmTC_eb22c.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_eb22c/fast] Error 2
+
+
+Source file was:
+
+          #include <altivec.h>
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { }
+Performing C SOURCE FILE Test HAVE_ALTIVEC failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2fa02/fast && /usr/bin/make -f CMakeFiles/cmTC_2fa02.dir/build.make CMakeFiles/cmTC_2fa02.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2fa02.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DHAVE_ALTIVEC -maltivec   -o CMakeFiles/cmTC_2fa02.dir/src.c.o   -c /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command line option ‘-maltivec’
+make[1]: *** [CMakeFiles/cmTC_2fa02.dir/build.make:66: CMakeFiles/cmTC_2fa02.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_2fa02/fast] Error 2
+
+
+Source file was:
+
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { }
+Performing C SOURCE FILE Test ARMSIMD_FOUND failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_150b7/fast && /usr/bin/make -f CMakeFiles/cmTC_150b7.dir/build.make CMakeFiles/cmTC_150b7.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_150b7.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DARMSIMD_FOUND  -x assembler-with-cpp   -o CMakeFiles/cmTC_150b7.dir/src.c.o   -c /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp/src.c
+/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp/src.c:8:10: error: #error EABI is required (to be sure that calling conventions are compatible)
+    8 |         #error EABI is required (to be sure that calling conventions are compatible)
+      |          ^~~~~
+make[1]: *** [CMakeFiles/cmTC_150b7.dir/build.make:66: CMakeFiles/cmTC_150b7.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_150b7/fast] Error 2
+
+
+Source file was:
+
+        .text
+        .arch armv6
+        .object_arch armv4
+        .arm
+        .altmacro
+        #ifndef __ARM_EABI__
+        #error EABI is required (to be sure that calling conventions are compatible)
+        #endif
+        pld [r0]
+        uqadd8 r0, r0, r0
+      
+Performing C SOURCE FILE Test ARMNEON_FOUND failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_caa63/fast && /usr/bin/make -f CMakeFiles/cmTC_caa63.dir/build.make CMakeFiles/cmTC_caa63.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_caa63.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DARMNEON_FOUND  -x assembler-with-cpp   -o CMakeFiles/cmTC_caa63.dir/src.c.o   -c /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp/src.c
+/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp/src.c:10:10: error: #error EABI is required (to be sure that calling conventions are compatible)
+   10 |         #error EABI is required (to be sure that calling conventions are compatible)
+      |          ^~~~~
+make[1]: *** [CMakeFiles/cmTC_caa63.dir/build.make:66: CMakeFiles/cmTC_caa63.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_caa63/fast] Error 2
+
+
+Source file was:
+
+        .text
+        .fpu neon
+        .arch armv7a
+        .object_arch armv4
+        .eabi_attribute 10, 0
+        .arm
+        .altmacro
+        #ifndef __ARM_EABI__
+        #error EABI is required (to be sure that calling conventions are compatible)
+        #endif
+        pld [r0]
+        vmovn.u16 d0, q0
+      
+Determining if the include file libunwind.h exists failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e9e92/fast && /usr/bin/make -f CMakeFiles/cmTC_e9e92.dir/build.make CMakeFiles/cmTC_e9e92.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e9e92.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos    -o CMakeFiles/cmTC_e9e92.dir/CheckIncludeFile.c.o   -c /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: libunwind.h: No such file or directory
+    1 | #include <libunwind.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_e9e92.dir/build.make:66: CMakeFiles/cmTC_e9e92.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e9e92/fast] Error 2
+
+
+
+Determining if the function strlcpy exists failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_48684/fast && /usr/bin/make -f CMakeFiles/cmTC_48684.dir/build.make CMakeFiles/cmTC_48684.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_48684.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=strlcpy   -o CMakeFiles/cmTC_48684.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_48684
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48684.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=strlcpy    -rdynamic CMakeFiles/cmTC_48684.dir/CheckFunctionExists.c.o  -o cmTC_48684 
+/usr/bin/ld: CMakeFiles/cmTC_48684.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:17: undefined reference to `strlcpy'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_48684.dir/build.make:87: cmTC_48684] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_48684/fast] Error 2
+
+
+
+Determining if the function strlcat exists failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ab639/fast && /usr/bin/make -f CMakeFiles/cmTC_ab639.dir/build.make CMakeFiles/cmTC_ab639.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ab639.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=strlcat   -o CMakeFiles/cmTC_ab639.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ab639
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ab639.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=strlcat    -rdynamic CMakeFiles/cmTC_ab639.dir/CheckFunctionExists.c.o  -o cmTC_ab639 
+/usr/bin/ld: CMakeFiles/cmTC_ab639.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:17: undefined reference to `strlcat'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_ab639.dir/build.make:87: cmTC_ab639] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ab639/fast] Error 2
+
+
+
+Determining if the function _strrev exists failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_137aa/fast && /usr/bin/make -f CMakeFiles/cmTC_137aa.dir/build.make CMakeFiles/cmTC_137aa.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_137aa.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strrev   -o CMakeFiles/cmTC_137aa.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_137aa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_137aa.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strrev    -rdynamic CMakeFiles/cmTC_137aa.dir/CheckFunctionExists.c.o  -o cmTC_137aa 
+/usr/bin/ld: CMakeFiles/cmTC_137aa.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:17: undefined reference to `_strrev'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_137aa.dir/build.make:87: cmTC_137aa] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_137aa/fast] Error 2
+
+
+
+Determining if the function _strupr exists failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a718a/fast && /usr/bin/make -f CMakeFiles/cmTC_a718a.dir/build.make CMakeFiles/cmTC_a718a.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a718a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strupr   -o CMakeFiles/cmTC_a718a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a718a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a718a.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strupr    -rdynamic CMakeFiles/cmTC_a718a.dir/CheckFunctionExists.c.o  -o cmTC_a718a 
+/usr/bin/ld: CMakeFiles/cmTC_a718a.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:17: undefined reference to `_strupr'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_a718a.dir/build.make:87: cmTC_a718a] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_a718a/fast] Error 2
+
+
+
+Determining if the function _strlwr exists failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d234a/fast && /usr/bin/make -f CMakeFiles/cmTC_d234a.dir/build.make CMakeFiles/cmTC_d234a.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d234a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strlwr   -o CMakeFiles/cmTC_d234a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d234a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d234a.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strlwr    -rdynamic CMakeFiles/cmTC_d234a.dir/CheckFunctionExists.c.o  -o cmTC_d234a 
+/usr/bin/ld: CMakeFiles/cmTC_d234a.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:17: undefined reference to `_strlwr'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_d234a.dir/build.make:87: cmTC_d234a] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_d234a/fast] Error 2
+
+
+
+Determining if the function itoa exists failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d2eaf/fast && /usr/bin/make -f CMakeFiles/cmTC_d2eaf.dir/build.make CMakeFiles/cmTC_d2eaf.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d2eaf.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=itoa   -o CMakeFiles/cmTC_d2eaf.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d2eaf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2eaf.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=itoa    -rdynamic CMakeFiles/cmTC_d2eaf.dir/CheckFunctionExists.c.o  -o cmTC_d2eaf 
+/usr/bin/ld: CMakeFiles/cmTC_d2eaf.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:17: undefined reference to `itoa'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_d2eaf.dir/build.make:87: cmTC_d2eaf] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_d2eaf/fast] Error 2
+
+
+
+Determining if the function _ltoa exists failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_03db0/fast && /usr/bin/make -f CMakeFiles/cmTC_03db0.dir/build.make CMakeFiles/cmTC_03db0.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_03db0.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ltoa   -o CMakeFiles/cmTC_03db0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_03db0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03db0.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ltoa    -rdynamic CMakeFiles/cmTC_03db0.dir/CheckFunctionExists.c.o  -o cmTC_03db0 
+/usr/bin/ld: CMakeFiles/cmTC_03db0.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:17: undefined reference to `_ltoa'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_03db0.dir/build.make:87: cmTC_03db0] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_03db0/fast] Error 2
+
+
+
+Determining if the function _uitoa exists failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7833a/fast && /usr/bin/make -f CMakeFiles/cmTC_7833a.dir/build.make CMakeFiles/cmTC_7833a.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7833a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=_uitoa   -o CMakeFiles/cmTC_7833a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7833a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7833a.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=_uitoa    -rdynamic CMakeFiles/cmTC_7833a.dir/CheckFunctionExists.c.o  -o cmTC_7833a 
+/usr/bin/ld: CMakeFiles/cmTC_7833a.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:17: undefined reference to `_uitoa'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_7833a.dir/build.make:87: cmTC_7833a] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_7833a/fast] Error 2
+
+
+
+Determining if the function _ultoa exists failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b69af/fast && /usr/bin/make -f CMakeFiles/cmTC_b69af.dir/build.make CMakeFiles/cmTC_b69af.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b69af.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ultoa   -o CMakeFiles/cmTC_b69af.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b69af
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b69af.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ultoa    -rdynamic CMakeFiles/cmTC_b69af.dir/CheckFunctionExists.c.o  -o cmTC_b69af 
+/usr/bin/ld: CMakeFiles/cmTC_b69af.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:17: undefined reference to `_ultoa'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_b69af.dir/build.make:87: cmTC_b69af] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_b69af/fast] Error 2
+
+
+
+Determining if the function _i64toa exists failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9c508/fast && /usr/bin/make -f CMakeFiles/cmTC_9c508.dir/build.make CMakeFiles/cmTC_9c508.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9c508.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=_i64toa   -o CMakeFiles/cmTC_9c508.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9c508
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9c508.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=_i64toa    -rdynamic CMakeFiles/cmTC_9c508.dir/CheckFunctionExists.c.o  -o cmTC_9c508 
+/usr/bin/ld: CMakeFiles/cmTC_9c508.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:17: undefined reference to `_i64toa'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_9c508.dir/build.make:87: cmTC_9c508] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_9c508/fast] Error 2
+
+
+
+Determining if the function _ui64toa exists failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_749ce/fast && /usr/bin/make -f CMakeFiles/cmTC_749ce.dir/build.make CMakeFiles/cmTC_749ce.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_749ce.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ui64toa   -o CMakeFiles/cmTC_749ce.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_749ce
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_749ce.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ui64toa    -rdynamic CMakeFiles/cmTC_749ce.dir/CheckFunctionExists.c.o  -o cmTC_749ce 
+/usr/bin/ld: CMakeFiles/cmTC_749ce.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:17: undefined reference to `_ui64toa'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_749ce.dir/build.make:87: cmTC_749ce] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_749ce/fast] Error 2
+
+
+
+Determining if the function _stricmp exists failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_24132/fast && /usr/bin/make -f CMakeFiles/cmTC_24132.dir/build.make CMakeFiles/cmTC_24132.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_24132.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=_stricmp   -o CMakeFiles/cmTC_24132.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_24132
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24132.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=_stricmp    -rdynamic CMakeFiles/cmTC_24132.dir/CheckFunctionExists.c.o  -o cmTC_24132 
+/usr/bin/ld: CMakeFiles/cmTC_24132.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:17: undefined reference to `_stricmp'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_24132.dir/build.make:87: cmTC_24132] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_24132/fast] Error 2
+
+
+
+Determining if the function _strnicmp exists failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_71e83/fast && /usr/bin/make -f CMakeFiles/cmTC_71e83.dir/build.make CMakeFiles/cmTC_71e83.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_71e83.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strnicmp   -o CMakeFiles/cmTC_71e83.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_71e83
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71e83.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strnicmp    -rdynamic CMakeFiles/cmTC_71e83.dir/CheckFunctionExists.c.o  -o cmTC_71e83 
+/usr/bin/ld: CMakeFiles/cmTC_71e83.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:17: undefined reference to `_strnicmp'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_71e83.dir/build.make:87: cmTC_71e83] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_71e83/fast] Error 2
+
+
+
+Determining if the function wcslcat exists failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3800d/fast && /usr/bin/make -f CMakeFiles/cmTC_3800d.dir/build.make CMakeFiles/cmTC_3800d.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3800d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=wcslcat   -o CMakeFiles/cmTC_3800d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3800d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3800d.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=wcslcat    -rdynamic CMakeFiles/cmTC_3800d.dir/CheckFunctionExists.c.o  -o cmTC_3800d 
+/usr/bin/ld: CMakeFiles/cmTC_3800d.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:17: undefined reference to `wcslcat'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_3800d.dir/build.make:87: cmTC_3800d] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_3800d/fast] Error 2
+
+
+
+Determining if the function wcslcpy exists failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7874d/fast && /usr/bin/make -f CMakeFiles/cmTC_7874d.dir/build.make CMakeFiles/cmTC_7874d.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7874d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=wcslcpy   -o CMakeFiles/cmTC_7874d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7874d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7874d.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=wcslcpy    -rdynamic CMakeFiles/cmTC_7874d.dir/CheckFunctionExists.c.o  -o cmTC_7874d 
+/usr/bin/ld: CMakeFiles/cmTC_7874d.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:17: undefined reference to `wcslcpy'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_7874d.dir/build.make:87: cmTC_7874d] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_7874d/fast] Error 2
+
+
+
+Determining if the function sysctlbyname exists failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2708e/fast && /usr/bin/make -f CMakeFiles/cmTC_2708e.dir/build.make CMakeFiles/cmTC_2708e.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2708e.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=sysctlbyname   -o CMakeFiles/cmTC_2708e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2708e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2708e.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=sysctlbyname    -rdynamic CMakeFiles/cmTC_2708e.dir/CheckFunctionExists.c.o  -o cmTC_2708e 
+/usr/bin/ld: CMakeFiles/cmTC_2708e.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:17: undefined reference to `sysctlbyname'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_2708e.dir/build.make:87: cmTC_2708e] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_2708e/fast] Error 2
+
+
+
+Determining if the function iconv_open exists in the iconv failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_55021/fast && /usr/bin/make -f CMakeFiles/cmTC_55021.dir/build.make CMakeFiles/cmTC_55021.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_55021.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=iconv_open   -o CMakeFiles/cmTC_55021.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_55021
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55021.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=iconv_open    -rdynamic CMakeFiles/cmTC_55021.dir/CheckFunctionExists.c.o  -o cmTC_55021  -liconv 
+/usr/bin/ld: cannot find -liconv
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_55021.dir/build.make:87: cmTC_55021] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_55021/fast] Error 2
+
+
+
+Determining if the function alloca exists failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9b24a/fast && /usr/bin/make -f CMakeFiles/cmTC_9b24a.dir/build.make CMakeFiles/cmTC_9b24a.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9b24a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=alloca   -o CMakeFiles/cmTC_9b24a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘alloca’; expected ‘void *(long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_9b24a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b24a.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=alloca    -rdynamic CMakeFiles/cmTC_9b24a.dir/CheckFunctionExists.c.o  -o cmTC_9b24a 
+/usr/bin/ld: CMakeFiles/cmTC_9b24a.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:17: undefined reference to `alloca'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_9b24a.dir/build.make:87: cmTC_9b24a] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_9b24a/fast] Error 2
+
+
+
+Determining if the function dlopen exists failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a6555/fast && /usr/bin/make -f CMakeFiles/cmTC_a6555.dir/build.make CMakeFiles/cmTC_a6555.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a6555.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=dlopen   -o CMakeFiles/cmTC_a6555.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a6555
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6555.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=dlopen    -rdynamic CMakeFiles/cmTC_a6555.dir/CheckFunctionExists.c.o  -o cmTC_a6555 
+/usr/bin/ld: CMakeFiles/cmTC_a6555.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:17: undefined reference to `dlopen'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_a6555.dir/build.make:87: cmTC_a6555] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_a6555/fast] Error 2
+
+
+
+Determining if the include file audio/audiolib.h exists failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cc1d5/fast && /usr/bin/make -f CMakeFiles/cmTC_cc1d5.dir/build.make CMakeFiles/cmTC_cc1d5.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cc1d5.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos    -o CMakeFiles/cmTC_cc1d5.dir/CheckIncludeFile.c.o   -c /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: audio/audiolib.h: No such file or directory
+    1 | #include <audio/audiolib.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_cc1d5.dir/build.make:66: CMakeFiles/cmTC_cc1d5.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_cc1d5/fast] Error 2
+
+
+
+Determining if the include file samplerate.h exists failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fb48c/fast && /usr/bin/make -f CMakeFiles/cmTC_fb48c.dir/build.make CMakeFiles/cmTC_fb48c.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fb48c.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos    -o CMakeFiles/cmTC_fb48c.dir/CheckIncludeFile.c.o   -c /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: samplerate.h: No such file or directory
+    1 | #include <samplerate.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_fb48c.dir/build.make:66: CMakeFiles/cmTC_fb48c.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_fb48c/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test HAVE_VIDEO_RPI failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_28992/fast && /usr/bin/make -f CMakeFiles/cmTC_28992.dir/build.make CMakeFiles/cmTC_28992.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_28992.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DHAVE_VIDEO_RPI  -I/opt/vc/include/interface/vmcs_host/linux/ -I/opt/vc/include/interface/vcos/pthreads -I/opt/vc/include  -L/opt/vc/lib   -o CMakeFiles/cmTC_28992.dir/src.c.o   -c /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp/src.c
+/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: bcm_host.h: No such file or directory
+    2 |         #include <bcm_host.h>
+      |                  ^~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_28992.dir/build.make:66: CMakeFiles/cmTC_28992.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_28992/fast] Error 2
+
+
+Source file was:
+
+        #include <bcm_host.h>
+        int main(int argc, char **argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_VIVANTE_VDK failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a8281/fast && /usr/bin/make -f CMakeFiles/cmTC_a8281.dir/build.make CMakeFiles/cmTC_a8281.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a8281.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DHAVE_VIDEO_VIVANTE_VDK   -o CMakeFiles/cmTC_a8281.dir/src.c.o   -c /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp/src.c
+/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: gc_vdk.h: No such file or directory
+    2 |         #include <gc_vdk.h>
+      |                  ^~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_a8281.dir/build.make:66: CMakeFiles/cmTC_a8281.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_a8281/fast] Error 2
+
+
+Source file was:
+
+        #include <gc_vdk.h>
+        int main(int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_VIVANTE_EGL_FB failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7ef82/fast && /usr/bin/make -f CMakeFiles/cmTC_7ef82.dir/build.make CMakeFiles/cmTC_7ef82.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7ef82.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DHAVE_VIDEO_VIVANTE_EGL_FB   -o CMakeFiles/cmTC_7ef82.dir/src.c.o   -c /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp/src.c
+/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp/src.c:4:18: fatal error: EGL/eglvivante.h: No such file or directory
+    4 |         #include <EGL/eglvivante.h>
+      |                  ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_7ef82.dir/build.make:66: CMakeFiles/cmTC_7ef82.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_7ef82/fast] Error 2
+
+
+Source file was:
+
+        #define LINUX
+        #define EGL_API_FB
+        #include <EGL/eglvivante.h>
+        int main(int argc, char** argv) {}
+Determining if the include file fcitx/frontend.h exists failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_23908/fast && /usr/bin/make -f CMakeFiles/cmTC_23908.dir/build.make CMakeFiles/cmTC_23908.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_23908.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos     -o CMakeFiles/cmTC_23908.dir/CheckIncludeFile.c.o   -c /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: fcitx/frontend.h: No such file or directory
+    1 | #include <fcitx/frontend.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_23908.dir/build.make:66: CMakeFiles/cmTC_23908.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_23908/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test HAVE_INPUT_TSLIB failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fe2eb/fast && /usr/bin/make -f CMakeFiles/cmTC_fe2eb.dir/build.make CMakeFiles/cmTC_fe2eb.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fe2eb.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DHAVE_INPUT_TSLIB   -o CMakeFiles/cmTC_fe2eb.dir/src.c.o   -c /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp/src.c
+/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: tslib.h: No such file or directory
+    2 |         #include "tslib.h"
+      |                  ^~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_fe2eb.dir/build.make:66: CMakeFiles/cmTC_fe2eb.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_fe2eb/fast] Error 2
+
+
+Source file was:
+
+        #include "tslib.h"
+        int main(int argc, char** argv) { }
+Performing C SOURCE FILE Test HAVE_PTHREAD_NP_H failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3149c/fast && /usr/bin/make -f CMakeFiles/cmTC_3149c.dir/build.make CMakeFiles/cmTC_3149c.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3149c.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DHAVE_PTHREAD_NP_H   -D_REENTRANT -pthread   -o CMakeFiles/cmTC_3149c.dir/src.c.o   -c /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp/src.c
+/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp/src.c:3:20: fatal error: pthread_np.h: No such file or directory
+    3 |           #include <pthread_np.h>
+      |                    ^~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_3149c.dir/build.make:66: CMakeFiles/cmTC_3149c.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_3149c/fast] Error 2
+
+
+Source file was:
+
+          #include <pthread.h>
+          #include <pthread_np.h>
+          int main(int argc, char** argv) { return 0; }
+Determining if the function pthread_set_name_np exists failed with the following output:
+Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e9921/fast && /usr/bin/make -f CMakeFiles/cmTC_e9921.dir/build.make CMakeFiles/cmTC_e9921.dir/build
+make[1]: Entering directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e9921.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=pthread_set_name_np   -D_REENTRANT -pthread   -o CMakeFiles/cmTC_e9921.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e9921
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9921.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/src/video/khronos -DCHECK_FUNCTION_EXISTS=pthread_set_name_np   -D_REENTRANT -pthread    -rdynamic CMakeFiles/cmTC_e9921.dir/CheckFunctionExists.c.o  -o cmTC_e9921 
+/usr/bin/ld: CMakeFiles/cmTC_e9921.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:17: undefined reference to `pthread_set_name_np'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_e9921.dir/build.make:87: cmTC_e9921] Error 1
+make[1]: Leaving directory '/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e9921/fast] Error 2
+
+
+

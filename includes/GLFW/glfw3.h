@@ -4987,9 +4987,9 @@ GLFWAPI const unsigned char* glfwGetJoystickHats(int jid, int* count);
  */
 GLFWAPI const char* glfwGetJoystickName(int jid);
 
-/*! @brief Returns the SDL compatible GUID of the specified joystick.
+/*! @brief Returns the SDL2 compatible GUID of the specified joystick.
  *
- *  This function returns the SDL compatible GUID, as a UTF-8 encoded
+ *  This function returns the SDL2 compatible GUID, as a UTF-8 encoded
  *  hexadecimal string, of the specified joystick.  The returned string is
  *  allocated and freed by GLFW.  You should not free it yourself.
  *
@@ -5001,7 +5001,7 @@ GLFWAPI const char* glfwGetJoystickName(int jid);
  *  but will not generate an error.  This can be used instead of first calling
  *  @ref glfwJoystickPresent.
  *
- *  The GUID uses the format introduced in SDL 2.0.5.  This GUID tries to
+ *  The GUID uses the format introduced in SDL2 2.0.5.  This GUID tries to
  *  uniquely identify the make and model of a joystick but does not identify
  *  a specific unit, e.g. all wired Xbox 360 controllers will have the same
  *  GUID on that platform.  The GUID for a unit may vary between platforms
