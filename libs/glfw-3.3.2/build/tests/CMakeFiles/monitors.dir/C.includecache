@@ -66,17 +66,17 @@ GL/glext.h
 GL/glu.h
 -
 
-/home/andrew/MY/Projects/С++/glfw-3.3.2/deps/getopt.c
+/home/andrew/MY/Projects/Graphic/glfw-3.3.2/deps/getopt.c
 getopt.h
-/home/andrew/MY/Projects/С++/glfw-3.3.2/deps/getopt.h
+/home/andrew/MY/Projects/Graphic/glfw-3.3.2/deps/getopt.h
 stddef.h
 -
 string.h
 -
 
-/home/andrew/MY/Projects/С++/glfw-3.3.2/deps/getopt.h
+/home/andrew/MY/Projects/Graphic/glfw-3.3.2/deps/getopt.h
 
-/home/andrew/MY/Projects/С++/glfw-3.3.2/deps/glad_gl.c
+/home/andrew/MY/Projects/Graphic/glfw-3.3.2/deps/glad_gl.c
 stdio.h
 -
 stdlib.h
@@ -86,7 +86,7 @@ string.h
 glad/gl.h
 -
 
-/home/andrew/MY/Projects/С++/glfw-3.3.2/tests/monitors.c
+/home/andrew/MY/Projects/Graphic/glfw-3.3.2/tests/monitors.c
 glad/gl.h
 -
 GLFW/glfw3.h
@@ -98,5 +98,5 @@ string.h
 stdlib.h
 -
 getopt.h
-/home/andrew/MY/Projects/С++/glfw-3.3.2/tests/getopt.h
+/home/andrew/MY/Projects/Graphic/glfw-3.3.2/tests/getopt.h
 

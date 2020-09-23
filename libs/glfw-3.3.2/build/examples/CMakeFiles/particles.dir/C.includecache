@@ -80,17 +80,17 @@ GL/glext.h
 GL/glu.h
 -
 
-/home/andrew/MY/Projects/С++/glfw-3.3.2/deps/getopt.c
+/home/andrew/MY/Projects/Graphic/glfw-3.3.2/deps/getopt.c
 getopt.h
-/home/andrew/MY/Projects/С++/glfw-3.3.2/deps/getopt.h
+/home/andrew/MY/Projects/Graphic/glfw-3.3.2/deps/getopt.h
 stddef.h
 -
 string.h
 -
 
-/home/andrew/MY/Projects/С++/glfw-3.3.2/deps/getopt.h
+/home/andrew/MY/Projects/Graphic/glfw-3.3.2/deps/getopt.h
 
-/home/andrew/MY/Projects/С++/glfw-3.3.2/deps/glad_gl.c
+/home/andrew/MY/Projects/Graphic/glfw-3.3.2/deps/glad_gl.c
 stdio.h
 -
 stdlib.h
@@ -100,9 +100,9 @@ string.h
 glad/gl.h
 -
 
-/home/andrew/MY/Projects/С++/glfw-3.3.2/deps/tinycthread.c
+/home/andrew/MY/Projects/Graphic/glfw-3.3.2/deps/tinycthread.c
 tinycthread.h
-/home/andrew/MY/Projects/С++/glfw-3.3.2/deps/tinycthread.h
+/home/andrew/MY/Projects/Graphic/glfw-3.3.2/deps/tinycthread.h
 stdlib.h
 -
 signal.h
@@ -120,7 +120,7 @@ process.h
 sys/timeb.h
 -
 
-/home/andrew/MY/Projects/С++/glfw-3.3.2/deps/tinycthread.h
+/home/andrew/MY/Projects/Graphic/glfw-3.3.2/deps/tinycthread.h
 time.h
 -
 sys/time.h
@@ -130,7 +130,7 @@ pthread.h
 windows.h
 -
 
-/home/andrew/MY/Projects/С++/glfw-3.3.2/examples/particles.c
+/home/andrew/MY/Projects/Graphic/glfw-3.3.2/examples/particles.c
 stdlib.h
 -
 stdio.h

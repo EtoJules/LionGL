@@ -4,10 +4,10 @@
 tests/CMakeFiles/reopen.dir/__/deps/glad_gl.c.o
  ../deps/glad/gl.h
  ../deps/glad/khrplatform.h
- /home/andrew/MY/Projects/С++/glfw-3.3.2/deps/glad_gl.c
+ /home/andrew/MY/Projects/Graphic/glfw-3.3.2/deps/glad_gl.c
 tests/CMakeFiles/reopen.dir/reopen.c.o
  ../deps/glad/gl.h
  ../deps/glad/khrplatform.h
  ../deps/linmath.h
  ../include/GLFW/glfw3.h
- /home/andrew/MY/Projects/С++/glfw-3.3.2/tests/reopen.c
+ /home/andrew/MY/Projects/Graphic/glfw-3.3.2/tests/reopen.c

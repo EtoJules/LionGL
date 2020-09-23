@@ -68,7 +68,7 @@ GL/glext.h
 GL/glu.h
 -
 
-/home/andrew/MY/Projects/С++/glfw-3.3.2/deps/glad_gl.c
+/home/andrew/MY/Projects/Graphic/glfw-3.3.2/deps/glad_gl.c
 stdio.h
 -
 stdlib.h
@@ -78,13 +78,13 @@ string.h
 glad/gl.h
 -
 
-/home/andrew/MY/Projects/С++/glfw-3.3.2/examples/simple.c
+/home/andrew/MY/Projects/Graphic/glfw-3.3.2/examples/simple.c
 glad/gl.h
 -
 GLFW/glfw3.h
 -
 linmath.h
-/home/andrew/MY/Projects/С++/glfw-3.3.2/examples/linmath.h
+/home/andrew/MY/Projects/Graphic/glfw-3.3.2/examples/linmath.h
 stdlib.h
 -
 stdio.h

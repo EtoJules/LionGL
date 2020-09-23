@@ -1,4 +1,4 @@
-# Install script for directory: /home/andrew/MY/Projects/С++/glfw-3.3.2/tests
+# Install script for directory: /home/andrew/MY/Projects/Graphic/glfw-3.3.2/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

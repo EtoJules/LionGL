@@ -3,7 +3,6 @@
 #include <iostream>
 
 #include "Renderer.h"
-#include "IndexBuffer/IndexBuffer.h"
 
 int main()
 {

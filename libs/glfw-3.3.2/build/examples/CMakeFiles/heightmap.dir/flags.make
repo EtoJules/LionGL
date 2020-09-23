@@ -6,5 +6,5 @@ C_FLAGS =   -std=gnu99
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/andrew/MY/Projects/С++/glfw-3.3.2/deps -I/home/andrew/MY/Projects/С++/glfw-3.3.2/include 
+C_INCLUDES = -I/home/andrew/MY/Projects/Graphic/glfw-3.3.2/deps -I/home/andrew/MY/Projects/Graphic/glfw-3.3.2/include 
 

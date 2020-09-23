@@ -110,8 +110,6 @@ assert.h
 EGL/eglplatform.h
 -
 
-/home/andrew/MY/Projects/Graphic/LionGL/libs/glfw-3.3.2/src/glfw_config.h
-
 /home/andrew/MY/Projects/Graphic/LionGL/libs/glfw-3.3.2/src/glx_context.c
 internal.h
 /home/andrew/MY/Projects/Graphic/LionGL/libs/glfw-3.3.2/src/internal.h
@@ -455,4 +453,6 @@ internal.h
 /home/andrew/MY/Projects/Graphic/LionGL/libs/glfw-3.3.2/src/internal.h
 
 /home/andrew/MY/Projects/Graphic/LionGL/libs/glfw-3.3.2/src/xkb_unicode.h
+
+libs/glfw-3.3.2/src/glfw_config.h
 

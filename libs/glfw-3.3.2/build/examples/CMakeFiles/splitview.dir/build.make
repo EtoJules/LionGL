@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andrew/MY/Projects/С++/glfw-3.3.2
+CMAKE_SOURCE_DIR = /home/andrew/MY/Projects/Graphic/glfw-3.3.2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andrew/MY/Projects/С++/glfw-3.3.2/build
+CMAKE_BINARY_DIR = /home/andrew/MY/Projects/Graphic/glfw-3.3.2/build
 
 # Include any dependencies generated for this target.
 include examples/CMakeFiles/splitview.dir/depend.make
@@ -59,29 +59,29 @@ include examples/CMakeFiles/splitview.dir/flags.make
 
 examples/CMakeFiles/splitview.dir/splitview.c.o: examples/CMakeFiles/splitview.dir/flags.make
 examples/CMakeFiles/splitview.dir/splitview.c.o: ../examples/splitview.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/MY/Projects/С++/glfw-3.3.2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/CMakeFiles/splitview.dir/splitview.c.o"
-	cd /home/andrew/MY/Projects/С++/glfw-3.3.2/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/splitview.dir/splitview.c.o   -c /home/andrew/MY/Projects/С++/glfw-3.3.2/examples/splitview.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/MY/Projects/Graphic/glfw-3.3.2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/CMakeFiles/splitview.dir/splitview.c.o"
+	cd /home/andrew/MY/Projects/Graphic/glfw-3.3.2/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/splitview.dir/splitview.c.o   -c /home/andrew/MY/Projects/Graphic/glfw-3.3.2/examples/splitview.c
 
 examples/CMakeFiles/splitview.dir/splitview.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/splitview.dir/splitview.c.i"
-	cd /home/andrew/MY/Projects/С++/glfw-3.3.2/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andrew/MY/Projects/С++/glfw-3.3.2/examples/splitview.c > CMakeFiles/splitview.dir/splitview.c.i
+	cd /home/andrew/MY/Projects/Graphic/glfw-3.3.2/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andrew/MY/Projects/Graphic/glfw-3.3.2/examples/splitview.c > CMakeFiles/splitview.dir/splitview.c.i
 
 examples/CMakeFiles/splitview.dir/splitview.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/splitview.dir/splitview.c.s"
-	cd /home/andrew/MY/Projects/С++/glfw-3.3.2/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andrew/MY/Projects/С++/glfw-3.3.2/examples/splitview.c -o CMakeFiles/splitview.dir/splitview.c.s
+	cd /home/andrew/MY/Projects/Graphic/glfw-3.3.2/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andrew/MY/Projects/Graphic/glfw-3.3.2/examples/splitview.c -o CMakeFiles/splitview.dir/splitview.c.s
 
 examples/CMakeFiles/splitview.dir/__/deps/glad_gl.c.o: examples/CMakeFiles/splitview.dir/flags.make
 examples/CMakeFiles/splitview.dir/__/deps/glad_gl.c.o: ../deps/glad_gl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/MY/Projects/С++/glfw-3.3.2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object examples/CMakeFiles/splitview.dir/__/deps/glad_gl.c.o"
-	cd /home/andrew/MY/Projects/С++/glfw-3.3.2/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/splitview.dir/__/deps/glad_gl.c.o   -c /home/andrew/MY/Projects/С++/glfw-3.3.2/deps/glad_gl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/MY/Projects/Graphic/glfw-3.3.2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object examples/CMakeFiles/splitview.dir/__/deps/glad_gl.c.o"
+	cd /home/andrew/MY/Projects/Graphic/glfw-3.3.2/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/splitview.dir/__/deps/glad_gl.c.o   -c /home/andrew/MY/Projects/Graphic/glfw-3.3.2/deps/glad_gl.c
 
 examples/CMakeFiles/splitview.dir/__/deps/glad_gl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/splitview.dir/__/deps/glad_gl.c.i"
-	cd /home/andrew/MY/Projects/С++/glfw-3.3.2/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andrew/MY/Projects/С++/glfw-3.3.2/deps/glad_gl.c > CMakeFiles/splitview.dir/__/deps/glad_gl.c.i
+	cd /home/andrew/MY/Projects/Graphic/glfw-3.3.2/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andrew/MY/Projects/Graphic/glfw-3.3.2/deps/glad_gl.c > CMakeFiles/splitview.dir/__/deps/glad_gl.c.i
 
 examples/CMakeFiles/splitview.dir/__/deps/glad_gl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/splitview.dir/__/deps/glad_gl.c.s"
-	cd /home/andrew/MY/Projects/С++/glfw-3.3.2/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andrew/MY/Projects/С++/glfw-3.3.2/deps/glad_gl.c -o CMakeFiles/splitview.dir/__/deps/glad_gl.c.s
+	cd /home/andrew/MY/Projects/Graphic/glfw-3.3.2/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andrew/MY/Projects/Graphic/glfw-3.3.2/deps/glad_gl.c -o CMakeFiles/splitview.dir/__/deps/glad_gl.c.s
 
 # Object files for target splitview
 splitview_OBJECTS = \
@@ -100,8 +100,8 @@ examples/splitview: /usr/lib/x86_64-linux-gnu/librt.so
 examples/splitview: /usr/lib/x86_64-linux-gnu/libm.so
 examples/splitview: /usr/lib/x86_64-linux-gnu/libX11.so
 examples/splitview: examples/CMakeFiles/splitview.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andrew/MY/Projects/С++/glfw-3.3.2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable splitview"
-	cd /home/andrew/MY/Projects/С++/glfw-3.3.2/build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/splitview.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andrew/MY/Projects/Graphic/glfw-3.3.2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable splitview"
+	cd /home/andrew/MY/Projects/Graphic/glfw-3.3.2/build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/splitview.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/CMakeFiles/splitview.dir/build: examples/splitview
@@ -109,10 +109,10 @@ examples/CMakeFiles/splitview.dir/build: examples/splitview
 .PHONY : examples/CMakeFiles/splitview.dir/build
 
 examples/CMakeFiles/splitview.dir/clean:
-	cd /home/andrew/MY/Projects/С++/glfw-3.3.2/build/examples && $(CMAKE_COMMAND) -P CMakeFiles/splitview.dir/cmake_clean.cmake
+	cd /home/andrew/MY/Projects/Graphic/glfw-3.3.2/build/examples && $(CMAKE_COMMAND) -P CMakeFiles/splitview.dir/cmake_clean.cmake
 .PHONY : examples/CMakeFiles/splitview.dir/clean
 
 examples/CMakeFiles/splitview.dir/depend:
-	cd /home/andrew/MY/Projects/С++/glfw-3.3.2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andrew/MY/Projects/С++/glfw-3.3.2 /home/andrew/MY/Projects/С++/glfw-3.3.2/examples /home/andrew/MY/Projects/С++/glfw-3.3.2/build /home/andrew/MY/Projects/С++/glfw-3.3.2/build/examples /home/andrew/MY/Projects/С++/glfw-3.3.2/build/examples/CMakeFiles/splitview.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/andrew/MY/Projects/Graphic/glfw-3.3.2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andrew/MY/Projects/Graphic/glfw-3.3.2 /home/andrew/MY/Projects/Graphic/glfw-3.3.2/examples /home/andrew/MY/Projects/Graphic/glfw-3.3.2/build /home/andrew/MY/Projects/Graphic/glfw-3.3.2/build/examples /home/andrew/MY/Projects/Graphic/glfw-3.3.2/build/examples/CMakeFiles/splitview.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/CMakeFiles/splitview.dir/depend
 

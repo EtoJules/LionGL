@@ -62,7 +62,7 @@ GL/glext.h
 GL/glu.h
 -
 
-/home/andrew/MY/Projects/С++/glfw-3.3.2/deps/glad_vulkan.c
+/home/andrew/MY/Projects/Graphic/glfw-3.3.2/deps/glad_vulkan.c
 stdio.h
 -
 stdlib.h
@@ -72,7 +72,7 @@ string.h
 glad/vulkan.h
 -
 
-/home/andrew/MY/Projects/С++/glfw-3.3.2/tests/triangle-vulkan.c
+/home/andrew/MY/Projects/Graphic/glfw-3.3.2/tests/triangle-vulkan.c
 stdio.h
 -
 stdlib.h
