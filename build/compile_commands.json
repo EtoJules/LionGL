@@ -16,6 +16,21 @@
 },
 {
   "directory": "/home/andrew/MY/Projects/Graphic/LionGL/build/src",
+  "command": "/bin/g++-9   -I/home/andrew/MY/Projects/Graphic/LionGL/src -I/home/andrew/MY/Projects/Graphic/LionGL/libs -I/home/andrew/MY/Projects/Graphic/LionGL/src/Core  -g   -o CMakeFiles/Sources.dir/Core/VertexBuffer/VertexLayout.cpp.o -c /home/andrew/MY/Projects/Graphic/LionGL/src/Core/VertexBuffer/VertexLayout.cpp",
+  "file": "/home/andrew/MY/Projects/Graphic/LionGL/src/Core/VertexBuffer/VertexLayout.cpp"
+},
+{
+  "directory": "/home/andrew/MY/Projects/Graphic/LionGL/build/src",
+  "command": "/bin/g++-9   -I/home/andrew/MY/Projects/Graphic/LionGL/src -I/home/andrew/MY/Projects/Graphic/LionGL/libs -I/home/andrew/MY/Projects/Graphic/LionGL/src/Core  -g   -o CMakeFiles/Sources.dir/Core/VertexArray/VertexArray.cpp.o -c /home/andrew/MY/Projects/Graphic/LionGL/src/Core/VertexArray/VertexArray.cpp",
+  "file": "/home/andrew/MY/Projects/Graphic/LionGL/src/Core/VertexArray/VertexArray.cpp"
+},
+{
+  "directory": "/home/andrew/MY/Projects/Graphic/LionGL/build/src",
+  "command": "/bin/g++-9   -I/home/andrew/MY/Projects/Graphic/LionGL/src -I/home/andrew/MY/Projects/Graphic/LionGL/libs -I/home/andrew/MY/Projects/Graphic/LionGL/src/Core  -g   -o CMakeFiles/Sources.dir/Core/IndexBuffer/IndexBuffer.cpp.o -c /home/andrew/MY/Projects/Graphic/LionGL/src/Core/IndexBuffer/IndexBuffer.cpp",
+  "file": "/home/andrew/MY/Projects/Graphic/LionGL/src/Core/IndexBuffer/IndexBuffer.cpp"
+},
+{
+  "directory": "/home/andrew/MY/Projects/Graphic/LionGL/build/src",
   "command": "/bin/g++-9   -I/home/andrew/MY/Projects/Graphic/LionGL/src -I/home/andrew/MY/Projects/Graphic/LionGL/libs -I/home/andrew/MY/Projects/Graphic/LionGL/src/Core  -g   -o CMakeFiles/Sources.dir/Helper/parser.cpp.o -c /home/andrew/MY/Projects/Graphic/LionGL/src/Helper/parser.cpp",
   "file": "/home/andrew/MY/Projects/Graphic/LionGL/src/Helper/parser.cpp"
 },

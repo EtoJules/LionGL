@@ -1,7 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Sources.dir/Core/IndexBuffer/IndexBuffer.cpp.o"
   "CMakeFiles/Sources.dir/Core/Renderer.cpp.o"
   "CMakeFiles/Sources.dir/Core/Shader/Shader.cpp.o"
+  "CMakeFiles/Sources.dir/Core/VertexArray/VertexArray.cpp.o"
   "CMakeFiles/Sources.dir/Core/VertexBuffer/VertexBuffer.cpp.o"
+  "CMakeFiles/Sources.dir/Core/VertexBuffer/VertexLayout.cpp.o"
   "CMakeFiles/Sources.dir/Helper/parser.cpp.o"
   "libSources.a"
   "libSources.pdb"

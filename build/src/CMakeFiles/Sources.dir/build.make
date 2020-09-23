@@ -83,9 +83,48 @@ src/CMakeFiles/Sources.dir/Core/VertexBuffer/VertexBuffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sources.dir/Core/VertexBuffer/VertexBuffer.cpp.s"
 	cd /home/andrew/MY/Projects/Graphic/LionGL/build/src && /bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/MY/Projects/Graphic/LionGL/src/Core/VertexBuffer/VertexBuffer.cpp -o CMakeFiles/Sources.dir/Core/VertexBuffer/VertexBuffer.cpp.s
 
+src/CMakeFiles/Sources.dir/Core/VertexBuffer/VertexLayout.cpp.o: src/CMakeFiles/Sources.dir/flags.make
+src/CMakeFiles/Sources.dir/Core/VertexBuffer/VertexLayout.cpp.o: ../src/Core/VertexBuffer/VertexLayout.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/Sources.dir/Core/VertexBuffer/VertexLayout.cpp.o"
+	cd /home/andrew/MY/Projects/Graphic/LionGL/build/src && /bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Sources.dir/Core/VertexBuffer/VertexLayout.cpp.o -c /home/andrew/MY/Projects/Graphic/LionGL/src/Core/VertexBuffer/VertexLayout.cpp
+
+src/CMakeFiles/Sources.dir/Core/VertexBuffer/VertexLayout.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Sources.dir/Core/VertexBuffer/VertexLayout.cpp.i"
+	cd /home/andrew/MY/Projects/Graphic/LionGL/build/src && /bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrew/MY/Projects/Graphic/LionGL/src/Core/VertexBuffer/VertexLayout.cpp > CMakeFiles/Sources.dir/Core/VertexBuffer/VertexLayout.cpp.i
+
+src/CMakeFiles/Sources.dir/Core/VertexBuffer/VertexLayout.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sources.dir/Core/VertexBuffer/VertexLayout.cpp.s"
+	cd /home/andrew/MY/Projects/Graphic/LionGL/build/src && /bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/MY/Projects/Graphic/LionGL/src/Core/VertexBuffer/VertexLayout.cpp -o CMakeFiles/Sources.dir/Core/VertexBuffer/VertexLayout.cpp.s
+
+src/CMakeFiles/Sources.dir/Core/VertexArray/VertexArray.cpp.o: src/CMakeFiles/Sources.dir/flags.make
+src/CMakeFiles/Sources.dir/Core/VertexArray/VertexArray.cpp.o: ../src/Core/VertexArray/VertexArray.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/Sources.dir/Core/VertexArray/VertexArray.cpp.o"
+	cd /home/andrew/MY/Projects/Graphic/LionGL/build/src && /bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Sources.dir/Core/VertexArray/VertexArray.cpp.o -c /home/andrew/MY/Projects/Graphic/LionGL/src/Core/VertexArray/VertexArray.cpp
+
+src/CMakeFiles/Sources.dir/Core/VertexArray/VertexArray.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Sources.dir/Core/VertexArray/VertexArray.cpp.i"
+	cd /home/andrew/MY/Projects/Graphic/LionGL/build/src && /bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrew/MY/Projects/Graphic/LionGL/src/Core/VertexArray/VertexArray.cpp > CMakeFiles/Sources.dir/Core/VertexArray/VertexArray.cpp.i
+
+src/CMakeFiles/Sources.dir/Core/VertexArray/VertexArray.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sources.dir/Core/VertexArray/VertexArray.cpp.s"
+	cd /home/andrew/MY/Projects/Graphic/LionGL/build/src && /bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/MY/Projects/Graphic/LionGL/src/Core/VertexArray/VertexArray.cpp -o CMakeFiles/Sources.dir/Core/VertexArray/VertexArray.cpp.s
+
+src/CMakeFiles/Sources.dir/Core/IndexBuffer/IndexBuffer.cpp.o: src/CMakeFiles/Sources.dir/flags.make
+src/CMakeFiles/Sources.dir/Core/IndexBuffer/IndexBuffer.cpp.o: ../src/Core/IndexBuffer/IndexBuffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/Sources.dir/Core/IndexBuffer/IndexBuffer.cpp.o"
+	cd /home/andrew/MY/Projects/Graphic/LionGL/build/src && /bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Sources.dir/Core/IndexBuffer/IndexBuffer.cpp.o -c /home/andrew/MY/Projects/Graphic/LionGL/src/Core/IndexBuffer/IndexBuffer.cpp
+
+src/CMakeFiles/Sources.dir/Core/IndexBuffer/IndexBuffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Sources.dir/Core/IndexBuffer/IndexBuffer.cpp.i"
+	cd /home/andrew/MY/Projects/Graphic/LionGL/build/src && /bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrew/MY/Projects/Graphic/LionGL/src/Core/IndexBuffer/IndexBuffer.cpp > CMakeFiles/Sources.dir/Core/IndexBuffer/IndexBuffer.cpp.i
+
+src/CMakeFiles/Sources.dir/Core/IndexBuffer/IndexBuffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sources.dir/Core/IndexBuffer/IndexBuffer.cpp.s"
+	cd /home/andrew/MY/Projects/Graphic/LionGL/build/src && /bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/MY/Projects/Graphic/LionGL/src/Core/IndexBuffer/IndexBuffer.cpp -o CMakeFiles/Sources.dir/Core/IndexBuffer/IndexBuffer.cpp.s
+
 src/CMakeFiles/Sources.dir/Helper/parser.cpp.o: src/CMakeFiles/Sources.dir/flags.make
 src/CMakeFiles/Sources.dir/Helper/parser.cpp.o: ../src/Helper/parser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/Sources.dir/Helper/parser.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/Sources.dir/Helper/parser.cpp.o"
 	cd /home/andrew/MY/Projects/Graphic/LionGL/build/src && /bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Sources.dir/Helper/parser.cpp.o -c /home/andrew/MY/Projects/Graphic/LionGL/src/Helper/parser.cpp
 
 src/CMakeFiles/Sources.dir/Helper/parser.cpp.i: cmake_force
@@ -98,7 +137,7 @@ src/CMakeFiles/Sources.dir/Helper/parser.cpp.s: cmake_force
 
 src/CMakeFiles/Sources.dir/Core/Renderer.cpp.o: src/CMakeFiles/Sources.dir/flags.make
 src/CMakeFiles/Sources.dir/Core/Renderer.cpp.o: ../src/Core/Renderer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/Sources.dir/Core/Renderer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/Sources.dir/Core/Renderer.cpp.o"
 	cd /home/andrew/MY/Projects/Graphic/LionGL/build/src && /bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Sources.dir/Core/Renderer.cpp.o -c /home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer.cpp
 
 src/CMakeFiles/Sources.dir/Core/Renderer.cpp.i: cmake_force
@@ -113,6 +152,9 @@ src/CMakeFiles/Sources.dir/Core/Renderer.cpp.s: cmake_force
 Sources_OBJECTS = \
 "CMakeFiles/Sources.dir/Core/Shader/Shader.cpp.o" \
 "CMakeFiles/Sources.dir/Core/VertexBuffer/VertexBuffer.cpp.o" \
+"CMakeFiles/Sources.dir/Core/VertexBuffer/VertexLayout.cpp.o" \
+"CMakeFiles/Sources.dir/Core/VertexArray/VertexArray.cpp.o" \
+"CMakeFiles/Sources.dir/Core/IndexBuffer/IndexBuffer.cpp.o" \
 "CMakeFiles/Sources.dir/Helper/parser.cpp.o" \
 "CMakeFiles/Sources.dir/Core/Renderer.cpp.o"
 
@@ -121,11 +163,14 @@ Sources_EXTERNAL_OBJECTS =
 
 src/libSources.a: src/CMakeFiles/Sources.dir/Core/Shader/Shader.cpp.o
 src/libSources.a: src/CMakeFiles/Sources.dir/Core/VertexBuffer/VertexBuffer.cpp.o
+src/libSources.a: src/CMakeFiles/Sources.dir/Core/VertexBuffer/VertexLayout.cpp.o
+src/libSources.a: src/CMakeFiles/Sources.dir/Core/VertexArray/VertexArray.cpp.o
+src/libSources.a: src/CMakeFiles/Sources.dir/Core/IndexBuffer/IndexBuffer.cpp.o
 src/libSources.a: src/CMakeFiles/Sources.dir/Helper/parser.cpp.o
 src/libSources.a: src/CMakeFiles/Sources.dir/Core/Renderer.cpp.o
 src/libSources.a: src/CMakeFiles/Sources.dir/build.make
 src/libSources.a: src/CMakeFiles/Sources.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libSources.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libSources.a"
 	cd /home/andrew/MY/Projects/Graphic/LionGL/build/src && $(CMAKE_COMMAND) -P CMakeFiles/Sources.dir/cmake_clean_target.cmake
 	cd /home/andrew/MY/Projects/Graphic/LionGL/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Sources.dir/link.txt --verbose=$(VERBOSE)
 

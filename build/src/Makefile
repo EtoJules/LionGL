@@ -171,6 +171,33 @@ Sources/fast:
 	cd /home/andrew/MY/Projects/Graphic/LionGL/build && $(MAKE) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/build
 .PHONY : Sources/fast
 
+Core/IndexBuffer/IndexBuffer.o: Core/IndexBuffer/IndexBuffer.cpp.o
+
+.PHONY : Core/IndexBuffer/IndexBuffer.o
+
+# target to build an object file
+Core/IndexBuffer/IndexBuffer.cpp.o:
+	cd /home/andrew/MY/Projects/Graphic/LionGL/build && $(MAKE) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/Core/IndexBuffer/IndexBuffer.cpp.o
+.PHONY : Core/IndexBuffer/IndexBuffer.cpp.o
+
+Core/IndexBuffer/IndexBuffer.i: Core/IndexBuffer/IndexBuffer.cpp.i
+
+.PHONY : Core/IndexBuffer/IndexBuffer.i
+
+# target to preprocess a source file
+Core/IndexBuffer/IndexBuffer.cpp.i:
+	cd /home/andrew/MY/Projects/Graphic/LionGL/build && $(MAKE) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/Core/IndexBuffer/IndexBuffer.cpp.i
+.PHONY : Core/IndexBuffer/IndexBuffer.cpp.i
+
+Core/IndexBuffer/IndexBuffer.s: Core/IndexBuffer/IndexBuffer.cpp.s
+
+.PHONY : Core/IndexBuffer/IndexBuffer.s
+
+# target to generate assembly for a file
+Core/IndexBuffer/IndexBuffer.cpp.s:
+	cd /home/andrew/MY/Projects/Graphic/LionGL/build && $(MAKE) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/Core/IndexBuffer/IndexBuffer.cpp.s
+.PHONY : Core/IndexBuffer/IndexBuffer.cpp.s
+
 Core/Renderer.o: Core/Renderer.cpp.o
 
 .PHONY : Core/Renderer.o
@@ -225,6 +252,33 @@ Core/Shader/Shader.cpp.s:
 	cd /home/andrew/MY/Projects/Graphic/LionGL/build && $(MAKE) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/Core/Shader/Shader.cpp.s
 .PHONY : Core/Shader/Shader.cpp.s
 
+Core/VertexArray/VertexArray.o: Core/VertexArray/VertexArray.cpp.o
+
+.PHONY : Core/VertexArray/VertexArray.o
+
+# target to build an object file
+Core/VertexArray/VertexArray.cpp.o:
+	cd /home/andrew/MY/Projects/Graphic/LionGL/build && $(MAKE) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/Core/VertexArray/VertexArray.cpp.o
+.PHONY : Core/VertexArray/VertexArray.cpp.o
+
+Core/VertexArray/VertexArray.i: Core/VertexArray/VertexArray.cpp.i
+
+.PHONY : Core/VertexArray/VertexArray.i
+
+# target to preprocess a source file
+Core/VertexArray/VertexArray.cpp.i:
+	cd /home/andrew/MY/Projects/Graphic/LionGL/build && $(MAKE) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/Core/VertexArray/VertexArray.cpp.i
+.PHONY : Core/VertexArray/VertexArray.cpp.i
+
+Core/VertexArray/VertexArray.s: Core/VertexArray/VertexArray.cpp.s
+
+.PHONY : Core/VertexArray/VertexArray.s
+
+# target to generate assembly for a file
+Core/VertexArray/VertexArray.cpp.s:
+	cd /home/andrew/MY/Projects/Graphic/LionGL/build && $(MAKE) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/Core/VertexArray/VertexArray.cpp.s
+.PHONY : Core/VertexArray/VertexArray.cpp.s
+
 Core/VertexBuffer/VertexBuffer.o: Core/VertexBuffer/VertexBuffer.cpp.o
 
 .PHONY : Core/VertexBuffer/VertexBuffer.o
@@ -251,6 +305,33 @@ Core/VertexBuffer/VertexBuffer.s: Core/VertexBuffer/VertexBuffer.cpp.s
 Core/VertexBuffer/VertexBuffer.cpp.s:
 	cd /home/andrew/MY/Projects/Graphic/LionGL/build && $(MAKE) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/Core/VertexBuffer/VertexBuffer.cpp.s
 .PHONY : Core/VertexBuffer/VertexBuffer.cpp.s
+
+Core/VertexBuffer/VertexLayout.o: Core/VertexBuffer/VertexLayout.cpp.o
+
+.PHONY : Core/VertexBuffer/VertexLayout.o
+
+# target to build an object file
+Core/VertexBuffer/VertexLayout.cpp.o:
+	cd /home/andrew/MY/Projects/Graphic/LionGL/build && $(MAKE) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/Core/VertexBuffer/VertexLayout.cpp.o
+.PHONY : Core/VertexBuffer/VertexLayout.cpp.o
+
+Core/VertexBuffer/VertexLayout.i: Core/VertexBuffer/VertexLayout.cpp.i
+
+.PHONY : Core/VertexBuffer/VertexLayout.i
+
+# target to preprocess a source file
+Core/VertexBuffer/VertexLayout.cpp.i:
+	cd /home/andrew/MY/Projects/Graphic/LionGL/build && $(MAKE) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/Core/VertexBuffer/VertexLayout.cpp.i
+.PHONY : Core/VertexBuffer/VertexLayout.cpp.i
+
+Core/VertexBuffer/VertexLayout.s: Core/VertexBuffer/VertexLayout.cpp.s
+
+.PHONY : Core/VertexBuffer/VertexLayout.s
+
+# target to generate assembly for a file
+Core/VertexBuffer/VertexLayout.cpp.s:
+	cd /home/andrew/MY/Projects/Graphic/LionGL/build && $(MAKE) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/Core/VertexBuffer/VertexLayout.cpp.s
+.PHONY : Core/VertexBuffer/VertexLayout.cpp.s
 
 Helper/parser.o: Helper/parser.cpp.o
 
@@ -292,15 +373,24 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Sources"
+	@echo "... Core/IndexBuffer/IndexBuffer.o"
+	@echo "... Core/IndexBuffer/IndexBuffer.i"
+	@echo "... Core/IndexBuffer/IndexBuffer.s"
 	@echo "... Core/Renderer.o"
 	@echo "... Core/Renderer.i"
 	@echo "... Core/Renderer.s"
 	@echo "... Core/Shader/Shader.o"
 	@echo "... Core/Shader/Shader.i"
 	@echo "... Core/Shader/Shader.s"
+	@echo "... Core/VertexArray/VertexArray.o"
+	@echo "... Core/VertexArray/VertexArray.i"
+	@echo "... Core/VertexArray/VertexArray.s"
 	@echo "... Core/VertexBuffer/VertexBuffer.o"
 	@echo "... Core/VertexBuffer/VertexBuffer.i"
 	@echo "... Core/VertexBuffer/VertexBuffer.s"
+	@echo "... Core/VertexBuffer/VertexLayout.o"
+	@echo "... Core/VertexBuffer/VertexLayout.i"
+	@echo "... Core/VertexBuffer/VertexLayout.s"
 	@echo "... Helper/parser.o"
 	@echo "... Helper/parser.i"
 	@echo "... Helper/parser.s"

@@ -50,6 +50,10 @@ GL/glext.h
 GL/glu.h
 -
 
+../src/Core/IndexBuffer/IndexBuffer.h
+GL/glew.h
+-
+
 ../src/Core/Renderer.h
 GL/glew.h
 -
@@ -57,6 +61,10 @@ Shader/Shader.h
 ../src/Core/Shader/Shader.h
 VertexBuffer/VertexBuffer.h
 ../src/Core/VertexBuffer/VertexBuffer.h
+VertexArray/VertexArray.h
+../src/Core/VertexArray/VertexArray.h
+IndexBuffer/IndexBuffer.h
+../src/Core/IndexBuffer/IndexBuffer.h
 
 ../src/Core/Shader/Shader.h
 GL/glew.h
@@ -66,8 +74,22 @@ string
 Helper/parser.h
 ../src/Core/Shader/Helper/parser.h
 
+../src/Core/VertexArray/VertexArray.h
+VertexBuffer/VertexBuffer.h
+../src/Core/VertexArray/VertexBuffer/VertexBuffer.h
+VertexBuffer/VertexLayout.h
+../src/Core/VertexArray/VertexBuffer/VertexLayout.h
+
 ../src/Core/VertexBuffer/VertexBuffer.h
 GL/glew.h
+-
+
+../src/Core/VertexBuffer/VertexLayout.h
+GL/glew.h
+-
+vector
+-
+iostream
 -
 
 ../src/Helper/parser.h
@@ -85,4 +107,6 @@ iostream
 -
 Renderer.h
 /home/andrew/MY/Projects/Graphic/LionGL/Renderer.h
+IndexBuffer/IndexBuffer.h
+/home/andrew/MY/Projects/Graphic/LionGL/IndexBuffer/IndexBuffer.h
 
