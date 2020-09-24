@@ -692,6 +692,36 @@ close_code.h
 
 ../includes/SDL2/close_code.h
 
+../libs/imgui/examples/imgui_impl_opengl3.h
+../imgui.h
+../libs/imgui/imgui.h
+TargetConditionals.h
+../libs/imgui/examples/TargetConditionals.h
+
+../libs/imgui/examples/imgui_impl_sdl.h
+../imgui.h
+../libs/imgui/imgui.h
+
+../libs/imgui/imconfig.h
+
+../libs/imgui/imgui.h
+imconfig.h
+../libs/imgui/imconfig.h
+float.h
+-
+stdarg.h
+-
+stddef.h
+-
+string.h
+-
+assert.h
+-
+stdint.h
+-
+imgui_user.h
+../libs/imgui/imgui_user.h
+
 ../src/Core/GlWindow/GlWindow.h
 Core/Sandbox/Sandbox.h
 ../src/Core/GlWindow/Core/Sandbox/Sandbox.h
@@ -699,6 +729,12 @@ SDL2/SDL.h
 ../src/Core/GlWindow/SDL2/SDL.h
 string
 -
+imgui/imgui.h
+../src/Core/GlWindow/imgui/imgui.h
+imgui/examples/imgui_impl_opengl3.h
+../src/Core/GlWindow/imgui/examples/imgui_impl_opengl3.h
+imgui/examples/imgui_impl_sdl.h
+../src/Core/GlWindow/imgui/examples/imgui_impl_sdl.h
 
 ../src/Core/Renderer/IndexBuffer/IndexBuffer.h
 GL/glew.h

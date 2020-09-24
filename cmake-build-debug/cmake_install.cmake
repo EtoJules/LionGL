@@ -44,6 +44,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/cmake_install.cmake")
 endif()
 

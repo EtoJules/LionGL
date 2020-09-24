@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.17.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.17.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.17.3/CMakeSystem.cmake"
+  "../libs/CMakeLists.txt"
   "../libs/glew-2.1.0/build/cmake/CMakeLists.txt"
   "../libs/glew-2.1.0/build/cmake/cmake_uninstall.cmake.in"
   "../libs/glew-2.1.0/glew.pc.in"
@@ -61,6 +62,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/SandboxExamples/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/Core/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "libs/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libs/glew-2.1.0/build/cmake/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -70,6 +72,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/Sources.dir/DependInfo.cmake"
   "src/SandboxExamples/CMakeFiles/SandboxExamples.dir/DependInfo.cmake"
   "src/Core/CMakeFiles/Core.dir/DependInfo.cmake"
+  "libs/CMakeFiles/imGUI.dir/DependInfo.cmake"
   "libs/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/DependInfo.cmake"
   "libs/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/DependInfo.cmake"
   "libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/DependInfo.cmake"

@@ -301,6 +301,9 @@
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Core/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\Core\"/>
 		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/libs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\"/>
+		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/libs/glew-2.1.0/glew.pc.in">
 			<Option virtualFolder="CMake Files\libs\glew-2.1.0\"/>
 		</Unit>

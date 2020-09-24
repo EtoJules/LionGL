@@ -55,6 +55,10 @@ src/Core/CMakeFiles/Core.dir/GlWindow/GlWindow.cpp.o: ../includes/SDL2/SDL_versi
 src/Core/CMakeFiles/Core.dir/GlWindow/GlWindow.cpp.o: ../includes/SDL2/SDL_video.h
 src/Core/CMakeFiles/Core.dir/GlWindow/GlWindow.cpp.o: ../includes/SDL2/begin_code.h
 src/Core/CMakeFiles/Core.dir/GlWindow/GlWindow.cpp.o: ../includes/SDL2/close_code.h
+src/Core/CMakeFiles/Core.dir/GlWindow/GlWindow.cpp.o: ../libs/imgui/examples/imgui_impl_opengl3.h
+src/Core/CMakeFiles/Core.dir/GlWindow/GlWindow.cpp.o: ../libs/imgui/examples/imgui_impl_sdl.h
+src/Core/CMakeFiles/Core.dir/GlWindow/GlWindow.cpp.o: ../libs/imgui/imconfig.h
+src/Core/CMakeFiles/Core.dir/GlWindow/GlWindow.cpp.o: ../libs/imgui/imgui.h
 src/Core/CMakeFiles/Core.dir/GlWindow/GlWindow.cpp.o: ../src/Core/Sandbox/Sandbox.h
 src/Core/CMakeFiles/Core.dir/GlWindow/GlWindow.cpp.o: ../src/Core/GlWindow/GlWindow.cpp
 src/Core/CMakeFiles/Core.dir/GlWindow/GlWindow.cpp.o: ../src/Core/GlWindow/GlWindow.h

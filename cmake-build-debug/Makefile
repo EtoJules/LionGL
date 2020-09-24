@@ -229,6 +229,19 @@ Core/fast:
 .PHONY : Core/fast
 
 #=============================================================================
+# Target rules for targets named imGUI
+
+# Build rule for target.
+imGUI: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imGUI
+.PHONY : imGUI
+
+# fast build rule for target.
+imGUI/fast:
+	$(MAKE) $(MAKESILENT) -f libs/CMakeFiles/imGUI.dir/build.make libs/CMakeFiles/imGUI.dir/build
+.PHONY : imGUI/fast
+
+#=============================================================================
 # Target rules for targets named glewinfo
 
 # Build rule for target.
@@ -340,6 +353,7 @@ help:
 	@echo "... glew"
 	@echo "... glew_s"
 	@echo "... glewinfo"
+	@echo "... imGUI"
 	@echo "... visualinfo"
 	@echo "... main.o"
 	@echo "... main.i"

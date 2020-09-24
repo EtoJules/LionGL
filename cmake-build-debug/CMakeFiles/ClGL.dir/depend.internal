@@ -57,6 +57,10 @@ CMakeFiles/ClGL.dir/main.cpp.o
  ../includes/SDL2/SDL_video.h
  ../includes/SDL2/begin_code.h
  ../includes/SDL2/close_code.h
+ ../libs/imgui/examples/imgui_impl_opengl3.h
+ ../libs/imgui/examples/imgui_impl_sdl.h
+ ../libs/imgui/imconfig.h
+ ../libs/imgui/imgui.h
  ../src/Core/GlWindow/GlWindow.h
  ../src/Core/Renderer/IndexBuffer/IndexBuffer.h
  ../src/Core/Renderer/Renderer.h
