@@ -65,7 +65,7 @@ typedef enum
 -(void) setPendingMoveX:(int)x Y:(int)y;
 -(void) windowDidFinishMoving;
 
-/* Window delegate functionality */
+/* GlWindow delegate functionality */
 -(BOOL) windowShouldClose:(id) sender;
 -(void) windowDidExpose:(NSNotification *) aNotification;
 -(void) windowDidMove:(NSNotification *) aNotification;
@@ -84,7 +84,7 @@ typedef enum
 /* See if event is in a drag area, toggle on window dragging. */
 -(BOOL) processHitTest:(NSEvent *)theEvent;
 
-/* Window event handling */
+/* GlWindow event handling */
 -(void) mouseDown:(NSEvent *) theEvent;
 -(void) rightMouseDown:(NSEvent *) theEvent;
 -(void) otherMouseDown:(NSEvent *) theEvent;

@@ -116,7 +116,7 @@ int
 video_createWindowVariousPositions(void *arg)
 {
   SDL_Window* window;
-  const char* title = "video_createWindowVariousPositions Test Window";
+  const char* title = "video_createWindowVariousPositions Test GlWindow";
   int x, y, w, h;
   int xVariation, yVariation;
 
@@ -197,7 +197,7 @@ int
 video_createWindowVariousSizes(void *arg)
 {
   SDL_Window* window;
-  const char* title = "video_createWindowVariousSizes Test Window";
+  const char* title = "video_createWindowVariousSizes Test GlWindow";
   int x, y, w, h;
   int wVariation, hVariation;
 
@@ -254,7 +254,7 @@ int
 video_createWindowVariousFlags(void *arg)
 {
   SDL_Window* window;
-  const char* title = "video_createWindowVariousFlags Test Window";
+  const char* title = "video_createWindowVariousFlags Test GlWindow";
   int x, y, w, h;
   int fVariation;
   SDL_WindowFlags flags;
@@ -331,7 +331,7 @@ int
 video_getWindowFlags(void *arg)
 {
   SDL_Window* window;
-  const char* title = "video_getWindowFlags Test Window";
+  const char* title = "video_getWindowFlags Test GlWindow";
   SDL_WindowFlags flags;
   Uint32 actualFlags;
 
@@ -514,7 +514,7 @@ int
 video_getWindowBrightness(void *arg)
 {
   SDL_Window* window;
-  const char* title = "video_getWindowBrightness Test Window";
+  const char* title = "video_getWindowBrightness Test GlWindow";
   float result;
 
   /* Call against new test window */
@@ -569,7 +569,7 @@ int
 video_getWindowDisplayMode(void *arg)
 {
   SDL_Window* window;
-  const char* title = "video_getWindowDisplayMode Test Window";
+  const char* title = "video_getWindowDisplayMode Test GlWindow";
   SDL_DisplayMode mode;
   int result;
 
@@ -625,7 +625,7 @@ video_getWindowDisplayModeNegative(void *arg)
   const char *expectedError = "Parameter 'mode' is invalid";
   char *lastError;
   SDL_Window* window;
-  const char* title = "video_getWindowDisplayModeNegative Test Window";
+  const char* title = "video_getWindowDisplayModeNegative Test GlWindow";
   SDL_DisplayMode mode;
   int result;
 
@@ -667,7 +667,7 @@ int
 video_getWindowGammaRamp(void *arg)
 {
   SDL_Window* window;
-  const char* title = "video_getWindowGammaRamp Test Window";
+  const char* title = "video_getWindowGammaRamp Test GlWindow";
   Uint16 red[256];
   Uint16 green[256];
   Uint16 blue[256];
@@ -773,7 +773,7 @@ _setAndCheckWindowGrabState(SDL_Window* window, SDL_bool desiredState)
 int
 video_getSetWindowGrab(void *arg)
 {
-  const char* title = "video_getSetWindowGrab Test Window";
+  const char* title = "video_getSetWindowGrab Test GlWindow";
   SDL_Window* window;
   SDL_bool originalState, dummyState, currentState, desiredState;
 
@@ -842,7 +842,7 @@ video_getSetWindowGrab(void *arg)
 int
 video_getWindowId(void *arg)
 {
-  const char* title = "video_getWindowId Test Window";
+  const char* title = "video_getWindowId Test GlWindow";
   SDL_Window* window;
   SDL_Window* result;
   Uint32 id, randomId;
@@ -897,7 +897,7 @@ video_getWindowId(void *arg)
 int
 video_getWindowPixelFormat(void *arg)
 {
-  const char* title = "video_getWindowPixelFormat Test Window";
+  const char* title = "video_getWindowPixelFormat Test GlWindow";
   SDL_Window* window;
   Uint32 format;
 
@@ -932,7 +932,7 @@ video_getWindowPixelFormat(void *arg)
 int
 video_getSetWindowPosition(void *arg)
 {
-  const char* title = "video_getSetWindowPosition Test Window";
+  const char* title = "video_getSetWindowPosition Test GlWindow";
   SDL_Window* window;
   int xVariation, yVariation;
   int referenceX, referenceY;
@@ -1075,7 +1075,7 @@ void _checkInvalidParameterError()
 int
 video_getSetWindowSize(void *arg)
 {
-  const char* title = "video_getSetWindowSize Test Window";
+  const char* title = "video_getSetWindowSize Test GlWindow";
   SDL_Window* window;
   int result;
   SDL_Rect display;
@@ -1237,7 +1237,7 @@ video_getSetWindowSize(void *arg)
 int
 video_getSetWindowMinimumSize(void *arg)
 {
-  const char* title = "video_getSetWindowMinimumSize Test Window";
+  const char* title = "video_getSetWindowMinimumSize Test GlWindow";
   SDL_Window* window;
   int result;
   SDL_Rect display;
@@ -1376,7 +1376,7 @@ video_getSetWindowMinimumSize(void *arg)
 int
 video_getSetWindowMaximumSize(void *arg)
 {
-  const char* title = "video_getSetWindowMaximumSize Test Window";
+  const char* title = "video_getSetWindowMaximumSize Test GlWindow";
   SDL_Window* window;
   int result;
   SDL_Rect display;
@@ -1515,7 +1515,7 @@ int
 video_getSetWindowData(void *arg)
 {
   int returnValue = TEST_COMPLETED;
-  const char* title = "video_setGetWindowData Test Window";
+  const char* title = "video_setGetWindowData Test GlWindow";
   SDL_Window* window;
   const char *referenceName = "TestName";
   const char *name = "TestName";

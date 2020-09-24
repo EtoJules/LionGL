@@ -97,7 +97,7 @@ OFFSCREEN_CreateDevice(int devindex)
     device->GL_GetSwapInterval = OFFSCREEN_GL_GetSwapInterval;
     device->GL_SetSwapInterval = OFFSCREEN_GL_SetSwapInterval;
 
-    /* "Window" */
+    /* "GlWindow" */
     device->CreateSDLWindow = OFFSCREEN_CreateWindow;
     device->DestroyWindow = OFFSCREEN_DestroyWindow;
 

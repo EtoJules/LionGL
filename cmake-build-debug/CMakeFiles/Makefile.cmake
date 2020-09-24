@@ -15,6 +15,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../libs/glew-2.1.0/build/cmake/cmake_uninstall.cmake.in"
   "../libs/glew-2.1.0/glew.pc.in"
   "../src/CMakeLists.txt"
+  "../src/Core/CMakeLists.txt"
+  "../src/SandboxExamples/CMakeLists.txt"
   "/snap/clion/126/bin/cmake/linux/share/cmake-3.17/Modules/CMakeCInformation.cmake"
   "/snap/clion/126/bin/cmake/linux/share/cmake-3.17/Modules/CMakeCXXInformation.cmake"
   "/snap/clion/126/bin/cmake/linux/share/cmake-3.17/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
@@ -57,6 +59,8 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/SandboxExamples/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/Core/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libs/glew-2.1.0/build/cmake/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -64,6 +68,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ClGL.dir/DependInfo.cmake"
   "src/CMakeFiles/Sources.dir/DependInfo.cmake"
+  "src/SandboxExamples/CMakeFiles/SandboxExamples.dir/DependInfo.cmake"
+  "src/Core/CMakeFiles/Core.dir/DependInfo.cmake"
   "libs/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/DependInfo.cmake"
   "libs/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/DependInfo.cmake"
   "libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/DependInfo.cmake"

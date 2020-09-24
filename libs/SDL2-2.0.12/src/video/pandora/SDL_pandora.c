@@ -236,7 +236,7 @@ PND_createwindow(_THIS, SDL_Window * window)
         phdata->egl_refcount++;
     }
 
-    /* Window has been successfully created */
+    /* GlWindow has been successfully created */
     return 0;
 }
 
@@ -298,7 +298,7 @@ PND_destroywindow(_THIS, SDL_Window * window)
 }
 
 /*****************************************************************************/
-/* SDL2 Window Manager function                                               */
+/* SDL2 GlWindow Manager function                                               */
 /*****************************************************************************/
 #if 0
 SDL_bool

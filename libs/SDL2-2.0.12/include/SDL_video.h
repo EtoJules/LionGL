@@ -145,27 +145,27 @@ typedef enum
 typedef enum
 {
     SDL_WINDOWEVENT_NONE,           /**< Never used */
-    SDL_WINDOWEVENT_SHOWN,          /**< Window has been shown */
-    SDL_WINDOWEVENT_HIDDEN,         /**< Window has been hidden */
-    SDL_WINDOWEVENT_EXPOSED,        /**< Window has been exposed and should be
+    SDL_WINDOWEVENT_SHOWN,          /**< GlWindow has been shown */
+    SDL_WINDOWEVENT_HIDDEN,         /**< GlWindow has been hidden */
+    SDL_WINDOWEVENT_EXPOSED,        /**< GlWindow has been exposed and should be
                                          redrawn */
-    SDL_WINDOWEVENT_MOVED,          /**< Window has been moved to data1, data2
+    SDL_WINDOWEVENT_MOVED,          /**< GlWindow has been moved to data1, data2
                                      */
-    SDL_WINDOWEVENT_RESIZED,        /**< Window has been resized to data1xdata2 */
+    SDL_WINDOWEVENT_RESIZED,        /**< GlWindow has been resized to data1xdata2 */
     SDL_WINDOWEVENT_SIZE_CHANGED,   /**< The window size has changed, either as
                                          a result of an API call or through the
                                          system or user changing the window size. */
-    SDL_WINDOWEVENT_MINIMIZED,      /**< Window has been minimized */
-    SDL_WINDOWEVENT_MAXIMIZED,      /**< Window has been maximized */
-    SDL_WINDOWEVENT_RESTORED,       /**< Window has been restored to normal size
+    SDL_WINDOWEVENT_MINIMIZED,      /**< GlWindow has been minimized */
+    SDL_WINDOWEVENT_MAXIMIZED,      /**< GlWindow has been maximized */
+    SDL_WINDOWEVENT_RESTORED,       /**< GlWindow has been restored to normal size
                                          and position */
-    SDL_WINDOWEVENT_ENTER,          /**< Window has gained mouse focus */
-    SDL_WINDOWEVENT_LEAVE,          /**< Window has lost mouse focus */
-    SDL_WINDOWEVENT_FOCUS_GAINED,   /**< Window has gained keyboard focus */
-    SDL_WINDOWEVENT_FOCUS_LOST,     /**< Window has lost keyboard focus */
+    SDL_WINDOWEVENT_ENTER,          /**< GlWindow has gained mouse focus */
+    SDL_WINDOWEVENT_LEAVE,          /**< GlWindow has lost mouse focus */
+    SDL_WINDOWEVENT_FOCUS_GAINED,   /**< GlWindow has gained keyboard focus */
+    SDL_WINDOWEVENT_FOCUS_LOST,     /**< GlWindow has lost keyboard focus */
     SDL_WINDOWEVENT_CLOSE,          /**< The window manager requests that the window be closed */
-    SDL_WINDOWEVENT_TAKE_FOCUS,     /**< Window is being offered a focus (should SetWindowInputFocus() on itself or a subwindow, or ignore) */
-    SDL_WINDOWEVENT_HIT_TEST        /**< Window had a hit test that wasn't SDL_HITTEST_NORMAL. */
+    SDL_WINDOWEVENT_TAKE_FOCUS,     /**< GlWindow is being offered a focus (should SetWindowInputFocus() on itself or a subwindow, or ignore) */
+    SDL_WINDOWEVENT_HIT_TEST        /**< GlWindow had a hit test that wasn't SDL_HITTEST_NORMAL. */
 } SDL_WindowEventID;
 
 /**
@@ -1206,7 +1206,7 @@ extern DECLSPEC SDL_GLContext SDLCALL SDL_GL_GetCurrentContext(void);
  *  \brief Get the size of a window's underlying drawable in pixels (for use
  *         with glViewport).
  *
- *  \param window   Window from which the drawable size should be queried
+ *  \param window   GlWindow from which the drawable size should be queried
  *  \param w        Pointer to variable for storing the width in pixels, may be NULL
  *  \param h        Pointer to variable for storing the height in pixels, may be NULL
  *

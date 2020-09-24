@@ -20,10 +20,10 @@ Code
 
     int PollEvents()
     {
-        SDL_Event event;
-        while (SDL_PollEvent(&event))
+        SDL_Event m_event;
+        while (SDL_PollEvent(&m_event))
         {
-            switch (event.type)
+            switch (m_event.type)
             {
                 case SDL_QUIT:
                     return 1;

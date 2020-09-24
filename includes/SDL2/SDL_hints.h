@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no event will the authors be held liable for any damages
+  warranty.  In no m_event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -57,7 +57,7 @@ extern "C" {
  *  This variable can be set to the following values:
  *    "0"       - Disable 3D acceleration
  *    "1"       - Enable 3D acceleration, using the default renderer.
- *    "X"       - Enable 3D acceleration, using X where X is one of the valid rendering drivers.  (e.g. "direct3d", "opengl", etc.)
+ *    "X"       - Enable 3D acceleration, using X where X is one of the valid rendering drivers.  (m_event.g. "direct3d", "opengl", etc.)
  *
  *  By default SDL2 tries to make a best guess for each platform whether
  *  to use acceleration or not.
@@ -473,7 +473,7 @@ extern "C" {
  *
  *  The variable should be comma separated entries, in the form: VID/PID=type
  *
- *  The VID and PID should be hexadecimal with exactly 4 digits, e.g. 0x00fd
+ *  The VID and PID should be hexadecimal with exactly 4 digits, m_event.g. 0x00fd
  *
  *  The type should be one of:
  *      Xbox360
@@ -510,7 +510,7 @@ extern "C" {
  *  \brief  A variable containing a list of devices to skip when scanning for game controllers.
  *
  *  The format of the string is a comma separated list of USB VID/PID pairs
- *  in hexadecimal form, e.g.
+ *  in hexadecimal form, m_event.g.
  *
  *      0xAAAA/0xBBBB,0xCCCC/0xDDDD
  *
@@ -523,7 +523,7 @@ extern "C" {
  *  \brief  If set, all devices will be skipped when scanning for game controllers except for the ones listed in this variable.
  *
  *  The format of the string is a comma separated list of USB VID/PID pairs
- *  in hexadecimal form, e.g.
+ *  in hexadecimal form, m_event.g.
  *
  *      0xAAAA/0xBBBB,0xCCCC/0xDDDD
  *
@@ -662,7 +662,7 @@ extern "C" {
 
 
 /**
- *  \brief If set to "0" then never set the top most bit on a SDL2 Window, even if the video mode expects it.
+ *  \brief If set to "0" then never set the top most bit on a SDL2 GlWindow, even if the video mode expects it.
  *      This is a debugging aid for developers and not expected to be used by end users. The default is "1"
  *
  *  This variable can be set to the following values:
@@ -692,8 +692,8 @@ extern "C" {
  *  \brief  A variable describing the content orientation on QtWayland-based platforms.
  *
  *  On QtWayland platforms, windows are rotated client-side to allow for custom
- *  transitions. In order to correctly position overlays (e.g. volume bar) and
- *  gestures (e.g. events view, close/minimize gestures), the system needs to
+ *  transitions. In order to correctly position overlays (m_event.g. volume bar) and
+ *  gestures (m_event.g. events view, close/minimize gestures), the system needs to
  *  know in which orientation the application is currently drawing its contents.
  *
  *  This does not cause the window to be rotated or resized, the application
@@ -736,10 +736,10 @@ extern "C" {
 #define SDL_HINT_VIDEO_HIGHDPI_DISABLED "SDL_VIDEO_HIGHDPI_DISABLED"
 
 /**
- *  \brief A variable that determines whether ctrl+click should generate a right-click event on Mac
+ *  \brief A variable that determines whether ctrl+click should generate a right-click m_event on Mac
  *
  *  If present, holding ctrl while left clicking will generate a right click
- *  event when on Mac.
+ *  m_event when on Mac.
  */
 #define SDL_HINT_MAC_CTRL_CLICK_EMULATE_RIGHT_CLICK "SDL_MAC_CTRL_CLICK_EMULATE_RIGHT_CLICK"
 
@@ -845,8 +845,8 @@ extern "C" {
  *  callback functions for such, shortly after being launched (during the
  *  app's initialization phase).  After the back button is pressed, the OS
  *  will invoke these callbacks.  If the app's callback(s) do not explicitly
- *  mark the event as handled by the time they return, or if the app never
- *  registers one of these callback, the OS will consider the event
+ *  mark the m_event as handled by the time they return, or if the app never
+ *  registers one of these callback, the OS will consider the m_event
  *  un-handled, and it will apply its default back button behavior (terminate
  *  the app).
  *
@@ -854,9 +854,9 @@ extern "C" {
  *  OS.  This callback will emit a pair of SDL2 key-press events (SDL_KEYDOWN
  *  and SDL_KEYUP), each with a scancode of SDL_SCANCODE_AC_BACK, after which
  *  it will check the contents of the hint, SDL_HINT_WINRT_HANDLE_BACK_BUTTON.
- *  If the hint's value is set to "1", the back button event's Handled
+ *  If the hint's value is set to "1", the back button m_event's Handled
  *  property will get set to 'true'.  If the hint's value is set to something
- *  else, or if it is unset, SDL2 will leave the event's Handled property
+ *  else, or if it is unset, SDL2 will leave the m_event's Handled property
  *  alone.  (By default, the OS sets this property to 'false', to note.)
  *
  *  SDL2 apps can either set SDL_HINT_WINRT_HANDLE_BACK_BUTTON well before a
@@ -867,9 +867,9 @@ extern "C" {
  *  register a callback function with SDL_AddEventWatch(), and have it listen
  *  for SDL_KEYDOWN events that have a scancode of SDL_SCANCODE_AC_BACK.
  *  (Alternatively, SDL_KEYUP events can be listened-for.  Listening for
- *  either event type is suitable.)  Any value of SDL_HINT_WINRT_HANDLE_BACK_BUTTON
+ *  either m_event type is suitable.)  Any value of SDL_HINT_WINRT_HANDLE_BACK_BUTTON
  *  set by such a callback, will be applied to the OS' current
- *  back-button-press event.
+ *  back-button-press m_event.
  *
  *  More details on back button behavior in Windows Phone apps can be found
  *  at the following page, on Microsoft's developer site:
@@ -958,7 +958,7 @@ extern "C" {
 #define SDL_HINT_ANDROID_TRAP_BACK_BUTTON "SDL_ANDROID_TRAP_BACK_BUTTON"
 
 /**
- * \brief A variable to control whether the event loop will block itself when the app is paused.
+ * \brief A variable to control whether the m_event loop will block itself when the app is paused.
  *
  * The variable can be set to the following values:
  *   "0"       - Non blocking.
@@ -973,7 +973,7 @@ extern "C" {
  *        should hide the soft keyboard on Android and iOS.
  *
  * The variable can be set to the following values:
- *   "0"       - The return key will be handled as a key event. This is the behaviour of SDL2 <= 2.0.3. (default)
+ *   "0"       - The return key will be handled as a key m_event. This is the behaviour of SDL2 <= 2.0.3. (default)
  *   "1"       - The return key will hide the keyboard.
  *
  * The value of this hint is used at runtime, so it can be changed at any time.
@@ -1001,7 +1001,7 @@ extern "C" {
  *
  * The variable can be set to the following values:
  *   "0"       - SDL2 will install a SIGINT and SIGTERM handler, and when it
- *               catches a signal, convert it into an SDL_QUIT event.
+ *               catches a signal, convert it into an SDL_QUIT m_event.
  *   "1"       - SDL2 will not install a signal handler at all.
  */
 #define SDL_HINT_NO_SIGNAL_HANDLERS   "SDL_NO_SIGNAL_HANDLERS"
@@ -1010,7 +1010,7 @@ extern "C" {
  *  \brief Tell SDL2 not to generate window-close events for Alt+F4 on Windows.
  *
  * The variable can be set to the following values:
- *   "0"       - SDL2 will generate a window-close event when it sees Alt+F4.
+ *   "0"       - SDL2 will generate a window-close m_event when it sees Alt+F4.
  *   "1"       - SDL2 will only do normal key handling for Alt+F4.
  */
 #define SDL_HINT_WINDOWS_NO_CLOSE_ON_ALT_F4 "SDL_WINDOWS_NO_CLOSE_ON_ALT_F4"
@@ -1082,13 +1082,13 @@ extern "C" {
  *  On some platforms, currently Windows and X11, OpenGL drivers may support
  *  creating contexts with an OpenGL ES profile. By default SDL2 uses these
  *  profiles, when available, otherwise it attempts to load an OpenGL ES
- *  library, e.g. that provided by the ANGLE project. This variable controls
+ *  library, m_event.g. that provided by the ANGLE project. This variable controls
  *  whether SDL2 follows this default behaviour or will always load an
  *  OpenGL ES library.
  *
  *  Circumstances where this is useful include
- *  - Testing an app with a particular OpenGL ES implementation, e.g ANGLE,
- *    or emulator, e.g. those from ARM, Imagination or Qualcomm.
+ *  - Testing an app with a particular OpenGL ES implementation, m_event.g ANGLE,
+ *    or emulator, m_event.g. those from ARM, Imagination or Qualcomm.
  *  - Resolving OpenGL ES function addresses at link time by linking with
  *    the OpenGL ES library instead of querying them at run time with
  *    SDL_GL_GetProcAddress().
@@ -1182,7 +1182,7 @@ extern "C" {
  *
  *  This is generally meant to be used to debug SDL2 itself, but can be useful
  *  for application developers that need better visibility into what is going
- *  on in the event queue. Logged events are sent through SDL_Log(), which
+ *  on in the m_event queue. Logged events are sent through SDL_Log(), which
  *  means by default they appear on stdout on most platforms or maybe
  *  OutputDebugString() on Windows, and can be funneled by the app with
  *  SDL_LogSetOutputFunction(), etc.

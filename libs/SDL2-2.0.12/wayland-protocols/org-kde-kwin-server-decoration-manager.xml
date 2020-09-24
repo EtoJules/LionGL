@@ -41,14 +41,14 @@
         <arg name="surface" type="object" interface="wl_surface"/>
       </request>
       <enum name="mode">
-            <description summary="Possible values to use in request_mode and the event mode."/>
+            <description summary="Possible values to use in request_mode and the m_event mode."/>
             <entry name="None" value="0" summary="Undecorated: The surface is not decorated at all, neither server nor client-side. An example is a popup surface which should not be decorated."/>
             <entry name="Client" value="1" summary="Client-side decoration: The decoration is part of the surface and the client."/>
             <entry name="Server" value="2" summary="Server-side decoration: The server embeds the surface into a decoration frame."/>
       </enum>
-      <event name="default_mode">
+      <m_event name="default_mode">
           <description summary="The default mode used on the server">
-              This event is emitted directly after binding the interface. It contains
+              This m_event is emitted directly after binding the interface. It contains
               the default mode for the decoration. When a new server decoration object
               is created this new object will be in the default mode until the first
               request_mode is requested.
@@ -56,14 +56,14 @@
               The server may change the default mode at any time.
           </description>
           <arg name="mode" type="uint" summary="The default decoration mode applied to newly created server decorations."/>
-      </event>
+      </m_event>
   </interface>
   <interface name="org_kde_kwin_server_decoration" version="1">
       <request name="release" type="destructor">
         <description summary="release the server decoration object"/>
       </request>
       <enum name="mode">
-            <description summary="Possible values to use in request_mode and the event mode."/>
+            <description summary="Possible values to use in request_mode and the m_event mode."/>
             <entry name="None" value="0" summary="Undecorated: The surface is not decorated at all, neither server nor client-side. An example is a popup surface which should not be decorated."/>
             <entry name="Client" value="1" summary="Client-side decoration: The decoration is part of the surface and the client."/>
             <entry name="Server" value="2" summary="Server-side decoration: The server embeds the surface into a decoration frame."/>
@@ -72,23 +72,23 @@
           <description summary="The decoration mode the surface wants to use."/>
           <arg name="mode" type="uint" summary="The mode this surface wants to use."/>
       </request>
-      <event name="mode">
+      <m_event name="mode">
           <description summary="The new decoration mode applied by the server">
-              This event is emitted directly after the decoration is created and
+              This m_event is emitted directly after the decoration is created and
               represents the base decoration policy by the server. E.g. a server
               which wants all surfaces to be client-side decorated will send Client,
               a server which wants server-side decoration will send Server.
 
               The client can request a different mode through the decoration request.
-              The server will acknowledge this by another event with the same mode. So
+              The server will acknowledge this by another m_event with the same mode. So
               even if a server prefers server-side decoration it's possible to force a
               client-side decoration.
 
-              The server may emit this event at any time. In this case the client can
+              The server may emit this m_event at any time. In this case the client can
               again request a different mode. It's the responsibility of the server to
               prevent a feedback loop.
           </description>
           <arg name="mode" type="uint" summary="The decoration mode applied to the surface by the server."/>
-      </event>
+      </m_event>
   </interface>
 </protocol>

@@ -115,7 +115,7 @@ main(int argc, char *argv[])
     window = SDL_CreateWindow("Chess Board", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 480, SDL_WINDOW_RESIZABLE);
     if(!window)
     {
-        SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Window creation fail : %s\n",SDL_GetError());
+        SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "GlWindow creation fail : %s\n",SDL_GetError());
         return 1;
     }
     surface = SDL_GetWindowSurface(window);

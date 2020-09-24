@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no event will the authors be held liable for any damages
+  warranty.  In no m_event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -22,7 +22,7 @@
 /**
  *  \file SDL_mouse.h
  *
- *  Include file for SDL2 mouse event handling.
+ *  Include file for SDL2 mouse m_event handling.
  */
 
 #ifndef SDL_mouse_h_
@@ -61,7 +61,7 @@ typedef enum
 } SDL_SystemCursor;
 
 /**
- * \brief Scroll direction types for the Scroll event
+ * \brief Scroll direction types for the Scroll m_event
  */
 typedef enum
 {
@@ -97,7 +97,7 @@ extern DECLSPEC Uint32 SDLCALL SDL_GetMouseState(int *x, int *y);
  *  coordinates relative to a window might not be in sync at all times.
  *
  *  \note SDL_GetMouseState() returns the mouse position as SDL2 understands
- *        it from the last pump of the event queue. This function, however,
+ *        it from the last pump of the m_event queue. This function, however,
  *        queries the OS for the current mouse position, and as such, might
  *        be a slightly less efficient function. Unless you know what you're
  *        doing and have a good reason to use this function, you probably want
@@ -127,7 +127,7 @@ extern DECLSPEC Uint32 SDLCALL SDL_GetRelativeMouseState(int *x, int *y);
  *  \param x The x coordinate within the window
  *  \param y The y coordinate within the window
  *
- *  \note This function generates a mouse motion event
+ *  \note This function generates a mouse motion m_event
  */
 extern DECLSPEC void SDLCALL SDL_WarpMouseInWindow(SDL_Window * window,
                                                    int x, int y);
@@ -139,7 +139,7 @@ extern DECLSPEC void SDLCALL SDL_WarpMouseInWindow(SDL_Window * window,
  *  \param y The y coordinate
  *  \return 0 on success, -1 on error (usually: unsupported by a platform).
  *
- *  \note This function generates a mouse motion event
+ *  \note This function generates a mouse motion m_event
  */
 extern DECLSPEC int SDLCALL SDL_WarpMouseGlobal(int x, int y);
 

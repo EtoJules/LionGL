@@ -242,7 +242,7 @@ class HIDDeviceUSB implements HIDDevice {
                 mInputThread.interrupt();
                 try {
                     mInputThread.join();
-                } catch (InterruptedException e) {
+                } catch (InterruptedException m_event) {
                     // Keep trying until we're done
                 }
             }
@@ -278,9 +278,9 @@ class HIDDeviceUSB implements HIDDevice {
                 {
                     r = mConnection.bulkTransfer(mInputEndpoint, packet, packetSize, 1000);
                 }
-                catch (Exception e)
+                catch (Exception m_event)
                 {
-                    Log.v(TAG, "Exception in UsbDeviceConnection bulktransfer: " + e);
+                    Log.v(TAG, "Exception in UsbDeviceConnection bulktransfer: " + m_event);
                     break;
                 }
                 if (r < 0) {

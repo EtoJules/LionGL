@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no event will the authors be held liable for any damages
+  warranty.  In no m_event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -76,7 +76,7 @@
 
 #elif defined(__NACL__)
 /* On NACL we use ppapi_simple to set up the application helper code,
-   then wait for the first PSE_INSTANCE_DIDCHANGEVIEW event before 
+   then wait for the first PSE_INSTANCE_DIDCHANGEVIEW m_event before
    starting the user main function.
    All user code is run in a separate thread by ppapi_simple, thus 
    allowing for blocking io to take place via nacl_io

@@ -2928,7 +2928,7 @@ Source file was:
           #include <X11/Xproto.h>
           #include <X11/extensions/Xext.h>
           #include <X11/extensions/extutil.h>
-          extern XExtDisplayInfo* XextAddDisplay(XExtensionInfo* a,Display* b,_Xconst char* c,XExtensionHooks* d,int e,XPointer f);
+          extern XExtDisplayInfo* XextAddDisplay(XExtensionInfo* a,Display* b,_Xconst char* c,XExtensionHooks* d,int m_event,XPointer f);
           int main(int argc, char **argv) {}
 Performing C SOURCE FILE Test HAVE_XGENERICEVENT succeeded with the following output:
 Change Dir: /home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/CMakeFiles/CMakeTmp
@@ -2948,9 +2948,9 @@ Source file was:
           #include <X11/Xlib.h>
           int main(int argc, char **argv) {
             Display *display;
-            XEvent event;
-            XGenericEventCookie *cookie = &event.xcookie;
-            XNextEvent(display, &event);
+            XEvent m_event;
+            XGenericEventCookie *cookie = &m_event.xcookie;
+            XNextEvent(display, &m_event);
             XGetEventData(display, cookie);
             XFreeEventData(display, cookie); }
 Determining if the function XkbKeycodeToKeysym exists passed with the following output:

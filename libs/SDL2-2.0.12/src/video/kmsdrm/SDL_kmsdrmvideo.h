@@ -112,7 +112,7 @@ void KMSDRM_RestoreWindow(_THIS, SDL_Window * window);
 void KMSDRM_SetWindowGrab(_THIS, SDL_Window * window, SDL_bool grabbed);
 void KMSDRM_DestroyWindow(_THIS, SDL_Window * window);
 
-/* Window manager function */
+/* GlWindow manager function */
 SDL_bool KMSDRM_GetWindowWMInfo(_THIS, SDL_Window * window,
                              struct SDL_SysWMinfo *info);
 

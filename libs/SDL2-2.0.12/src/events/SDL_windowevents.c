@@ -20,7 +20,7 @@
 */
 #include "../SDL_internal.h"
 
-/* Window event handling code for SDL2 */
+/* GlWindow event handling code for SDL2 */
 
 #include "SDL_events.h"
 #include "SDL_events_c.h"

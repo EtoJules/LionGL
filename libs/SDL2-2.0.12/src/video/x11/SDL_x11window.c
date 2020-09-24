@@ -47,17 +47,17 @@
 
 static Bool isMapNotify(Display *dpy, XEvent *ev, XPointer win)
 {
-    return ev->type == MapNotify && ev->xmap.window == *((Window*)win);
+    return ev->type == MapNotify && ev->xmap.window == *((GlWindow*)win);
 }
 static Bool isUnmapNotify(Display *dpy, XEvent *ev, XPointer win)
 {
-    return ev->type == UnmapNotify && ev->xunmap.window == *((Window*)win);
+    return ev->type == UnmapNotify && ev->xunmap.window == *((GlWindow*)win);
 }
 
 /*
 static Bool isConfigureNotify(Display *dpy, XEvent *ev, XPointer win)
 {
-    return ev->type == ConfigureNotify && ev->xconfigure.window == *((Window*)win);
+    return ev->type == ConfigureNotify && ev->xconfigure.window == *((GlWindow*)win);
 }
 static Bool
 X11_XIfEventTimeout(Display *display, XEvent *event_return, Bool (*predicate)(), XPointer arg, int timeoutMS)
@@ -125,7 +125,7 @@ X11_IsActionAllowed(SDL_Window *window, Atom action)
 #endif /* 0 */
 
 void
-X11_SetNetWMState(_THIS, Window xwindow, Uint32 flags)
+X11_SetNetWMState(_THIS, GlWindow xwindow, Uint32 flags)
 {
     SDL_VideoData *videodata = (SDL_VideoData *) _this->driverdata;
     Display *display = videodata->display;
@@ -180,7 +180,7 @@ X11_SetNetWMState(_THIS, Window xwindow, Uint32 flags)
 }
 
 Uint32
-X11_GetNetWMState(_THIS, Window xwindow)
+X11_GetNetWMState(_THIS, GlWindow xwindow)
 {
     SDL_VideoData *videodata = (SDL_VideoData *) _this->driverdata;
     Display *display = videodata->display;
@@ -248,7 +248,7 @@ X11_GetNetWMState(_THIS, Window xwindow)
 }
 
 static int
-SetupWindowData(_THIS, SDL_Window * window, Window w, BOOL created)
+SetupWindowData(_THIS, SDL_Window * window, GlWindow w, BOOL created)
 {
     SDL_VideoData *videodata = (SDL_VideoData *) _this->driverdata;
     SDL_WindowData *data;
@@ -315,7 +315,7 @@ SetupWindowData(_THIS, SDL_Window * window, Window w, BOOL created)
     window->flags |= X11_GetNetWMState(_this, w);
 
     {
-        Window FocalWindow;
+        GlWindow FocalWindow;
         int RevertTo=0;
         X11_XGetInputFocus(data->videodata->display, &FocalWindow, &RevertTo);
         if (FocalWindow==w)
@@ -338,7 +338,7 @@ SetupWindowData(_THIS, SDL_Window * window, Window w, BOOL created)
 }
 
 static void
-SetWindowBordered(Display *display, int screen, Window window, SDL_bool border)
+SetWindowBordered(Display *display, int screen, GlWindow window, SDL_bool border)
 {
     /*
      * this code used to check for KWM_WIN_DECORATION, but KDE hasn't
@@ -380,7 +380,7 @@ X11_CreateWindow(_THIS, SDL_Window * window)
     Visual *visual;
     int depth;
     XSetWindowAttributes xattr;
-    Window w;
+    GlWindow w;
     XSizeHints *sizehints;
     XWMHints *wmhints;
     XClassHint *classhints;
@@ -678,7 +678,7 @@ X11_CreateWindow(_THIS, SDL_Window * window)
 int
 X11_CreateWindowFrom(_THIS, SDL_Window * window, const void *data)
 {
-    Window w = (Window) data;
+    GlWindow w = (GlWindow) data;
 
     window->title = X11_GetWindowTitle(_this, w);
 
@@ -689,7 +689,7 @@ X11_CreateWindowFrom(_THIS, SDL_Window * window, const void *data)
 }
 
 char *
-X11_GetWindowTitle(_THIS, Window xwindow)
+X11_GetWindowTitle(_THIS, GlWindow xwindow)
 {
     SDL_VideoData *data = (SDL_VideoData *) _this->driverdata;
     Display *display = data->display;
@@ -806,8 +806,8 @@ X11_SetWindowPosition(_THIS, SDL_Window * window)
     SDL_WindowData *data = (SDL_WindowData *) window->driverdata;
     Display *display = data->videodata->display;
     unsigned int childCount;
-    Window childReturn, root, parent;
-    Window* children;
+    GlWindow childReturn, root, parent;
+    GlWindow* children;
     XWindowAttributes attrs;
     int orig_x, orig_y;
     Uint32 timeout;
@@ -923,7 +923,7 @@ X11_SetWindowSize(_THIS, SDL_Window * window)
         X11_ResizeWindowShape(window);
     }
     if (!(window->flags & SDL_WINDOW_RESIZABLE)) {
-         /* Apparently, if the X11 Window is set to a 'non-resizable' window, you cannot resize it using the X11_XResizeWindow, thus
+         /* Apparently, if the X11 GlWindow is set to a 'non-resizable' window, you cannot resize it using the X11_XResizeWindow, thus
             we must set the size hints to adjust the window size. */
          XSizeHints *sizehints = X11_XAllocSizeHints();
          long userhints;
@@ -1162,7 +1162,7 @@ SetWindowActive(_THIS, SDL_Window * window)
     if (X11_IsWindowMapped(_this, window)) {
         XEvent e;
 
-        /*printf("SDL2 Window %p: sending _NET_ACTIVE_WINDOW with timestamp %lu\n", window, data->user_time);*/
+        /*printf("SDL2 GlWindow %p: sending _NET_ACTIVE_WINDOW with timestamp %lu\n", window, data->user_time);*/
 
         SDL_zero(e);
         e.xany.type = ClientMessage;
@@ -1256,7 +1256,7 @@ X11_RestoreWindow(_THIS, SDL_Window * window)
     SetWindowActive(_this, window);
 }
 
-/* This asks the Window Manager to handle fullscreen for us. This is the modern way. */
+/* This asks the GlWindow Manager to handle fullscreen for us. This is the modern way. */
 static void
 X11_SetWindowFullscreenViaWM(_THIS, SDL_Window * window, SDL_VideoDisplay * _display, SDL_bool fullscreen)
 {
@@ -1340,7 +1340,7 @@ X11_SetWindowFullscreenViaWM(_THIS, SDL_Window * window, SDL_VideoDisplay * _dis
     X11_XFlush(display);
 }
 
-/* This handles fullscreen itself, outside the Window Manager. */
+/* This handles fullscreen itself, outside the GlWindow Manager. */
 static void
 X11_BeginWindowFullscreenLegacy(_THIS, SDL_Window * window, SDL_VideoDisplay * _display)
 {
@@ -1349,7 +1349,7 @@ X11_BeginWindowFullscreenLegacy(_THIS, SDL_Window * window, SDL_VideoDisplay * _
     Visual *visual = data->visual;
     Display *display = data->videodata->display;
     const int screen = displaydata->screen;
-    Window root = RootWindow(display, screen);
+    GlWindow root = RootWindow(display, screen);
     const int def_vis = (visual == DefaultVisual(display, screen));
     unsigned long xattrmask = 0;
     XSetWindowAttributes xattr;
@@ -1425,8 +1425,8 @@ X11_EndWindowFullscreenLegacy(_THIS, SDL_Window * window, SDL_VideoDisplay * _di
     SDL_DisplayData *displaydata = (SDL_DisplayData *) _display->driverdata;
     Display *display = data->videodata->display;
     const int screen = displaydata->screen;
-    Window root = RootWindow(display, screen);
-    Window fswindow = data->fswindow;
+    GlWindow root = RootWindow(display, screen);
+    GlWindow fswindow = data->fswindow;
     XEvent ev;
 
     if (!data->fswindow) {
@@ -1509,7 +1509,7 @@ X11_SetWindowGammaRamp(_THIS, SDL_Window * window, const Uint16 * ramp)
     int i;
 
     if (visual->class != DirectColor) {
-        return SDL_SetError("Window doesn't have DirectColor visual");
+        return SDL_SetError("GlWindow doesn't have DirectColor visual");
     }
 
     ncolors = visual->map_entries;

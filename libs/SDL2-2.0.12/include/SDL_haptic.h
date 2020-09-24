@@ -511,7 +511,7 @@ typedef struct SDL_HapticConstant
  *   - 27000: Displaced 75% of its period.
  *   - 36000: Displaced 100% of its period, same as 0, but 0 is preferred.
  *
- *  Examples:
+ *  SandboxExamples:
  *  \verbatim
     SDL_HAPTIC_SINE
       __      __      __      __

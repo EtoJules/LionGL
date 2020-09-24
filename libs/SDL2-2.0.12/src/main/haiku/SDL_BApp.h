@@ -163,7 +163,7 @@ public:
         }
     }
 
-    /* Window creation/destruction methods */
+    /* GlWindow creation/destruction methods */
     int32 GetID(SDL_Window *win) {
         int32 i;
         for(i = 0; i < _GetNumWindowSlots(); ++i) {

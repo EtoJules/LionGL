@@ -5,7 +5,7 @@
 		<Option title="glew"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SDL2\;CMake Files\src\;CMake Files\libs\;CMake Files\libs\glew-2.1.0\;CMake Files\libs\glew-2.1.0\build\;CMake Files\libs\glew-2.1.0\build\cmake\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SDL2\;CMake Files\src\;CMake Files\src\SandboxExamples\;CMake Files\src\Core\;CMake Files\libs\;CMake Files\libs\glew-2.1.0\;CMake Files\libs\glew-2.1.0\build\;CMake Files\libs\glew-2.1.0\build\cmake\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake"/>
@@ -26,8 +26,8 @@
 				<Compiler>
 					<Add option="-DGLEW_NO_GLU"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/include"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/includes"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src/Core"/>
 					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs/glew-2.1.0/build/cmake/../../include"/>
@@ -55,8 +55,8 @@
 				<Compiler>
 					<Add option="-DGLEW_NO_GLU"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/include"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/includes"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src/Core"/>
 					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs/glew-2.1.0/build/cmake/../../include"/>
@@ -84,8 +84,8 @@
 				<Compiler>
 					<Add option="-DGLEW_NO_GLU"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/include"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/includes"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src/Core"/>
 					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs/glew-2.1.0/build/cmake/../../include"/>
@@ -113,8 +113,8 @@
 				<Compiler>
 					<Add option="-DGLEW_NO_GLU"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/include"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/includes"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src/Core"/>
 					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs/glew-2.1.0/build/cmake/../../include"/>
@@ -143,8 +143,8 @@
 					<Add option="-DGLEW_STATIC"/>
 					<Add option="-DGLEW_NO_GLU"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/include"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/includes"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src/Core"/>
 					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs/glew-2.1.0/build/cmake/../../include"/>
@@ -173,8 +173,8 @@
 					<Add option="-DGLEW_STATIC"/>
 					<Add option="-DGLEW_NO_GLU"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/include"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/includes"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src/Core"/>
 					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs/glew-2.1.0/build/cmake/../../include"/>
@@ -203,8 +203,8 @@
 					<Add option="-DGLEW_BUILD"/>
 					<Add option="-DGLEW_NO_GLU"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/include"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/includes"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src/Core"/>
 					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs/glew-2.1.0/build/cmake/../../include"/>
@@ -233,8 +233,8 @@
 					<Add option="-DGLEW_BUILD"/>
 					<Add option="-DGLEW_NO_GLU"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/include"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/includes"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src/Core"/>
 					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs/glew-2.1.0/build/cmake/../../include"/>
@@ -294,6 +294,12 @@
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\SandboxExamples\"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Core/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\Core\"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/libs/glew-2.1.0/glew.pc.in">
 			<Option virtualFolder="CMake Files\libs\glew-2.1.0\"/>

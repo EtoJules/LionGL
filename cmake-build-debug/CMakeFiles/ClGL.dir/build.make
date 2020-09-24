@@ -99,8 +99,10 @@ ClGL_EXTERNAL_OBJECTS =
 
 ClGL: CMakeFiles/ClGL.dir/main.cpp.o
 ClGL: CMakeFiles/ClGL.dir/build.make
-ClGL: src/libSources.a
+ClGL: src/SandboxExamples/libSandboxExamples.a
+ClGL: src/Core/libCore.a
 ClGL: lib/libGLEWd.a
+ClGL: src/libSources.a
 ClGL: /usr/lib/x86_64-linux-gnu/libGL.so
 ClGL: /usr/lib/x86_64-linux-gnu/libGLU.so
 ClGL: CMakeFiles/ClGL.dir/link.txt

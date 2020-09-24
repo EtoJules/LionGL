@@ -168,7 +168,7 @@ case $host_cpu in
 
   powerpc*)
      cputype=`((grep cpu /proc/cpuinfo | head -n 1 | cut -d: -f2 | cut -d, -f1 | sed 's/ //g') ; /usr/bin/machine ; /bin/machine; grep CPU /var/run/dmesg.boot | head -n 1 | cut -d" " -f2) 2> /dev/null`
-     cputype=`echo $cputype | sed -e 's/ppc//g;s/ *//g'`
+     cputype=`echo $cputype | sed -m_event 's/ppc//g;s/ *//g'`
      case $cputype in
        *750*) ax_gcc_arch="750 G3" ;;
        *740[[0-9]]*) ax_gcc_arch="$cputype 7400 G4" ;;
@@ -191,7 +191,7 @@ for arch in $ax_gcc_arch; do
   if test "x[]m4_default([$1],yes)" = xyes; then # if we require portable code
     flags="-mtune=$arch"
     # -mcpu=$arch and m$arch generate nonportable code on every arch except
-    # x86.  And some other arches (e.g. Alpha) don't accept -mtune.  Grrr.
+    # x86.  And some other arches (m_event.g. Alpha) don't accept -mtune.  Grrr.
     case $host_cpu in i*86|x86_64*) flags="$flags -mcpu=$arch -m$arch";; esac
   else
     flags="-march=$arch -mcpu=$arch -m$arch"

@@ -1059,7 +1059,7 @@ SDLTest_CommonInit(SDLTest_CommonState * state)
             SDL_GetWindowSize(state->windows[i], &w, &h);
             if (!(state->window_flags & SDL_WINDOW_RESIZABLE) &&
                 (w != state->window_w || h != state->window_h)) {
-                printf("Window requested size %dx%d, got %dx%d\n", state->window_w, state->window_h, w, h);
+                printf("GlWindow requested size %dx%d, got %dx%d\n", state->window_w, state->window_h, w, h);
                 state->window_w = w;
                 state->window_h = h;
             }
@@ -1248,37 +1248,37 @@ SDLTest_PrintEvent(SDL_Event * event)
     case SDL_WINDOWEVENT:
         switch (event->window.event) {
         case SDL_WINDOWEVENT_SHOWN:
-            SDL_Log("SDL2 EVENT: Window %d shown", event->window.windowID);
+            SDL_Log("SDL2 EVENT: GlWindow %d shown", event->window.windowID);
             break;
         case SDL_WINDOWEVENT_HIDDEN:
-            SDL_Log("SDL2 EVENT: Window %d hidden", event->window.windowID);
+            SDL_Log("SDL2 EVENT: GlWindow %d hidden", event->window.windowID);
             break;
         case SDL_WINDOWEVENT_EXPOSED:
-            SDL_Log("SDL2 EVENT: Window %d exposed", event->window.windowID);
+            SDL_Log("SDL2 EVENT: GlWindow %d exposed", event->window.windowID);
             break;
         case SDL_WINDOWEVENT_MOVED:
-            SDL_Log("SDL2 EVENT: Window %d moved to %d,%d",
+            SDL_Log("SDL2 EVENT: GlWindow %d moved to %d,%d",
                     event->window.windowID, event->window.data1,
                     event->window.data2);
             break;
         case SDL_WINDOWEVENT_RESIZED:
-            SDL_Log("SDL2 EVENT: Window %d resized to %dx%d",
+            SDL_Log("SDL2 EVENT: GlWindow %d resized to %dx%d",
                     event->window.windowID, event->window.data1,
                     event->window.data2);
             break;
         case SDL_WINDOWEVENT_SIZE_CHANGED:
-            SDL_Log("SDL2 EVENT: Window %d changed size to %dx%d",
+            SDL_Log("SDL2 EVENT: GlWindow %d changed size to %dx%d",
                     event->window.windowID, event->window.data1,
                     event->window.data2);
             break;
         case SDL_WINDOWEVENT_MINIMIZED:
-            SDL_Log("SDL2 EVENT: Window %d minimized", event->window.windowID);
+            SDL_Log("SDL2 EVENT: GlWindow %d minimized", event->window.windowID);
             break;
         case SDL_WINDOWEVENT_MAXIMIZED:
-            SDL_Log("SDL2 EVENT: Window %d maximized", event->window.windowID);
+            SDL_Log("SDL2 EVENT: GlWindow %d maximized", event->window.windowID);
             break;
         case SDL_WINDOWEVENT_RESTORED:
-            SDL_Log("SDL2 EVENT: Window %d restored", event->window.windowID);
+            SDL_Log("SDL2 EVENT: GlWindow %d restored", event->window.windowID);
             break;
         case SDL_WINDOWEVENT_ENTER:
             SDL_Log("SDL2 EVENT: Mouse entered window %d",
@@ -1288,24 +1288,24 @@ SDLTest_PrintEvent(SDL_Event * event)
             SDL_Log("SDL2 EVENT: Mouse left window %d", event->window.windowID);
             break;
         case SDL_WINDOWEVENT_FOCUS_GAINED:
-            SDL_Log("SDL2 EVENT: Window %d gained keyboard focus",
+            SDL_Log("SDL2 EVENT: GlWindow %d gained keyboard focus",
                     event->window.windowID);
             break;
         case SDL_WINDOWEVENT_FOCUS_LOST:
-            SDL_Log("SDL2 EVENT: Window %d lost keyboard focus",
+            SDL_Log("SDL2 EVENT: GlWindow %d lost keyboard focus",
                     event->window.windowID);
             break;
         case SDL_WINDOWEVENT_CLOSE:
-            SDL_Log("SDL2 EVENT: Window %d closed", event->window.windowID);
+            SDL_Log("SDL2 EVENT: GlWindow %d closed", event->window.windowID);
             break;
         case SDL_WINDOWEVENT_TAKE_FOCUS:
-            SDL_Log("SDL2 EVENT: Window %d take focus", event->window.windowID);
+            SDL_Log("SDL2 EVENT: GlWindow %d take focus", event->window.windowID);
             break;
         case SDL_WINDOWEVENT_HIT_TEST:
-            SDL_Log("SDL2 EVENT: Window %d hit test", event->window.windowID);
+            SDL_Log("SDL2 EVENT: GlWindow %d hit test", event->window.windowID);
             break;
         default:
-            SDL_Log("SDL2 EVENT: Window %d got unknown event 0x%4.4x",
+            SDL_Log("SDL2 EVENT: GlWindow %d got unknown event 0x%4.4x",
                     event->window.windowID, event->window.event);
             break;
         }

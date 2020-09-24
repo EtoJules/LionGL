@@ -9,10 +9,12 @@ private:
     unsigned int m_Count;
 
 public:
-    IndexBuffer(const void* data, unsigned int size);
+    IndexBuffer();
+    IndexBuffer(const void* data, unsigned int count);
     ~IndexBuffer();
 
 public:
+    void bufferData(const void* data, unsigned int count);
     void bind() const;
     void unbind() const;
     unsigned int getCount() const;

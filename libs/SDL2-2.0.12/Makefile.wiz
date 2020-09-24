@@ -41,7 +41,7 @@ SOURCES = \
 	./src/video/pandora/*.c \
 	
 
-OBJECTS = $(shell echo $(SOURCES) | sed -e 's,\.c,\.o,g')
+OBJECTS = $(shell echo $(SOURCES) | sed -m_event 's,\.c,\.o,g')
 
 all: config_copy $(TARGET_STATIC) $(TARGET_SHARED)
 

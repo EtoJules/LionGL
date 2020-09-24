@@ -207,7 +207,7 @@ struct SDL_VideoDevice
 
     /* * * */
     /*
-     * Window functions
+     * GlWindow functions
      */
     int (*CreateSDLWindow) (_THIS, SDL_Window * window);
     int (*CreateSDLWindowFrom) (_THIS, SDL_Window * window, const void *data);

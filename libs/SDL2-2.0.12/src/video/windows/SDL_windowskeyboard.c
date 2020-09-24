@@ -1387,7 +1387,7 @@ IME_PositionCandidateList(SDL_VideoData *videodata, SIZE size)
             ok = SDL_TRUE;
     }
 
-    /* Window too small, show at (0,0) */
+    /* GlWindow too small, show at (0,0) */
     if (!ok) {
         left = 0;
         top = 0;

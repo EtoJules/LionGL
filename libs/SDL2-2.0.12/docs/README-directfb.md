@@ -30,7 +30,7 @@ To disable to use x11 backend when DISPLAY variable is found use
 
 export SDL_DIRECTFB_X11_CHECK=0
 
-To disable the use of linux input devices, i.e. multimice/multikeyboard support,
+To disable the use of linux input devices, i.m_event. multimice/multikeyboard support,
 use
 
 export SDL_DIRECTFB_LINUX_INPUT=0

@@ -100,7 +100,7 @@ int main(int argc, char **argv)
 
                 case SDL_WINDOWEVENT:
                     if (e.window.event == SDL_WINDOWEVENT_MOVED) {
-                        SDL_Log("Window event moved to (%d, %d)!\n", (int) e.window.data1, (int) e.window.data2);
+                        SDL_Log("GlWindow event moved to (%d, %d)!\n", (int) e.window.data1, (int) e.window.data2);
                     }
                     break;
 

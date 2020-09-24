@@ -84,7 +84,7 @@ void RPI_RestoreWindow(_THIS, SDL_Window * window);
 void RPI_SetWindowGrab(_THIS, SDL_Window * window, SDL_bool grabbed);
 void RPI_DestroyWindow(_THIS, SDL_Window * window);
 
-/* Window manager function */
+/* GlWindow manager function */
 SDL_bool RPI_GetWindowWMInfo(_THIS, SDL_Window * window,
                              struct SDL_SysWMinfo *info);
 

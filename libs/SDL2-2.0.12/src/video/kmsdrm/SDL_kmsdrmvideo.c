@@ -904,7 +904,7 @@ KMSDRM_SetWindowGrab(_THIS, SDL_Window * window, SDL_bool grabbed)
 }
 
 /*****************************************************************************/
-/* SDL2 Window Manager function                                               */
+/* SDL2 GlWindow Manager function                                               */
 /*****************************************************************************/
 SDL_bool
 KMSDRM_GetWindowWMInfo(_THIS, SDL_Window * window, struct SDL_SysWMinfo *info)

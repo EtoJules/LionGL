@@ -164,7 +164,7 @@ main(int argc, char *argv[])
         SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't create SDL2 window: %s\n", SDL_GetError());
         quit(4);
     }
-    SDL_SetWindowTitle(window, "SDL2 Native Window Test");
+    SDL_SetWindowTitle(window, "SDL2 Native GlWindow Test");
 
     /* Create the renderer */
     renderer = SDL_CreateRenderer(window, -1, 0);

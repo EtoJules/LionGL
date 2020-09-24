@@ -94,14 +94,14 @@ Notes -- Application events
 
 On iOS the application goes through a fixed life cycle and you will get
 notifications of state changes via application events. When these events
-are delivered you must handle them in an event callback because the OS may
+are delivered you must handle them in an m_event callback because the OS may
 not give you any processing time after the events are delivered.
 
-e.g.
+m_event.g.
 
-    int HandleAppEvents(void *userdata, SDL_Event *event)
+    int HandleAppEvents(void *userdata, SDL_Event *m_event)
     {
-        switch (event->type)
+        switch (m_event->type)
         {
         case SDL_APP_TERMINATING:
             /* Terminate the app.
@@ -120,7 +120,7 @@ e.g.
             return 0;
         case SDL_APP_DIDENTERBACKGROUND:
             /* This will get called if the user accepted whatever sent your app to the background.
-               If the user got a phone call and canceled it, you'll instead get an SDL_APP_DIDENTERFOREGROUND event and restart your loops.
+               If the user got a phone call and canceled it, you'll instead get an SDL_APP_DIDENTERFOREGROUND m_event and restart your loops.
                When you get this, you have 5 seconds to save all your state or the app will be terminated.
                Your app is NOT active at this point.
             */
@@ -136,7 +136,7 @@ e.g.
             */
             return 0;
         default:
-            /* No special processing, add it to the event queue */
+            /* No special processing, add it to the m_event queue */
             return 1;
         }
     }
@@ -236,14 +236,14 @@ Game Center integration might require that you break up your main loop in order 
 
     int SDL_iPhoneSetAnimationCallback(SDL_Window * window, int interval, void (*callback)(void*), void *callbackParam);
 
-This will set up the given function to be called back on the animation callback, and then you have to return from main() to let the Cocoa event loop run.
+This will set up the given function to be called back on the animation callback, and then you have to return from main() to let the Cocoa m_event loop run.
 
-e.g.
+m_event.g.
 
     extern "C"
     void ShowFrame(void*)
     {
-        ... do event handling, frame logic and rendering ...
+        ... do m_event handling, frame logic and rendering ...
     }
     
     int main(int argc, char *argv[])

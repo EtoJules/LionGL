@@ -348,7 +348,7 @@ RPI_CreateWindow(_THIS, SDL_Window * window)
     SDL_SetMouseFocus(window);
     SDL_SetKeyboardFocus(window);
 
-    /* Window has been successfully created */
+    /* GlWindow has been successfully created */
     return 0;
 }
 
@@ -435,7 +435,7 @@ RPI_SetWindowGrab(_THIS, SDL_Window * window, SDL_bool grabbed)
 }
 
 /*****************************************************************************/
-/* SDL2 Window Manager function                                               */
+/* SDL2 GlWindow Manager function                                               */
 /*****************************************************************************/
 #if 0
 SDL_bool

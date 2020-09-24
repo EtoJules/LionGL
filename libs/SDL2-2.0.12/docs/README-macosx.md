@@ -56,9 +56,9 @@ Some things you have to be aware of when using SDL on Mac OS X:
     - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender
     {
         if (SDL_GetEventState(SDL_QUIT) == SDL_ENABLE) {
-            SDL_Event event;
-            event.type = SDL_QUIT;
-            SDL_PushEvent(&event);
+            SDL_Event m_event;
+            m_event.type = SDL_QUIT;
+            SDL_PushEvent(&m_event);
         }
     
         return NSTerminateCancel;
@@ -67,10 +67,10 @@ Some things you have to be aware of when using SDL on Mac OS X:
     - (BOOL)application:(NSApplication *)theApplication openFile:(NSString *)filename
     {
         if (SDL_GetEventState(SDL_DROPFILE) == SDL_ENABLE) {
-            SDL_Event event;
-            event.type = SDL_DROPFILE;
-            event.drop.file = SDL_strdup([filename UTF8String]);
-            return (SDL_PushEvent(&event) > 0);
+            SDL_Event m_event;
+            m_event.type = SDL_DROPFILE;
+            m_event.drop.file = SDL_strdup([filename UTF8String]);
+            return (SDL_PushEvent(&m_event) > 0);
         }
     
         return NO;

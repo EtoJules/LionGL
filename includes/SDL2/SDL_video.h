@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no event will the authors be held liable for any damages
+  warranty.  In no m_event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -145,27 +145,27 @@ typedef enum
 typedef enum
 {
     SDL_WINDOWEVENT_NONE,           /**< Never used */
-    SDL_WINDOWEVENT_SHOWN,          /**< Window has been shown */
-    SDL_WINDOWEVENT_HIDDEN,         /**< Window has been hidden */
-    SDL_WINDOWEVENT_EXPOSED,        /**< Window has been exposed and should be
+    SDL_WINDOWEVENT_SHOWN,          /**< GlWindow has been shown */
+    SDL_WINDOWEVENT_HIDDEN,         /**< GlWindow has been hidden */
+    SDL_WINDOWEVENT_EXPOSED,        /**< GlWindow has been exposed and should be
                                          redrawn */
-    SDL_WINDOWEVENT_MOVED,          /**< Window has been moved to data1, data2
+    SDL_WINDOWEVENT_MOVED,          /**< GlWindow has been moved to data1, data2
                                      */
-    SDL_WINDOWEVENT_RESIZED,        /**< Window has been resized to data1xdata2 */
+    SDL_WINDOWEVENT_RESIZED,        /**< GlWindow has been resized to data1xdata2 */
     SDL_WINDOWEVENT_SIZE_CHANGED,   /**< The window size has changed, either as
                                          a result of an API call or through the
                                          system or user changing the window size. */
-    SDL_WINDOWEVENT_MINIMIZED,      /**< Window has been minimized */
-    SDL_WINDOWEVENT_MAXIMIZED,      /**< Window has been maximized */
-    SDL_WINDOWEVENT_RESTORED,       /**< Window has been restored to normal size
+    SDL_WINDOWEVENT_MINIMIZED,      /**< GlWindow has been minimized */
+    SDL_WINDOWEVENT_MAXIMIZED,      /**< GlWindow has been maximized */
+    SDL_WINDOWEVENT_RESTORED,       /**< GlWindow has been restored to normal size
                                          and position */
-    SDL_WINDOWEVENT_ENTER,          /**< Window has gained mouse focus */
-    SDL_WINDOWEVENT_LEAVE,          /**< Window has lost mouse focus */
-    SDL_WINDOWEVENT_FOCUS_GAINED,   /**< Window has gained keyboard focus */
-    SDL_WINDOWEVENT_FOCUS_LOST,     /**< Window has lost keyboard focus */
+    SDL_WINDOWEVENT_ENTER,          /**< GlWindow has gained mouse focus */
+    SDL_WINDOWEVENT_LEAVE,          /**< GlWindow has lost mouse focus */
+    SDL_WINDOWEVENT_FOCUS_GAINED,   /**< GlWindow has gained keyboard focus */
+    SDL_WINDOWEVENT_FOCUS_LOST,     /**< GlWindow has lost keyboard focus */
     SDL_WINDOWEVENT_CLOSE,          /**< The window manager requests that the window be closed */
-    SDL_WINDOWEVENT_TAKE_FOCUS,     /**< Window is being offered a focus (should SetWindowInputFocus() on itself or a subwindow, or ignore) */
-    SDL_WINDOWEVENT_HIT_TEST        /**< Window had a hit test that wasn't SDL_HITTEST_NORMAL. */
+    SDL_WINDOWEVENT_TAKE_FOCUS,     /**< GlWindow is being offered a focus (should SetWindowInputFocus() on itself or a subwindow, or ignore) */
+    SDL_WINDOWEVENT_HIT_TEST        /**< GlWindow had a hit test that wasn't SDL_HITTEST_NORMAL. */
 } SDL_WindowEventID;
 
 /**
@@ -490,7 +490,7 @@ extern DECLSPEC Uint32 SDLCALL SDL_GetWindowPixelFormat(SDL_Window * window);
  *
  *  If the window is created with the SDL_WINDOW_ALLOW_HIGHDPI flag, its size
  *  in pixels may differ from its size in screen coordinates on platforms with
- *  high-DPI support (e.g. iOS and Mac OS X). Use SDL_GetWindowSize() to query
+ *  high-DPI support (m_event.g. iOS and Mac OS X). Use SDL_GetWindowSize() to query
  *  the client area's size in screen coordinates, and SDL_GL_GetDrawableSize(),
  *  SDL_Vulkan_GetDrawableSize(), or SDL_GetRendererOutputSize() to query the
  *  drawable size in pixels.
@@ -637,7 +637,7 @@ extern DECLSPEC void SDLCALL SDL_GetWindowPosition(SDL_Window * window,
  *
  *  The window size in screen coordinates may differ from the size in pixels, if
  *  the window was created with SDL_WINDOW_ALLOW_HIGHDPI on a platform with
- *  high-dpi support (e.g. iOS or OS X). Use SDL_GL_GetDrawableSize() or
+ *  high-dpi support (m_event.g. iOS or OS X). Use SDL_GL_GetDrawableSize() or
  *  SDL_GetRendererOutputSize() to get the real client area size in pixels.
  *
  *  \sa SDL_GetWindowSize()
@@ -657,7 +657,7 @@ extern DECLSPEC void SDLCALL SDL_SetWindowSize(SDL_Window * window, int w,
  *
  *  The window size in screen coordinates may differ from the size in pixels, if
  *  the window was created with SDL_WINDOW_ALLOW_HIGHDPI on a platform with
- *  high-dpi support (e.g. iOS or OS X). Use SDL_GL_GetDrawableSize() or
+ *  high-dpi support (m_event.g. iOS or OS X). Use SDL_GL_GetDrawableSize() or
  *  SDL_GetRendererOutputSize() to get the real client area size in pixels.
  *
  *  \sa SDL_SetWindowSize()
@@ -1049,7 +1049,7 @@ typedef SDL_HitTestResult (SDLCALL *SDL_HitTest)(SDL_Window *win,
  *  from any part, or simulate its own title bar, etc.
  *
  *  This function lets the app provide a callback that designates pieces of
- *  a given window as special. This callback is run during event processing
+ *  a given window as special. This callback is run during m_event processing
  *  if we need to tell the OS to treat a region of the window specially; the
  *  use of this callback is known as "hit testing."
  *
@@ -1206,12 +1206,12 @@ extern DECLSPEC SDL_GLContext SDLCALL SDL_GL_GetCurrentContext(void);
  *  \brief Get the size of a window's underlying drawable in pixels (for use
  *         with glViewport).
  *
- *  \param window   Window from which the drawable size should be queried
+ *  \param window   GlWindow from which the drawable size should be queried
  *  \param w        Pointer to variable for storing the width in pixels, may be NULL
  *  \param h        Pointer to variable for storing the height in pixels, may be NULL
  *
  * This may differ from SDL_GetWindowSize() if we're rendering to a high-DPI
- * drawable, i.e. the window was created with SDL_WINDOW_ALLOW_HIGHDPI on a
+ * drawable, i.m_event. the window was created with SDL_WINDOW_ALLOW_HIGHDPI on a
  * platform with high-DPI support (Apple calls this "Retina"), and not disabled
  * by the SDL_HINT_VIDEO_HIGHDPI_DISABLED hint.
  *

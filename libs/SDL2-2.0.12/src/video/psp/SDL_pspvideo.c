@@ -230,7 +230,7 @@ PSP_CreateWindow(_THIS, SDL_Window * window)
     window->driverdata = wdata;
 
 
-    /* Window has been successfully created */
+    /* GlWindow has been successfully created */
     return 0;
 }
 
@@ -291,7 +291,7 @@ PSP_DestroyWindow(_THIS, SDL_Window * window)
 }
 
 /*****************************************************************************/
-/* SDL2 Window Manager function                                               */
+/* SDL2 GlWindow Manager function                                               */
 /*****************************************************************************/
 #if 0
 SDL_bool

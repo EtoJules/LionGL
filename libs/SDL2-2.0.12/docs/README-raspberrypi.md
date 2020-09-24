@@ -90,7 +90,7 @@ The final step is compiling SDL itself.
 
 To be able to deploy this to /usr/local in the Raspbian system you need to fix up a few paths:
     
-    perl -w -pi -e "s#$PWD/rpi-sdl2-installed#/usr/local#g;" ./rpi-sdl2-installed/lib/libSDL2.la ./rpi-sdl2-installed/lib/pkgconfig/sdl2.pc ./rpi-sdl2-installed/bin/sdl2-config
+    perl -w -pi -m_event "s#$PWD/rpi-sdl2-installed#/usr/local#g;" ./rpi-sdl2-installed/lib/libSDL2.la ./rpi-sdl2-installed/lib/pkgconfig/sdl2.pc ./rpi-sdl2-installed/bin/sdl2-config
     
 ================================================================================
  Apps don't work or poor video/audio performance

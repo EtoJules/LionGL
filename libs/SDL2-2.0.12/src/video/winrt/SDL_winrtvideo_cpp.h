@@ -59,7 +59,7 @@ typedef struct SDL_VideoData {
     IUnknown *displayRequest;
 } SDL_VideoData;
 
-/* The global, WinRT, SDL2 Window.
+/* The global, WinRT, SDL2 GlWindow.
    For now, SDL2/WinRT only supports one window (due to platform limitations of
    WinRT.
 */

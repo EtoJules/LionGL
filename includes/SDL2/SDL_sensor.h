@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no event will the authors be held liable for any damages
+  warranty.  In no m_event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -22,7 +22,7 @@
 /**
  *  \file SDL_sensor.h
  *
- *  Include file for SDL2 sensor event handling
+ *  Include file for SDL2 sensor m_event handling
  *
  */
 
@@ -231,7 +231,7 @@ extern DECLSPEC void SDLCALL SDL_SensorClose(SDL_Sensor * sensor);
 /**
  *  Update the current state of the open sensors.
  *
- *  This is called automatically by the event loop if sensor events are enabled.
+ *  This is called automatically by the m_event loop if sensor events are enabled.
  *
  *  This needs to be called from the thread that initialized the sensor subsystem.
  */

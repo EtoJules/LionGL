@@ -203,6 +203,32 @@ Sources/fast:
 .PHONY : Sources/fast
 
 #=============================================================================
+# Target rules for targets named SandboxExamples
+
+# Build rule for target.
+SandboxExamples: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SandboxExamples
+.PHONY : SandboxExamples
+
+# fast build rule for target.
+SandboxExamples/fast:
+	$(MAKE) $(MAKESILENT) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build
+.PHONY : SandboxExamples/fast
+
+#=============================================================================
+# Target rules for targets named Core
+
+# Build rule for target.
+Core: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Core
+.PHONY : Core
+
+# fast build rule for target.
+Core/fast:
+	$(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/build
+.PHONY : Core/fast
+
+#=============================================================================
 # Target rules for targets named glewinfo
 
 # Build rule for target.
@@ -308,6 +334,8 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... uninstall"
 	@echo "... ClGL"
+	@echo "... Core"
+	@echo "... SandboxExamples"
 	@echo "... Sources"
 	@echo "... glew"
 	@echo "... glew_s"

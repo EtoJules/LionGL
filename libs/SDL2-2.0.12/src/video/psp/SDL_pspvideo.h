@@ -76,7 +76,7 @@ void PSP_RestoreWindow(_THIS, SDL_Window * window);
 void PSP_SetWindowGrab(_THIS, SDL_Window * window, SDL_bool grabbed);
 void PSP_DestroyWindow(_THIS, SDL_Window * window);
 
-/* Window manager function */
+/* GlWindow manager function */
 SDL_bool PSP_GetWindowWMInfo(_THIS, SDL_Window * window,
                              struct SDL_SysWMinfo *info);
 

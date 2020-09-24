@@ -11,21 +11,21 @@ Recording:
 To begin recording on a touch device call:
 SDL_RecordGesture(SDL_TouchID touchId), where touchId is the id of the touch device you wish to record on, or -1 to record on all connected devices.
 
-Recording terminates as soon as a finger comes up. Recording is acknowledged by an SDL_DOLLARRECORD event.
-A SDL_DOLLARRECORD event is a dgesture with the following fields:
+Recording terminates as soon as a finger comes up. Recording is acknowledged by an SDL_DOLLARRECORD m_event.
+A SDL_DOLLARRECORD m_event is a dgesture with the following fields:
 
-* event.dgesture.touchId   - the Id of the touch used to record the gesture.
-* event.dgesture.gestureId - the unique id of the recorded gesture.
+* m_event.dgesture.touchId   - the Id of the touch used to record the gesture.
+* m_event.dgesture.gestureId - the unique id of the recorded gesture.
 
 
 Performing:
 -----------
-As long as there is a dollar gesture assigned to a touch, every finger-up event will also cause an SDL_DOLLARGESTURE event with the following fields:
+As long as there is a dollar gesture assigned to a touch, every finger-up m_event will also cause an SDL_DOLLARGESTURE m_event with the following fields:
 
-* event.dgesture.touchId    - the Id of the touch which performed the gesture.
-* event.dgesture.gestureId  - the unique id of the closest gesture to the performed stroke.
-* event.dgesture.error      - the difference between the gesture template and the actual performed gesture. Lower error is a better match.
-* event.dgesture.numFingers - the number of fingers used to draw the stroke.
+* m_event.dgesture.touchId    - the Id of the touch which performed the gesture.
+* m_event.dgesture.gestureId  - the unique id of the closest gesture to the performed stroke.
+* m_event.dgesture.error      - the difference between the gesture template and the actual performed gesture. Lower error is a better match.
+* m_event.dgesture.numFingers - the number of fingers used to draw the stroke.
 
 Most programs will want to define an appropriate error threshold and check to be sure that the error of a gesture is not abnormally high (an indicator that no gesture was performed).
 
@@ -52,14 +52,14 @@ SDL_LoadDollarTemplates returns the number of templates successfully loaded.
 Multi Gestures
 ===========================================================================
 SDL provides simple support for pinch/rotate/swipe gestures. 
-Every time a finger is moved an SDL_MULTIGESTURE event is sent with the following fields:
+Every time a finger is moved an SDL_MULTIGESTURE m_event is sent with the following fields:
 
-* event.mgesture.touchId - the Id of the touch on which the gesture was performed.
-* event.mgesture.x       - the normalized x coordinate of the gesture. (0..1)
-* event.mgesture.y       - the normalized y coordinate of the gesture. (0..1)
-* event.mgesture.dTheta  - the amount that the fingers rotated during this motion.
-* event.mgesture.dDist   - the amount that the fingers pinched during this motion.
-* event.mgesture.numFingers - the number of fingers used in the gesture.
+* m_event.mgesture.touchId - the Id of the touch on which the gesture was performed.
+* m_event.mgesture.x       - the normalized x coordinate of the gesture. (0..1)
+* m_event.mgesture.y       - the normalized y coordinate of the gesture. (0..1)
+* m_event.mgesture.dTheta  - the amount that the fingers rotated during this motion.
+* m_event.mgesture.dDist   - the amount that the fingers pinched during this motion.
+* m_event.mgesture.numFingers - the number of fingers used in the gesture.
 
 
 ===========================================================================

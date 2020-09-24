@@ -60,7 +60,7 @@ loop()
                 if (event.window.event == SDL_WINDOWEVENT_RESIZED) {
                     SDL_Window *window = SDL_GetWindowFromID(event.window.windowID);
                     if (window) {
-                        SDL_Log("Window %d resized to %dx%d\n",
+                        SDL_Log("GlWindow %d resized to %dx%d\n",
                             event.window.windowID,
                             event.window.data1,
                             event.window.data2);
@@ -69,7 +69,7 @@ loop()
                 if (event.window.event == SDL_WINDOWEVENT_MOVED) {
                     SDL_Window *window = SDL_GetWindowFromID(event.window.windowID);
                     if (window) {
-                        SDL_Log("Window %d moved to %d,%d (display %s)\n",
+                        SDL_Log("GlWindow %d moved to %d,%d (display %s)\n",
                             event.window.windowID,
                             event.window.data1,
                             event.window.data2,

@@ -128,7 +128,7 @@ To customize your application name, edit AndroidManifest.xml and replace
 "org.libsdl.app" with an identifier for your product package.
 
 Then create a Java class extending SDLActivity and place it in a directory
-under src matching your package, e.g.
+under src matching your package, m_event.g.
 
     src/com/gamemaker/game/MyGame.java
 
@@ -148,7 +148,7 @@ Here's an example of a minimal class file:
     ------------------------------------------
 
 Then replace "SDLActivity" in AndroidManifest.xml with the name of your
-class, .e.g. "MyGame"
+class, .m_event.g. "MyGame"
 
 
 ================================================================================
@@ -194,7 +194,7 @@ http://ponystyle.com/blog/2010/03/26/dealing-with-asset-compression-in-android-a
 ================================================================================
 
 If SDL_HINT_ANDROID_BLOCK_ON_PAUSE hint is set (the default),
-the event loop will block itself when the app is paused (ie, when the user
+the m_event loop will block itself when the app is paused (ie, when the user
 returns to the main Android dashboard). Blocking is better in terms of battery
 use, and it allows your app to spring back to life instantaneously after resume
 (versus polling for a resume message).
@@ -313,7 +313,7 @@ For example, if your crash looks like this:
 You can see that there's a crash in the C library being called from the main code.
 I run addr2line with the debug version of my code:
 
-    arm-eabi-addr2line -C -f -e obj/local/armeabi/libmain.so
+    arm-eabi-addr2line -C -f -m_event obj/local/armeabi/libmain.so
 
 and then paste in the number after "pc" in the call stack, from the line that I care about:
 000014bc
@@ -437,7 +437,7 @@ Two legitimate ways:
 Activity by calling Activity.finish().
 
 - Android OS can decide to terminate your application by calling onDestroy()
-(see Activity life cycle). Your application will receive a SDL_QUIT event you 
+(see Activity life cycle). Your application will receive a SDL_QUIT m_event you 
 can handle to save things and quit.
 
 Don't call exit() as it stops the activity badly.

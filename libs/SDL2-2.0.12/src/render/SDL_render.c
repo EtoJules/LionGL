@@ -606,7 +606,7 @@ SDL_RendererEventWatch(void *userdata, SDL_Event *event)
                 if (renderer->logical_w) {
                     UpdateLogicalSize(renderer);
                 } else {
-                    /* Window was resized, reset viewport */
+                    /* GlWindow was resized, reset viewport */
                     int w, h;
 
                     if (renderer->GetOutputSize) {

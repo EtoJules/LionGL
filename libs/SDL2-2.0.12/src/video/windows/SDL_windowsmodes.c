@@ -272,7 +272,7 @@ WIN_GetDisplayDPI(_THIS, SDL_VideoDisplay * display, float * ddpi_out, float * h
             return SDL_SetError("GetDpiForMonitor failed");
         }
     } else {
-        // Window 8.0 and below: same DPI for all monitors.
+        // GlWindow 8.0 and below: same DPI for all monitors.
         HDC hdc;
         int hdpi_int, vdpi_int, hpoints, vpoints, hpix, vpix;
         float hinches, vinches;

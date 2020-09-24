@@ -54,7 +54,7 @@ Then run:
 You'll hopefully see your joystick listed along with a name like "/dev/input/eventXX"
 Now run:
     
-    cat /dev/input/event/XX
+    cat /dev/input/m_event/XX
 
 If you get a permission error, you need to set a udev rule to change the mode of
 your device (see below)    

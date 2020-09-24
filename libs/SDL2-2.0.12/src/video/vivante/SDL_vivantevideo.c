@@ -308,7 +308,7 @@ VIVANTE_CreateWindow(_THIS, SDL_Window * window)
     }
 #endif
 
-    /* Window has been successfully created */
+    /* GlWindow has been successfully created */
     return 0;
 }
 
@@ -381,7 +381,7 @@ VIVANTE_HideWindow(_THIS, SDL_Window * window)
 }
 
 /*****************************************************************************/
-/* SDL2 Window Manager function                                               */
+/* SDL2 GlWindow Manager function                                               */
 /*****************************************************************************/
 SDL_bool
 VIVANTE_GetWindowWMInfo(_THIS, SDL_Window * window, struct SDL_SysWMinfo *info)

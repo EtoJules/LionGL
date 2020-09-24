@@ -85,7 +85,7 @@
       <description summary="release the relative pointer object"/>
     </request>
 
-    <event name="relative_motion">
+    <m_event name="relative_motion">
       <description summary="relative pointer motion">
 	Relative x/y pointer motion from the pointer of the seat associated with
 	this object.
@@ -98,7 +98,7 @@
 	monitor, the relative motion is unaffected by the clipping and will
 	represent the unclipped motion.
 
-	This event also contains non-accelerated motion deltas. The
+	This m_event also contains non-accelerated motion deltas. The
 	non-accelerated delta is, when applicable, the regular pointer motion
 	delta as it was before having applied motion acceleration and other
 	transformations such as normalization.
@@ -111,7 +111,7 @@
 	Relative motions are not coupled to wl_pointer.motion events, and can be
 	sent in combination with such events, but also independently. There may
 	also be scenarios where wl_pointer.motion is sent, but there is no
-	relative motion. The order of an absolute and relative motion event
+	relative motion. The order of an absolute and relative motion m_event
 	originating from the same physical motion is not guaranteed.
 
 	If the client needs button events or focus state, it can receive them
@@ -130,7 +130,7 @@
 	   summary="the x component of the unaccelerated motion vector"/>
       <arg name="dy_unaccel" type="fixed"
 	   summary="the y component of the unaccelerated motion vector"/>
-    </event>
+    </m_event>
   </interface>
 
 </protocol>

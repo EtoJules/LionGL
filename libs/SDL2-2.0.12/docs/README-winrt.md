@@ -328,7 +328,7 @@ At this point, you can add in SDL-specific source code.  Be sure to include a
 C-style main function (ie: `int main(int argc, char *argv[])`).  From there you 
 should be able to create a single `SDL_Window` (WinRT apps can only have one 
 window, at present), as well as an `SDL_Renderer`.  Direct3D will be used to 
-draw content.  Events are received via SDL's usual event functions 
+draw content.  Events are received via SDL's usual m_event functions 
 (`SDL_PollEvent`, etc.)  If you have a set of existing source files and assets, 
 you can start adding them to the project now.  If not, or if you would like to 
 make sure that you're setup correctly, some short and simple sample code is 

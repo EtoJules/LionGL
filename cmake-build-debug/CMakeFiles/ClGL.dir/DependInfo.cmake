@@ -16,16 +16,18 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../src"
-  "../include"
   "../libs"
+  "../includes"
   "../src/Core"
   "/usr/include/SDL2"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/CMakeFiles/Sources.dir/DependInfo.cmake"
+  "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples/CMakeFiles/SandboxExamples.dir/DependInfo.cmake"
+  "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core/CMakeFiles/Core.dir/DependInfo.cmake"
   "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/DependInfo.cmake"
+  "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/CMakeFiles/Sources.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -44,12 +44,12 @@ GL_CORE_SPEC := $(CORE)/GL_VERSION*
 GLX_CORE_SPEC := $(CORE)/GLX_VERSION*
 EGL_CORE_SPEC := $(CORE)/EGL_VERSION*
 ifeq (custom,$(MAKECMDGOALS))
-#GL_CORE_SPEC  := $(shell grep GL_VERSION custom.txt    |                       perl -pi -e "s=^=$(CORE)/=g;")
-GL_EXT_SPEC    := $(shell grep "^[ \t]*GL_" custom.txt  | grep -v GL_VERSION  | perl -pi -e "s=^=$(EXT)/=g;")
-WGL_EXT_SPEC   := $(shell grep "^[ \t]*WGL_" custom.txt |                       perl -pi -e "s=^=$(EXT)/=g;")
-#GLX_CORE_SPEC := $(shell grep GLX_VERSION custom.txt   |                       perl -pi -e "s=^=$(CORE)/=g;")
-GLX_EXT_SPEC   := $(shell grep "^[ \t]*GLX_" custom.txt | grep -v GLX_VERSION | perl -pi -e "s=^=$(EXT)/=g;")
-EGL_EXT_SPEC   := $(shell grep "^[ \t]*EGL_" custom.txt | grep -v EGL_VERSION | perl -pi -e "s=^=$(EXT)/=g;")
+#GL_CORE_SPEC  := $(shell grep GL_VERSION custom.txt    |                       perl -pi -m_event "s=^=$(CORE)/=g;")
+GL_EXT_SPEC    := $(shell grep "^[ \t]*GL_" custom.txt  | grep -v GL_VERSION  | perl -pi -m_event "s=^=$(EXT)/=g;")
+WGL_EXT_SPEC   := $(shell grep "^[ \t]*WGL_" custom.txt |                       perl -pi -m_event "s=^=$(EXT)/=g;")
+#GLX_CORE_SPEC := $(shell grep GLX_VERSION custom.txt   |                       perl -pi -m_event "s=^=$(CORE)/=g;")
+GLX_EXT_SPEC   := $(shell grep "^[ \t]*GLX_" custom.txt | grep -v GLX_VERSION | perl -pi -m_event "s=^=$(EXT)/=g;")
+EGL_EXT_SPEC   := $(shell grep "^[ \t]*EGL_" custom.txt | grep -v EGL_VERSION | perl -pi -m_event "s=^=$(EXT)/=g;")
 else
 GL_EXT_SPEC := $(EXT)/GL_*
 WGL_EXT_SPEC := $(EXT)/WGL_*
@@ -141,15 +141,15 @@ $(I.DEST)/glew.h: $(EXT)/.dummy
 	cat $(SRC)/glew_head.h >> $@
 	$(BIN)/make_header.pl GLAPIENTRY GL $(GL_CORE_SPEC) >> $@
 	$(BIN)/make_header.pl GLAPIENTRY GL $(GL_EXT_SPEC) >> $@
-	echo -e "/* ------------------------------------------------------------------------- */\n\n" >> $@
+	echo -m_event "/* ------------------------------------------------------------------------- */\n\n" >> $@
 	$(BIN)/make_struct_fun.pl GLEW_FUN_EXPORT $(GL_CORE_SPEC) $(GL_EXT_SPEC) >> $@
 	$(BIN)/make_struct_var.pl GLEW_VAR_EXPORT $(GL_CORE_SPEC) $(GL_EXT_SPEC) >> $@
-	perl -e "s/GLEW_VAR_EXPORT GLboolean __GLEW_VERSION_1_2;/GLEW_VAR_EXPORT GLboolean __GLEW_VERSION_1_1;\nGLEW_VAR_EXPORT GLboolean __GLEW_VERSION_1_2;/" -pi $@
+	perl -m_event "s/GLEW_VAR_EXPORT GLboolean __GLEW_VERSION_1_2;/GLEW_VAR_EXPORT GLboolean __GLEW_VERSION_1_1;\nGLEW_VAR_EXPORT GLboolean __GLEW_VERSION_1_2;/" -pi $@
 	cat $(SRC)/glew_tail.h >> $@
-	perl -e "s/GLEW_VERSION_STRING/$(GLEW_VERSION)/g" -pi $@
-	perl -e "s/GLEW_VERSION_MAJOR_STRING/$(GLEW_MAJOR)/g" -pi $@
-	perl -e "s/GLEW_VERSION_MINOR_STRING/$(GLEW_MINOR)/g" -pi $@
-	perl -e "s/GLEW_VERSION_MICRO_STRING/$(GLEW_MICRO)/g" -pi $@
+	perl -m_event "s/GLEW_VERSION_STRING/$(GLEW_VERSION)/g" -pi $@
+	perl -m_event "s/GLEW_VERSION_MAJOR_STRING/$(GLEW_MAJOR)/g" -pi $@
+	perl -m_event "s/GLEW_VERSION_MINOR_STRING/$(GLEW_MINOR)/g" -pi $@
+	perl -m_event "s/GLEW_VERSION_MICRO_STRING/$(GLEW_MICRO)/g" -pi $@
 	rm -f $@.bak
 
 $(I.DEST)/wglew.h: $(EXT)/.dummy
@@ -178,7 +178,7 @@ $(I.DEST)/glxew.h: $(EXT)/.dummy
 	cat $(SRC)/glxew_mid.h >> $@
 	$(BIN)/make_struct_fun.pl GLXEW_FUN_EXPORT $(GLX_CORE_SPEC) $(GLX_EXT_SPEC) >> $@
 	$(BIN)/make_struct_var.pl GLXEW_VAR_EXPORT $(GLX_CORE_SPEC) $(GLX_EXT_SPEC) >> $@
-	perl -e "s/GLXEW_VAR_EXPORT GLboolean __GLXEW_VERSION_1_2;/GLXEW_VAR_EXPORT GLboolean __GLXEW_VERSION_1_0;\nGLXEW_VAR_EXPORT GLboolean __GLXEW_VERSION_1_1;\nGLXEW_VAR_EXPORT GLboolean __GLXEW_VERSION_1_2;/" -pi $@
+	perl -m_event "s/GLXEW_VAR_EXPORT GLboolean __GLXEW_VERSION_1_2;/GLXEW_VAR_EXPORT GLboolean __GLXEW_VERSION_1_0;\nGLXEW_VAR_EXPORT GLboolean __GLXEW_VERSION_1_1;\nGLXEW_VAR_EXPORT GLboolean __GLXEW_VERSION_1_2;/" -pi $@
 	cat $(SRC)/glxew_tail.h >> $@
 
 $(I.DEST)/eglew.h: $(EXT)/.dummy
@@ -204,25 +204,25 @@ $(S.DEST)/glew.c: $(EXT)/.dummy
 	cat $(SRC)/glew_head.c >> $@
 	$(BIN)/make_def_fun.pl GL $(GL_CORE_SPEC) >> $@
 	$(BIN)/make_def_fun.pl GL $(GL_EXT_SPEC) >> $@
-	echo -e "\nGLboolean __GLEW_VERSION_1_1 = GL_FALSE;" >> $@
+	echo -m_event "\nGLboolean __GLEW_VERSION_1_1 = GL_FALSE;" >> $@
 	$(BIN)/make_def_var.pl GL $(GL_CORE_SPEC) >> $@
 	$(BIN)/make_def_var.pl GL $(GL_EXT_SPEC) >> $@
-	echo -e "\nstatic const char * _glewExtensionLookup[] = {" >> $@;
+	echo -m_event "\nstatic const char * _glewExtensionLookup[] = {" >> $@;
 	$(BIN)/make_index.pl $(GL_CORE_SPEC) $(GL_EXT_SPEC) >> $@
-	echo -e "  NULL\n};\n" >> $@;
+	echo -m_event "  NULL\n};\n" >> $@;
 	$(BIN)/make_enable_index.pl $(GL_CORE_SPEC) $(GL_EXT_SPEC) >> $@
 	$(BIN)/make_initd.pl GL $(GL_CORE_SPEC) >> $@
 	$(BIN)/make_initd.pl GL $(GL_EXT_SPEC) >> $@
-	echo -e "" >> $@;
+	echo -m_event "" >> $@;
 	$(BIN)/make_init.pl GL $(GL_CORE_SPEC) >> $@
 	$(BIN)/make_init.pl GL $(GL_EXT_SPEC) >> $@
 	cat $(SRC)/glew_init_gl.c >> $@
 	$(BIN)/make_list.pl $(GL_CORE_SPEC) | grep -v '\"GL_VERSION' >> $@
 	$(BIN)/make_list.pl $(GL_EXT_SPEC) >> $@
 	$(BIN)/make_list2.pl $(GL_EXT_SPEC) >> $@
-	echo -e "\n  return GLEW_OK;\n}\n" >> $@
-	echo -e "\n#if defined(GLEW_OSMESA)" >> $@
-	echo -e "\n#elif defined(GLEW_EGL)" >> $@
+	echo -m_event "\n  return GLEW_OK;\n}\n" >> $@
+	echo -m_event "\n#if defined(GLEW_OSMESA)" >> $@
+	echo -m_event "\n#elif defined(GLEW_EGL)" >> $@
 	$(BIN)/make_def_fun.pl EGL $(EGL_CORE_SPEC) >> $@
 	$(BIN)/make_def_fun.pl EGL $(EGL_EXT_SPEC) >> $@
 	$(BIN)/make_def_var.pl EGL $(EGL_CORE_SPEC) >> $@
@@ -232,19 +232,19 @@ $(S.DEST)/glew.c: $(EXT)/.dummy
 	cat $(SRC)/glew_init_egl.c >> $@
 	$(BIN)/make_list.pl $(EGL_CORE_SPEC) >> $@
 	$(BIN)/make_list.pl $(EGL_EXT_SPEC) >> $@
-	echo -e "\n  return GLEW_OK;\n}" >> $@
-	echo -e "\n#elif defined(_WIN32)" >> $@
+	echo -m_event "\n  return GLEW_OK;\n}" >> $@
+	echo -m_event "\n#elif defined(_WIN32)" >> $@
 	$(BIN)/make_def_fun.pl WGL $(WGL_EXT_SPEC) >> $@
 	$(BIN)/make_def_var.pl WGL $(WGL_EXT_SPEC) >> $@
 	$(BIN)/make_init.pl WGL $(WGL_EXT_SPEC) >> $@
 	cat $(SRC)/glew_init_wgl.c >> $@
 	$(BIN)/make_list.pl $(WGL_EXT_SPEC) >> $@
-	echo -e "\n  return GLEW_OK;\n}" >> $@;
-	echo -e "\n#elif !defined(__ANDROID__) && !defined(__native_client__) && !defined(__HAIKU__) && (!defined(__APPLE__) || defined(GLEW_APPLE_GLX))" >> $@
+	echo -m_event "\n  return GLEW_OK;\n}" >> $@;
+	echo -m_event "\n#elif !defined(__ANDROID__) && !defined(__native_client__) && !defined(__HAIKU__) && (!defined(__APPLE__) || defined(GLEW_APPLE_GLX))" >> $@
 	$(BIN)/make_def_fun.pl GLX $(GLX_CORE_SPEC) >> $@
 	$(BIN)/make_def_fun.pl GLX $(GLX_EXT_SPEC) >> $@
-	echo -e "\nGLboolean __GLXEW_VERSION_1_0 = GL_FALSE;" >> $@
-	echo -e "GLboolean __GLXEW_VERSION_1_1 = GL_FALSE;" >> $@
+	echo -m_event "\nGLboolean __GLXEW_VERSION_1_0 = GL_FALSE;" >> $@
+	echo -m_event "GLboolean __GLXEW_VERSION_1_1 = GL_FALSE;" >> $@
 	$(BIN)/make_def_var.pl GLX $(GLX_CORE_SPEC) >> $@
 	$(BIN)/make_def_var.pl GLX $(GLX_EXT_SPEC) >> $@
 	$(BIN)/make_init.pl GLX $(GLX_CORE_SPEC) >> $@
@@ -252,8 +252,8 @@ $(S.DEST)/glew.c: $(EXT)/.dummy
 	cat $(SRC)/glew_init_glx.c >> $@
 	$(BIN)/make_list.pl $(CORE)/GLX_VERSION_1_3 | grep -v '\"GLX_VERSION' >> $@
 	$(BIN)/make_list.pl $(GLX_EXT_SPEC) >> $@
-	echo -e "\n  return GLEW_OK;\n}" >> $@
-	echo -e "\n#endif /* !defined(__ANDROID__) && !defined(__native_client__) && !defined(__HAIKU__) && (!defined(__APPLE__) || defined(GLEW_APPLE_GLX)) */\n" >> $@;
+	echo -m_event "\n  return GLEW_OK;\n}" >> $@
+	echo -m_event "\n#endif /* !defined(__ANDROID__) && !defined(__native_client__) && !defined(__HAIKU__) && (!defined(__APPLE__) || defined(GLEW_APPLE_GLX)) */\n" >> $@;
 	cat $(SRC)/glew_init_tail.c >> $@
 	cat $(SRC)/glew_str_head.c >> $@
 	$(BIN)/make_str.pl $(GL_CORE_SPEC) $(GL_EXT_SPEC) >> $@
@@ -264,12 +264,12 @@ $(S.DEST)/glew.c: $(EXT)/.dummy
 	cat $(SRC)/glew_str_egl.c >> $@
 	$(BIN)/make_str.pl $(EGL_CORE_SPEC) $(EGL_EXT_SPEC) >> $@
 	cat $(SRC)/glew_str_tail.c >> $@
-	perl -e "s/GLEW_VERSION_STRING/$(GLEW_VERSION)/g" -pi $@
-	perl -e "s/GLEW_VERSION_MAJOR_STRING/$(GLEW_MAJOR)/g" -pi $@
-	perl -e "s/GLEW_VERSION_MINOR_STRING/$(GLEW_MINOR)/g" -pi $@
-	perl -e "s/GLEW_VERSION_MICRO_STRING/$(GLEW_MICRO)/g" -pi $@
-	perl -e "s/GLEW_ARB_vertex_shader = !_glewInit_GL_ARB_vertex_shader\(\);/{ GLEW_ARB_vertex_shader = !_glewInit_GL_ARB_vertex_shader(); _glewInit_GL_ARB_vertex_program(); }/g" -pi $@
-	perl -e "s/\(\(glColorSubTable = /((glBlendEquation = (PFNGLBLENDEQUATIONPROC)glewGetProcAddress((const GLubyte*)\"glBlendEquation\")) == NULL) || r;\n  r = ((glColorSubTable = /g" -pi $@
+	perl -m_event "s/GLEW_VERSION_STRING/$(GLEW_VERSION)/g" -pi $@
+	perl -m_event "s/GLEW_VERSION_MAJOR_STRING/$(GLEW_MAJOR)/g" -pi $@
+	perl -m_event "s/GLEW_VERSION_MINOR_STRING/$(GLEW_MINOR)/g" -pi $@
+	perl -m_event "s/GLEW_VERSION_MICRO_STRING/$(GLEW_MICRO)/g" -pi $@
+	perl -m_event "s/GLEW_ARB_vertex_shader = !_glewInit_GL_ARB_vertex_shader\(\);/{ GLEW_ARB_vertex_shader = !_glewInit_GL_ARB_vertex_shader(); _glewInit_GL_ARB_vertex_program(); }/g" -pi $@
+	perl -m_event "s/\(\(glColorSubTable = /((glBlendEquation = (PFNGLBLENDEQUATIONPROC)glewGetProcAddress((const GLubyte*)\"glBlendEquation\")) == NULL) || r;\n  r = ((glColorSubTable = /g" -pi $@
 	rm -f $@.bak
 
 $(S.DEST)/glewinfo.c: $(EXT)/.dummy
@@ -280,15 +280,15 @@ $(S.DEST)/glewinfo.c: $(EXT)/.dummy
 	cat $(SRC)/glewinfo_head.c >> $@
 	$(BIN)/make_info.pl $(GL_CORE_SPEC) >> $@
 	$(BIN)/make_info.pl $(GL_EXT_SPEC) >> $@
-	echo -e "#if defined(GLEW_EGL)\n" >> $@
+	echo -m_event "#if defined(GLEW_EGL)\n" >> $@
 	$(BIN)/make_info.pl $(EGL_CORE_SPEC) >> $@
 	$(BIN)/make_info.pl $(EGL_EXT_SPEC) >> $@
-	echo -e "#elif _WIN32\n" >> $@
+	echo -m_event "#elif _WIN32\n" >> $@
 	$(BIN)/make_info.pl $(WGL_EXT_SPEC) >> $@
-	echo -e "#else /* _UNIX */\n" >> $@
+	echo -m_event "#else /* _UNIX */\n" >> $@
 	$(BIN)/make_info.pl $(GLX_CORE_SPEC) >> $@
 	$(BIN)/make_info.pl $(GLX_EXT_SPEC) >> $@
-	echo -e "#endif /* _WIN32 */\n" >> $@
+	echo -m_event "#endif /* _WIN32 */\n" >> $@
 
 	cat $(SRC)/glewinfo_gl.c >> $@
 	$(BIN)/make_info_list.pl $(GL_CORE_SPEC) >> $@
@@ -302,7 +302,7 @@ $(S.DEST)/glewinfo.c: $(EXT)/.dummy
 	$(BIN)/make_info_list.pl $(EGL_CORE_SPEC) >> $@
 	$(BIN)/make_info_list.pl $(EGL_EXT_SPEC) >> $@
 	cat $(SRC)/glewinfo_tail.c >> $@
-	perl -e 's/"glColorSubTable"/"glBlendEquation", glBlendEquation == NULL);\n  glewInfoFunc("glColorSubTable"/g' -pi $@
+	perl -m_event 's/"glColorSubTable"/"glBlendEquation", glBlendEquation == NULL);\n  glewInfoFunc("glColorSubTable"/g' -pi $@
 	rm -f $@.bak
 
 # Update documentation
@@ -319,7 +319,7 @@ $(D.DEST)/glew.html: $(EXT)/.dummy
 	@echo "Creating glew.html"
 	@echo "--------------------------------------------------------------------"
 	cp -f $(SRC)/header.html $@
-	echo -e "<h2>Supported OpenGL Extensions</h2>\n" >> $@
+	echo -m_event "<h2>Supported OpenGL Extensions</h2>\n" >> $@
 	$(BIN)/make_html.pl $(GL_EXT_SPEC) >> $@
 	cat $(SRC)/footer.html >> $@
 	perl -i -pe 's#<a href="$(@F)">(.*)</a>#\1#' $@
@@ -329,7 +329,7 @@ $(D.DEST)/wglew.html: $(EXT)/.dummy
 	@echo "Creating wglew.html"
 	@echo "--------------------------------------------------------------------"
 	cp -f $(SRC)/header.html $@
-	echo -e "<h2>Supported WGL Extensions</h2>\n" >> $@
+	echo -m_event "<h2>Supported WGL Extensions</h2>\n" >> $@
 	$(BIN)/make_html.pl $(WGL_EXT_SPEC) >> $@
 	cat $(SRC)/footer.html >> $@
 	perl -i -pe 's#<a href="$(@F)">(.*)</a>#\1#' $@
@@ -339,13 +339,13 @@ $(D.DEST)/glxew.html: $(EXT)/.dummy
 	@echo "Creating glxew.html"
 	@echo "--------------------------------------------------------------------"
 	cp -f $(SRC)/header.html $@
-	echo -e "<h2>Supported GLX Extensions</h2>\n" >> $@
+	echo -m_event "<h2>Supported GLX Extensions</h2>\n" >> $@
 	$(BIN)/make_html.pl $(GLX_EXT_SPEC) >> $@
 	cat $(SRC)/footer.html >> $@
 	perl -i -pe 's#<a href="$(@F)">(.*)</a>#\1#' $@
 
 $(B.DEST)/%.rc: src/%.rc $(EXT)/.dummy
-	perl -e "s/GLEW_MAJOR/$(GLEW_MAJOR)/g;s/GLEW_MINOR/$(GLEW_MINOR)/g;s/GLEW_MICRO/$(GLEW_MICRO)/g;" -p $< > $@
+	perl -m_event "s/GLEW_MAJOR/$(GLEW_MAJOR)/g;s/GLEW_MINOR/$(GLEW_MINOR)/g;s/GLEW_MICRO/$(GLEW_MICRO)/g;" -p $< > $@
 
 clean:
 	rm -rf $(I.TARGETS) $(S.TARGETS) $(D.TARGETS) $(B.TARGETS)

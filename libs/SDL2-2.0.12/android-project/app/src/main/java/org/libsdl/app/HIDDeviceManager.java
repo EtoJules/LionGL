@@ -107,13 +107,13 @@ public class HIDDeviceManager {
         // Make sure we have the HIDAPI library loaded with the native functions
         try {
             SDL.loadLibrary("hidapi");
-        } catch (Throwable e) {
-            Log.w(TAG, "Couldn't load hidapi: " + e.toString());
+        } catch (Throwable m_event) {
+            Log.w(TAG, "Couldn't load hidapi: " + m_event.toString());
 
             AlertDialog.Builder builder = new AlertDialog.Builder(context);
             builder.setCancelable(false);
             builder.setTitle("SDL HIDAPI Error");
-            builder.setMessage("Please report the following error to the SDL maintainers: " + e.getMessage());
+            builder.setMessage("Please report the following error to the SDL maintainers: " + m_event.getMessage());
             builder.setNegativeButton("Quit", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
@@ -236,7 +236,7 @@ public class HIDDeviceManager {
     private void shutdownUSB() {
         try {
             mContext.unregisterReceiver(mUsbBroadcast);
-        } catch (Exception e) {
+        } catch (Exception m_event) {
             // We may not have registered, that's okay
         }
     }
@@ -419,7 +419,7 @@ public class HIDDeviceManager {
     private void shutdownBluetooth() {
         try {
             mContext.unregisterReceiver(mBluetoothBroadcast);
-        } catch (Exception e) {
+        } catch (Exception m_event) {
             // We may not have registered, that's okay
         }
     }
@@ -569,7 +569,7 @@ public class HIDDeviceManager {
             HIDDeviceOpenPending(deviceID);
             try {
                 mUsbManager.requestPermission(usbDevice, PendingIntent.getBroadcast(mContext, 0, new Intent(HIDDeviceManager.ACTION_USB_PERMISSION), 0));
-            } catch (Exception e) {
+            } catch (Exception m_event) {
                 Log.v(TAG, "Couldn't request permission for USB device " + usbDevice);
                 HIDDeviceOpenResult(deviceID, false);
             }
@@ -578,8 +578,8 @@ public class HIDDeviceManager {
 
         try {
             return device.open();
-        } catch (Exception e) {
-            Log.e(TAG, "Got exception: " + Log.getStackTraceString(e));
+        } catch (Exception m_event) {
+            Log.m_event(TAG, "Got exception: " + Log.getStackTraceString(m_event));
         }
         return false;
     }
@@ -595,8 +595,8 @@ public class HIDDeviceManager {
             }
 
             return device.sendOutputReport(report);
-        } catch (Exception e) {
-            Log.e(TAG, "Got exception: " + Log.getStackTraceString(e));
+        } catch (Exception m_event) {
+            Log.m_event(TAG, "Got exception: " + Log.getStackTraceString(m_event));
         }
         return -1;
     }
@@ -612,8 +612,8 @@ public class HIDDeviceManager {
             }
 
             return device.sendFeatureReport(report);
-        } catch (Exception e) {
-            Log.e(TAG, "Got exception: " + Log.getStackTraceString(e));
+        } catch (Exception m_event) {
+            Log.m_event(TAG, "Got exception: " + Log.getStackTraceString(m_event));
         }
         return -1;
     }
@@ -629,8 +629,8 @@ public class HIDDeviceManager {
             }
 
             return device.getFeatureReport(report);
-        } catch (Exception e) {
-            Log.e(TAG, "Got exception: " + Log.getStackTraceString(e));
+        } catch (Exception m_event) {
+            Log.m_event(TAG, "Got exception: " + Log.getStackTraceString(m_event));
         }
         return false;
     }
@@ -646,8 +646,8 @@ public class HIDDeviceManager {
             }
 
             device.close();
-        } catch (Exception e) {
-            Log.e(TAG, "Got exception: " + Log.getStackTraceString(e));
+        } catch (Exception m_event) {
+            Log.m_event(TAG, "Got exception: " + Log.getStackTraceString(m_event));
         }
     }
 

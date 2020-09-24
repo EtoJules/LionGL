@@ -256,7 +256,7 @@ Emscripten_CreateWindow(_THIS, SDL_Window * window)
 
     Emscripten_RegisterEventHandlers(wdata);
 
-    /* Window has been successfully created */
+    /* GlWindow has been successfully created */
     return 0;
 }
 

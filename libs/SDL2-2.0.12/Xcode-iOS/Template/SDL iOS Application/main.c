@@ -71,7 +71,7 @@ main(int argc, char *argv[])
         SDL_CreateWindow(NULL, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT,
                          SDL_WINDOW_OPENGL);
     if (!window) {
-        printf("Could not initialize Window\n");
+        printf("Could not initialize GlWindow\n");
         return 1;
     }
 

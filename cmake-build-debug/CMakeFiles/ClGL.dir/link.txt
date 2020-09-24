@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/ClGL.dir/main.cpp.o  -o ClGL  -lSDL2 src/libSources.a lib/libGLEWd.a /usr/lib/x86_64-linux-gnu/libGL.so /usr/lib/x86_64-linux-gnu/libGLU.so 
+/usr/bin/c++  -g   CMakeFiles/ClGL.dir/main.cpp.o  -o ClGL  src/SandboxExamples/libSandboxExamples.a src/Core/libCore.a -lSDL2 lib/libGLEWd.a src/libSources.a /usr/lib/x86_64-linux-gnu/libGL.so /usr/lib/x86_64-linux-gnu/libGLU.so 

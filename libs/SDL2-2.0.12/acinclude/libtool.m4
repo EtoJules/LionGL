@@ -562,7 +562,7 @@ for var in lt_decl_all_varnames([[ \
 ]], lt_decl_dquote_varnames); do
     case \`eval \\\\\$ECHO \\\\""\\\\\$\$var"\\\\"\` in
     *[[\\\\\\\`\\"\\\$]]*)
-      eval "lt_\$var=\\\\\\"\\\`\\\$ECHO \\"\\\$\$var\\" | \\\$SED -e \\"\\\$double_quote_subst\\" -e \\"\\\$sed_quote_subst\\" -e \\"\\\$delay_variable_subst\\"\\\`\\\\\\""
+      eval "lt_\$var=\\\\\\"\\\`\\\$ECHO \\"\\\$\$var\\" | \\\$SED -m_event \\"\\\$double_quote_subst\\" -m_event \\"\\\$sed_quote_subst\\" -m_event \\"\\\$delay_variable_subst\\"\\\`\\\\\\""
       ;;
     *)
       eval "lt_\$var=\\\\\\"\\\$\$var\\\\\\""
@@ -1107,7 +1107,7 @@ m4_defun([_LT_DARWIN_LINKER_FEATURES],
     _LT_TAGVAR(archive_cmds, $1)="\$CC -dynamiclib \$allow_undefined_flag -o \$lib \$libobjs \$deplibs \$compiler_flags -install_name \$rpath/\$soname \$verstring $_lt_dar_single_mod${_lt_dsymutil}"
     _LT_TAGVAR(module_cmds, $1)="\$CC \$allow_undefined_flag -o \$lib -bundle \$libobjs \$deplibs \$compiler_flags${_lt_dsymutil}"
     _LT_TAGVAR(archive_expsym_cmds, $1)="sed 's,^,_,' < \$export_symbols > \$output_objdir/\${libname}-symbols.expsym~\$CC -dynamiclib \$allow_undefined_flag -o \$lib \$libobjs \$deplibs \$compiler_flags -install_name \$rpath/\$soname \$verstring ${_lt_dar_single_mod}${_lt_dar_export_syms}${_lt_dsymutil}"
-    _LT_TAGVAR(module_expsym_cmds, $1)="sed -e 's,^,_,' < \$export_symbols > \$output_objdir/\${libname}-symbols.expsym~\$CC \$allow_undefined_flag -o \$lib -bundle \$libobjs \$deplibs \$compiler_flags${_lt_dar_export_syms}${_lt_dsymutil}"
+    _LT_TAGVAR(module_expsym_cmds, $1)="sed -m_event 's,^,_,' < \$export_symbols > \$output_objdir/\${libname}-symbols.expsym~\$CC \$allow_undefined_flag -o \$lib -bundle \$libobjs \$deplibs \$compiler_flags${_lt_dar_export_syms}${_lt_dsymutil}"
     m4_if([$1], [CXX],
 [   if test "$lt_cv_apple_cc_single_mod" != "yes"; then
       _LT_TAGVAR(archive_cmds, $1)="\$CC -r -keep_private_externs -nostdlib -o \${lib}-master.o \$libobjs~\$CC -dynamiclib \$allow_undefined_flag -o \$lib \${lib}-master.o \$deplibs \$compiler_flags -install_name \$rpath/\$soname \$verstring${_lt_dsymutil}"
@@ -1143,10 +1143,10 @@ else
 	      p
 	  }
       }]'
-  _LT_TAGVAR([lt_cv_aix_libpath_], [$1])=`dump -H conftest$ac_exeext 2>/dev/null | $SED -n -e "$lt_aix_libpath_sed"`
+  _LT_TAGVAR([lt_cv_aix_libpath_], [$1])=`dump -H conftest$ac_exeext 2>/dev/null | $SED -n -m_event "$lt_aix_libpath_sed"`
   # Check for a 64-bit object if we didn't find anything.
   if test -z "$_LT_TAGVAR([lt_cv_aix_libpath_], [$1])"; then
-    _LT_TAGVAR([lt_cv_aix_libpath_], [$1])=`dump -HX64 conftest$ac_exeext 2>/dev/null | $SED -n -e "$lt_aix_libpath_sed"`
+    _LT_TAGVAR([lt_cv_aix_libpath_], [$1])=`dump -HX64 conftest$ac_exeext 2>/dev/null | $SED -n -m_event "$lt_aix_libpath_sed"`
   fi],[])
   if test -z "$_LT_TAGVAR([lt_cv_aix_libpath_], [$1])"; then
     _LT_TAGVAR([lt_cv_aix_libpath_], [$1])="/usr/lib:/lib"
@@ -1241,7 +1241,7 @@ case ${with_sysroot} in #(
    fi
    ;; #(
  /*)
-   lt_sysroot=`echo "$with_sysroot" | sed -e "$sed_quote_subst"`
+   lt_sysroot=`echo "$with_sysroot" | sed -m_event "$sed_quote_subst"`
    ;; #(
  no|'')
    ;; #(
@@ -1518,9 +1518,9 @@ AC_CACHE_CHECK([$1], [$2],
    # with a dollar sign (not a hyphen), so the echo should work correctly.
    # The option is referenced via a variable to avoid confusing sed.
    lt_compile=`echo "$ac_compile" | $SED \
-   -e 's:.*FLAGS}\{0,1\} :&$lt_compiler_flag :; t' \
-   -e 's: [[^ ]]*conftest\.: $lt_compiler_flag&:; t' \
-   -e 's:$: $lt_compiler_flag:'`
+   -m_event 's:.*FLAGS}\{0,1\} :&$lt_compiler_flag :; t' \
+   -m_event 's: [[^ ]]*conftest\.: $lt_compiler_flag&:; t' \
+   -m_event 's:$: $lt_compiler_flag:'`
    (eval echo "\"\$as_me:$LINENO: $lt_compile\"" >&AS_MESSAGE_LOG_FD)
    (eval "$lt_compile" 2>conftest.err)
    ac_status=$?
@@ -1991,9 +1991,9 @@ AC_CACHE_CHECK([if $compiler supports -c -o file.$ac_objext],
    # Note that $ac_compile itself does not contain backslashes and begins
    # with a dollar sign (not a hyphen), so the echo should work correctly.
    lt_compile=`echo "$ac_compile" | $SED \
-   -e 's:.*FLAGS}\{0,1\} :&$lt_compiler_flag :; t' \
-   -e 's: [[^ ]]*conftest\.: $lt_compiler_flag&:; t' \
-   -e 's:$: $lt_compiler_flag:'`
+   -m_event 's:.*FLAGS}\{0,1\} :&$lt_compiler_flag :; t' \
+   -m_event 's: [[^ ]]*conftest\.: $lt_compiler_flag&:; t' \
+   -m_event 's:$: $lt_compiler_flag:'`
    (eval echo "\"\$as_me:$LINENO: $lt_compile\"" >&AS_MESSAGE_LOG_FD)
    (eval "$lt_compile" 2>out/conftest.err)
    ac_status=$?
@@ -2175,11 +2175,11 @@ if test "$GCC" = yes; then
     mingw* | cegcc*) lt_sed_strip_eq="s,=\([[A-Za-z]]:\),\1,g" ;;
     *) lt_sed_strip_eq="s,=/,/,g" ;;
   esac
-  lt_search_path_spec=`$CC -print-search-dirs | awk $lt_awk_arg | $SED -e "s/^libraries://" -e $lt_sed_strip_eq`
+  lt_search_path_spec=`$CC -print-search-dirs | awk $lt_awk_arg | $SED -m_event "s/^libraries://" -m_event $lt_sed_strip_eq`
   case $lt_search_path_spec in
   *\;*)
     # if the path contains ";" then we assume it to be the separator
-    # otherwise default to the standard path separator (i.e. ":") - it is
+    # otherwise default to the standard path separator (i.m_event. ":") - it is
     # assumed that no part of a normal pathname contains ";" but that should
     # okay in the real world where ";" in dirpaths is itself problematic.
     lt_search_path_spec=`$ECHO "$lt_search_path_spec" | $SED 's/;/ /g'`
@@ -2374,19 +2374,19 @@ cygwin* | mingw* | pw32* | cegcc*)
     case $host_os in
     cygwin*)
       # Cygwin DLLs use 'cyg' prefix rather than 'lib'
-      #soname_spec='`echo ${libname} | sed -e 's/^lib/cyg/'``echo ${release} | $SED -e 's/[[.]]/-/g'`${versuffix}${shared_ext}'
-      soname_spec='`echo ${libname} | sed -e 's/^lib//'`${shared_ext}'
+      #soname_spec='`echo ${libname} | sed -m_event 's/^lib/cyg/'``echo ${release} | $SED -m_event 's/[[.]]/-/g'`${versuffix}${shared_ext}'
+      soname_spec='`echo ${libname} | sed -m_event 's/^lib//'`${shared_ext}'
 m4_if([$1], [],[
       sys_lib_search_path_spec="$sys_lib_search_path_spec /usr/lib/w32api"])
       ;;
     mingw* | cegcc*)
       # MinGW DLLs use traditional 'lib' prefix
-      #soname_spec='${libname}`echo ${release} | $SED -e 's/[[.]]/-/g'`${versuffix}${shared_ext}'
-      soname_spec='`echo ${libname} | $SED -e 's/^lib//'`${shared_ext}'
+      #soname_spec='${libname}`echo ${release} | $SED -m_event 's/[[.]]/-/g'`${versuffix}${shared_ext}'
+      soname_spec='`echo ${libname} | $SED -m_event 's/^lib//'`${shared_ext}'
       ;;
     pw32*)
       # pw32 DLLs use 'pw' prefix rather than 'lib'
-      library_names_spec='`echo ${libname} | sed -e 's/^lib/pw/'``echo ${release} | $SED -e 's/[[.]]/-/g'`${versuffix}${shared_ext}'
+      library_names_spec='`echo ${libname} | sed -m_event 's/^lib/pw/'``echo ${release} | $SED -m_event 's/[[.]]/-/g'`${versuffix}${shared_ext}'
       ;;
     esac
     dynamic_linker='Win32 ld.exe'
@@ -2395,7 +2395,7 @@ m4_if([$1], [],[
   *,cl*)
     # Native MSVC
     libname_spec='$name'
-    soname_spec='${libname}`echo ${release} | $SED -e 's/[[.]]/-/g'`${versuffix}${shared_ext}'
+    soname_spec='${libname}`echo ${release} | $SED -m_event 's/[[.]]/-/g'`${versuffix}${shared_ext}'
     library_names_spec='${libname}.dll.lib'
 
     case $build_os in
@@ -2412,7 +2412,7 @@ m4_if([$1], [],[
       done
       IFS=$lt_save_ifs
       # Convert to MSYS style.
-      sys_lib_search_path_spec=`$ECHO "$sys_lib_search_path_spec" | sed -e 's|\\\\|/|g' -e 's| \\([[a-zA-Z]]\\):| /\\1|g' -e 's|^ ||'`
+      sys_lib_search_path_spec=`$ECHO "$sys_lib_search_path_spec" | sed -m_event 's|\\\\|/|g' -m_event 's| \\([[a-zA-Z]]\\):| /\\1|g' -m_event 's|^ ||'`
       ;;
     cygwin*)
       # Convert to unix form, then to dos form, then back to unix form
@@ -2420,18 +2420,18 @@ m4_if([$1], [],[
       # like /cygdrive/c/PROGRA~1:/cygdr...
       sys_lib_search_path_spec=`cygpath --path --unix "$LIB"`
       sys_lib_search_path_spec=`cygpath --path --dos "$sys_lib_search_path_spec" 2>/dev/null`
-      sys_lib_search_path_spec=`cygpath --path --unix "$sys_lib_search_path_spec" | $SED -e "s/$PATH_SEPARATOR/ /g"`
+      sys_lib_search_path_spec=`cygpath --path --unix "$sys_lib_search_path_spec" | $SED -m_event "s/$PATH_SEPARATOR/ /g"`
       ;;
     *)
       sys_lib_search_path_spec="$LIB"
       if $ECHO "$sys_lib_search_path_spec" | [$GREP ';[c-zC-Z]:/' >/dev/null]; then
         # It is most probably a Windows format PATH.
-        sys_lib_search_path_spec=`$ECHO "$sys_lib_search_path_spec" | $SED -e 's/;/ /g'`
+        sys_lib_search_path_spec=`$ECHO "$sys_lib_search_path_spec" | $SED -m_event 's/;/ /g'`
       else
-        sys_lib_search_path_spec=`$ECHO "$sys_lib_search_path_spec" | $SED -e "s/$PATH_SEPARATOR/ /g"`
+        sys_lib_search_path_spec=`$ECHO "$sys_lib_search_path_spec" | $SED -m_event "s/$PATH_SEPARATOR/ /g"`
       fi
       # FIXME: find the short name or the path components, as spaces are
-      # common. (e.g. "Program Files" -> "PROGRA~1")
+      # common. (m_event.g. "Program Files" -> "PROGRA~1")
       ;;
     esac
 
@@ -2450,7 +2450,7 @@ m4_if([$1], [],[
 
   *)
     # Assume MSVC wrapper
-    library_names_spec='${libname}`echo ${release} | $SED -e 's/[[.]]/-/g'`${versuffix}${shared_ext} $libname.lib'
+    library_names_spec='${libname}`echo ${release} | $SED -m_event 's/[[.]]/-/g'`${versuffix}${shared_ext} $libname.lib'
     dynamic_linker='Win32 ld.exe'
     ;;
   esac
@@ -2685,7 +2685,7 @@ linux* | k*bsd*-gnu | kopensolaris*-gnu)
 
   # Append ld.so.conf contents to the search path
   if test -f /etc/ld.so.conf; then
-    lt_ld_extra=`awk '/^include / { system(sprintf("cd /etc; cat %s 2>/dev/null", \[$]2)); skip = 1; } { if (!skip) print \[$]0; skip = 0; }' < /etc/ld.so.conf | $SED -e 's/#.*//;/^[	 ]*hwcap[	 ]/d;s/[:,	]/ /g;s/=[^=]*$//;s/=[^= ]* / /g;s/"//g;/^$/d' | tr '\n' ' '`
+    lt_ld_extra=`awk '/^include / { system(sprintf("cd /etc; cat %s 2>/dev/null", \[$]2)); skip = 1; } { if (!skip) print \[$]0; skip = 0; }' < /etc/ld.so.conf | $SED -m_event 's/#.*//;/^[	 ]*hwcap[	 ]/d;s/[:,	]/ /g;s/=[^=]*$//;s/=[^= ]* / /g;s/"//g;/^$/d' | tr '\n' ' '`
     sys_lib_dlsearch_path_spec="/lib /usr/lib $lt_ld_extra"
   fi
 
@@ -3388,7 +3388,7 @@ if test "$build" = "$host"; then
     if ( shopt | grep nocaseglob ) >/dev/null 2>&1; then
       want_nocaseglob=yes
     else
-      file_magic_glob=`echo aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ | $SED -e "s/\(..\)/s\/[[\1]]\/[[\1]]\/g;/g"`
+      file_magic_glob=`echo aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ | $SED -m_event "s/\(..\)/s\/[[\1]]\/[[\1]]\/g;/g"`
     fi
     ;;
   esac
@@ -3692,11 +3692,11 @@ esac
 # Transform an extracted symbol line into a proper C declaration.
 # Some systems (esp. on ia64) link data and code symbols differently,
 # so use this general approach.
-lt_cv_sys_global_symbol_to_cdecl="sed -n -e 's/^T .* \(.*\)$/extern int \1();/p' -e 's/^$symcode* .* \(.*\)$/extern char \1;/p'"
+lt_cv_sys_global_symbol_to_cdecl="sed -n -m_event 's/^T .* \(.*\)$/extern int \1();/p' -m_event 's/^$symcode* .* \(.*\)$/extern char \1;/p'"
 
 # Transform an extracted symbol line into symbol name and symbol address
-lt_cv_sys_global_symbol_to_c_name_address="sed -n -e 's/^: \([[^ ]]*\)[[ ]]*$/  {\\\"\1\\\", (void *) 0},/p' -e 's/^$symcode* \([[^ ]]*\) \([[^ ]]*\)$/  {\"\2\", (void *) \&\2},/p'"
-lt_cv_sys_global_symbol_to_c_name_address_lib_prefix="sed -n -e 's/^: \([[^ ]]*\)[[ ]]*$/  {\\\"\1\\\", (void *) 0},/p' -e 's/^$symcode* \([[^ ]]*\) \(lib[[^ ]]*\)$/  {\"\2\", (void *) \&\2},/p' -e 's/^$symcode* \([[^ ]]*\) \([[^ ]]*\)$/  {\"lib\2\", (void *) \&\2},/p'"
+lt_cv_sys_global_symbol_to_c_name_address="sed -n -m_event 's/^: \([[^ ]]*\)[[ ]]*$/  {\\\"\1\\\", (void *) 0},/p' -m_event 's/^$symcode* \([[^ ]]*\) \([[^ ]]*\)$/  {\"\2\", (void *) \&\2},/p'"
+lt_cv_sys_global_symbol_to_c_name_address_lib_prefix="sed -n -m_event 's/^: \([[^ ]]*\)[[ ]]*$/  {\\\"\1\\\", (void *) 0},/p' -m_event 's/^$symcode* \([[^ ]]*\) \(lib[[^ ]]*\)$/  {\"\2\", (void *) \&\2},/p' -m_event 's/^$symcode* \([[^ ]]*\) \([[^ ]]*\)$/  {\"lib\2\", (void *) \&\2},/p'"
 
 # Handle CRLF in mingw tool chain
 opt_cr=
@@ -3731,7 +3731,7 @@ for ac_symprfx in "" "_"; do
 "     s[1]~prfx {split(s[1],t,\"@\"); print t[1], substr(t[1],length(prfx))}"\
 "     ' prfx=^$ac_symprfx]"
   else
-    lt_cv_sys_global_symbol_pipe="sed -n -e 's/^.*[[	 ]]\($symcode$symcode*\)[[	 ]][[	 ]]*$ac_symprfx$sympat$opt_cr$/$symxfrm/p'"
+    lt_cv_sys_global_symbol_pipe="sed -n -m_event 's/^.*[[	 ]]\($symcode$symcode*\)[[	 ]][[	 ]]*$ac_symprfx$sympat$opt_cr$/$symxfrm/p'"
   fi
   lt_cv_sys_global_symbol_pipe="$lt_cv_sys_global_symbol_pipe | sed '/ __gnu_lto/d'"
 
@@ -4589,7 +4589,7 @@ m4_if([$1], [CXX], [
       _LT_TAGVAR(exclude_expsyms, $1)='_NULL_IMPORT_DESCRIPTOR|_IMPORT_DESCRIPTOR_.*'
       ;;
     *)
-      _LT_TAGVAR(export_symbols_cmds, $1)='$NM $libobjs $convenience | $global_symbol_pipe | $SED -e '\''/^[[BCDGRS]][[ ]]/s/.*[[ ]]\([[^ ]]*\)/\1 DATA/;s/^.*[[ ]]__nm__\([[^ ]]*\)[[ ]][[^ ]]*/\1 DATA/;/^I[[ ]]/d;/^[[AITW]][[ ]]/s/.* //'\'' | sort | uniq > $export_symbols'
+      _LT_TAGVAR(export_symbols_cmds, $1)='$NM $libobjs $convenience | $global_symbol_pipe | $SED -m_event '\''/^[[BCDGRS]][[ ]]/s/.*[[ ]]\([[^ ]]*\)/\1 DATA/;s/^.*[[ ]]__nm__\([[^ ]]*\)[[ ]][[^ ]]*/\1 DATA/;/^I[[ ]]/d;/^[[AITW]][[ ]]/s/.* //'\'' | sort | uniq > $export_symbols'
       _LT_TAGVAR(exclude_expsyms, $1)=['[_]+GLOBAL_OFFSET_TABLE_|[_]+GLOBAL__[FID]_.*|[_]+head_[A-Za-z0-9_]+_dll|[A-Za-z0-9_]+_dll_iname']
       ;;
     esac
@@ -4764,7 +4764,7 @@ _LT_EOF
       _LT_TAGVAR(allow_undefined_flag, $1)=unsupported
       _LT_TAGVAR(always_export_symbols, $1)=no
       _LT_TAGVAR(enable_shared_with_static_runtimes, $1)=yes
-      _LT_TAGVAR(export_symbols_cmds, $1)='$NM $libobjs $convenience | $global_symbol_pipe | $SED -e '\''/^[[BCDGRS]][[ ]]/s/.*[[ ]]\([[^ ]]*\)/\1 DATA/;s/^.*[[ ]]__nm__\([[^ ]]*\)[[ ]][[^ ]]*/\1 DATA/;/^I[[ ]]/d;/^[[AITW]][[ ]]/s/.* //'\'' | sort | uniq > $export_symbols'
+      _LT_TAGVAR(export_symbols_cmds, $1)='$NM $libobjs $convenience | $global_symbol_pipe | $SED -m_event '\''/^[[BCDGRS]][[ ]]/s/.*[[ ]]\([[^ ]]*\)/\1 DATA/;s/^.*[[ ]]__nm__\([[^ ]]*\)[[ ]][[^ ]]*/\1 DATA/;/^I[[ ]]/d;/^[[AITW]][[ ]]/s/.* //'\'' | sort | uniq > $export_symbols'
       _LT_TAGVAR(exclude_expsyms, $1)=['[_]+GLOBAL_OFFSET_TABLE_|[_]+GLOBAL__[FID]_.*|[_]+head_[A-Za-z0-9_]+_dll|[A-Za-z0-9_]+_dll_iname']
 
       if $LD --help 2>&1 | $GREP 'auto-import' > /dev/null; then
@@ -4853,7 +4853,7 @@ _LT_EOF
 
         if test "x$supports_anon_versioning" = xyes; then
           _LT_TAGVAR(archive_expsym_cmds, $1)='echo "{ global:" > $output_objdir/$libname.ver~
-	    cat $export_symbols | sed -e "s/\(.*\)/\1;/" >> $output_objdir/$libname.ver~
+	    cat $export_symbols | sed -m_event "s/\(.*\)/\1;/" >> $output_objdir/$libname.ver~
 	    echo "local: *; };" >> $output_objdir/$libname.ver~
 	    $CC '"$tmp_sharedflag""$tmp_addflag"' $libobjs $deplibs $compiler_flags ${wl}-soname $wl$soname ${wl}-version-script ${wl}$output_objdir/$libname.ver -o $lib'
         fi
@@ -4866,7 +4866,7 @@ _LT_EOF
 	  _LT_TAGVAR(archive_cmds, $1)='$LD -shared $libobjs $deplibs $linker_flags -soname $soname -o $lib'
 	  if test "x$supports_anon_versioning" = xyes; then
 	    _LT_TAGVAR(archive_expsym_cmds, $1)='echo "{ global:" > $output_objdir/$libname.ver~
-	      cat $export_symbols | sed -e "s/\(.*\)/\1;/" >> $output_objdir/$libname.ver~
+	      cat $export_symbols | sed -m_event "s/\(.*\)/\1;/" >> $output_objdir/$libname.ver~
 	      echo "local: *; };" >> $output_objdir/$libname.ver~
 	      $LD -shared $libobjs $deplibs $linker_flags -soname $soname -version-script $output_objdir/$libname.ver -o $lib'
 	  fi
@@ -5148,9 +5148,9 @@ _LT_EOF
 	# FIXME: Setting linknames here is a bad hack.
 	_LT_TAGVAR(archive_cmds, $1)='$CC -o $output_objdir/$soname $libobjs $compiler_flags $deplibs -Wl,-dll~linknames='
 	_LT_TAGVAR(archive_expsym_cmds, $1)='if test "x`$SED 1q $export_symbols`" = xEXPORTS; then
-	    sed -n -e 's/\\\\\\\(.*\\\\\\\)/-link\\\ -EXPORT:\\\\\\\1/' -e '1\\\!p' < $export_symbols > $output_objdir/$soname.exp;
+	    sed -n -m_event 's/\\\\\\\(.*\\\\\\\)/-link\\\ -EXPORT:\\\\\\\1/' -m_event '1\\\!p' < $export_symbols > $output_objdir/$soname.exp;
 	  else
-	    sed -e 's/\\\\\\\(.*\\\\\\\)/-link\\\ -EXPORT:\\\\\\\1/' < $export_symbols > $output_objdir/$soname.exp;
+	    sed -m_event 's/\\\\\\\(.*\\\\\\\)/-link\\\ -EXPORT:\\\\\\\1/' < $export_symbols > $output_objdir/$soname.exp;
 	  fi~
 	  $CC -o $tool_output_objdir$soname $libobjs $compiler_flags $deplibs "@$tool_output_objdir$soname.exp" -Wl,-DLL,-IMPLIB:"$tool_output_objdir$libname.dll.lib"~
 	  linknames='
@@ -5158,7 +5158,7 @@ _LT_EOF
 	# _LT_TAGVAR(old_archive_from_new_cmds, $1)='true'
 	_LT_TAGVAR(enable_shared_with_static_runtimes, $1)=yes
 	_LT_TAGVAR(exclude_expsyms, $1)='_NULL_IMPORT_DESCRIPTOR|_IMPORT_DESCRIPTOR_.*'
-	_LT_TAGVAR(export_symbols_cmds, $1)='$NM $libobjs $convenience | $global_symbol_pipe | $SED -e '\''/^[[BCDGRS]][[ ]]/s/.*[[ ]]\([[^ ]]*\)/\1,DATA/'\'' | $SED -e '\''/^[[AITW]][[ ]]/s/.*[[ ]]//'\'' | sort | uniq > $export_symbols'
+	_LT_TAGVAR(export_symbols_cmds, $1)='$NM $libobjs $convenience | $global_symbol_pipe | $SED -m_event '\''/^[[BCDGRS]][[ ]]/s/.*[[ ]]\([[^ ]]*\)/\1,DATA/'\'' | $SED -m_event '\''/^[[AITW]][[ ]]/s/.*[[ ]]//'\'' | sort | uniq > $export_symbols'
 	# Don't use ranlib
 	_LT_TAGVAR(old_postinstall_cmds, $1)='chmod 644 $oldlib'
 	_LT_TAGVAR(postlink_cmds, $1)='lt_outputfile="@OUTPUT@"~
@@ -5451,20 +5451,20 @@ _LT_EOF
       if test "$GCC" = yes; then
 	wlarc='${wl}'
 	_LT_TAGVAR(archive_cmds, $1)='$CC -shared $pic_flag ${wl}-z ${wl}text ${wl}-h ${wl}$soname -o $lib $libobjs $deplibs $compiler_flags'
-	_LT_TAGVAR(archive_expsym_cmds, $1)='echo "{ global:" > $lib.exp~cat $export_symbols | $SED -e "s/\(.*\)/\1;/" >> $lib.exp~echo "local: *; };" >> $lib.exp~
+	_LT_TAGVAR(archive_expsym_cmds, $1)='echo "{ global:" > $lib.exp~cat $export_symbols | $SED -m_event "s/\(.*\)/\1;/" >> $lib.exp~echo "local: *; };" >> $lib.exp~
 	  $CC -shared $pic_flag ${wl}-z ${wl}text ${wl}-M ${wl}$lib.exp ${wl}-h ${wl}$soname -o $lib $libobjs $deplibs $compiler_flags~$RM $lib.exp'
       else
 	case `$CC -V 2>&1` in
 	*"Compilers 5.0"*)
 	  wlarc=''
 	  _LT_TAGVAR(archive_cmds, $1)='$LD -G${allow_undefined_flag} -h $soname -o $lib $libobjs $deplibs $linker_flags'
-	  _LT_TAGVAR(archive_expsym_cmds, $1)='echo "{ global:" > $lib.exp~cat $export_symbols | $SED -e "s/\(.*\)/\1;/" >> $lib.exp~echo "local: *; };" >> $lib.exp~
+	  _LT_TAGVAR(archive_expsym_cmds, $1)='echo "{ global:" > $lib.exp~cat $export_symbols | $SED -m_event "s/\(.*\)/\1;/" >> $lib.exp~echo "local: *; };" >> $lib.exp~
 	  $LD -G${allow_undefined_flag} -M $lib.exp -h $soname -o $lib $libobjs $deplibs $linker_flags~$RM $lib.exp'
 	  ;;
 	*)
 	  wlarc='${wl}'
 	  _LT_TAGVAR(archive_cmds, $1)='$CC -G${allow_undefined_flag} -h $soname -o $lib $libobjs $deplibs $compiler_flags'
-	  _LT_TAGVAR(archive_expsym_cmds, $1)='echo "{ global:" > $lib.exp~cat $export_symbols | $SED -e "s/\(.*\)/\1;/" >> $lib.exp~echo "local: *; };" >> $lib.exp~
+	  _LT_TAGVAR(archive_expsym_cmds, $1)='echo "{ global:" > $lib.exp~cat $export_symbols | $SED -m_event "s/\(.*\)/\1;/" >> $lib.exp~echo "local: *; };" >> $lib.exp~
 	  $CC -G${allow_undefined_flag} -M $lib.exp -h $soname -o $lib $libobjs $deplibs $compiler_flags~$RM $lib.exp'
 	  ;;
 	esac
@@ -5704,7 +5704,7 @@ _LT_TAGDECL([], [hardcode_direct], [0],
 _LT_TAGDECL([], [hardcode_direct_absolute], [0],
     [Set to "yes" if using DIR/libNAME${shared_ext} during linking hardcodes
     DIR into the resulting binary and the resulting library dependency is
-    "absolute", i.e impossible to change by setting ${shlibpath_var} if the
+    "absolute", i.m_event impossible to change by setting ${shlibpath_var} if the
     library is relocated])
 _LT_TAGDECL([], [hardcode_minus_L], [0],
     [Set to "yes" if using the -LDIR flag during linking hardcodes DIR
@@ -6147,9 +6147,9 @@ if test "$_lt_caught_CXX_error" != yes; then
 	  # FIXME: Setting linknames here is a bad hack.
 	  _LT_TAGVAR(archive_cmds, $1)='$CC -o $output_objdir/$soname $libobjs $compiler_flags $deplibs -Wl,-dll~linknames='
 	  _LT_TAGVAR(archive_expsym_cmds, $1)='if test "x`$SED 1q $export_symbols`" = xEXPORTS; then
-	      $SED -n -e 's/\\\\\\\(.*\\\\\\\)/-link\\\ -EXPORT:\\\\\\\1/' -e '1\\\!p' < $export_symbols > $output_objdir/$soname.exp;
+	      $SED -n -m_event 's/\\\\\\\(.*\\\\\\\)/-link\\\ -EXPORT:\\\\\\\1/' -m_event '1\\\!p' < $export_symbols > $output_objdir/$soname.exp;
 	    else
-	      $SED -e 's/\\\\\\\(.*\\\\\\\)/-link\\\ -EXPORT:\\\\\\\1/' < $export_symbols > $output_objdir/$soname.exp;
+	      $SED -m_event 's/\\\\\\\(.*\\\\\\\)/-link\\\ -EXPORT:\\\\\\\1/' < $export_symbols > $output_objdir/$soname.exp;
 	    fi~
 	    $CC -o $tool_output_objdir$soname $libobjs $compiler_flags $deplibs "@$tool_output_objdir$soname.exp" -Wl,-DLL,-IMPLIB:"$tool_output_objdir$libname.dll.lib"~
 	    linknames='
@@ -6410,8 +6410,8 @@ if test "$_lt_caught_CXX_error" != yes; then
 	    # KCC will only create a shared library if the output file
 	    # ends with ".so" (or ".sl" for HP-UX), so rename the library
 	    # to its proper name (with version) after linking.
-	    _LT_TAGVAR(archive_cmds, $1)='tempext=`echo $shared_ext | $SED -e '\''s/\([[^()0-9A-Za-z{}]]\)/\\\\\1/g'\''`; templib=`echo $lib | $SED -e "s/\${tempext}\..*/.so/"`; $CC $predep_objects $libobjs $deplibs $postdep_objects $compiler_flags --soname $soname -o \$templib; mv \$templib $lib'
-	    _LT_TAGVAR(archive_expsym_cmds, $1)='tempext=`echo $shared_ext | $SED -e '\''s/\([[^()0-9A-Za-z{}]]\)/\\\\\1/g'\''`; templib=`echo $lib | $SED -e "s/\${tempext}\..*/.so/"`; $CC $predep_objects $libobjs $deplibs $postdep_objects $compiler_flags --soname $soname -o \$templib ${wl}-retain-symbols-file,$export_symbols; mv \$templib $lib'
+	    _LT_TAGVAR(archive_cmds, $1)='tempext=`echo $shared_ext | $SED -m_event '\''s/\([[^()0-9A-Za-z{}]]\)/\\\\\1/g'\''`; templib=`echo $lib | $SED -m_event "s/\${tempext}\..*/.so/"`; $CC $predep_objects $libobjs $deplibs $postdep_objects $compiler_flags --soname $soname -o \$templib; mv \$templib $lib'
+	    _LT_TAGVAR(archive_expsym_cmds, $1)='tempext=`echo $shared_ext | $SED -m_event '\''s/\([[^()0-9A-Za-z{}]]\)/\\\\\1/g'\''`; templib=`echo $lib | $SED -m_event "s/\${tempext}\..*/.so/"`; $CC $predep_objects $libobjs $deplibs $postdep_objects $compiler_flags --soname $soname -o \$templib ${wl}-retain-symbols-file,$export_symbols; mv \$templib $lib'
 	    # Commands to make compiler produce verbose output that lists
 	    # what "hidden" libraries, object files and flags are used when
 	    # linking a shared library.
@@ -6512,7 +6512,7 @@ if test "$_lt_caught_CXX_error" != yes; then
 	    _LT_TAGVAR(archive_cmds, $1)='$CC -qmkshrobj $libobjs $deplibs $compiler_flags ${wl}-soname $wl$soname -o $lib'
 	    if test "x$supports_anon_versioning" = xyes; then
 	      _LT_TAGVAR(archive_expsym_cmds, $1)='echo "{ global:" > $output_objdir/$libname.ver~
-		cat $export_symbols | sed -e "s/\(.*\)/\1;/" >> $output_objdir/$libname.ver~
+		cat $export_symbols | sed -m_event "s/\(.*\)/\1;/" >> $output_objdir/$libname.ver~
 		echo "local: *; };" >> $output_objdir/$libname.ver~
 		$CC -qmkshrobj $libobjs $deplibs $compiler_flags ${wl}-soname $wl$soname ${wl}-version-script ${wl}$output_objdir/$libname.ver -o $lib'
 	    fi
@@ -6576,7 +6576,7 @@ if test "$_lt_caught_CXX_error" != yes; then
 	  _LT_TAGVAR(hardcode_shlibpath_var, $1)=no
 	fi
 	# Workaround some broken pre-1.5 toolchains
-	output_verbose_link_cmd='$CC -shared $CFLAGS -v conftest.$objext 2>&1 | $GREP conftest.$objext | $SED -e "s:-lgcc -lc -lgcc::"'
+	output_verbose_link_cmd='$CC -shared $CFLAGS -v conftest.$objext 2>&1 | $GREP conftest.$objext | $SED -m_event "s:-lgcc -lc -lgcc::"'
 	;;
 
       *nto* | *qnx*)
@@ -6614,7 +6614,7 @@ if test "$_lt_caught_CXX_error" != yes; then
 	    # KCC will only create a shared library if the output file
 	    # ends with ".so" (or ".sl" for HP-UX), so rename the library
 	    # to its proper name (with version) after linking.
-	    _LT_TAGVAR(archive_cmds, $1)='tempext=`echo $shared_ext | $SED -e '\''s/\([[^()0-9A-Za-z{}]]\)/\\\\\1/g'\''`; templib=`echo "$lib" | $SED -e "s/\${tempext}\..*/.so/"`; $CC $predep_objects $libobjs $deplibs $postdep_objects $compiler_flags --soname $soname -o \$templib; mv \$templib $lib'
+	    _LT_TAGVAR(archive_cmds, $1)='tempext=`echo $shared_ext | $SED -m_event '\''s/\([[^()0-9A-Za-z{}]]\)/\\\\\1/g'\''`; templib=`echo "$lib" | $SED -m_event "s/\${tempext}\..*/.so/"`; $CC $predep_objects $libobjs $deplibs $postdep_objects $compiler_flags --soname $soname -o \$templib; mv \$templib $lib'
 
 	    _LT_TAGVAR(hardcode_libdir_flag_spec, $1)='${wl}-rpath,$libdir'
 	    _LT_TAGVAR(hardcode_libdir_separator, $1)=:
@@ -6720,7 +6720,7 @@ if test "$_lt_caught_CXX_error" != yes; then
             _LT_TAGVAR(archive_cmds_need_lc,$1)=yes
 	    _LT_TAGVAR(no_undefined_flag, $1)=' -zdefs'
 	    _LT_TAGVAR(archive_cmds, $1)='$CC -G${allow_undefined_flag}  -h$soname -o $lib $predep_objects $libobjs $deplibs $postdep_objects $compiler_flags'
-	    _LT_TAGVAR(archive_expsym_cmds, $1)='echo "{ global:" > $lib.exp~cat $export_symbols | $SED -e "s/\(.*\)/\1;/" >> $lib.exp~echo "local: *; };" >> $lib.exp~
+	    _LT_TAGVAR(archive_expsym_cmds, $1)='echo "{ global:" > $lib.exp~cat $export_symbols | $SED -m_event "s/\(.*\)/\1;/" >> $lib.exp~echo "local: *; };" >> $lib.exp~
 	      $CC -G${allow_undefined_flag} ${wl}-M ${wl}$lib.exp -h$soname -o $lib $predep_objects $libobjs $deplibs $postdep_objects $compiler_flags~$RM $lib.exp'
 
 	    _LT_TAGVAR(hardcode_libdir_flag_spec, $1)='-R$libdir'
@@ -6757,7 +6757,7 @@ if test "$_lt_caught_CXX_error" != yes; then
 	      _LT_TAGVAR(no_undefined_flag, $1)=' ${wl}-z ${wl}defs'
 	      if $CC --version | $GREP -v '^2\.7' > /dev/null; then
 	        _LT_TAGVAR(archive_cmds, $1)='$CC -shared $pic_flag -nostdlib $LDFLAGS $predep_objects $libobjs $deplibs $postdep_objects $compiler_flags ${wl}-h $wl$soname -o $lib'
-	        _LT_TAGVAR(archive_expsym_cmds, $1)='echo "{ global:" > $lib.exp~cat $export_symbols | $SED -e "s/\(.*\)/\1;/" >> $lib.exp~echo "local: *; };" >> $lib.exp~
+	        _LT_TAGVAR(archive_expsym_cmds, $1)='echo "{ global:" > $lib.exp~cat $export_symbols | $SED -m_event "s/\(.*\)/\1;/" >> $lib.exp~echo "local: *; };" >> $lib.exp~
 		  $CC -shared $pic_flag -nostdlib ${wl}-M $wl$lib.exp -o $lib $predep_objects $libobjs $deplibs $postdep_objects $compiler_flags~$RM $lib.exp'
 
 	        # Commands to make compiler produce verbose output that lists
@@ -6768,7 +6768,7 @@ if test "$_lt_caught_CXX_error" != yes; then
 	        # g++ 2.7 appears to require `-G' NOT `-shared' on this
 	        # platform.
 	        _LT_TAGVAR(archive_cmds, $1)='$CC -G -nostdlib $LDFLAGS $predep_objects $libobjs $deplibs $postdep_objects $compiler_flags ${wl}-h $wl$soname -o $lib'
-	        _LT_TAGVAR(archive_expsym_cmds, $1)='echo "{ global:" > $lib.exp~cat $export_symbols | $SED -e "s/\(.*\)/\1;/" >> $lib.exp~echo "local: *; };" >> $lib.exp~
+	        _LT_TAGVAR(archive_expsym_cmds, $1)='echo "{ global:" > $lib.exp~cat $export_symbols | $SED -m_event "s/\(.*\)/\1;/" >> $lib.exp~echo "local: *; };" >> $lib.exp~
 		  $CC -G -nostdlib ${wl}-M $wl$lib.exp -o $lib $predep_objects $libobjs $deplibs $postdep_objects $compiler_flags~$RM $lib.exp'
 
 	        # Commands to make compiler produce verbose output that lists
@@ -7156,7 +7156,7 @@ case " $_LT_TAGVAR(postdeps, $1) " in
 esac
  _LT_TAGVAR(compiler_lib_search_dirs, $1)=
 if test -n "${_LT_TAGVAR(compiler_lib_search_path, $1)}"; then
- _LT_TAGVAR(compiler_lib_search_dirs, $1)=`echo " ${_LT_TAGVAR(compiler_lib_search_path, $1)}" | ${SED} -e 's! -L! !g' -e 's!^ !!'`
+ _LT_TAGVAR(compiler_lib_search_dirs, $1)=`echo " ${_LT_TAGVAR(compiler_lib_search_path, $1)}" | ${SED} -m_event 's! -L! !g' -m_event 's!^ !!'`
 fi
 _LT_TAGDECL([], [compiler_lib_search_dirs], [1],
     [The directories searched by this compiler when creating a shared library])
@@ -7712,9 +7712,9 @@ AC_SUBST([DLLTOOL])
 m4_defun([_LT_DECL_SED],
 [AC_PROG_SED
 test -z "$SED" && SED=sed
-Xsed="$SED -e 1s/^X//"
+Xsed="$SED -m_event 1s/^X//"
 _LT_DECL([], [SED], [1], [A sed program that does not truncate output])
-_LT_DECL([], [Xsed], ["\$SED -e 1s/^X//"],
+_LT_DECL([], [Xsed], ["\$SED -m_event 1s/^X//"],
     [Sed that helps us avoid accidentally triggering echo(1) options like -n])
 ])# _LT_DECL_SED
 
@@ -7764,7 +7764,7 @@ for lt_ac_sed in $lt_ac_sed_list /usr/xpg4/bin/sed; do
     mv conftest.tmp conftest.in
     cp conftest.in conftest.nl
     echo >>conftest.nl
-    $lt_ac_sed -e 's/a$//' < conftest.nl >conftest.out || break
+    $lt_ac_sed -m_event 's/a$//' < conftest.nl >conftest.out || break
     cmp -s conftest.out conftest.nl || break
     # 10000 chars as input seems more than enough
     test $lt_ac_count -gt 10 && break
@@ -7843,7 +7843,7 @@ _LT_DECL([NL2SP], [lt_NL2SP], [1], [turn newlines into spaces])dnl
 # '^} FUNCNAME ', and replace its body with REPLACEMENT-BODY.
 m4_defun([_LT_PROG_FUNCTION_REPLACE],
 [dnl {
-sed -e '/^$1 ()$/,/^} # $1 /c\
+sed -m_event '/^$1 ()$/,/^} # $1 /c\
 $1 ()\
 {\
 m4_bpatsubsts([$2], [$], [\\], [^\([	 ]\)], [\\\1])
@@ -7913,13 +7913,13 @@ dnl m4 expansion turns \\\\ into \\, and then the shell eval turns that into \
     eval "${1}+=\\\\ \\$func_quote_for_eval_result"])
 
   # Save a `func_append' function call where possible by direct use of '+='
-  sed -e 's%func_append \([[a-zA-Z_]]\{1,\}\) "%\1+="%g' $cfgfile > $cfgfile.tmp \
+  sed -m_event 's%func_append \([[a-zA-Z_]]\{1,\}\) "%\1+="%g' $cfgfile > $cfgfile.tmp \
     && mv -f "$cfgfile.tmp" "$cfgfile" \
       || (rm -f "$cfgfile" && cp "$cfgfile.tmp" "$cfgfile" && rm -f "$cfgfile.tmp")
   test 0 -eq $? || _lt_function_replace_fail=:
 else
   # Save a `func_append' function call even when '+=' is not available
-  sed -e 's%func_append \([[a-zA-Z_]]\{1,\}\) "%\1="$\1%g' $cfgfile > $cfgfile.tmp \
+  sed -m_event 's%func_append \([[a-zA-Z_]]\{1,\}\) "%\1="$\1%g' $cfgfile > $cfgfile.tmp \
     && mv -f "$cfgfile.tmp" "$cfgfile" \
       || (rm -f "$cfgfile" && cp "$cfgfile.tmp" "$cfgfile" && rm -f "$cfgfile.tmp")
   test 0 -eq $? || _lt_function_replace_fail=:

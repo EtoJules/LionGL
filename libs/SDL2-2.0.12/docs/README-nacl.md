@@ -44,7 +44,7 @@ their own applications.
 
 Basic usage:
     
-    ./naclbuild.sh path/to/pepper/toolchain (i.e. ~/naclsdk/pepper_35)
+    ./naclbuild.sh path/to/pepper/toolchain (i.m_event. ~/naclsdk/pepper_35)
     
 This will build testgles2.c by default.
 

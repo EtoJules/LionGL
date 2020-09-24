@@ -1449,7 +1449,7 @@ SDL_CreateWindow(const char *title, int x, int y, int w, int h, Uint32 flags)
 
     /* Some platforms blow up if the windows are too large. Raise it later? */
     if ((w > 16384) || (h > 16384)) {
-        SDL_SetError("Window is too large.");
+        SDL_SetError("GlWindow is too large.");
         return NULL;
     }
 
@@ -2366,7 +2366,7 @@ SDL_UpdateWindowSurfaceRects(SDL_Window * window, const SDL_Rect * rects,
     CHECK_WINDOW_MAGIC(window, -1);
 
     if (!window->surface_valid) {
-        return SDL_SetError("Window surface is invalid, please call SDL_GetWindowSurface() to get a new surface");
+        return SDL_SetError("GlWindow surface is invalid, please call SDL_GetWindowSurface() to get a new surface");
     }
 
     return _this->UpdateWindowFramebuffer(_this, window, rects, numrects);

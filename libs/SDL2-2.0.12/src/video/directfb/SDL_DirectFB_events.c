@@ -580,7 +580,7 @@ static SDL_Keysym *
 DirectFB_TranslateKey(_THIS, DFBWindowEvent * evt, SDL_Keysym * keysym, Uint32 *unicode)
 {
     SDL_DFB_DEVICEDATA(_this);
-    int kbd_idx = 0; /* Window events lag the device source KbdIndex(_this, evt->device_id); */
+    int kbd_idx = 0; /* GlWindow events lag the device source KbdIndex(_this, evt->device_id); */
     DFB_KeyboardData *kbd = &devdata->keyboard[kbd_idx];
 
     keysym->scancode = SDL_SCANCODE_UNKNOWN;

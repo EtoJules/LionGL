@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no event will the authors be held liable for any damages
+  warranty.  In no m_event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -22,7 +22,7 @@
 /**
  *  \file SDL_gamecontroller.h
  *
- *  Include file for SDL2 game controller event handling
+ *  Include file for SDL2 game controller m_event handling
  */
 
 #ifndef SDL_gamecontroller_h_
@@ -271,7 +271,7 @@ extern DECLSPEC SDL_bool SDLCALL SDL_GameControllerGetAttached(SDL_GameControlle
 extern DECLSPEC SDL_Joystick *SDLCALL SDL_GameControllerGetJoystick(SDL_GameController *gamecontroller);
 
 /**
- *  Enable/disable controller event polling.
+ *  Enable/disable controller m_event polling.
  *
  *  If controller events are disabled, you must call SDL_GameControllerUpdate()
  *  yourself and check the state of the controller when you want controller
@@ -284,7 +284,7 @@ extern DECLSPEC int SDLCALL SDL_GameControllerEventState(int state);
 /**
  *  Update the current state of the open game controllers.
  *
- *  This is called automatically by the event loop if any game controller
+ *  This is called automatically by the m_event loop if any game controller
  *  events are enabled.
  */
 extern DECLSPEC void SDLCALL SDL_GameControllerUpdate(void);

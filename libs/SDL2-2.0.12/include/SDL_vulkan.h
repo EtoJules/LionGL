@@ -135,7 +135,7 @@ extern DECLSPEC void SDLCALL SDL_Vulkan_UnloadLibrary(void);
  *  \brief Get the names of the Vulkan instance extensions needed to create
  *         a surface with \c SDL_Vulkan_CreateSurface().
  *
- *  \param [in]     \c NULL or window Window for which the required Vulkan instance
+ *  \param [in]     \c NULL or window GlWindow for which the required Vulkan instance
  *                  extensions should be retrieved
  *  \param [in,out] pCount pointer to an \c unsigned related to the number of
  *                  required Vulkan instance extensions

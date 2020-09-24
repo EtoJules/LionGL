@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no event will the authors be held liable for any damages
+  warranty.  In no m_event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -22,7 +22,7 @@
 /**
  *  \file SDL_joystick.h
  *
- *  Include file for SDL2 joystick event handling
+ *  Include file for SDL2 joystick m_event handling
  *
  * The term "device_index" identifies currently plugged in joystick devices between 0 and SDL_NumJoysticks(), with the exact joystick
  *   behind a device_index changing as joysticks are plugged and unplugged.
@@ -292,13 +292,13 @@ extern DECLSPEC int SDLCALL SDL_JoystickNumButtons(SDL_Joystick * joystick);
 /**
  *  Update the current state of the open joysticks.
  *
- *  This is called automatically by the event loop if any joystick
+ *  This is called automatically by the m_event loop if any joystick
  *  events are enabled.
  */
 extern DECLSPEC void SDLCALL SDL_JoystickUpdate(void);
 
 /**
- *  Enable/disable joystick event polling.
+ *  Enable/disable joystick m_event polling.
  *
  *  If joystick events are disabled, you must call SDL_JoystickUpdate()
  *  yourself and check the state of the joystick when you want joystick

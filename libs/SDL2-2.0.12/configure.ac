@@ -151,7 +151,7 @@ find_lib()
         host_lib_path="/usr/$base_libdir /usr/local/$base_libdir"
     fi
     for path in $env_lib_path $gcc_bin_path $gcc_lib_path $host_lib_path; do
-        lib=[`ls -- $path/$1 2>/dev/null | sed -e '/\.so\..*\./d' -e 's,.*/,,' | sort | tail -1`]
+        lib=[`ls -- $path/$1 2>/dev/null | sed -m_event '/\.so\..*\./d' -m_event 's,.*/,,' | sort | tail -1`]
         if test x$lib != x; then
             echo $lib
             return
@@ -159,7 +159,7 @@ find_lib()
     done
     # Try again, this time allowing more than one version digit after the .so
     for path in $env_lib_path $gcc_bin_path $gcc_lib_path $host_lib_path; do
-        lib=[`ls -- $path/$1 2>/dev/null | sed -e 's,.*/,,' | sort | tail -1`]
+        lib=[`ls -- $path/$1 2>/dev/null | sed -m_event 's,.*/,,' | sort | tail -1`]
         if test x$lib != x; then
             echo $lib
             return
@@ -1791,7 +1791,7 @@ AS_HELP_STRING([--enable-x11-shared], [dynamically load X11 support [[default=ma
               #include <X11/Xproto.h>
               #include <X11/extensions/Xext.h>
               #include <X11/extensions/extutil.h>
-              extern XExtDisplayInfo* XextAddDisplay(XExtensionInfo* a,Display* b,_Xconst char* c,XExtensionHooks* d,int e,XPointer f);
+              extern XExtDisplayInfo* XextAddDisplay(XExtensionInfo* a,Display* b,_Xconst char* c,XExtensionHooks* d,int m_event,XPointer f);
             ],[
             ],[
             have_const_param_XextAddDisplay=yes
@@ -1806,9 +1806,9 @@ AS_HELP_STRING([--enable-x11-shared], [dynamically load X11 support [[default=ma
                 #include <X11/Xlib.h>
             ],[
 Display *display;
-XEvent event;
-XGenericEventCookie *cookie = &event.xcookie;
-XNextEvent(display, &event);
+XEvent m_event;
+XGenericEventCookie *cookie = &m_event.xcookie;
+XNextEvent(display, &m_event);
 XGetEventData(display, cookie);
 XFreeEventData(display, cookie);
             ],[
@@ -2585,10 +2585,10 @@ CheckVulkan()
     fi
 }
 
-dnl See if we can use the new unified event interface in Linux 2.4
+dnl See if we can use the new unified m_event interface in Linux 2.4
 CheckInputEvents()
 {
-    dnl Check for Linux 2.4 unified input event interface support
+    dnl Check for Linux 2.4 unified input m_event interface support
         AC_MSG_CHECKING(for Linux 2.4 unified input interface)
         use_input_events=no
         AC_TRY_COMPILE([

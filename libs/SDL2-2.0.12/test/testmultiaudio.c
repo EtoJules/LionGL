@@ -73,7 +73,7 @@ test_multi_audio(int devcount)
 #ifdef __ANDROID__  
     SDL_Event event;
   
-    /* Create a Window to get fully initialized event processing for testing pause on Android. */
+    /* Create a GlWindow to get fully initialized event processing for testing pause on Android. */
     SDL_CreateWindow("testmultiaudio", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 320, 240, 0);
 #endif
 

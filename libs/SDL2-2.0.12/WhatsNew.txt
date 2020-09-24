@@ -41,7 +41,7 @@ General:
 
 Windows:
 * Fixed crash when using the release SDL DLL with applications built with gcc
-* Fixed performance regression in event handling introduced in 2.0.10
+* Fixed performance regression in m_event handling introduced in 2.0.10
 * Added support for SDL_SetThreadPriority() for UWP applications
 
 Linux:
@@ -93,7 +93,7 @@ Android:
 * Removed SDL_HINT_ANDROID_SEPARATE_MOUSE_AND_TOUCH (replaced by SDL_HINT_MOUSE_TOUCH_EVENTS and SDL_HINT_TOUCH_MOUSE_EVENTS)
   SDL_HINT_ANDROID_SEPARATE_MOUSE_AND_TOUCH=1, should be replaced by setting both previous hints to 0.
   SDL_HINT_ANDROID_SEPARATE_MOUSE_AND_TOUCH=0, should be replaced by setting both previous hints to 1.
-* Added the hint SDL_HINT_ANDROID_BLOCK_ON_PAUSE to set whether the event loop will block itself when the app is paused.
+* Added the hint SDL_HINT_ANDROID_BLOCK_ON_PAUSE to set whether the m_event loop will block itself when the app is paused.
 
 
 ---------------------------------------------------------------------------
@@ -102,9 +102,9 @@ Android:
 
 General:
 * Added a new sensor API, initialized by passing SDL_INIT_SENSOR to SDL_Init(), and defined in SDL_sensor.h
-* Added an event SDL_SENSORUPDATE which is sent when a sensor is updated
+* Added an m_event SDL_SENSORUPDATE which is sent when a sensor is updated
 * Added SDL_GetDisplayOrientation() to return the current display orientation
-* Added an event SDL_DISPLAYEVENT which is sent when the display orientation changes
+* Added an m_event SDL_DISPLAYEVENT which is sent when the display orientation changes
 * Added HIDAPI joystick drivers for more consistent support for Xbox, PS4 and Nintendo Switch Pro controller support across platforms. (Thanks to Valve for contributing the PS4 and Nintendo Switch Pro controller support)
 * Added support for many other popular game controllers
 * Added SDL_JoystickGetDevicePlayerIndex(), SDL_JoystickGetPlayerIndex(), and SDL_GameControllerGetPlayerIndex() to get the player index for a controller. For XInput controllers this returns the XInput index for the controller.
@@ -166,7 +166,7 @@ iOS:
 * Added the hint SDL_HINT_IOS_HIDE_HOME_INDICATOR to control whether the home indicator bar on iPhone X should be hidden. This defaults to dimming the indicator for fullscreen applications and showing the indicator for windowed applications.
 
 iOS / Android:
-* Added the hint SDL_HINT_RETURN_KEY_HIDES_IME to control whether the return key on the software keyboard should hide the keyboard or send a key event (the default)
+* Added the hint SDL_HINT_RETURN_KEY_HIDES_IME to control whether the return key on the software keyboard should hide the keyboard or send a key m_event (the default)
 
 Android:
 * SDL now supports building with Android Studio and Gradle by default, and the old Ant project is available in android-project-ant
@@ -284,7 +284,7 @@ General:
 * Added SDL_CreateRGBSurfaceWithFormat() and SDL_CreateRGBSurfaceWithFormatFrom() to create an SDL surface with a specific pixel format
 * Added SDL_GetDisplayUsableBounds() which returns the area usable for windows. For example, on Mac OS X, this subtracts the area occupied by the menu bar and dock.
 * Added SDL_GetWindowBordersSize() which returns the size of the window's borders around the client area
-* Added a window event SDL_WINDOWEVENT_HIT_TEST when a window had a hit test that wasn't SDL_HITTEST_NORMAL (e.g. in the title bar or window frame)
+* Added a window m_event SDL_WINDOWEVENT_HIT_TEST when a window had a hit test that wasn't SDL_HITTEST_NORMAL (m_event.g. in the title bar or window frame)
 * Added SDL_SetWindowResizable() to change whether a window is resizable
 * Added SDL_SetWindowOpacity() and SDL_GetWindowOpacity() to affect the window transparency
 * Added SDL_SetWindowModalFor() to set a window as modal for another window
@@ -303,14 +303,14 @@ Windows:
 
 Mac OS X:
 * Fixed selecting the dummy video driver
-* The caps lock key now generates a pressed event when pressed and a released event when released, instead of a press/release event pair when pressed.
+* The caps lock key now generates a pressed m_event when pressed and a released m_event when released, instead of a press/release m_event pair when pressed.
 * Fixed mouse wheel events on Mac OS X 10.12
 * The audio driver has been updated to use AVFoundation for better compatibility with newer versions of Mac OS X
 
 Linux:
 * Added support for the Fcitx IME
-* Added a window event SDL_WINDOWEVENT_TAKE_FOCUS when a window manager asks the SDL window whether it wants to take focus.
-* Refresh rates are now rounded instead of truncated, e.g. 59.94 Hz is rounded up to 60 Hz instead of 59.
+* Added a window m_event SDL_WINDOWEVENT_TAKE_FOCUS when a window manager asks the SDL window whether it wants to take focus.
+* Refresh rates are now rounded instead of truncated, m_event.g. 59.94 Hz is rounded up to 60 Hz instead of 59.
 * Added initial support for touchscreens on Raspberry Pi
 
 OpenBSD:
@@ -355,7 +355,7 @@ General:
 * Added EGL_KHR_create_context support to allow OpenGL ES version selection on some platforms
 * Added NV12 and NV21 YUV texture support for OpenGL and OpenGL ES 2.0 renderers
 * Added a Vivante video driver that is used on various SoC platforms
-* Added an event SDL_RENDER_DEVICE_RESET that is sent from the D3D renderers when the D3D device is lost, and from Android's event loop when the GLES context had to be recreated
+* Added an m_event SDL_RENDER_DEVICE_RESET that is sent from the D3D renderers when the D3D device is lost, and from Android's m_event loop when the GLES context had to be recreated
 * Added a hint SDL_HINT_NO_SIGNAL_HANDLERS to disable SDL's built in signal handling
 * Added a hint SDL_HINT_THREAD_STACK_SIZE to set the stack size of SDL's threads
 * Added SDL_sqrtf(), SDL_tan(), and SDL_tanf() to the stdlib routines
@@ -364,8 +364,8 @@ General:
 * Added a hint SDL_HINT_WINDOW_FRAME_USABLE_WHILE_CURSOR_HIDDEN to prevent window interaction while cursor is hidden
 * Added SDL_GetDisplayDPI() to get the DPI information for a display
 * Added SDL_JoystickCurrentPowerLevel() to get the battery level of a joystick
-* Added SDL_JoystickFromInstanceID(), as a helper function, to get the SDL_Joystick* that an event is referring to.
-* Added SDL_GameControllerFromInstanceID(), as a helper function, to get the SDL_GameController* that an event is referring to.
+* Added SDL_JoystickFromInstanceID(), as a helper function, to get the SDL_Joystick* that an m_event is referring to.
+* Added SDL_GameControllerFromInstanceID(), as a helper function, to get the SDL_GameController* that an m_event is referring to.
 
 Windows:
 * Added support for Windows Phone 8.1 and Windows 10/UWP (Universal Windows Platform)
@@ -373,7 +373,7 @@ Windows:
 * SDLmain no longer depends on the C runtime, so you can use the same .lib in both Debug and Release builds
 * Added SDL_SetWindowsMessageHook() to set a function to be called for every windows message before TranslateMessage()
 * Added a hint SDL_HINT_WINDOWS_ENABLE_MESSAGELOOP to control whether SDL_PumpEvents() processes the Windows message loop
-* You can distinguish between real mouse and touch events by looking for SDL_TOUCH_MOUSEID in the mouse event "which" field
+* You can distinguish between real mouse and touch events by looking for SDL_TOUCH_MOUSEID in the mouse m_event "which" field
 * SDL_SysWMinfo now contains the window HDC
 * Added support for Unicode command line options
 * Prevent beeping when Alt-key combos are pressed
@@ -384,7 +384,7 @@ Windows:
 Mac OS X:
 * Implemented drag-and-drop support
 * Improved joystick hot-plug detection
-* The SDL_WINDOWEVENT_EXPOSED window event is triggered in the appropriate situations
+* The SDL_WINDOWEVENT_EXPOSED window m_event is triggered in the appropriate situations
 * Fixed relative mouse mode when the application loses/regains focus
 * Fixed bugs related to transitioning to and from Spaces-aware fullscreen-desktop mode
 * Fixed the refresh rate of display modes
@@ -444,7 +444,7 @@ General:
 * Added SDL_vsscanf(), SDL_acos(), and SDL_asin() to the stdlib routines
 * EGL can now create/manage OpenGL and OpenGL ES 1.x/2.x contexts, and share
   them using SDL_GL_SHARE_WITH_CURRENT_CONTEXT
-* Added a field "clicks" to the mouse button event which records whether the event is a single click, double click, etc.
+* Added a field "clicks" to the mouse button m_event which records whether the m_event is a single click, double click, etc.
 * The screensaver is now disabled by default, and there is a hint SDL_HINT_VIDEO_ALLOW_SCREENSAVER that can change that behavior.
 * Added a hint SDL_HINT_MOUSE_RELATIVE_MODE_WARP to specify whether mouse relative mode should be emulated using mouse warping.
 * testgl2 does not need to link with libGL anymore
@@ -456,7 +456,7 @@ Windows:
   the driver or emulated through ANGLE)
 * Added a hint SDL_HINT_VIDEO_WIN_D3DCOMPILER to specify which D3D shader compiler to use for OpenGL ES 2 support through ANGLE
 * Added a hint SDL_HINT_VIDEO_WINDOW_SHARE_PIXEL_FORMAT that is useful when creating multiple windows that should share the same OpenGL context.
-* Added an event SDL_RENDER_TARGETS_RESET that is sent when D3D9 render targets are reset after the device has been restored.
+* Added an m_event SDL_RENDER_TARGETS_RESET that is sent when D3D9 render targets are reset after the device has been restored.
 
 Mac OS X:
 * Added a hint SDL_HINT_MAC_CTRL_CLICK_EMULATE_RIGHT_CLICK to control whether Ctrl+click should be treated as a right click on Mac OS X. This is off by default.

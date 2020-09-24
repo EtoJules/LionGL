@@ -122,24 +122,67 @@ libs/glew-2.1.0/build/cmake/clean: libs/glew-2.1.0/build/cmake/CMakeFiles/uninst
 
 # Recursive "all" directory target.
 src/all: src/CMakeFiles/Sources.dir/all
+src/all: src/SandboxExamples/all
+src/all: src/Core/all
 
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
-src/preinstall:
+src/preinstall: src/SandboxExamples/preinstall
+src/preinstall: src/Core/preinstall
 
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
 src/clean: src/CMakeFiles/Sources.dir/clean
+src/clean: src/SandboxExamples/clean
+src/clean: src/Core/clean
 
 .PHONY : src/clean
+
+#=============================================================================
+# Directory level rules for directory src/Core
+
+# Recursive "all" directory target.
+src/Core/all: src/Core/CMakeFiles/Core.dir/all
+
+.PHONY : src/Core/all
+
+# Recursive "preinstall" directory target.
+src/Core/preinstall:
+
+.PHONY : src/Core/preinstall
+
+# Recursive "clean" directory target.
+src/Core/clean: src/Core/CMakeFiles/Core.dir/clean
+
+.PHONY : src/Core/clean
+
+#=============================================================================
+# Directory level rules for directory src/SandboxExamples
+
+# Recursive "all" directory target.
+src/SandboxExamples/all: src/SandboxExamples/CMakeFiles/SandboxExamples.dir/all
+
+.PHONY : src/SandboxExamples/all
+
+# Recursive "preinstall" directory target.
+src/SandboxExamples/preinstall:
+
+.PHONY : src/SandboxExamples/preinstall
+
+# Recursive "clean" directory target.
+src/SandboxExamples/clean: src/SandboxExamples/CMakeFiles/SandboxExamples.dir/clean
+
+.PHONY : src/SandboxExamples/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/ClGL.dir
 
 # All Build rule for target.
 CMakeFiles/ClGL.dir/all: src/CMakeFiles/Sources.dir/all
+CMakeFiles/ClGL.dir/all: src/SandboxExamples/CMakeFiles/SandboxExamples.dir/all
+CMakeFiles/ClGL.dir/all: src/Core/CMakeFiles/Core.dir/all
 CMakeFiles/ClGL.dir/all: libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClGL.dir/build.make CMakeFiles/ClGL.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClGL.dir/build.make CMakeFiles/ClGL.dir/build
@@ -148,7 +191,7 @@ CMakeFiles/ClGL.dir/all: libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ClGL.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ClGL.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/ClGL.dir/rule
@@ -170,12 +213,12 @@ CMakeFiles/ClGL.dir/clean:
 src/CMakeFiles/Sources.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=3,4,5,6,7,8,9,10 "Built target Sources"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=14,15 "Built target Sources"
 .PHONY : src/CMakeFiles/Sources.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/Sources.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/Sources.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles 0
 .PHONY : src/CMakeFiles/Sources.dir/rule
@@ -191,13 +234,67 @@ src/CMakeFiles/Sources.dir/clean:
 .PHONY : src/CMakeFiles/Sources.dir/clean
 
 #=============================================================================
+# Target rules for target src/SandboxExamples/CMakeFiles/SandboxExamples.dir
+
+# All Build rule for target.
+src/SandboxExamples/CMakeFiles/SandboxExamples.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=12,13 "Built target SandboxExamples"
+.PHONY : src/SandboxExamples/CMakeFiles/SandboxExamples.dir/all
+
+# Build rule for subdir invocation for target.
+src/SandboxExamples/CMakeFiles/SandboxExamples.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles 0
+.PHONY : src/SandboxExamples/CMakeFiles/SandboxExamples.dir/rule
+
+# Convenience name for target.
+SandboxExamples: src/SandboxExamples/CMakeFiles/SandboxExamples.dir/rule
+
+.PHONY : SandboxExamples
+
+# clean rule for target.
+src/SandboxExamples/CMakeFiles/SandboxExamples.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/clean
+.PHONY : src/SandboxExamples/CMakeFiles/SandboxExamples.dir/clean
+
+#=============================================================================
+# Target rules for target src/Core/CMakeFiles/Core.dir
+
+# All Build rule for target.
+src/Core/CMakeFiles/Core.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11 "Built target Core"
+.PHONY : src/Core/CMakeFiles/Core.dir/all
+
+# Build rule for subdir invocation for target.
+src/Core/CMakeFiles/Core.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Core/CMakeFiles/Core.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles 0
+.PHONY : src/Core/CMakeFiles/Core.dir/rule
+
+# Convenience name for target.
+Core: src/Core/CMakeFiles/Core.dir/rule
+
+.PHONY : Core
+
+# clean rule for target.
+src/Core/CMakeFiles/Core.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/clean
+.PHONY : src/Core/CMakeFiles/Core.dir/clean
+
+#=============================================================================
 # Target rules for target libs/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir
 
 # All Build rule for target.
 libs/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/all: libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/all
 	$(MAKE) $(MAKESILENT) -f libs/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target glewinfo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=20,21 "Built target glewinfo"
 .PHONY : libs/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/all
 
 # Build rule for subdir invocation for target.
@@ -224,7 +321,7 @@ libs/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/clean:
 libs/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/all: libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/all
 	$(MAKE) $(MAKESILENT) -f libs/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target visualinfo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=22,23 "Built target visualinfo"
 .PHONY : libs/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/all
 
 # Build rule for subdir invocation for target.
@@ -251,7 +348,7 @@ libs/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/clean:
 libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target glew_s"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=18,19 "Built target glew_s"
 .PHONY : libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/all
 
 # Build rule for subdir invocation for target.
@@ -278,7 +375,7 @@ libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/clean:
 libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target glew"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=16,17 "Built target glew"
 .PHONY : libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/all
 
 # Build rule for subdir invocation for target.

@@ -158,7 +158,7 @@ JAVADOC_AUTOBRIEF      = YES
 QT_AUTOBRIEF           = YES
 
 # The MULTILINE_CPP_IS_BRIEF tag can be set to YES to make Doxygen 
-# treat a multi-line C++ special comment block (i.e. a block of //! or /// 
+# treat a multi-line C++ special comment block (i.m_event. a block of //! or ///
 # comments) as a brief description. This used to be the default behaviour. 
 # The new default is to treat a multi-line C++ comment block as a detailed 
 # description. Set this tag to YES if you prefer the old behaviour instead.
@@ -229,10 +229,10 @@ OPTIMIZE_OUTPUT_VHDL   = NO
 
 EXTENSION_MAPPING      = 
 
-# If you use STL classes (i.e. std::string, std::vector, etc.) but do not want 
+# If you use STL classes (i.m_event. std::string, std::vector, etc.) but do not want
 # to include (a tag file for) the STL sources as input, then you should 
 # set this tag to YES in order to let doxygen match functions declarations and 
-# definitions whose arguments contain STL classes (e.g. func(std::string); v.s. 
+# definitions whose arguments contain STL classes (m_event.g. func(std::string); v.s.
 # func(std::string) {}). This also make the inheritance and collaboration 
 # diagrams that involve STL classes more complete and accurate.
 
@@ -267,7 +267,7 @@ DISTRIBUTE_GROUP_DOC   = NO
 
 # Set the SUBGROUPING tag to YES (the default) to allow class member groups of 
 # the same type (for instance a group of public functions) to be put as a 
-# subgroup of that type (e.g. under the Public Functions section). Set it to 
+# subgroup of that type (m_event.g. under the Public Functions section). Set it to
 # NO to prevent subgrouping. Alternatively, this can be done per class using 
 # the \nosubgrouping command.
 
@@ -714,7 +714,7 @@ FILTER_PATTERNS        =
 
 # If the FILTER_SOURCE_FILES tag is set to YES, the input filter (if set using 
 # INPUT_FILTER) will be used to filter the input files when producing source 
-# files to browse (i.e. when SOURCE_BROWSER is set to YES).
+# files to browse (i.m_event. when SOURCE_BROWSER is set to YES).
 
 FILTER_SOURCE_FILES    = NO
 
@@ -873,7 +873,7 @@ DOCSET_FEEDNAME        = "Doxygen generated docs for SDL"
 
 # When GENERATE_DOCSET tag is set to YES, this tag specifies a string that 
 # should uniquely identify the documentation set bundle. This should be a 
-# reverse domain-name style string, e.g. com.mycompany.MyDocSet. Doxygen 
+# reverse domain-name style string, m_event.g. com.mycompany.MyDocSet. Doxygen
 # will append .docset to the name.
 
 DOCSET_BUNDLE_ID       = org.libsdl.sdl
@@ -987,7 +987,7 @@ ENUM_VALUES_PER_LINE   = 4
 # If the tag value is set to YES, a side panel will be generated 
 # containing a tree-like index structure (just like the one that 
 # is generated for HTML Help). For this to work a browser that supports 
-# JavaScript, DHTML, CSS and frames is required (i.e. any modern browser). 
+# JavaScript, DHTML, CSS and frames is required (i.m_event. any modern browser).
 # Windows users are probably better off using the HTML help feature.
 
 GENERATE_TREEVIEW      = NO
@@ -1135,7 +1135,7 @@ COMPACT_RTF            = NO
 RTF_HYPERLINKS         = NO
 
 # Load stylesheet definitions from file. Syntax is similar to doxygen's 
-# config file, i.e. a series of assignments. You only have to provide 
+# config file, i.m_event. a series of assignments. You only have to provide
 # replacements, missing definitions are set to their default value.
 
 RTF_STYLESHEET_FILE    = 
@@ -1359,7 +1359,7 @@ ALLEXTERNALS           = NO
 EXTERNAL_GROUPS        = YES
 
 # The PERL_PATH should be the absolute path and name of the perl script 
-# interpreter (i.e. the result of `which perl').
+# interpreter (i.m_event. the result of `which perl').
 
 PERL_PATH              = /usr/bin/perl
 
@@ -1534,12 +1534,12 @@ MAX_DOT_GRAPH_DEPTH    = 2
 # background. This is disabled by default, because dot on Windows does not 
 # seem to support this out of the box. Warning: Depending on the platform used, 
 # enabling this option may lead to badly anti-aliased labels on the edges of 
-# a graph (i.e. they become hard to read).
+# a graph (i.m_event. they become hard to read).
 
 DOT_TRANSPARENT        = NO
 
 # Set the DOT_MULTI_TARGETS tag to YES allow dot to generate multiple output 
-# files in one run (i.e. multiple -o and -T options on the command line). This 
+# files in one run (i.m_event. multiple -o and -T options on the command line). This
 # makes dot run faster, but since only newer versions of dot (>1.8.10) 
 # support this, this feature is disabled by default.
 

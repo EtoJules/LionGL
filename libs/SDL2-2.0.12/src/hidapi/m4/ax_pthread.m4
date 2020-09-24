@@ -19,7 +19,7 @@
 #   is necessary on AIX to use the special cc_r compiler alias.)
 #
 #   NOTE: You are assumed to not only compile your program with these flags,
-#   but also link it with them as well. e.g. you should link with
+#   but also link it with them as well. m_event.g. you should link with
 #   $PTHREAD_CC $CFLAGS $PTHREAD_CFLAGS $LDFLAGS ... $PTHREAD_LIBS $LIBS
 #
 #   If you are only building threads programs, you may wish to use these
@@ -31,7 +31,7 @@
 #
 #   In addition, if the PTHREAD_CREATE_JOINABLE thread-attribute constant
 #   has a nonstandard name, defines PTHREAD_CREATE_JOINABLE to that name
-#   (e.g. PTHREAD_CREATE_UNDETACHED on AIX).
+#   (m_event.g. PTHREAD_CREATE_UNDETACHED on AIX).
 #
 #   Also HAVE_PTHREAD_PRIO_INHERIT is defined if pthread is found and the
 #   PTHREAD_PRIO_INHERIT symbol is defined when compiling with
@@ -91,7 +91,7 @@ AC_LANG_PUSH([C])
 ax_pthread_ok=no
 
 # We used to check for pthread.h first, but this fails if pthread.h
-# requires special compiler flags (e.g. on True64 or Sequent).
+# requires special compiler flags (m_event.g. on True64 or Sequent).
 # It gets checked for in the link test anyway.
 
 # First of all, check if the user has set any of the PTHREAD_LIBS,
@@ -115,7 +115,7 @@ fi
 
 # We must check for the threads library under a number of different
 # names; the ordering is very important because some systems
-# (e.g. DEC) have both -lpthread and -lpthreads, where one of the
+# (m_event.g. DEC) have both -lpthread and -lpthreads, where one of the
 # libraries is broken (non-POSIX).
 
 # Create a list of thread flags to try.  Items starting with a "-" are

@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no event will the authors be held liable for any damages
+  warranty.  In no m_event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -22,7 +22,7 @@
 /**
  *  \file SDL_keyboard.h
  *
- *  Include file for SDL2 keyboard event handling
+ *  Include file for SDL2 keyboard m_event handling
  */
 
 #ifndef SDL_keyboard_h_
@@ -42,7 +42,7 @@ extern "C" {
 /**
  *  \brief The SDL2 keysym structure, used in key events.
  *
- *  \note  If you are looking for translated character input, see the ::SDL_TEXTINPUT event.
+ *  \note  If you are looking for translated character input, see the ::SDL_TEXTINPUT m_event.
  */
 typedef struct SDL_Keysym
 {

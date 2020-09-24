@@ -54,8 +54,8 @@ public class SDLControllerManager
     }
 
     // Joystick glue code, just a series of stubs that redirect to the SDLJoystickHandler instance
-    public static boolean handleJoystickMotionEvent(MotionEvent event) {
-        return mJoystickHandler.handleMotionEvent(event);
+    public static boolean handleJoystickMotionEvent(MotionEvent m_event) {
+        return mJoystickHandler.handleMotionEvent(m_event);
     }
 
     /**
@@ -122,10 +122,10 @@ class SDLJoystickHandler {
 
     /**
      * Handles given MotionEvent.
-     * @param event the event to be handled.
-     * @return if given event was processed.
+     * @param m_event the m_event to be handled.
+     * @return if given m_event was processed.
      */
-    public boolean handleMotionEvent(MotionEvent event) {
+    public boolean handleMotionEvent(MotionEvent m_event) {
         return false;
     }
 
@@ -244,23 +244,23 @@ class SDLJoystickHandler_API16 extends SDLJoystickHandler {
     }
 
     @Override
-    public boolean handleMotionEvent(MotionEvent event) {
-        if ((event.getSource() & InputDevice.SOURCE_JOYSTICK) != 0) {
-            int actionPointerIndex = event.getActionIndex();
-            int action = event.getActionMasked();
+    public boolean handleMotionEvent(MotionEvent m_event) {
+        if ((m_event.getSource() & InputDevice.SOURCE_JOYSTICK) != 0) {
+            int actionPointerIndex = m_event.getActionIndex();
+            int action = m_event.getActionMasked();
             switch(action) {
                 case MotionEvent.ACTION_MOVE:
-                    SDLJoystick joystick = getJoystick(event.getDeviceId());
+                    SDLJoystick joystick = getJoystick(m_event.getDeviceId());
                     if ( joystick != null ) {
                         for (int i = 0; i < joystick.axes.size(); i++) {
                             InputDevice.MotionRange range = joystick.axes.get(i);
                             /* Normalize the value to -1...1 */
-                            float value = ( event.getAxisValue( range.getAxis(), actionPointerIndex) - range.getMin() ) / range.getRange() * 2.0f - 1.0f;
+                            float value = ( m_event.getAxisValue( range.getAxis(), actionPointerIndex) - range.getMin() ) / range.getRange() * 2.0f - 1.0f;
                             SDLControllerManager.onNativeJoy(joystick.device_id, i, value );
                         }
                         for (int i = 0; i < joystick.hats.size(); i+=2) {
-                            int hatX = Math.round(event.getAxisValue( joystick.hats.get(i).getAxis(), actionPointerIndex ) );
-                            int hatY = Math.round(event.getAxisValue( joystick.hats.get(i+1).getAxis(), actionPointerIndex ) );
+                            int hatX = Math.round(m_event.getAxisValue( joystick.hats.get(i).getAxis(), actionPointerIndex ) );
+                            int hatY = Math.round(m_event.getAxisValue( joystick.hats.get(i+1).getAxis(), actionPointerIndex ) );
                             SDLControllerManager.onNativeHat(joystick.device_id, i/2, hatX, hatY );
                         }
                     }
@@ -421,7 +421,7 @@ class SDLHapticHandler_API26 extends SDLHapticHandler {
             try {
                 haptic.vib.vibrate(VibrationEffect.createOneShot(length, vibeValue));
             }
-            catch (Exception e) {
+            catch (Exception m_event) {
                 // Fall back to the generic method, which uses DEFAULT_AMPLITUDE, but works even if
                 // something went horribly wrong with the Android 8.0 APIs.
                 haptic.vib.vibrate(length);
@@ -544,28 +544,28 @@ class SDLHapticHandler {
 class SDLGenericMotionListener_API12 implements View.OnGenericMotionListener {
     // Generic Motion (mouse hover, joystick...) events go here
     @Override
-    public boolean onGenericMotion(View v, MotionEvent event) {
+    public boolean onGenericMotion(View v, MotionEvent m_event) {
         float x, y;
         int action;
 
-        switch ( event.getSource() ) {
+        switch ( m_event.getSource() ) {
             case InputDevice.SOURCE_JOYSTICK:
             case InputDevice.SOURCE_GAMEPAD:
             case InputDevice.SOURCE_DPAD:
-                return SDLControllerManager.handleJoystickMotionEvent(event);
+                return SDLControllerManager.handleJoystickMotionEvent(m_event);
 
             case InputDevice.SOURCE_MOUSE:
-                action = event.getActionMasked();
+                action = m_event.getActionMasked();
                 switch (action) {
                     case MotionEvent.ACTION_SCROLL:
-                        x = event.getAxisValue(MotionEvent.AXIS_HSCROLL, 0);
-                        y = event.getAxisValue(MotionEvent.AXIS_VSCROLL, 0);
+                        x = m_event.getAxisValue(MotionEvent.AXIS_HSCROLL, 0);
+                        y = m_event.getAxisValue(MotionEvent.AXIS_VSCROLL, 0);
                         SDLActivity.onNativeMouse(0, action, x, y, false);
                         return true;
 
                     case MotionEvent.ACTION_HOVER_MOVE:
-                        x = event.getX(0);
-                        y = event.getY(0);
+                        x = m_event.getX(0);
+                        y = m_event.getY(0);
 
                         SDLActivity.onNativeMouse(0, action, x, y, false);
                         return true;
@@ -600,12 +600,12 @@ class SDLGenericMotionListener_API12 implements View.OnGenericMotionListener {
 
     }
 
-    public float getEventX(MotionEvent event) {
-        return event.getX(0);
+    public float getEventX(MotionEvent m_event) {
+        return m_event.getX(0);
     }
 
-    public float getEventY(MotionEvent event) {
-        return event.getY(0);
+    public float getEventY(MotionEvent m_event) {
+        return m_event.getY(0);
     }
 
 }
@@ -616,15 +616,15 @@ class SDLGenericMotionListener_API24 extends SDLGenericMotionListener_API12 {
     private boolean mRelativeModeEnabled;
 
     @Override
-    public boolean onGenericMotion(View v, MotionEvent event) {
+    public boolean onGenericMotion(View v, MotionEvent m_event) {
 
         // Handle relative mouse mode
         if (mRelativeModeEnabled) {
-            if (event.getSource() == InputDevice.SOURCE_MOUSE) {
-                int action = event.getActionMasked();
+            if (m_event.getSource() == InputDevice.SOURCE_MOUSE) {
+                int action = m_event.getActionMasked();
                 if (action == MotionEvent.ACTION_HOVER_MOVE) {
-                    float x = event.getAxisValue(MotionEvent.AXIS_RELATIVE_X);
-                    float y = event.getAxisValue(MotionEvent.AXIS_RELATIVE_Y);
+                    float x = m_event.getAxisValue(MotionEvent.AXIS_RELATIVE_X);
+                    float y = m_event.getAxisValue(MotionEvent.AXIS_RELATIVE_Y);
                     SDLActivity.onNativeMouse(0, action, x, y, true);
                     return true;
                 }
@@ -632,7 +632,7 @@ class SDLGenericMotionListener_API24 extends SDLGenericMotionListener_API12 {
         }
 
         // Event was not managed, call SDLGenericMotionListener_API12 method
-        return super.onGenericMotion(v, event);
+        return super.onGenericMotion(v, m_event);
     }
 
     @Override
@@ -652,22 +652,22 @@ class SDLGenericMotionListener_API24 extends SDLGenericMotionListener_API12 {
     }
 
     @Override
-    public float getEventX(MotionEvent event) {
+    public float getEventX(MotionEvent m_event) {
         if (mRelativeModeEnabled) {
-            return event.getAxisValue(MotionEvent.AXIS_RELATIVE_X);
+            return m_event.getAxisValue(MotionEvent.AXIS_RELATIVE_X);
         }
         else {
-            return event.getX(0);
+            return m_event.getX(0);
         }
     }
 
     @Override
-    public float getEventY(MotionEvent event) {
+    public float getEventY(MotionEvent m_event) {
         if (mRelativeModeEnabled) {
-            return event.getAxisValue(MotionEvent.AXIS_RELATIVE_Y);
+            return m_event.getAxisValue(MotionEvent.AXIS_RELATIVE_Y);
         }
         else {
-            return event.getY(0);
+            return m_event.getY(0);
         }
     }
 }
@@ -678,30 +678,30 @@ class SDLGenericMotionListener_API26 extends SDLGenericMotionListener_API24 {
     private boolean mRelativeModeEnabled;
 
     @Override
-    public boolean onGenericMotion(View v, MotionEvent event) {
+    public boolean onGenericMotion(View v, MotionEvent m_event) {
         float x, y;
         int action;
 
-        switch ( event.getSource() ) {
+        switch ( m_event.getSource() ) {
             case InputDevice.SOURCE_JOYSTICK:
             case InputDevice.SOURCE_GAMEPAD:
             case InputDevice.SOURCE_DPAD:
-                return SDLControllerManager.handleJoystickMotionEvent(event);
+                return SDLControllerManager.handleJoystickMotionEvent(m_event);
 
             case InputDevice.SOURCE_MOUSE:
             // DeX desktop mouse cursor is a separate non-standard input type.
             case InputDevice.SOURCE_MOUSE | InputDevice.SOURCE_TOUCHSCREEN:
-                action = event.getActionMasked();
+                action = m_event.getActionMasked();
                 switch (action) {
                     case MotionEvent.ACTION_SCROLL:
-                        x = event.getAxisValue(MotionEvent.AXIS_HSCROLL, 0);
-                        y = event.getAxisValue(MotionEvent.AXIS_VSCROLL, 0);
+                        x = m_event.getAxisValue(MotionEvent.AXIS_HSCROLL, 0);
+                        y = m_event.getAxisValue(MotionEvent.AXIS_VSCROLL, 0);
                         SDLActivity.onNativeMouse(0, action, x, y, false);
                         return true;
 
                     case MotionEvent.ACTION_HOVER_MOVE:
-                        x = event.getX(0);
-                        y = event.getY(0);
+                        x = m_event.getX(0);
+                        y = m_event.getY(0);
                         SDLActivity.onNativeMouse(0, action, x, y, false);
                         return true;
 
@@ -711,17 +711,17 @@ class SDLGenericMotionListener_API26 extends SDLGenericMotionListener_API24 {
                 break;
 
             case InputDevice.SOURCE_MOUSE_RELATIVE:
-                action = event.getActionMasked();
+                action = m_event.getActionMasked();
                 switch (action) {
                     case MotionEvent.ACTION_SCROLL:
-                        x = event.getAxisValue(MotionEvent.AXIS_HSCROLL, 0);
-                        y = event.getAxisValue(MotionEvent.AXIS_VSCROLL, 0);
+                        x = m_event.getAxisValue(MotionEvent.AXIS_HSCROLL, 0);
+                        y = m_event.getAxisValue(MotionEvent.AXIS_VSCROLL, 0);
                         SDLActivity.onNativeMouse(0, action, x, y, false);
                         return true;
 
                     case MotionEvent.ACTION_HOVER_MOVE:
-                        x = event.getX(0);
-                        y = event.getY(0);
+                        x = m_event.getX(0);
+                        y = m_event.getY(0);
                         SDLActivity.onNativeMouse(0, action, x, y, true);
                         return true;
 
@@ -775,14 +775,14 @@ class SDLGenericMotionListener_API26 extends SDLGenericMotionListener_API24 {
     }
 
     @Override
-    public float getEventX(MotionEvent event) {
+    public float getEventX(MotionEvent m_event) {
         // Relative mouse in capture mode will only have relative for X/Y
-        return event.getX(0);
+        return m_event.getX(0);
     }
 
     @Override
-    public float getEventY(MotionEvent event) {
+    public float getEventY(MotionEvent m_event) {
         // Relative mouse in capture mode will only have relative for X/Y
-        return event.getY(0);
+        return m_event.getY(0);
     }
 }

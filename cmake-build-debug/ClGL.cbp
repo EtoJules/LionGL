@@ -5,7 +5,7 @@
 		<Option title="ClGL"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SDL2\;CMake Files\src\;CMake Files\libs\;CMake Files\libs\glew-2.1.0\;CMake Files\libs\glew-2.1.0\build\;CMake Files\libs\glew-2.1.0\build\cmake\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SDL2\;CMake Files\src\;CMake Files\src\SandboxExamples\;CMake Files\src\Core\;CMake Files\libs\;CMake Files\libs\glew-2.1.0\;CMake Files\libs\glew-2.1.0\build\;CMake Files\libs\glew-2.1.0\build\cmake\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug"/>
@@ -46,8 +46,8 @@
 				<Compiler>
 					<Add option="-DGLEW_STATIC"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/include"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/includes"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src/Core"/>
 					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/usr/include/c++/9"/>
@@ -74,8 +74,8 @@
 				<Compiler>
 					<Add option="-DGLEW_STATIC"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/include"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/includes"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src/Core"/>
 					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/usr/include/c++/9"/>
@@ -141,8 +141,8 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/include"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/includes"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src/Core"/>
 					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/usr/include/c++/9"/>
@@ -168,8 +168,8 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/include"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/includes"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src/Core"/>
 					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/usr/include/c++/9"/>
@@ -187,6 +187,114 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="SandboxExamples">
+				<Option output="/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples/libSandboxExamples.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/includes"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src/Core"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples/Makefile&quot;  VERBOSE=1 SandboxExamples"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SandboxExamples/fast">
+				<Option output="/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples/libSandboxExamples.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/includes"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src/Core"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples/Makefile&quot;  VERBOSE=1 SandboxExamples/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Core">
+				<Option output="/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core/libCore.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/includes"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src/Core"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core/Makefile&quot;  VERBOSE=1 Core"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Core/fast">
+				<Option output="/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core/libCore.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/includes"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src/Core"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core/Makefile&quot;  VERBOSE=1 Core/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="glewinfo">
 				<Option output="/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/bin/glewinfo" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/bin"/>
@@ -196,8 +304,8 @@
 				<Compiler>
 					<Add option="-DGLEW_NO_GLU"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/include"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/includes"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src/Core"/>
 					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs/glew-2.1.0/build/cmake/../../include"/>
@@ -225,8 +333,8 @@
 				<Compiler>
 					<Add option="-DGLEW_NO_GLU"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/include"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/includes"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src/Core"/>
 					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs/glew-2.1.0/build/cmake/../../include"/>
@@ -254,8 +362,8 @@
 				<Compiler>
 					<Add option="-DGLEW_NO_GLU"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/include"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/includes"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src/Core"/>
 					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs/glew-2.1.0/build/cmake/../../include"/>
@@ -283,8 +391,8 @@
 				<Compiler>
 					<Add option="-DGLEW_NO_GLU"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/include"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/includes"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src/Core"/>
 					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs/glew-2.1.0/build/cmake/../../include"/>
@@ -313,8 +421,8 @@
 					<Add option="-DGLEW_STATIC"/>
 					<Add option="-DGLEW_NO_GLU"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/include"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/includes"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src/Core"/>
 					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs/glew-2.1.0/build/cmake/../../include"/>
@@ -343,8 +451,8 @@
 					<Add option="-DGLEW_STATIC"/>
 					<Add option="-DGLEW_NO_GLU"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/include"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/includes"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src/Core"/>
 					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs/glew-2.1.0/build/cmake/../../include"/>
@@ -373,8 +481,8 @@
 					<Add option="-DGLEW_BUILD"/>
 					<Add option="-DGLEW_NO_GLU"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/include"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/includes"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src/Core"/>
 					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs/glew-2.1.0/build/cmake/../../include"/>
@@ -403,8 +511,8 @@
 					<Add option="-DGLEW_BUILD"/>
 					<Add option="-DGLEW_NO_GLU"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/include"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/includes"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src/Core"/>
 					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs/glew-2.1.0/build/cmake/../../include"/>
@@ -459,47 +567,65 @@
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/main.cpp">
 			<Option target="ClGL"/>
 		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Core/GlWindow/GlWindow.cpp">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Core/GlWindow/GlWindow.h">
+			<Option target="Core"/>
+		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/IndexBuffer/IndexBuffer.cpp">
-			<Option target="Sources"/>
+			<Option target="Core"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/IndexBuffer/IndexBuffer.h">
-			<Option target="Sources"/>
+			<Option target="Core"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/Renderer.cpp">
-			<Option target="Sources"/>
+			<Option target="Core"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/Renderer.h">
-			<Option target="Sources"/>
+			<Option target="Core"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/Shader/Shader.cpp">
-			<Option target="Sources"/>
+			<Option target="Core"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/Shader/Shader.h">
-			<Option target="Sources"/>
+			<Option target="Core"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/VertexArray/VertexArray.cpp">
-			<Option target="Sources"/>
+			<Option target="Core"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/VertexArray/VertexArray.h">
-			<Option target="Sources"/>
+			<Option target="Core"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/VertexBuffer/VertexBuffer.cpp">
-			<Option target="Sources"/>
+			<Option target="Core"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/VertexBuffer/VertexBuffer.h">
-			<Option target="Sources"/>
+			<Option target="Core"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/VertexBuffer/VertexLayout.cpp">
-			<Option target="Sources"/>
+			<Option target="Core"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/VertexBuffer/VertexLayout.h">
-			<Option target="Sources"/>
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Sandbox/Sandbox.cpp">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Sandbox/Sandbox.h">
+			<Option target="Core"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Helper/parser.cpp">
 			<Option target="Sources"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Helper/parser.h">
 			<Option target="Sources"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/Triangle/TriangleSandbox.cpp">
+			<Option target="SandboxExamples"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/Triangle/TriangleSandbox.h">
+			<Option target="SandboxExamples"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
@@ -509,6 +635,12 @@
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\SandboxExamples\"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Core/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\Core\"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/libs/glew-2.1.0/glew.pc.in">
 			<Option virtualFolder="CMake Files\libs\glew-2.1.0\"/>

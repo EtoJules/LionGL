@@ -81,7 +81,7 @@
       <entry name="oneshot" value="1">
 	<description summary="the pointer constraint is defunct once deactivated">
 	  A oneshot pointer constraint will never reactivate once it has been
-	  deactivated. See the corresponding deactivation event
+	  deactivated. See the corresponding deactivation m_event
 	  (wp_locked_pointer.unlocked and wp_confined_pointer.unconfined) for
 	  details.
 	</description>
@@ -89,7 +89,7 @@
       <entry name="persistent" value="2">
 	<description summary="the pointer constraint may reactivate">
 	  A persistent pointer constraint may again reactivate once it has
-	  been deactivated. See the corresponding deactivation event
+	  been deactivated. See the corresponding deactivation m_event
 	  (wp_locked_pointer.unlocked and wp_confined_pointer.unconfined) for
 	  details.
 	</description>
@@ -106,11 +106,11 @@
     <request name="lock_pointer">
       <description summary="lock pointer to a position">
 	The lock_pointer request lets the client request to disable movements of
-	the virtual pointer (i.e. the cursor), effectively locking the pointer
+	the virtual pointer (i.m_event. the cursor), effectively locking the pointer
 	to a position. This request may not take effect immediately; in the
 	future, when the compositor deems implementation-specific constraints
 	are satisfied, the pointer lock will be activated and the compositor
-	sends a locked event.
+	sends a locked m_event.
 
 	The protocol provides no guarantee that the constraints are ever
 	satisfied, and does not require the compositor to send an error if the
@@ -156,7 +156,7 @@
 	pointer cursor to a given region. This request may not take effect
 	immediately; in the future, when the compositor deems implementation-
 	specific constraints are satisfied, the pointer confinement will be
-	activated and the compositor sends a confined event.
+	activated and the compositor sends a confined m_event.
 
 	The intersection of the region passed with this request and the input
 	region of the surface is used to determine where the pointer must be
@@ -188,7 +188,7 @@
       While the lock of this object is active, the wl_pointer objects of the
       associated seat will not emit any wl_pointer.motion events.
 
-      This object will send the event 'locked' when the lock is activated.
+      This object will send the m_event 'locked' when the lock is activated.
       Whenever the lock is activated, it is guaranteed that the locked surface
       will already have received pointer focus and that the pointer will be
       within the region passed to the request creating this object.
@@ -196,7 +196,7 @@
       To unlock the pointer, send the destroy request. This will also destroy
       the wp_locked_pointer object.
 
-      If the compositor decides to unlock the pointer the unlocked event is
+      If the compositor decides to unlock the pointer the unlocked m_event is
       sent. See wp_locked_pointer.unlock for details.
 
       When unlocking, the compositor may warp the cursor position to the set
@@ -249,14 +249,14 @@
 	   summary="region of surface"/>
     </request>
 
-    <event name="locked">
-      <description summary="lock activation event">
+    <m_event name="locked">
+      <description summary="lock activation m_event">
 	Notification that the pointer lock of the seat's pointer is activated.
       </description>
-    </event>
+    </m_event>
 
-    <event name="unlocked">
-      <description summary="lock deactivation event">
+    <m_event name="unlocked">
+      <description summary="lock deactivation m_event">
 	Notification that the pointer lock of the seat's pointer is no longer
 	active. If this is a oneshot pointer lock (see
 	wp_pointer_constraints.lifetime) this object is now defunct and should
@@ -264,14 +264,14 @@
 	wp_pointer_constraints.lifetime) this pointer lock may again
 	reactivate in the future.
       </description>
-    </event>
+    </m_event>
   </interface>
 
   <interface name="zwp_confined_pointer_v1" version="1">
     <description summary="confined pointer object">
       The wp_confined_pointer interface represents a confined pointer state.
 
-      This object will send the event 'confined' when the confinement is
+      This object will send the m_event 'confined' when the confinement is
       activated. Whenever the confinement is activated, it is guaranteed that
       the surface the pointer is confined to will already have received pointer
       focus and that the pointer will be within the region passed to the request
@@ -282,7 +282,7 @@
       To unconfine the pointer, send the destroy request. This will also destroy
       the wp_confined_pointer object.
 
-      If the compositor decides to unconfine the pointer the unconfined event is
+      If the compositor decides to unconfine the pointer the unconfined m_event is
       sent. The wp_confined_pointer object is at this point defunct and should
       be destroyed.
     </description>
@@ -305,8 +305,8 @@
 	If the confinement is active when the new confinement region is applied
 	and the pointer ends up outside of newly applied region, the pointer may
 	warped to a position within the new confinement region. If warped, a
-	wl_pointer.motion event will be emitted, but no
-	wp_relative_pointer.relative_motion event.
+	wl_pointer.motion m_event will be emitted, but no
+	wp_relative_pointer.relative_motion m_event.
 
 	The compositor may also, instead of using the new region, unconfine the
 	pointer.
@@ -317,14 +317,14 @@
 	   summary="region of surface"/>
     </request>
 
-    <event name="confined">
+    <m_event name="confined">
       <description summary="pointer confined">
 	Notification that the pointer confinement of the seat's pointer is
 	activated.
       </description>
-    </event>
+    </m_event>
 
-    <event name="unconfined">
+    <m_event name="unconfined">
       <description summary="pointer unconfined">
 	Notification that the pointer confinement of the seat's pointer is no
 	longer active. If this is a oneshot pointer confinement (see
@@ -333,7 +333,7 @@
 	wp_pointer_constraints.lifetime) this pointer confinement may again
 	reactivate in the future.
       </description>
-    </event>
+    </m_event>
   </interface>
 
 </protocol>

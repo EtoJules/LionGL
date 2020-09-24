@@ -80,7 +80,7 @@ void PND_restorewindow(_THIS, SDL_Window * window);
 void PND_setwindowgrab(_THIS, SDL_Window * window, SDL_bool grabbed);
 void PND_destroywindow(_THIS, SDL_Window * window);
 
-/* Window manager function */
+/* GlWindow manager function */
 SDL_bool PND_getwindowwminfo(_THIS, SDL_Window * window,
                              struct SDL_SysWMinfo *info);
 

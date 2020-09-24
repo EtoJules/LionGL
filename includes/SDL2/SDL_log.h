@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no event will the authors be held liable for any damages
+  warranty.  In no m_event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -85,7 +85,7 @@ typedef enum
     SDL_LOG_CATEGORY_RESERVED9,
     SDL_LOG_CATEGORY_RESERVED10,
 
-    /* Beyond this point is reserved for application use, e.g.
+    /* Beyond this point is reserved for application use, m_event.g.
        enum {
            MYAPP_CATEGORY_AWESOME1 = SDL_LOG_CATEGORY_CUSTOM,
            MYAPP_CATEGORY_AWESOME2,

@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no event will the authors be held liable for any damages
+  warranty.  In no m_event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -511,7 +511,7 @@ typedef struct SDL_HapticConstant
  *   - 27000: Displaced 75% of its period.
  *   - 36000: Displaced 100% of its period, same as 0, but 0 is preferred.
  *
- *  Examples:
+ *  SandboxExamples:
  *  \verbatim
     SDL_HAPTIC_SINE
       __      __      __      __

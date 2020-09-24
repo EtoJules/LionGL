@@ -187,7 +187,7 @@ public class SDLAudioManager
 
                 // see notes about AudioTrack state in audioOpen(), above. Probably also applies here.
                 if (mAudioRecord.getState() != AudioRecord.STATE_INITIALIZED) {
-                    Log.e(TAG, "Failed during initialization of AudioRecord");
+                    Log.m_event(TAG, "Failed during initialization of AudioRecord");
                     mAudioRecord.release();
                     mAudioRecord = null;
                     return null;
@@ -211,7 +211,7 @@ public class SDLAudioManager
                 if (mAudioTrack.getState() != AudioTrack.STATE_INITIALIZED) {
                     /* Try again, with safer values */
 
-                    Log.e(TAG, "Failed during initialization of Audio Track");
+                    Log.m_event(TAG, "Failed during initialization of Audio Track");
                     mAudioTrack.release();
                     mAudioTrack = null;
                     return null;
@@ -243,7 +243,7 @@ public class SDLAudioManager
      */
     public static void audioWriteFloatBuffer(float[] buffer) {
         if (mAudioTrack == null) {
-            Log.e(TAG, "Attempted to make audio call with uninitialized audio!");
+            Log.m_event(TAG, "Attempted to make audio call with uninitialized audio!");
             return;
         }
 
@@ -254,7 +254,7 @@ public class SDLAudioManager
             } else if (result == 0) {
                 try {
                     Thread.sleep(1);
-                } catch(InterruptedException e) {
+                } catch(InterruptedException m_event) {
                     // Nom nom
                 }
             } else {
@@ -269,7 +269,7 @@ public class SDLAudioManager
      */
     public static void audioWriteShortBuffer(short[] buffer) {
         if (mAudioTrack == null) {
-            Log.e(TAG, "Attempted to make audio call with uninitialized audio!");
+            Log.m_event(TAG, "Attempted to make audio call with uninitialized audio!");
             return;
         }
 
@@ -280,7 +280,7 @@ public class SDLAudioManager
             } else if (result == 0) {
                 try {
                     Thread.sleep(1);
-                } catch(InterruptedException e) {
+                } catch(InterruptedException m_event) {
                     // Nom nom
                 }
             } else {
@@ -295,7 +295,7 @@ public class SDLAudioManager
      */
     public static void audioWriteByteBuffer(byte[] buffer) {
         if (mAudioTrack == null) {
-            Log.e(TAG, "Attempted to make audio call with uninitialized audio!");
+            Log.m_event(TAG, "Attempted to make audio call with uninitialized audio!");
             return;
         }
 
@@ -306,7 +306,7 @@ public class SDLAudioManager
             } else if (result == 0) {
                 try {
                     Thread.sleep(1);
-                } catch(InterruptedException e) {
+                } catch(InterruptedException m_event) {
                     // Nom nom
                 }
             } else {
@@ -378,8 +378,8 @@ public class SDLAudioManager
             /* Set thread priority */
             android.os.Process.setThreadPriority(android.os.Process.THREAD_PRIORITY_AUDIO);
 
-        } catch (Exception e) {
-            Log.v(TAG, "modify thread properties failed " + e.toString());
+        } catch (Exception m_event) {
+            Log.v(TAG, "modify thread properties failed " + m_event.toString());
         }
     }
 

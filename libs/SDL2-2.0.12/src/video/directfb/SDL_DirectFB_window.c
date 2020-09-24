@@ -67,7 +67,7 @@ DirectFB_CreateWindow(_THIS, SDL_Window * window)
 
     DirectFB_WM_AdjustWindowLayout(window, window->flags, window->w, window->h);
 
-    /* Create Window */
+    /* Create GlWindow */
     desc.caps = 0;
     desc.flags =
         DWDESC_WIDTH | DWDESC_HEIGHT | DWDESC_POSX | DWDESC_POSY | DWDESC_SURFACE_CAPS;
@@ -364,7 +364,7 @@ DirectFB_RestoreWindow(_THIS, SDL_Window * window)
     wopts &= ~(DWOP_KEEP_SIZE | DWOP_KEEP_POSITION);
     SDL_DFB_CHECK(windata->dfbwin->SetOptions(windata->dfbwin, wopts));
 
-    /* Window layout */
+    /* GlWindow layout */
     DirectFB_WM_AdjustWindowLayout(window, window->flags & ~(SDL_WINDOW_MAXIMIZED | SDL_WINDOW_MINIMIZED),
         windata->restore.w, windata->restore.h);
     SDL_DFB_CHECK(windata->dfbwin->Resize(windata->dfbwin, windata->restore.w,

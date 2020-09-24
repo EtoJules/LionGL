@@ -10,7 +10,7 @@ the framebuffer, try to set the following variable before starting your applicat
 "export SDL_VIDEODRIVER=pandora"
 
 - OpenGL ES support was added to the x11 driver, so it's working like the normal
-x11 driver one with OpenGLX support, with SDL input event's etc..
+x11 driver one with OpenGLX support, with SDL input m_event's etc..
 
 
 David Carré (Cpasjuste)

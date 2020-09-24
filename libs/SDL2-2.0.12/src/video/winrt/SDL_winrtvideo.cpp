@@ -77,7 +77,7 @@ static int WINRT_SetDisplayMode(_THIS, SDL_VideoDisplay * display, SDL_DisplayMo
 static void WINRT_VideoQuit(_THIS);
 
 
-/* Window functions */
+/* GlWindow functions */
 static int WINRT_CreateWindow(_THIS, SDL_Window * window);
 static void WINRT_SetWindowSize(_THIS, SDL_Window * window);
 static void WINRT_SetWindowFullscreen(_THIS, SDL_Window * window, SDL_VideoDisplay * display, SDL_bool fullscreen);

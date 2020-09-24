@@ -90,17 +90,17 @@
     </request>
 
     <request name="pong">
-      <description summary="respond to a ping event">
-	A client must respond to a ping event with a pong request or
+      <description summary="respond to a ping m_event">
+	A client must respond to a ping m_event with a pong request or
 	the client may be deemed unresponsive. See xdg_wm_base.ping.
       </description>
-      <arg name="serial" type="uint" summary="serial of the ping event"/>
+      <arg name="serial" type="uint" summary="serial of the ping m_event"/>
     </request>
 
-    <event name="ping">
+    <m_event name="ping">
       <description summary="check if the client is alive">
-	The ping event asks the client if it's still alive. Pass the
-	serial specified in the event back to the compositor by sending
+	The ping m_event asks the client if it's still alive. Pass the
+	serial specified in the m_event back to the compositor by sending
 	a "pong" request back with the specified serial. See xdg_wm_base.ping.
 
 	Compositors can use this to determine if the client is still
@@ -112,7 +112,7 @@
 	always respond to any xdg_wm_base object it created.
       </description>
       <arg name="serial" type="uint" summary="pass this to the pong request"/>
-    </event>
+    </m_event>
   </interface>
 
   <interface name="xdg_positioner" version="1">
@@ -195,7 +195,7 @@
       <description summary="set anchor rectangle anchor">
 	Defines the anchor point for the anchor rectangle. The specified anchor
 	is used derive an anchor point that the child surface will be
-	positioned relative to. If a corner anchor is set (e.g. 'top_left' or
+	positioned relative to. If a corner anchor is set (m_event.g. 'top_left' or
 	'bottom_right'), the anchor point will be at the specified corner;
 	otherwise, the derived anchor point will be centered on the specified
 	edge, or in the center of the anchor rectangle if no edge is specified.
@@ -220,7 +220,7 @@
       <description summary="set child surface gravity">
 	Defines in what direction a surface should be positioned, relative to
 	the anchor point of the parent surface. If a corner gravity is
-	specified (e.g. 'bottom_right' or 'top_left'), then the child surface
+	specified (m_event.g. 'bottom_right' or 'top_left'), then the child surface
 	will be placed towards the specified gravity; otherwise, the child
 	surface will be centered over the anchor point on any axis that had no
 	gravity specified.
@@ -371,7 +371,7 @@
 
       Creating an xdg_surface does not set the role for a wl_surface. In order
       to map an xdg_surface, the client must create a role-specific object
-      using, e.g., get_toplevel, get_popup. The wl_surface for any given
+      using, m_event.g., get_toplevel, get_popup. The wl_surface for any given
       xdg_surface can have at most one role, and may not be assigned any role
       not based on xdg_surface.
 
@@ -481,18 +481,18 @@
     </request>
 
     <request name="ack_configure">
-      <description summary="ack a configure event">
-	When a configure event is received, if a client commits the
-	surface in response to the configure event, then the client
+      <description summary="ack a configure m_event">
+	When a configure m_event is received, if a client commits the
+	surface in response to the configure m_event, then the client
 	must make an ack_configure request sometime before the commit
-	request, passing along the serial of the configure event.
+	request, passing along the serial of the configure m_event.
 
 	For instance, for toplevel surfaces the compositor might use this
 	information to move a surface to the top left only when the client has
 	drawn itself for the maximized or fullscreen state.
 
 	If the client receives multiple configure events before it
-	can respond to one, it only has to ack the last configure event.
+	can respond to one, it only has to ack the last configure m_event.
 
 	A client is not required to commit immediately after sending
 	an ack_configure request - it may even ack_configure several times
@@ -500,32 +500,32 @@
 
 	A client may send multiple ack_configure requests before committing, but
 	only the last request sent before a commit indicates which configure
-	event the client really is responding to.
+	m_event the client really is responding to.
       </description>
-      <arg name="serial" type="uint" summary="the serial from the configure event"/>
+      <arg name="serial" type="uint" summary="the serial from the configure m_event"/>
     </request>
 
-    <event name="configure">
+    <m_event name="configure">
       <description summary="suggest a surface change">
-	The configure event marks the end of a configure sequence. A configure
+	The configure m_event marks the end of a configure sequence. A configure
 	sequence is a set of one or more events configuring the state of the
-	xdg_surface, including the final xdg_surface.configure event.
+	xdg_surface, including the final xdg_surface.configure m_event.
 
 	Where applicable, xdg_surface surface roles will during a configure
-	sequence extend this event as a latched state sent as events before the
-	xdg_surface.configure event. Such events should be considered to make up
+	sequence extend this m_event as a latched state sent as events before the
+	xdg_surface.configure m_event. Such events should be considered to make up
 	a set of atomically applied configuration states, where the
 	xdg_surface.configure commits the accumulated state.
 
 	Clients should arrange their surface for the new states, and then send
-	an ack_configure request with the serial sent in this configure event at
+	an ack_configure request with the serial sent in this configure m_event at
 	some point before committing the new surface.
 
 	If the client receives multiple configure events before it can respond
-	to one, it is free to discard all but the last event it received.
+	to one, it is free to discard all but the last m_event it received.
       </description>
-      <arg name="serial" type="uint" summary="serial of the configure event"/>
-    </event>
+      <arg name="serial" type="uint" summary="serial of the configure m_event"/>
+    </m_event>
   </interface>
 
   <interface name="xdg_toplevel" version="1">
@@ -538,8 +538,8 @@
 
       Unmapping an xdg_toplevel means that the surface cannot be shown
       by the compositor until it is explicitly mapped again.
-      All active operations (e.g., move, resize) are canceled and all
-      attributes (e.g. title, state, stacking, ...) are discarded for
+      All active operations (m_event.g., move, resize) are canceled and all
+      attributes (m_event.g. title, state, stacking, ...) are discarded for
       an xdg_toplevel surface when it is unmapped.
 
       Attaching a null buffer to a toplevel unmaps the surface.
@@ -625,10 +625,10 @@
 	the window menu contains.
 
 	This request must be used in response to some sort of user action
-	like a button press, key press, or touch down event.
+	like a button press, key press, or touch down m_event.
       </description>
-      <arg name="seat" type="object" interface="wl_seat" summary="the wl_seat of the user event"/>
-      <arg name="serial" type="uint" summary="the serial of the user event"/>
+      <arg name="seat" type="object" interface="wl_seat" summary="the wl_seat of the user m_event"/>
+      <arg name="serial" type="uint" summary="the serial of the user m_event"/>
       <arg name="x" type="int" summary="the x position to pop up the window menu at"/>
       <arg name="y" type="int" summary="the y position to pop up the window menu at"/>
     </request>
@@ -638,12 +638,12 @@
 	Start an interactive, user-driven move of the surface.
 
 	This request must be used in response to some sort of user action
-	like a button press, key press, or touch down event. The passed
+	like a button press, key press, or touch down m_event. The passed
 	serial is used to determine the type of interactive move (touch,
 	pointer, etc).
 
 	The server may ignore move requests depending on the state of
-	the surface (e.g. fullscreen or maximized), or if the passed serial
+	the surface (m_event.g. fullscreen or maximized), or if the passed serial
 	is no longer valid.
 
 	If triggered, the surface will lose the focus of the device
@@ -652,8 +652,8 @@
 	updating a pointer cursor, during the move. There is no guarantee
 	that the device focus will return when the move is completed.
       </description>
-      <arg name="seat" type="object" interface="wl_seat" summary="the wl_seat of the user event"/>
-      <arg name="serial" type="uint" summary="the serial of the user event"/>
+      <arg name="seat" type="object" interface="wl_seat" summary="the wl_seat of the user m_event"/>
+      <arg name="serial" type="uint" summary="the serial of the user m_event"/>
     </request>
 
     <enum name="resize_edge">
@@ -677,19 +677,19 @@
 	Start a user-driven, interactive resize of the surface.
 
 	This request must be used in response to some sort of user action
-	like a button press, key press, or touch down event. The passed
+	like a button press, key press, or touch down m_event. The passed
 	serial is used to determine the type of interactive resize (touch,
 	pointer, etc).
 
 	The server may ignore resize requests depending on the state of
-	the surface (e.g. fullscreen or maximized).
+	the surface (m_event.g. fullscreen or maximized).
 
 	If triggered, the client will receive configure events with the
 	"resize" state enum value and the expected sizes. See the "resize"
 	enum value for more details about what is required. The client
 	must also acknowledge configure events using "ack_configure". After
 	the resize is completed, the client will receive another "configure"
-	event without the resize state.
+	m_event without the resize state.
 
 	If triggered, the surface also will lose the focus of the device
 	(wl_pointer, wl_touch, etc) used for the resize. It is up to the
@@ -702,11 +702,11 @@
 	and is one of the values of the resize_edge enum. The compositor
 	may use this information to update the surface position for
 	example when dragging the top left corner. The compositor may also
-	use this information to adapt its behavior, e.g. choose an
+	use this information to adapt its behavior, m_event.g. choose an
 	appropriate cursor image.
       </description>
-      <arg name="seat" type="object" interface="wl_seat" summary="the wl_seat of the user event"/>
-      <arg name="serial" type="uint" summary="the serial of the user event"/>
+      <arg name="seat" type="object" interface="wl_seat" summary="the wl_seat of the user m_event"/>
+      <arg name="serial" type="uint" summary="the serial of the user m_event"/>
       <arg name="edges" type="uint" summary="which edge or corner is being dragged"/>
     </request>
 
@@ -714,7 +714,7 @@
       <description summary="types of state on the surface">
 	The different state values used on the surface. This is designed for
 	state values like maximized, fullscreen. It is paired with the
-	configure event to ensure that both the client and the compositor
+	configure m_event to ensure that both the client and the compositor
 	setting the state can be synchronized.
 
 	States set in this way are double-buffered. They will get applied on
@@ -723,13 +723,13 @@
       <entry name="maximized" value="1" summary="the surface is maximized">
 	<description summary="the surface is maximized">
 	  The surface is maximized. The window geometry specified in the configure
-	  event must be obeyed by the client.
+	  m_event must be obeyed by the client.
 	</description>
       </entry>
       <entry name="fullscreen" value="2" summary="the surface is fullscreen">
 	<description summary="the surface is fullscreen">
 	  The surface is fullscreen. The window geometry specified in the
-	  configure event is a maximum; the client cannot resize beyond it. For
+	  configure m_event is a maximum; the client cannot resize beyond it. For
 	  a surface to cover the whole fullscreened area, the geometry
 	  dimensions must be obeyed by the client. For more details, see
 	  xdg_toplevel.set_fullscreen.
@@ -738,7 +738,7 @@
       <entry name="resizing" value="3" summary="the surface is being resized">
 	<description summary="the surface is being resized">
 	  The surface is being resized. The window geometry specified in the
-	  configure event is a maximum; the client cannot resize beyond it.
+	  configure m_event is a maximum; the client cannot resize beyond it.
 	  Clients that have aspect ratio or cell sizing configuration can use
 	  a smaller size, however.
 	</description>
@@ -839,9 +839,9 @@
 	Maximize the surface.
 
 	After requesting that the surface should be maximized, the compositor
-	will respond by emitting a configure event with the "maximized" state
+	will respond by emitting a configure m_event with the "maximized" state
 	and the required window geometry. The client should then update its
-	content, drawing it in a maximized state, i.e. without shadow or other
+	content, drawing it in a maximized state, i.m_event. without shadow or other
 	decoration outside of the window geometry. The client must also
 	acknowledge the configure when committing the new content (see
 	ack_configure).
@@ -851,7 +851,7 @@
 	be used.
 
 	If the surface was already maximized, the compositor will still emit
-	a configure event with the "maximized" state.
+	a configure m_event with the "maximized" state.
 
 	If the surface is in a fullscreen state, this request has no direct
 	effect. It will alter the state the surface is returned to when
@@ -864,11 +864,11 @@
 	Unmaximize the surface.
 
 	After requesting that the surface should be unmaximized, the compositor
-	will respond by emitting a configure event without the "maximized"
+	will respond by emitting a configure m_event without the "maximized"
 	state. If available, the compositor will include the window geometry
 	dimensions the window had prior to being maximized in the configure
-	event. The client must then update its content, drawing it in a
-	regular state, i.e. potentially with shadow, etc. The client must also
+	m_event. The client must then update its content, drawing it in a
+	regular state, i.m_event. potentially with shadow, etc. The client must also
 	acknowledge the configure when committing the new content (see
 	ack_configure).
 
@@ -877,7 +877,7 @@
 	applicable.
 
 	If the surface was already not maximized, the compositor will still
-	emit a configure event without the "maximized" state.
+	emit a configure m_event without the "maximized" state.
 
 	If the surface is in a fullscreen state, this request has no direct
 	effect. It will alter the state the surface is returned to when
@@ -890,7 +890,7 @@
 	Make the surface fullscreen.
 
 	After requesting that the surface should be fullscreened, the
-	compositor will respond by emitting a configure event with the
+	compositor will respond by emitting a configure m_event with the
 	"fullscreen" state and the fullscreen window geometry. The client must
 	also acknowledge the configure when committing the new content (see
 	ack_configure).
@@ -904,7 +904,7 @@
 	position the surface in the center of the output and compensate with
 	with border fill covering the rest of the output. The content of the
 	border fill is undefined, but should be assumed to be in some way that
-	attempts to blend into the surrounding area (e.g. solid black).
+	attempts to blend into the surrounding area (m_event.g. solid black).
 
 	If the fullscreened surface is not opaque, the compositor must make
 	sure that other screen content not part of the same surface tree (made
@@ -919,7 +919,7 @@
 	Make the surface no longer fullscreen.
 
 	After requesting that the surface should be unfullscreened, the
-	compositor will respond by emitting a configure event without the
+	compositor will respond by emitting a configure m_event without the
 	"fullscreen" state.
 
 	Making a surface unfullscreen sets states for the surface based on the following:
@@ -928,7 +928,7 @@
 	* any state(s) requested by the client while the surface was fullscreen
 
 	The compositor may include the previous window geometry dimensions in
-	the configure event, if applicable.
+	the configure m_event, if applicable.
 
 	The client must also acknowledge the configure when committing the new
 	content (see ack_configure).
@@ -942,15 +942,15 @@
 	any way to unset minimization on this surface.
 
 	If you are looking to throttle redrawing when minimized, please
-	instead use the wl_surface.frame event for this, as this will
+	instead use the wl_surface.frame m_event for this, as this will
 	also work with live previews on windows in Alt-Tab, Expose or
 	similar compositor features.
       </description>
     </request>
 
-    <event name="configure">
+    <m_event name="configure">
       <description summary="suggest a surface change">
-	This configure event asks the client to resize its toplevel surface or
+	This configure m_event asks the client to resize its toplevel surface or
 	to change its state. The configured state should not be applied
 	immediately. See xdg_surface.configure for details.
 
@@ -963,21 +963,21 @@
 	compositor needs to configure the state of the surface but doesn't
 	have any information about any previous or expected dimension.
 
-	The states listed in the event specify how the width/height
+	The states listed in the m_event specify how the width/height
 	arguments should be interpreted, and possibly how it should be
 	drawn.
 
-	Clients must send an ack_configure in response to this event. See
+	Clients must send an ack_configure in response to this m_event. See
 	xdg_surface.configure and xdg_surface.ack_configure for details.
       </description>
       <arg name="width" type="int"/>
       <arg name="height" type="int"/>
       <arg name="states" type="array"/>
-    </event>
+    </m_event>
 
-    <event name="close">
+    <m_event name="close">
       <description summary="surface wants to be closed">
-	The close event is sent by the compositor when the user
+	The close m_event is sent by the compositor when the user
 	wants the surface to be closed. This should be equivalent to
 	the user clicking the close button in client-side decorations,
 	if your application has any.
@@ -986,7 +986,7 @@
 	window. The client may choose to ignore this request, or show
 	a dialog to ask the user to save their data, etc.
       </description>
-    </event>
+    </m_event>
   </interface>
 
   <interface name="xdg_popup" version="1">
@@ -998,9 +998,9 @@
       A popup can be made to take an explicit grab. See xdg_popup.grab for
       details.
 
-      When the popup is dismissed, a popup_done event will be sent out, and at
+      When the popup is dismissed, a popup_done m_event will be sent out, and at
       the same time the surface will be unmapped. See the xdg_popup.popup_done
-      event for details.
+      m_event for details.
 
       Explicitly destroying the xdg_popup object will also dismiss the popup and
       unmap the surface. Clients that want to dismiss the popup when another
@@ -1053,8 +1053,8 @@
 	dismissed.
 
 	This request must be used in response to some sort of user action like a
-	button press, key press, or touch down event. The serial number of the
-	event should be passed as 'serial'.
+	button press, key press, or touch down m_event. The serial number of the
+	m_event should be passed as 'serial'.
 
 	The parent of a grabbing popup must either be an xdg_toplevel surface or
 	another xdg_popup with an explicit grab. If the parent is another
@@ -1062,7 +1062,7 @@
 	the topmost popup.
 
 	Nested popups must be destroyed in the reverse order they were created
-	in, e.g. the only popup you are allowed to destroy at all times is the
+	in, m_event.g. the only popup you are allowed to destroy at all times is the
 	topmost one.
 
 	When compositors choose to dismiss a popup, they may dismiss every
@@ -1086,13 +1086,13 @@
 	will always have keyboard focus.
       </description>
       <arg name="seat" type="object" interface="wl_seat"
-	   summary="the wl_seat of the user event"/>
-      <arg name="serial" type="uint" summary="the serial of the user event"/>
+	   summary="the wl_seat of the user m_event"/>
+      <arg name="serial" type="uint" summary="the serial of the user m_event"/>
     </request>
 
-    <event name="configure">
+    <m_event name="configure">
       <description summary="configure the popup surface">
-	This event asks the popup surface to configure itself given the
+	This m_event asks the popup surface to configure itself given the
 	configuration. The configured state should not be applied immediately.
 	See xdg_surface.configure for details.
 
@@ -1106,15 +1106,15 @@
 	   summary="y position relative to parent surface window geometry"/>
       <arg name="width" type="int" summary="window geometry width"/>
       <arg name="height" type="int" summary="window geometry height"/>
-    </event>
+    </m_event>
 
-    <event name="popup_done">
+    <m_event name="popup_done">
       <description summary="popup interaction is done">
-	The popup_done event is sent out when a popup is dismissed by the
+	The popup_done m_event is sent out when a popup is dismissed by the
 	compositor. The client should destroy the xdg_popup object at this
 	point.
       </description>
-    </event>
+    </m_event>
 
   </interface>
 </protocol>

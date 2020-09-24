@@ -227,7 +227,7 @@ glSetSwapInterval(_THIS, int interval)
 /**
  * Swaps the EGL buffers associated with the given window
  * @param   _THIS
- * @param   window  Window to swap buffers for
+ * @param   window  GlWindow to swap buffers for
  * @return  0 if successful, -1 on error
  */
 int

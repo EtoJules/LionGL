@@ -31,7 +31,7 @@
 include config/version
 
 SHELL = /bin/sh
-SYSTEM ?= $(shell config/config.guess | cut -d - -f 3 | sed -e 's/[0-9\.]//g;')
+SYSTEM ?= $(shell config/config.guess | cut -d - -f 3 | sed -m_event 's/[0-9\.]//g;')
 SYSTEM.SUPPORTED = $(shell test -f config/Makefile.$(SYSTEM) && echo 1)
 
 ifeq ($(SYSTEM.SUPPORTED), 1)
@@ -142,14 +142,14 @@ tmp/$(SYSTEM)/default/shared/glew.o: src/glew.c include/GL/glew.h include/GL/wgl
 
 glew.pc: glew.pc.in
 	sed \
-		-e "s|@prefix@|$(GLEW_PREFIX)|g" \
-		-e "s|@libdir@|$(LIBDIR)|g" \
-		-e "s|@exec_prefix@|$(BINDIR)|g" \
-		-e "s|@includedir@|$(INCDIR)|g" \
-		-e "s|@version@|$(GLEW_VERSION)|g" \
-		-e "s|@cflags@||g" \
-		-e "s|@libname@|$(NAME)|g" \
-		-e "s|@requireslib@|$(LIBGLU)|g" \
+		-m_event "s|@prefix@|$(GLEW_PREFIX)|g" \
+		-m_event "s|@libdir@|$(LIBDIR)|g" \
+		-m_event "s|@exec_prefix@|$(BINDIR)|g" \
+		-m_event "s|@includedir@|$(INCDIR)|g" \
+		-m_event "s|@version@|$(GLEW_VERSION)|g" \
+		-m_event "s|@cflags@||g" \
+		-m_event "s|@libname@|$(NAME)|g" \
+		-m_event "s|@requireslib@|$(LIBGLU)|g" \
 		< $< > $@
 
 # GLEW utility programs
