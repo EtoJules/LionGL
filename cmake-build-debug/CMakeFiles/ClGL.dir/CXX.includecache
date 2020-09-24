@@ -793,6 +793,8 @@ Sandbox/Sandbox.h
 ../src/SandboxExamples/Triangle/Sandbox/Sandbox.h
 iostream
 -
+imgui/imgui.h
+../src/SandboxExamples/Triangle/imgui/imgui.h
 
 /home/andrew/MY/Projects/Graphic/LionGL/main.cpp
 GL/glew.h

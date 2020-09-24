@@ -67,18 +67,15 @@ void GlWindow::startGameLoop()
                     break;
             }
         }
-
         ImGui_ImplOpenGL3_NewFrame();
         ImGui_ImplSDL2_NewFrame(m_window);
         ImGui::NewFrame();
-        {
-            ImGui::Begin("FPS");
-            ImGui::Text("Average %.3f ms (%.1f FPS)",
-                        1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
-            ImGui::End();
-        }
-        ImGui::Render();
 
+        {
+            m_sandbox->onGUI();
+        }
+
+        ImGui::Render();
         last = now;
         now = SDL_GetPerformanceCounter();
         deltaTime = (double) ((now - last) * 1000 / (double) SDL_GetPerformanceFrequency());

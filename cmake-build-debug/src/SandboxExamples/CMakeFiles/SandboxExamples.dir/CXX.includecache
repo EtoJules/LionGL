@@ -22,6 +22,26 @@ OpenGL/glu.h
 GL/glu.h
 -
 
+../libs/imgui/imconfig.h
+
+../libs/imgui/imgui.h
+imconfig.h
+../libs/imgui/imconfig.h
+float.h
+-
+stdarg.h
+-
+stddef.h
+-
+string.h
+-
+assert.h
+-
+stdint.h
+-
+imgui_user.h
+../libs/imgui/imgui_user.h
+
 ../src/Core/Renderer/IndexBuffer/IndexBuffer.h
 GL/glew.h
 -
@@ -83,4 +103,6 @@ Sandbox/Sandbox.h
 /home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/Triangle/Sandbox/Sandbox.h
 iostream
 -
+imgui/imgui.h
+/home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/Triangle/imgui/imgui.h
 

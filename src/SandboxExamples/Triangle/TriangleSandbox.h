@@ -4,6 +4,8 @@
 #include "Sandbox/Sandbox.h"
 #include <iostream>
 
+#include "imgui/imgui.h"
+
 class TriangleSandbox : public Sandbox
 {
 private:
@@ -18,6 +20,7 @@ public:
     TriangleSandbox();
 
 public:
+    void onGUI() final;
     void start() final;
     void onUpdate(double deltaTime) final;
 

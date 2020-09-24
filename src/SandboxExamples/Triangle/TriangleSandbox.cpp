@@ -31,3 +31,11 @@ void TriangleSandbox::onUpdate(double deltaTime)
     m_renderer.clear();
     m_renderer.draw(m_vertexArray, m_indexBuffer, m_shader);
 }
+
+void TriangleSandbox::onGUI()
+{
+    ImGui::Begin("FPS");
+    ImGui::Text("Average %.3f ms (%.1f FPS)",
+                1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
+    ImGui::End();
+}

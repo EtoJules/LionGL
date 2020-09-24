@@ -3,6 +3,8 @@
 
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/Triangle/TriangleSandbox.cpp.o
  ../includes/GL/glew.h
+ ../libs/imgui/imconfig.h
+ ../libs/imgui/imgui.h
  ../src/Core/Renderer/IndexBuffer/IndexBuffer.h
  ../src/Core/Renderer/Renderer.h
  ../src/Core/Renderer/Shader/Shader.h
