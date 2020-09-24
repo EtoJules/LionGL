@@ -16,5 +16,6 @@ void TriangleSandbox::start()
 void TriangleSandbox::onUpdate(double deltaTime)
 {
     std::cout << deltaTime << std::endl;
+    m_renderer.clear();
     m_renderer.draw(m_vertexArray, m_indexBuffer, m_shader);
 }

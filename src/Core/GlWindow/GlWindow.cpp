@@ -6,7 +6,7 @@ GlWindow::GlWindow(const std::string& name, unsigned int width, unsigned int hei
     m_window = SDL_CreateWindow(name.c_str(),
                                 SDL_WINDOWPOS_CENTERED,
                                 SDL_WINDOWPOS_CENTERED, width, height, flags);
-    SDL_GLContext glContext = SDL_GL_CreateContext(m_window);
+    m_glContext = SDL_GL_CreateContext(m_window);
     m_sandbox = new Sandbox();
 }
 
@@ -24,8 +24,8 @@ void GlWindow::loadSandbox(Sandbox* sandbox)
 
 void GlWindow::startGameLoop()
 {
-    double now = SDL_GetPerformanceCounter();
-    double last = 0;
+    Uint64 now = SDL_GetPerformanceCounter();
+    Uint64 last = 0;
     double deltaTime = 0;
 
     m_sandbox->start();
@@ -33,9 +33,7 @@ void GlWindow::startGameLoop()
     {
         last = now;
         now = SDL_GetPerformanceCounter();
-        deltaTime = (double)((now-last) * 1000 / (double)SDL_GetPerformanceFrequency());
-        m_sandbox->onUpdate(deltaTime);
-
+        deltaTime = (double) ((now - last) * 1000 / (double) SDL_GetPerformanceFrequency());
         while(SDL_PollEvent(&m_event) > 0)
         {
             switch(m_event.type)
@@ -44,7 +42,8 @@ void GlWindow::startGameLoop()
                     m_isWindowOpen = false;
                     break;
             }
-            SDL_GL_SwapWindow(m_window);
         }
+        m_sandbox->onUpdate(deltaTime);
+        SDL_GL_SwapWindow(m_window);
     }
 }

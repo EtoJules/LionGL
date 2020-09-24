@@ -10,7 +10,7 @@ int main()
         return -1;
     GlWindow window("LionGL",
                     800, 600,
-                    SDL_WINDOW_OPENGL|SDL_WINDOW_RESIZABLE);
+                    SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE);
     if (glewInit() != GLEW_OK)
         std::cout << "Glew error!!! \n";
 
