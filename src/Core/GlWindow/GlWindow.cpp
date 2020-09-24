@@ -31,9 +31,6 @@ void GlWindow::startGameLoop()
     m_sandbox->start();
     while(m_isWindowOpen)
     {
-        last = now;
-        now = SDL_GetPerformanceCounter();
-        deltaTime = (double) ((now - last) * 1000 / (double) SDL_GetPerformanceFrequency());
         while(SDL_PollEvent(&m_event) > 0)
         {
             switch(m_event.type)
@@ -43,6 +40,9 @@ void GlWindow::startGameLoop()
                     break;
             }
         }
+        last = now;
+        now = SDL_GetPerformanceCounter();
+        deltaTime = (double) ((now - last) * 1000 / (double) SDL_GetPerformanceFrequency());
         m_sandbox->onUpdate(deltaTime);
         SDL_GL_SwapWindow(m_window);
     }
