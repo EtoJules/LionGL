@@ -1,2 +1,2 @@
 add_library(SandboxExamples STATIC
-        TriangleSadbox/TriangleSandbox.h TriangleSadbox/TriangleSandbox.cpp)
+        TriangleSandbox/TriangleSandbox.h TriangleSandbox/TriangleSandbox.cpp)

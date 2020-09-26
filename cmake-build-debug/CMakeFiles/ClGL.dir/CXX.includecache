@@ -1762,17 +1762,17 @@ string
 fstream
 -
 
-../src/SandboxExamples/TriangleSadbox/TriangleSandbox.h
+../src/SandboxExamples/TriangleSandbox/TriangleSandbox.h
 Core/Renderer/Renderer.h
-../src/SandboxExamples/TriangleSadbox/Core/Renderer/Renderer.h
+../src/SandboxExamples/TriangleSandbox/Core/Renderer/Renderer.h
 Sandbox/Sandbox.h
-../src/SandboxExamples/TriangleSadbox/Sandbox/Sandbox.h
+../src/SandboxExamples/TriangleSandbox/Sandbox/Sandbox.h
 imgui/imgui.h
-../src/SandboxExamples/TriangleSadbox/imgui/imgui.h
+../src/SandboxExamples/TriangleSandbox/imgui/imgui.h
 glm/mat4x4.hpp
-../src/SandboxExamples/TriangleSadbox/glm/mat4x4.hpp
+../src/SandboxExamples/TriangleSandbox/glm/mat4x4.hpp
 glm/gtc/matrix_transform.hpp
-../src/SandboxExamples/TriangleSadbox/glm/gtc/matrix_transform.hpp
+../src/SandboxExamples/TriangleSandbox/glm/gtc/matrix_transform.hpp
 iostream
 -
 
@@ -1781,8 +1781,8 @@ GL/glew.h
 -
 iostream
 -
-SandboxExamples/TriangleSadbox/TriangleSandbox.h
-/home/andrew/MY/Projects/Graphic/LionGL/SandboxExamples/TriangleSadbox/TriangleSandbox.h
+SandboxExamples/TriangleSandbox/TriangleSandbox.h
+/home/andrew/MY/Projects/Graphic/LionGL/SandboxExamples/TriangleSandbox/TriangleSandbox.h
 GlWindow/GlWindow.h
 /home/andrew/MY/Projects/Graphic/LionGL/GlWindow/GlWindow.h
 

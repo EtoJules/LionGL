@@ -171,32 +171,32 @@ SandboxExamples/fast:
 	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build
 .PHONY : SandboxExamples/fast
 
-TriangleSadbox/TriangleSandbox.o: TriangleSadbox/TriangleSandbox.cpp.o
+TriangleSandbox/TriangleSandbox.o: TriangleSandbox/TriangleSandbox.cpp.o
 
-.PHONY : TriangleSadbox/TriangleSandbox.o
+.PHONY : TriangleSandbox/TriangleSandbox.o
 
 # target to build an object file
-TriangleSadbox/TriangleSandbox.cpp.o:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSadbox/TriangleSandbox.cpp.o
-.PHONY : TriangleSadbox/TriangleSandbox.cpp.o
+TriangleSandbox/TriangleSandbox.cpp.o:
+	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o
+.PHONY : TriangleSandbox/TriangleSandbox.cpp.o
 
-TriangleSadbox/TriangleSandbox.i: TriangleSadbox/TriangleSandbox.cpp.i
+TriangleSandbox/TriangleSandbox.i: TriangleSandbox/TriangleSandbox.cpp.i
 
-.PHONY : TriangleSadbox/TriangleSandbox.i
+.PHONY : TriangleSandbox/TriangleSandbox.i
 
 # target to preprocess a source file
-TriangleSadbox/TriangleSandbox.cpp.i:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSadbox/TriangleSandbox.cpp.i
-.PHONY : TriangleSadbox/TriangleSandbox.cpp.i
+TriangleSandbox/TriangleSandbox.cpp.i:
+	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.i
+.PHONY : TriangleSandbox/TriangleSandbox.cpp.i
 
-TriangleSadbox/TriangleSandbox.s: TriangleSadbox/TriangleSandbox.cpp.s
+TriangleSandbox/TriangleSandbox.s: TriangleSandbox/TriangleSandbox.cpp.s
 
-.PHONY : TriangleSadbox/TriangleSandbox.s
+.PHONY : TriangleSandbox/TriangleSandbox.s
 
 # target to generate assembly for a file
-TriangleSadbox/TriangleSandbox.cpp.s:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSadbox/TriangleSandbox.cpp.s
-.PHONY : TriangleSadbox/TriangleSandbox.cpp.s
+TriangleSandbox/TriangleSandbox.cpp.s:
+	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.s
+.PHONY : TriangleSandbox/TriangleSandbox.cpp.s
 
 # Help Target
 help:
@@ -211,9 +211,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... install/local"
 	@echo "... SandboxExamples"
-	@echo "... TriangleSadbox/TriangleSandbox.o"
-	@echo "... TriangleSadbox/TriangleSandbox.i"
-	@echo "... TriangleSadbox/TriangleSandbox.s"
+	@echo "... TriangleSandbox/TriangleSandbox.o"
+	@echo "... TriangleSandbox/TriangleSandbox.i"
+	@echo "... TriangleSandbox/TriangleSandbox.s"
 .PHONY : help
 
 

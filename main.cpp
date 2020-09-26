@@ -1,7 +1,7 @@
 #include <GL/glew.h>
 #include <iostream>
 
-#include "SandboxExamples/TriangleSadbox/TriangleSandbox.h"
+#include "SandboxExamples/TriangleSandbox/TriangleSandbox.h"
 #include "GlWindow/GlWindow.h"
 
 int main()

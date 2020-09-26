@@ -717,10 +717,10 @@
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Helper/parser.h">
 			<Option target="Sources"/>
 		</Unit>
-		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/TriangleSadbox/TriangleSandbox.cpp">
+		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/TriangleSandbox/TriangleSandbox.cpp">
 			<Option target="SandboxExamples"/>
 		</Unit>
-		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/TriangleSadbox/TriangleSandbox.h">
+		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/TriangleSandbox/TriangleSandbox.h">
 			<Option target="SandboxExamples"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/CMakeLists.txt">

@@ -221,5 +221,5 @@ CMakeFiles/ClGL.dir/main.cpp.o
  ../src/Core/Renderer/VertexBuffer/VertexLayout.h
  ../src/Core/Sandbox/Sandbox.h
  ../src/Helper/parser.h
- ../src/SandboxExamples/TriangleSadbox/TriangleSandbox.h
+ ../src/SandboxExamples/TriangleSandbox/TriangleSandbox.h
  /home/andrew/MY/Projects/Graphic/LionGL/main.cpp

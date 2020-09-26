@@ -57,27 +57,27 @@ include src/SandboxExamples/CMakeFiles/SandboxExamples.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/SandboxExamples/CMakeFiles/SandboxExamples.dir/flags.make
 
-src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSadbox/TriangleSandbox.cpp.o: src/SandboxExamples/CMakeFiles/SandboxExamples.dir/flags.make
-src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSadbox/TriangleSandbox.cpp.o: ../src/SandboxExamples/TriangleSadbox/TriangleSandbox.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSadbox/TriangleSandbox.cpp.o"
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SandboxExamples.dir/TriangleSadbox/TriangleSandbox.cpp.o -c /home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/TriangleSadbox/TriangleSandbox.cpp
+src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o: src/SandboxExamples/CMakeFiles/SandboxExamples.dir/flags.make
+src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o: ../src/SandboxExamples/TriangleSandbox/TriangleSandbox.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o"
+	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o -c /home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/TriangleSandbox/TriangleSandbox.cpp
 
-src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSadbox/TriangleSandbox.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SandboxExamples.dir/TriangleSadbox/TriangleSandbox.cpp.i"
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/TriangleSadbox/TriangleSandbox.cpp > CMakeFiles/SandboxExamples.dir/TriangleSadbox/TriangleSandbox.cpp.i
+src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.i"
+	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/TriangleSandbox/TriangleSandbox.cpp > CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.i
 
-src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSadbox/TriangleSandbox.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SandboxExamples.dir/TriangleSadbox/TriangleSandbox.cpp.s"
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/TriangleSadbox/TriangleSandbox.cpp -o CMakeFiles/SandboxExamples.dir/TriangleSadbox/TriangleSandbox.cpp.s
+src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.s"
+	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/TriangleSandbox/TriangleSandbox.cpp -o CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.s
 
 # Object files for target SandboxExamples
 SandboxExamples_OBJECTS = \
-"CMakeFiles/SandboxExamples.dir/TriangleSadbox/TriangleSandbox.cpp.o"
+"CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o"
 
 # External object files for target SandboxExamples
 SandboxExamples_EXTERNAL_OBJECTS =
 
-src/SandboxExamples/libSandboxExamples.a: src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSadbox/TriangleSandbox.cpp.o
+src/SandboxExamples/libSandboxExamples.a: src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o
 src/SandboxExamples/libSandboxExamples.a: src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make
 src/SandboxExamples/libSandboxExamples.a: src/SandboxExamples/CMakeFiles/SandboxExamples.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libSandboxExamples.a"
