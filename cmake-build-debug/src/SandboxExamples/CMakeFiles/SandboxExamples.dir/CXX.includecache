@@ -1068,21 +1068,21 @@ string
 fstream
 -
 
-/home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/TriangleSandbox/TriangleSandbox.cpp
-TriangleSandbox.h
-/home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/TriangleSandbox/TriangleSandbox.h
+/home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/CameraSandbox/CameraSandbox.cpp
+CameraSandbox.h
+/home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/CameraSandbox/CameraSandbox.h
 
-/home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/TriangleSandbox/TriangleSandbox.h
+/home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/CameraSandbox/CameraSandbox.h
 Core/Renderer/Renderer.h
-/home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/TriangleSandbox/Core/Renderer/Renderer.h
+/home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/CameraSandbox/Core/Renderer/Renderer.h
 Sandbox/Sandbox.h
-/home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/TriangleSandbox/Sandbox/Sandbox.h
+/home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/CameraSandbox/Sandbox/Sandbox.h
 imgui/imgui.h
-/home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/TriangleSandbox/imgui/imgui.h
+/home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/CameraSandbox/imgui/imgui.h
 glm/mat4x4.hpp
-/home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/TriangleSandbox/glm/mat4x4.hpp
+/home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/CameraSandbox/glm/mat4x4.hpp
 glm/gtc/matrix_transform.hpp
-/home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/TriangleSandbox/glm/gtc/matrix_transform.hpp
+/home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/CameraSandbox/glm/gtc/matrix_transform.hpp
 iostream
 -
 
