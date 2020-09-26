@@ -350,7 +350,7 @@ SDL_LoadLaunchImageNamed(NSString *name, int screenh)
 - (void)postFinishLaunch
 {
     /* Hide the launch screen the next time the run loop is run. SDL2 apps will
-     * have a chance to load resources while the launch screen is still up. */
+     * have a chance to load res while the launch screen is still up. */
     [self performSelector:@selector(hideLaunchScreen) withObject:nil afterDelay:0.0];
 
     /* run the user's application, passing argc and argv */
@@ -377,7 +377,7 @@ SDL_LoadLaunchImageNamed(NSString *name, int screenh)
     /* The normal launch screen is displayed until didFinishLaunching returns,
      * but SDL_main is called after that happens and there may be a noticeable
      * delay between the start of SDL_main and when the first real frame is
-     * displayed (e.g. if resources are loaded before SDL_GL_SwapWindow is
+     * displayed (e.g. if res are loaded before SDL_GL_SwapWindow is
      * called), so we show the launch screen programmatically until the first
      * time events are pumped. */
     UIViewController *vc = nil;

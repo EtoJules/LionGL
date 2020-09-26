@@ -118,7 +118,7 @@ SDL_SYS_CreateThread(SDL_Thread * thread, void *args)
 
     /* Create the thread and go! */
     if (pthread_create(&thread->handle, &type, RunThread, args) != 0) {
-        return SDL_SetError("Not enough resources to create thread");
+        return SDL_SetError("Not enough res to create thread");
     }
 
     return 0;

@@ -101,7 +101,7 @@ endforeach(RESOURCE_FILE)
 
 file(COPY ${RESOURCE_FILES} DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 
-# TODO: Might be easier to make all targets depend on the resources...?
+# TODO: Might be easier to make all targets depend on the res...?
 
 set(NEEDS_RESOURCES
     testscale

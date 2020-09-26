@@ -56,7 +56,7 @@ StartBeApp(void *unused)
 {
     BApplication *App;
 
-    // dig resources for correct signature
+    // dig res for correct signature
     image_info info;
     int32 cookie = 0;
     if (get_next_image_info(B_CURRENT_TEAM, &cookie, &info) == B_OK) {

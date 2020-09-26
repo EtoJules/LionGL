@@ -2,9 +2,10 @@
 
 #include "Core/Renderer/Renderer.h"
 #include "Sandbox/Sandbox.h"
-#include <iostream>
-
 #include "imgui/imgui.h"
+#include "glm/mat4x4.hpp"
+#include "glm/gtc/matrix_transform.hpp"
+#include <iostream>
 
 class TriangleSandbox : public Sandbox
 {
@@ -16,12 +17,16 @@ private:
     Shader m_shader;
     Renderer m_renderer{};
 
+private:
+    glm::mat4 m_model;
+    glm::mat4 m_view;
+    glm::mat4 m_projection;
+
 public:
     TriangleSandbox();
 
 public:
-    void onGUI() final;
     void start() final;
     void onUpdate(double deltaTime) final;
-
+    void onGUI() final;
 };

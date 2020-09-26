@@ -5,7 +5,11 @@ layout(location = 1) in vec3 aColor;
 
 out vec3 oColor;
 
+uniform mat4 u_Model;
+uniform mat4 u_View;
+uniform mat4 u_Projection;
+
 void main() {
-    gl_Position = vec4(aPos.xyz, 1.0f);
+    gl_Position = u_Projection * u_View * u_Model * vec4(aPos, 1.0f);
     oColor = aColor;
 }

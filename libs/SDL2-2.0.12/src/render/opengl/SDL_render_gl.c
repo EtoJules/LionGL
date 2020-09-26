@@ -1477,7 +1477,7 @@ GL_DestroyRenderer(SDL_Renderer * renderer)
 
     if (data) {
         if (data->context != NULL) {
-            /* make sure we delete the right resources! */
+            /* make sure we delete the right res! */
             GL_ActivateRenderer(renderer);
         }
 

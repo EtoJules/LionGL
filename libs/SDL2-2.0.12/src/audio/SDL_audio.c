@@ -496,7 +496,7 @@ void SDL_OpenedAudioDeviceDisconnected(SDL_AudioDevice *device)
     }
 
     /* Ends the audio callback and mark the device as STOPPED, but the
-       app still needs to close the device to free resources. */
+       app still needs to close the device to free res. */
     current_audio.impl.LockDevice(device);
     SDL_AtomicSet(&device->enabled, 0);
     current_audio.impl.UnlockDevice(device);

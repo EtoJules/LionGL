@@ -17,59 +17,11 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="glewinfo">
-				<Option output="/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/bin/glewinfo" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/bin"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add option="-DGLEW_NO_GLU"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/includes"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src/Core"/>
-					<Add directory="/usr/include/SDL2"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs/glew-2.1.0/build/cmake/../../include"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
+			<Target title="uninstall">
+				<Option working_dir="/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake"/>
+				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 glewinfo"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="glewinfo/fast">
-				<Option output="/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/bin/glewinfo" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/bin"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add option="-DGLEW_NO_GLU"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/includes"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src/Core"/>
-					<Add directory="/usr/include/SDL2"/>
-					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs/glew-2.1.0/build/cmake/../../include"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 glewinfo/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 uninstall"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
@@ -128,6 +80,64 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 visualinfo/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glewinfo">
+				<Option output="/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/bin/glewinfo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLEW_NO_GLU"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/includes"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src/Core"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs/glew-2.1.0/build/cmake/../../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 glewinfo"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glewinfo/fast">
+				<Option output="/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/bin/glewinfo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLEW_NO_GLU"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/includes"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/src/Core"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/home/andrew/MY/Projects/Graphic/LionGL/libs/glew-2.1.0/build/cmake/../../include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 glewinfo/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
@@ -248,16 +258,6 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 glew/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="uninstall">
-				<Option working_dir="/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 uninstall"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile&quot;  VERBOSE=1 clean"/>

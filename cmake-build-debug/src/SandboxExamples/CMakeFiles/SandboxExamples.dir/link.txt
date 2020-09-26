@@ -1,2 +1,2 @@
-/usr/bin/ar qc libSandboxExamples.a  CMakeFiles/SandboxExamples.dir/Triangle/TriangleSandbox.cpp.o
+/usr/bin/ar qc libSandboxExamples.a  CMakeFiles/SandboxExamples.dir/TriangleSadbox/TriangleSandbox.cpp.o
 /usr/bin/ranlib libSandboxExamples.a

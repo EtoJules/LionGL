@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/Triangle/TriangleSandbox.cpp" "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples/CMakeFiles/SandboxExamples.dir/Triangle/TriangleSandbox.cpp.o"
+  "/home/andrew/MY/Projects/Graphic/LionGL/src/SandboxExamples/TriangleSadbox/TriangleSandbox.cpp" "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSadbox/TriangleSandbox.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -218,7 +218,7 @@ main (int argc, char** argv)
   VisualInfo(&ctx);
 
   /* ---------------------------------------------------------------------- */
-  /* release resources */
+  /* release res */
   DestroyContext(&ctx);
   if (file != stdout)
     fclose(file);

@@ -23,6 +23,11 @@ void Shader::unbind() const
     glUseProgram(0);
 }
 
+void Shader::setUniformMat4f(const std::string &name, glm::mat4 matrix)
+{
+    glUniformMatrix4fv(getUniformLocation(name), 1, GL_FALSE, &matrix[0][0]);
+}
+
 unsigned int Shader::compileShader(unsigned int type, const std::string& source)
 {
 	unsigned int id = glCreateShader(type);
@@ -57,4 +62,9 @@ unsigned int Shader::createShader(const std::string& vertexShader, const std::st
 	glDeleteShader(fs);
 
 	return program;
+}
+
+unsigned int Shader::getUniformLocation(std::string name) const
+{
+    return glGetUniformLocation(m_RenderID, name.c_str());
 }

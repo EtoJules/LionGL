@@ -391,7 +391,7 @@ D3D11_CreateBlendState(SDL_Renderer * renderer, SDL_BlendMode blendMode)
     return blendState;
 }
 
-/* Create resources that depend on the device. */
+/* Create res that depend on the device. */
 static HRESULT
 D3D11_CreateDeviceResources(SDL_Renderer * renderer)
 {
@@ -873,7 +873,7 @@ D3D11_HandleDeviceLost(SDL_Renderer * renderer)
     return S_OK;
 }
 
-/* Initialize all resources that change when the window's size changes. */
+/* Initialize all res that change when the window's size changes. */
 static HRESULT
 D3D11_CreateWindowSizeDependentResources(SDL_Renderer * renderer)
 {
@@ -2469,7 +2469,7 @@ D3D11_RenderPresent(SDL_Renderer * renderer)
 
     if (FAILED(result) && result != DXGI_ERROR_WAS_STILL_DRAWING) {
         /* If the device was removed either by a disconnect or a driver upgrade, we 
-         * must recreate all device resources.
+         * must recreate all device res.
          *
          * TODO, WinRT: consider throwing an exception if D3D11_RenderPresent fails, especially if there is a way to salvage debug info from users' machines
          */
@@ -2553,7 +2553,7 @@ D3D11_CreateRenderer(SDL_Window * window, Uint32 flags)
      */
     renderer->window = window;
 
-    /* Initialize Direct3D resources */
+    /* Initialize Direct3D res */
     if (FAILED(D3D11_CreateDeviceResources(renderer))) {
         D3D11_DestroyRenderer(renderer);
         return NULL;

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/SandboxExamples.dir/Triangle/TriangleSandbox.cpp.o"
+  "CMakeFiles/SandboxExamples.dir/TriangleSadbox/TriangleSandbox.cpp.o"
   "libSandboxExamples.a"
   "libSandboxExamples.pdb"
 )
