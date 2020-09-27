@@ -155,9 +155,11 @@ src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.c
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o: ../libs/glm/vector_relational.hpp
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o: ../libs/imgui/imconfig.h
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o: ../libs/imgui/imgui.h
+src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o: ../libs/stb/stb_image.h
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o: ../src/Core/Renderer/IndexBuffer/IndexBuffer.h
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o: ../src/Core/Renderer/Renderer.h
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o: ../src/Core/Renderer/Shader/Shader.h
+src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o: ../src/Core/Renderer/Texture/Texture.h
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o: ../src/Core/Renderer/VertexArray/VertexArray.h
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o: ../src/Core/Renderer/VertexBuffer/VertexBuffer.h
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o: ../src/Core/Renderer/VertexBuffer/VertexLayout.h

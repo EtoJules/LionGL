@@ -356,6 +356,11 @@ src/Core/CMakeFiles/Core.dir/Renderer/Shader/Shader.cpp.o
  ../src/Helper/parser.h
  /home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/Shader/Shader.cpp
  /home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/Shader/Shader.h
+src/Core/CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.o
+ ../includes/GL/glew.h
+ ../libs/stb/stb_image.h
+ /home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/Texture/Texture.cpp
+ /home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/Texture/Texture.h
 src/Core/CMakeFiles/Core.dir/Renderer/VertexArray/VertexArray.cpp.o
  ../includes/GL/glew.h
  ../src/Core/Renderer/VertexBuffer/VertexBuffer.h

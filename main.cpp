@@ -1,3 +1,5 @@
+#define STB_IMAGE_IMPLEMENTATION
+
 #include <GL/glew.h>
 #include <iostream>
 

@@ -356,6 +356,11 @@ src/Core/CMakeFiles/Core.dir/Renderer/Shader/Shader.cpp.o: ../src/Helper/parser.
 src/Core/CMakeFiles/Core.dir/Renderer/Shader/Shader.cpp.o: ../src/Core/Renderer/Shader/Shader.cpp
 src/Core/CMakeFiles/Core.dir/Renderer/Shader/Shader.cpp.o: ../src/Core/Renderer/Shader/Shader.h
 
+src/Core/CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.o: ../includes/GL/glew.h
+src/Core/CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.o: ../libs/stb/stb_image.h
+src/Core/CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.o: ../src/Core/Renderer/Texture/Texture.cpp
+src/Core/CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.o: ../src/Core/Renderer/Texture/Texture.h
+
 src/Core/CMakeFiles/Core.dir/Renderer/VertexArray/VertexArray.cpp.o: ../includes/GL/glew.h
 src/Core/CMakeFiles/Core.dir/Renderer/VertexArray/VertexArray.cpp.o: ../src/Core/Renderer/VertexBuffer/VertexBuffer.h
 src/Core/CMakeFiles/Core.dir/Renderer/VertexArray/VertexArray.cpp.o: ../src/Core/Renderer/VertexBuffer/VertexLayout.h

@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/IndexBuffer/IndexBuffer.cpp" "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core/CMakeFiles/Core.dir/Renderer/IndexBuffer/IndexBuffer.cpp.o"
   "/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/Renderer.cpp" "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core/CMakeFiles/Core.dir/Renderer/Renderer.cpp.o"
   "/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/Shader/Shader.cpp" "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core/CMakeFiles/Core.dir/Renderer/Shader/Shader.cpp.o"
+  "/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/Texture/Texture.cpp" "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core/CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.o"
   "/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/VertexArray/VertexArray.cpp" "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core/CMakeFiles/Core.dir/Renderer/VertexArray/VertexArray.cpp.o"
   "/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/VertexBuffer/VertexBuffer.cpp" "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core/CMakeFiles/Core.dir/Renderer/VertexBuffer/VertexBuffer.cpp.o"
   "/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/VertexBuffer/VertexLayout.cpp" "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core/CMakeFiles/Core.dir/Renderer/VertexBuffer/VertexLayout.cpp.o"

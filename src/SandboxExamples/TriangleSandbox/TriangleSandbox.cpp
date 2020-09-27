@@ -1,8 +1,8 @@
 #include "TriangleSandbox.h"
 
 TriangleSandbox::TriangleSandbox()
-    : m_shader("../src/SandboxExamples/TriangleSandbox/res/vertex.glsl",
-        "../src/SandboxExamples/TriangleSandbox/res/fragment.glsl"),
+    : m_shader("../src/SandboxExamples/TriangleSandbox/res/shaders/vertex.glsl",
+        "../src/SandboxExamples/TriangleSandbox/res/shaders/fragment.glsl"),
         m_model(1.0f), m_view(1.0f), m_projection(1.0f)
         {}
 

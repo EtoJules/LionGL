@@ -2,9 +2,12 @@
 
 #include "Core/Renderer/Renderer.h"
 #include "Sandbox/Sandbox.h"
-#include "imgui/imgui.h"
-#include "glm/mat4x4.hpp"
+
 #include "glm/gtc/matrix_transform.hpp"
+#include "glm/mat4x4.hpp"
+
+#include "Renderer/Texture/Texture.h"
+#include "imgui/imgui.h"
 #include <iostream>
 
 class CameraSandbox : public Sandbox
@@ -14,6 +17,7 @@ private:
     VertexBuffer m_vertexBuffer;
     VertexLayout m_vertexLayout;
     IndexBuffer m_indexBuffer;
+    Texture m_texture;
     Shader m_shader;
     Renderer m_renderer{};
 

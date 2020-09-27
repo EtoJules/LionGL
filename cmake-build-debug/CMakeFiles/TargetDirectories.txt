@@ -28,7 +28,7 @@
 /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core/CMakeFiles/list_install_components.dir
 /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/CMakeFiles/install/strip.dir
 /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/CMakeFiles/install/local.dir
-/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/CMakeFiles/imGUI.dir
+/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/CMakeFiles/libs.dir
 /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/CMakeFiles/edit_cache.dir
 /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/CMakeFiles/rebuild_cache.dir
 /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/CMakeFiles/install.dir

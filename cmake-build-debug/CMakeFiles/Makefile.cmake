@@ -72,7 +72,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/Sources.dir/DependInfo.cmake"
   "src/SandboxExamples/CMakeFiles/SandboxExamples.dir/DependInfo.cmake"
   "src/Core/CMakeFiles/Core.dir/DependInfo.cmake"
-  "libs/CMakeFiles/imGUI.dir/DependInfo.cmake"
+  "libs/CMakeFiles/libs.dir/DependInfo.cmake"
   "libs/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/DependInfo.cmake"
   "libs/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/DependInfo.cmake"
   "libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/DependInfo.cmake"

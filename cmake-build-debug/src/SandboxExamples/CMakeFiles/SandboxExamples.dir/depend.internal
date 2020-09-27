@@ -156,9 +156,11 @@ src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.c
  ../libs/glm/vector_relational.hpp
  ../libs/imgui/imconfig.h
  ../libs/imgui/imgui.h
+ ../libs/stb/stb_image.h
  ../src/Core/Renderer/IndexBuffer/IndexBuffer.h
  ../src/Core/Renderer/Renderer.h
  ../src/Core/Renderer/Shader/Shader.h
+ ../src/Core/Renderer/Texture/Texture.h
  ../src/Core/Renderer/VertexArray/VertexArray.h
  ../src/Core/Renderer/VertexBuffer/VertexBuffer.h
  ../src/Core/Renderer/VertexBuffer/VertexLayout.h

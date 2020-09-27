@@ -102,7 +102,7 @@ ClGL: CMakeFiles/ClGL.dir/build.make
 ClGL: src/SandboxExamples/libSandboxExamples.a
 ClGL: src/Core/libCore.a
 ClGL: src/libSources.a
-ClGL: libs/libimGUI.a
+ClGL: libs/liblibs.a
 ClGL: lib/libGLEWd.a
 ClGL: /usr/lib/x86_64-linux-gnu/libGL.so
 ClGL: /usr/lib/x86_64-linux-gnu/libGLU.so

@@ -21,5 +21,5 @@ target_link_libraries(ClGL Core)
 target_link_libraries(ClGL Sources)
 
 target_link_libraries(ClGL ${SDL2_LIBRARIES})
-target_link_libraries(ClGL imGUI)
+target_link_libraries(ClGL libs)
 target_link_libraries(ClGL glew_s)

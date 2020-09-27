@@ -299,6 +299,33 @@ Renderer/Shader/Shader.cpp.s:
 	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/Shader/Shader.cpp.s
 .PHONY : Renderer/Shader/Shader.cpp.s
 
+Renderer/Texture/Texture.o: Renderer/Texture/Texture.cpp.o
+
+.PHONY : Renderer/Texture/Texture.o
+
+# target to build an object file
+Renderer/Texture/Texture.cpp.o:
+	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.o
+.PHONY : Renderer/Texture/Texture.cpp.o
+
+Renderer/Texture/Texture.i: Renderer/Texture/Texture.cpp.i
+
+.PHONY : Renderer/Texture/Texture.i
+
+# target to preprocess a source file
+Renderer/Texture/Texture.cpp.i:
+	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.i
+.PHONY : Renderer/Texture/Texture.cpp.i
+
+Renderer/Texture/Texture.s: Renderer/Texture/Texture.cpp.s
+
+.PHONY : Renderer/Texture/Texture.s
+
+# target to generate assembly for a file
+Renderer/Texture/Texture.cpp.s:
+	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.s
+.PHONY : Renderer/Texture/Texture.cpp.s
+
 Renderer/VertexArray/VertexArray.o: Renderer/VertexArray/VertexArray.cpp.o
 
 .PHONY : Renderer/VertexArray/VertexArray.o
@@ -432,6 +459,9 @@ help:
 	@echo "... Renderer/Shader/Shader.o"
 	@echo "... Renderer/Shader/Shader.i"
 	@echo "... Renderer/Shader/Shader.s"
+	@echo "... Renderer/Texture/Texture.o"
+	@echo "... Renderer/Texture/Texture.i"
+	@echo "... Renderer/Texture/Texture.s"
 	@echo "... Renderer/VertexArray/VertexArray.o"
 	@echo "... Renderer/VertexArray/VertexArray.i"
 	@echo "... Renderer/VertexArray/VertexArray.s"

@@ -212,10 +212,12 @@ CMakeFiles/ClGL.dir/main.cpp.o
  ../libs/imgui/examples/imgui_impl_sdl.h
  ../libs/imgui/imconfig.h
  ../libs/imgui/imgui.h
+ ../libs/stb/stb_image.h
  ../src/Core/GlWindow/GlWindow.h
  ../src/Core/Renderer/IndexBuffer/IndexBuffer.h
  ../src/Core/Renderer/Renderer.h
  ../src/Core/Renderer/Shader/Shader.h
+ ../src/Core/Renderer/Texture/Texture.h
  ../src/Core/Renderer/VertexArray/VertexArray.h
  ../src/Core/Renderer/VertexBuffer/VertexBuffer.h
  ../src/Core/Renderer/VertexBuffer/VertexLayout.h

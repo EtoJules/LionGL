@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Core.dir/Renderer/IndexBuffer/IndexBuffer.cpp.o"
   "CMakeFiles/Core.dir/Renderer/Renderer.cpp.o"
   "CMakeFiles/Core.dir/Renderer/Shader/Shader.cpp.o"
+  "CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.o"
   "CMakeFiles/Core.dir/Renderer/VertexArray/VertexArray.cpp.o"
   "CMakeFiles/Core.dir/Renderer/VertexBuffer/VertexBuffer.cpp.o"
   "CMakeFiles/Core.dir/Renderer/VertexBuffer/VertexLayout.cpp.o"

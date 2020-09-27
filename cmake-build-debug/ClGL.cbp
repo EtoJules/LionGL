@@ -295,8 +295,8 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="imGUI">
-				<Option output="/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/libimGUI.a" prefix_auto="0" extension_auto="0"/>
+			<Target title="libs">
+				<Option output="/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/liblibs.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
@@ -316,14 +316,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/Makefile&quot;  VERBOSE=1 imGUI"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/Makefile&quot;  VERBOSE=1 libs"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="imGUI/fast">
-				<Option output="/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/libimGUI.a" prefix_auto="0" extension_auto="0"/>
+			<Target title="libs/fast">
+				<Option output="/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/liblibs.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
@@ -343,7 +343,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/Makefile&quot;  VERBOSE=1 imGUI/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/Makefile&quot;  VERBOSE=1 libs/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/Makefile&quot;  VERBOSE=1 clean"/>
@@ -619,46 +619,49 @@
 			<Option target="visualinfo"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/libs/imgui/examples/imgui_impl_opengl3.cpp">
-			<Option target="imGUI"/>
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/libs/imgui/examples/imgui_impl_opengl3.h">
-			<Option target="imGUI"/>
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/libs/imgui/examples/imgui_impl_sdl.cpp">
-			<Option target="imGUI"/>
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/libs/imgui/examples/imgui_impl_sdl.h">
-			<Option target="imGUI"/>
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/libs/imgui/imconfig.h">
-			<Option target="imGUI"/>
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/libs/imgui/imgui.cpp">
-			<Option target="imGUI"/>
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/libs/imgui/imgui.h">
-			<Option target="imGUI"/>
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/libs/imgui/imgui_demo.cpp">
-			<Option target="imGUI"/>
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/libs/imgui/imgui_draw.cpp">
-			<Option target="imGUI"/>
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/libs/imgui/imgui_internal.h">
-			<Option target="imGUI"/>
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/libs/imgui/imgui_widgets.cpp">
-			<Option target="imGUI"/>
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/libs/imgui/imstb_rectpack.h">
-			<Option target="imGUI"/>
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/libs/imgui/imstb_textedit.h">
-			<Option target="imGUI"/>
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/libs/imgui/imstb_truetype.h">
-			<Option target="imGUI"/>
+			<Option target="libs"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/libs/stb/stb_image.h">
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/main.cpp">
 			<Option target="ClGL"/>
@@ -685,6 +688,12 @@
 			<Option target="Core"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/Shader/Shader.h">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/Texture/Texture.cpp">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/Texture/Texture.h">
 			<Option target="Core"/>
 		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/VertexArray/VertexArray.cpp">

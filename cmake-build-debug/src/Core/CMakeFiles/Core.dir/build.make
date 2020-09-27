@@ -181,6 +181,19 @@ src/Core/CMakeFiles/Core.dir/Sandbox/Sandbox.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Core.dir/Sandbox/Sandbox.cpp.s"
 	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/MY/Projects/Graphic/LionGL/src/Core/Sandbox/Sandbox.cpp -o CMakeFiles/Core.dir/Sandbox/Sandbox.cpp.s
 
+src/Core/CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.o: src/Core/CMakeFiles/Core.dir/flags.make
+src/Core/CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.o: ../src/Core/Renderer/Texture/Texture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/Core/CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.o"
+	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.o -c /home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/Texture/Texture.cpp
+
+src/Core/CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.i"
+	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/Texture/Texture.cpp > CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.i
+
+src/Core/CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.s"
+	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/Texture/Texture.cpp -o CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.s
+
 # Object files for target Core
 Core_OBJECTS = \
 "CMakeFiles/Core.dir/Renderer/Renderer.cpp.o" \
@@ -190,7 +203,8 @@ Core_OBJECTS = \
 "CMakeFiles/Core.dir/Renderer/VertexArray/VertexArray.cpp.o" \
 "CMakeFiles/Core.dir/Renderer/IndexBuffer/IndexBuffer.cpp.o" \
 "CMakeFiles/Core.dir/GlWindow/GlWindow.cpp.o" \
-"CMakeFiles/Core.dir/Sandbox/Sandbox.cpp.o"
+"CMakeFiles/Core.dir/Sandbox/Sandbox.cpp.o" \
+"CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.o"
 
 # External object files for target Core
 Core_EXTERNAL_OBJECTS =
@@ -203,9 +217,10 @@ src/Core/libCore.a: src/Core/CMakeFiles/Core.dir/Renderer/VertexArray/VertexArra
 src/Core/libCore.a: src/Core/CMakeFiles/Core.dir/Renderer/IndexBuffer/IndexBuffer.cpp.o
 src/Core/libCore.a: src/Core/CMakeFiles/Core.dir/GlWindow/GlWindow.cpp.o
 src/Core/libCore.a: src/Core/CMakeFiles/Core.dir/Sandbox/Sandbox.cpp.o
+src/Core/libCore.a: src/Core/CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.o
 src/Core/libCore.a: src/Core/CMakeFiles/Core.dir/build.make
 src/Core/libCore.a: src/Core/CMakeFiles/Core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libCore.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library libCore.a"
 	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core && $(CMAKE_COMMAND) -P CMakeFiles/Core.dir/cmake_clean_target.cmake
 	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Core.dir/link.txt --verbose=$(VERBOSE)
 
