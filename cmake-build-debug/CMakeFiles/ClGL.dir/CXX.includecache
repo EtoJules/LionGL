@@ -1735,6 +1735,8 @@ SDL2/SDL.h
 ../src/Core/GlWindow/SDL2/SDL.h
 string
 -
+GL/glew.h
+../src/Core/GlWindow/GL/glew.h
 imgui/imgui.h
 ../src/Core/GlWindow/imgui/imgui.h
 imgui/examples/imgui_impl_opengl3.h
@@ -1795,6 +1797,8 @@ iostream
 -
 
 ../src/Core/Sandbox/Sandbox.h
+SDL2/SDL.h
+../src/Core/Sandbox/SDL2/SDL.h
 
 ../src/Helper/parser.h
 string
@@ -1817,12 +1821,30 @@ imgui/imgui.h
 ../src/SandboxExamples/CameraSandbox/imgui/imgui.h
 iostream
 -
+array
+-
+
+../src/SandboxExamples/TriangleSandbox/TriangleSandbox.h
+Core/Renderer/Renderer.h
+../src/SandboxExamples/TriangleSandbox/Core/Renderer/Renderer.h
+Sandbox/Sandbox.h
+../src/SandboxExamples/TriangleSandbox/Sandbox/Sandbox.h
+imgui/imgui.h
+../src/SandboxExamples/TriangleSandbox/imgui/imgui.h
+glm/mat4x4.hpp
+../src/SandboxExamples/TriangleSandbox/glm/mat4x4.hpp
+glm/gtc/matrix_transform.hpp
+../src/SandboxExamples/TriangleSandbox/glm/gtc/matrix_transform.hpp
+iostream
+-
 
 /home/andrew/MY/Projects/Graphic/LionGL/main.cpp
 GL/glew.h
 -
 iostream
 -
+SandboxExamples/TriangleSandbox/TriangleSandbox.h
+/home/andrew/MY/Projects/Graphic/LionGL/SandboxExamples/TriangleSandbox/TriangleSandbox.h
 SandboxExamples/CameraSandbox/CameraSandbox.h
 /home/andrew/MY/Projects/Graphic/LionGL/SandboxExamples/CameraSandbox/CameraSandbox.h
 GlWindow/GlWindow.h

@@ -9,6 +9,7 @@
 #include "Renderer/Texture/Texture.h"
 #include "imgui/imgui.h"
 #include <iostream>
+#include <array>
 
 class CameraSandbox : public Sandbox
 {
@@ -22,9 +23,23 @@ private:
     Renderer m_renderer{};
 
 private:
+    std::array<glm::vec3, 10> m_cubePositions;
+    glm::vec3 m_cameraPosition;
     glm::mat4 m_model;
     glm::mat4 m_view;
     glm::mat4 m_projection;
+    float m_time;
+
+    float yaw;
+    float pitch;
+    glm::vec3 cameraFront;
+    glm::vec3 cameraUp;
+    glm::vec3 cameraMoveVec;
+    glm::vec3 direction;
+
+private:
+    int m_mouseX;
+    int m_mouseY;
 
 public:
     CameraSandbox();
@@ -32,5 +47,6 @@ public:
 public:
     void start() final;
     void onUpdate(double deltaTime) final;
+    void onEvent(const SDL_Event& event) final;
     void onGUI() final;
 };

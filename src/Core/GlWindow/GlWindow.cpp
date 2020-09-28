@@ -14,6 +14,8 @@ GlWindow::GlWindow(const std::string& name, unsigned int width, unsigned int hei
     m_glContext = SDL_GL_CreateContext(m_window);
     m_sandbox = new Sandbox();
 
+    SDL_GL_SetSwapInterval(1);
+
     // setting up imgui
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
@@ -59,6 +61,10 @@ void GlWindow::startGameLoop()
             {
                 m_isWindowOpen = false;
             }
+            if(m_event.window.event == SDL_WINDOWEVENT_RESIZED)
+            {
+                glViewport(0, 0, m_event.window.data1, m_event.window.data2);
+            }
 
             switch(m_event.type)
             {
@@ -66,16 +72,17 @@ void GlWindow::startGameLoop()
                     m_isWindowOpen = false;
                     break;
             }
+            m_sandbox->onEvent(m_event);
         }
         ImGui_ImplOpenGL3_NewFrame();
         ImGui_ImplSDL2_NewFrame(m_window);
-        ImGui::NewFrame();
 
+        ImGui::NewFrame();
         {
             m_sandbox->onGUI();
         }
-
         ImGui::Render();
+
         last = now;
         now = SDL_GetPerformanceCounter();
         deltaTime = (double) ((now - last) * 1000 / (double) SDL_GetPerformanceFrequency());
