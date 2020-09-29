@@ -220,6 +220,7 @@ CMakeFiles/ClGL.dir/main.cpp.o: ../src/Core/Renderer/Texture/Texture.h
 CMakeFiles/ClGL.dir/main.cpp.o: ../src/Core/Renderer/VertexArray/VertexArray.h
 CMakeFiles/ClGL.dir/main.cpp.o: ../src/Core/Renderer/VertexBuffer/VertexBuffer.h
 CMakeFiles/ClGL.dir/main.cpp.o: ../src/Core/Renderer/VertexBuffer/VertexLayout.h
+CMakeFiles/ClGL.dir/main.cpp.o: ../src/Core/Sandbox/Camera/Camera.h
 CMakeFiles/ClGL.dir/main.cpp.o: ../src/Core/Sandbox/Sandbox.h
 CMakeFiles/ClGL.dir/main.cpp.o: ../src/Helper/parser.h
 CMakeFiles/ClGL.dir/main.cpp.o: ../src/SandboxExamples/CameraSandbox/CameraSandbox.h

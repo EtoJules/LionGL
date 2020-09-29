@@ -407,6 +407,33 @@ Renderer/VertexBuffer/VertexLayout.cpp.s:
 	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/VertexBuffer/VertexLayout.cpp.s
 .PHONY : Renderer/VertexBuffer/VertexLayout.cpp.s
 
+Sandbox/Camera/Camera.o: Sandbox/Camera/Camera.cpp.o
+
+.PHONY : Sandbox/Camera/Camera.o
+
+# target to build an object file
+Sandbox/Camera/Camera.cpp.o:
+	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Sandbox/Camera/Camera.cpp.o
+.PHONY : Sandbox/Camera/Camera.cpp.o
+
+Sandbox/Camera/Camera.i: Sandbox/Camera/Camera.cpp.i
+
+.PHONY : Sandbox/Camera/Camera.i
+
+# target to preprocess a source file
+Sandbox/Camera/Camera.cpp.i:
+	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Sandbox/Camera/Camera.cpp.i
+.PHONY : Sandbox/Camera/Camera.cpp.i
+
+Sandbox/Camera/Camera.s: Sandbox/Camera/Camera.cpp.s
+
+.PHONY : Sandbox/Camera/Camera.s
+
+# target to generate assembly for a file
+Sandbox/Camera/Camera.cpp.s:
+	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Sandbox/Camera/Camera.cpp.s
+.PHONY : Sandbox/Camera/Camera.cpp.s
+
 Sandbox/Sandbox.o: Sandbox/Sandbox.cpp.o
 
 .PHONY : Sandbox/Sandbox.o
@@ -471,6 +498,9 @@ help:
 	@echo "... Renderer/VertexBuffer/VertexLayout.o"
 	@echo "... Renderer/VertexBuffer/VertexLayout.i"
 	@echo "... Renderer/VertexBuffer/VertexLayout.s"
+	@echo "... Sandbox/Camera/Camera.o"
+	@echo "... Sandbox/Camera/Camera.i"
+	@echo "... Sandbox/Camera/Camera.s"
 	@echo "... Sandbox/Sandbox.o"
 	@echo "... Sandbox/Sandbox.i"
 	@echo "... Sandbox/Sandbox.s"

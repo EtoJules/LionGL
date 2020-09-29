@@ -2,6 +2,7 @@
 
 #include "Core/Renderer/Renderer.h"
 #include "Sandbox/Sandbox.h"
+#include "Core/Sandbox/Camera/Camera.h"
 
 #include "glm/gtc/matrix_transform.hpp"
 #include "glm/mat4x4.hpp"
@@ -24,18 +25,15 @@ private:
 
 private:
     std::array<glm::vec3, 10> m_cubePositions;
-    glm::vec3 m_cameraPosition;
     glm::mat4 m_model;
     glm::mat4 m_view;
     glm::mat4 m_projection;
     float m_time;
 
+    Camera m_camera;
     float yaw;
     float pitch;
-    glm::vec3 cameraFront;
-    glm::vec3 cameraUp;
     glm::vec3 cameraMoveVec;
-    glm::vec3 direction;
 
 private:
     int m_mouseX;

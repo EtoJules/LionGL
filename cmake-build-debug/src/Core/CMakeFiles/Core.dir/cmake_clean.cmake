@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Core.dir/Renderer/VertexArray/VertexArray.cpp.o"
   "CMakeFiles/Core.dir/Renderer/VertexBuffer/VertexBuffer.cpp.o"
   "CMakeFiles/Core.dir/Renderer/VertexBuffer/VertexLayout.cpp.o"
+  "CMakeFiles/Core.dir/Sandbox/Camera/Camera.cpp.o"
   "CMakeFiles/Core.dir/Sandbox/Sandbox.cpp.o"
   "libCore.a"
   "libCore.pdb"

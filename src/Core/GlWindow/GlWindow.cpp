@@ -20,7 +20,7 @@ GlWindow::GlWindow(const std::string& name, unsigned int width, unsigned int hei
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
     ImGuiIO& io = ImGui::GetIO(); (void)io;
-    ImGui::StyleColorsClassic();
+    ImGui::StyleColorsDark();
     ImGui_ImplSDL2_InitForOpenGL(m_window, m_glContext);
     ImGui_ImplOpenGL3_Init("#version 150");
 }

@@ -1796,6 +1796,14 @@ vector
 iostream
 -
 
+../src/Core/Sandbox/Camera/Camera.h
+glm/gtc/matrix_transform.hpp
+../src/Core/Sandbox/Camera/glm/gtc/matrix_transform.hpp
+glm/mat4x4.hpp
+../src/Core/Sandbox/Camera/glm/mat4x4.hpp
+glm/vec3.hpp
+../src/Core/Sandbox/Camera/glm/vec3.hpp
+
 ../src/Core/Sandbox/Sandbox.h
 SDL2/SDL.h
 ../src/Core/Sandbox/SDL2/SDL.h
@@ -1811,6 +1819,8 @@ Core/Renderer/Renderer.h
 ../src/SandboxExamples/CameraSandbox/Core/Renderer/Renderer.h
 Sandbox/Sandbox.h
 ../src/SandboxExamples/CameraSandbox/Sandbox/Sandbox.h
+Core/Sandbox/Camera/Camera.h
+../src/SandboxExamples/CameraSandbox/Core/Sandbox/Camera/Camera.h
 glm/gtc/matrix_transform.hpp
 ../src/SandboxExamples/CameraSandbox/glm/gtc/matrix_transform.hpp
 glm/mat4x4.hpp

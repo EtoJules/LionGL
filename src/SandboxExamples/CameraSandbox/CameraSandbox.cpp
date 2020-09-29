@@ -3,7 +3,7 @@
 CameraSandbox::CameraSandbox()
         : m_shader("../src/SandboxExamples/CameraSandbox/res/shaders/vertex.glsl",
                    "../src/SandboxExamples/CameraSandbox/res/shaders/fragment.glsl"),
-          m_model(1.0f), m_view(1.0f), m_projection(1.0f)
+          m_model(1.0f), m_view(1.0f), m_projection(1.0f), m_camera()
 {}
 
 void CameraSandbox::start()
@@ -92,8 +92,6 @@ void CameraSandbox::start()
     m_shader.setUniformMat4f("u_Projection", m_projection);
 
     SDL_SetRelativeMouseMode(SDL_TRUE);
-    //camera
-    m_cameraPosition = glm::vec3(0.0f, 0.0f, 3.0f);
     m_time = 0;
 }
 
@@ -102,26 +100,14 @@ void CameraSandbox::onUpdate(double deltaTime)
     m_renderer.clear();
     m_time += (float)deltaTime;
 
-    //camera rotation
-    //mouse
     SDL_GetRelativeMouseState(&m_mouseX, &m_mouseY);
-    float deltaX = m_mouseX;
-    float deltaY = m_mouseY;
 
-    yaw += deltaX * deltaTime * 0.05f;
-    pitch -= deltaY * deltaTime * 0.05f;
-
-    direction.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
-    direction.y = sin(glm::radians(pitch));
-    direction.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
-
-    m_cameraPosition += cameraMoveVec * (float)deltaTime;
-
-    cameraFront = glm::normalize(direction);
-    cameraUp = glm::vec3(0.0f, 1.0f, 0.0f);
-    glm::mat4 view;
-    view = glm::lookAt(m_cameraPosition, m_cameraPosition + cameraFront, cameraUp);
-    m_shader.setUniformMat4f("u_View", view);
+    //camera
+    yaw += m_mouseX * deltaTime * 0.05f;
+    pitch -= m_mouseY * deltaTime * 0.05f;
+    m_camera.setEulerAngle(yaw, pitch);
+    m_camera.setPosition(m_camera.getPosition() + cameraMoveVec * (float)deltaTime);
+    m_shader.setUniformMat4f("u_View", m_camera.getLookAtMatrix());
 
     //drawing multiple cubes
     for(auto cubePosition : m_cubePositions)
@@ -140,16 +126,16 @@ void CameraSandbox::onEvent(const SDL_Event &event)
         switch (event.key.keysym.sym)
         {
             case SDLK_w:
-                cameraMoveVec = 0.01f * cameraFront;
+                cameraMoveVec = 0.01f * m_camera.getCameraFront();
                 break;
             case SDLK_s:
-                cameraMoveVec = -0.01f * cameraFront;
+                cameraMoveVec = -0.01f * m_camera.getCameraFront();
                 break;
             case SDLK_a:
-                cameraMoveVec = -0.01f * glm::normalize(glm::cross(cameraFront, cameraUp));
+                cameraMoveVec = -0.01f * glm::normalize(glm::cross(m_camera.getCameraFront(), m_camera.getCameraUp()));
                 break;
             case SDLK_d:
-                cameraMoveVec = 0.01f * glm::normalize(glm::cross(cameraFront, cameraUp));
+                cameraMoveVec = 0.01f * glm::normalize(glm::cross(m_camera.getCameraFront(), m_camera.getCameraUp()));
                 break;
             default:
                 break;

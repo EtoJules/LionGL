@@ -714,6 +714,12 @@
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/VertexBuffer/VertexLayout.h">
 			<Option target="Core"/>
 		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Sandbox/Camera/Camera.cpp">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Sandbox/Camera/Camera.h">
+			<Option target="Core"/>
+		</Unit>
 		<Unit filename="/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Sandbox/Sandbox.cpp">
 			<Option target="Core"/>
 		</Unit>

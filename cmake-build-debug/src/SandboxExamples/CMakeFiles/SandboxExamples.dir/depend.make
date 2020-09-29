@@ -217,6 +217,7 @@ src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.c
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o: ../src/Core/Renderer/VertexArray/VertexArray.h
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o: ../src/Core/Renderer/VertexBuffer/VertexBuffer.h
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o: ../src/Core/Renderer/VertexBuffer/VertexLayout.h
+src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o: ../src/Core/Sandbox/Camera/Camera.h
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o: ../src/Core/Sandbox/Sandbox.h
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o: ../src/Helper/parser.h
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o: ../src/SandboxExamples/CameraSandbox/CameraSandbox.cpp

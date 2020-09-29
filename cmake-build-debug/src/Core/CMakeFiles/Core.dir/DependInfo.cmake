@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/VertexArray/VertexArray.cpp" "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core/CMakeFiles/Core.dir/Renderer/VertexArray/VertexArray.cpp.o"
   "/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/VertexBuffer/VertexBuffer.cpp" "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core/CMakeFiles/Core.dir/Renderer/VertexBuffer/VertexBuffer.cpp.o"
   "/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Renderer/VertexBuffer/VertexLayout.cpp" "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core/CMakeFiles/Core.dir/Renderer/VertexBuffer/VertexLayout.cpp.o"
+  "/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Sandbox/Camera/Camera.cpp" "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core/CMakeFiles/Core.dir/Sandbox/Camera/Camera.cpp.o"
   "/home/andrew/MY/Projects/Graphic/LionGL/src/Core/Sandbox/Sandbox.cpp" "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core/CMakeFiles/Core.dir/Sandbox/Sandbox.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
