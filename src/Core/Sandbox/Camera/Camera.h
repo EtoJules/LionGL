@@ -22,4 +22,6 @@ public:
     glm::vec3 getCameraFront() const;
     glm::vec3 getCameraUp() const;
     glm::mat4 getLookAtMatrix() const;
+    float getYaw() const;
+    float getPitch() const;
 };

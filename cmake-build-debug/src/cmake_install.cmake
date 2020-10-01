@@ -1,4 +1,4 @@
-# Install script for directory: /home/andrew/MY/Projects/Graphic/LionGL/src
+# Install script for directory: /home/andrew/home/andrew/Projects/Graphic/LionGL/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,11 +39,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples/cmake_install.cmake")
+  include("/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core/cmake_install.cmake")
+  include("/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/src/Core/cmake_install.cmake")
 endif()
 

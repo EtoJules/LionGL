@@ -63,10 +63,10 @@ RM = /snap/clion/126/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andrew/MY/Projects/Graphic/LionGL
+CMAKE_SOURCE_DIR = /home/andrew/home/andrew/Projects/Graphic/LionGL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug
+CMAKE_BINARY_DIR = /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug
 
 # Utility rule file for uninstall.
 
@@ -74,7 +74,7 @@ CMAKE_BINARY_DIR = /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug
 include libs/glew-2.1.0/build/cmake/CMakeFiles/uninstall.dir/progress.make
 
 libs/glew-2.1.0/build/cmake/CMakeFiles/uninstall:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake && /snap/clion/126/bin/cmake/linux/bin/cmake -P /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/cmake_uninstall.cmake
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake && /snap/clion/126/bin/cmake/linux/bin/cmake -P /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/cmake_uninstall.cmake
 
 uninstall: libs/glew-2.1.0/build/cmake/CMakeFiles/uninstall
 uninstall: libs/glew-2.1.0/build/cmake/CMakeFiles/uninstall.dir/build.make
@@ -87,10 +87,10 @@ libs/glew-2.1.0/build/cmake/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : libs/glew-2.1.0/build/cmake/CMakeFiles/uninstall.dir/build
 
 libs/glew-2.1.0/build/cmake/CMakeFiles/uninstall.dir/clean:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : libs/glew-2.1.0/build/cmake/CMakeFiles/uninstall.dir/clean
 
 libs/glew-2.1.0/build/cmake/CMakeFiles/uninstall.dir/depend:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andrew/MY/Projects/Graphic/LionGL /home/andrew/MY/Projects/Graphic/LionGL/libs/glew-2.1.0/build/cmake /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andrew/home/andrew/Projects/Graphic/LionGL /home/andrew/home/andrew/Projects/Graphic/LionGL/libs/glew-2.1.0/build/cmake /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : libs/glew-2.1.0/build/cmake/CMakeFiles/uninstall.dir/depend
 

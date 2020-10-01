@@ -3,8 +3,9 @@
 CameraSandbox::CameraSandbox()
         : m_shader("../src/SandboxExamples/CameraSandbox/res/shaders/vertex.glsl",
                    "../src/SandboxExamples/CameraSandbox/res/shaders/fragment.glsl"),
-          m_model(1.0f), m_view(1.0f), m_projection(1.0f), m_camera()
-{}
+          m_model(1.0f), m_view(1.0f), m_projection(1.0f), m_camera(0.0f, 0.0f, 3.0f)
+{
+}
 
 void CameraSandbox::start()
 {
@@ -92,6 +93,7 @@ void CameraSandbox::start()
     m_shader.setUniformMat4f("u_Projection", m_projection);
 
     SDL_SetRelativeMouseMode(SDL_TRUE);
+    m_camera.setEulerAngle(-90, 0);
     m_time = 0;
 }
 
@@ -100,12 +102,10 @@ void CameraSandbox::onUpdate(double deltaTime)
     m_renderer.clear();
     m_time += (float)deltaTime;
 
-    SDL_GetRelativeMouseState(&m_mouseX, &m_mouseY);
-
     //camera
-    yaw += m_mouseX * deltaTime * 0.05f;
-    pitch -= m_mouseY * deltaTime * 0.05f;
-    m_camera.setEulerAngle(yaw, pitch);
+    SDL_GetRelativeMouseState(&m_mouseX, &m_mouseY);
+    m_camera.setEulerAngle(m_camera.getYaw() + (m_mouseX * deltaTime * 0.005f),
+                           m_camera.getPitch() - (m_mouseY * deltaTime * 0.005f));
     m_camera.setPosition(m_camera.getPosition() + cameraMoveVec * (float)deltaTime);
     m_shader.setUniformMat4f("u_View", m_camera.getLookAtMatrix());
 
@@ -143,23 +143,7 @@ void CameraSandbox::onEvent(const SDL_Event &event)
     }
     if(event.type == SDL_KEYUP)
     {
-        switch (event.key.keysym.sym)
-        {
-            case SDLK_w:
-                cameraMoveVec = glm::vec3(0.0f, 0.0f, 0.0f);
-                break;
-            case SDLK_s:
-                cameraMoveVec = glm::vec3(0.0f, 0.0f, 0.0f);
-                break;
-            case SDLK_a:
-                cameraMoveVec = glm::vec3(0.0f, 0.0f, 0.0f);
-                break;
-            case SDLK_d:
-                cameraMoveVec = glm::vec3(0.0f, 0.0f, 0.0f);
-                break;
-            default:
-                break;
-        }
+        cameraMoveVec = glm::vec3(0.0f, 0.0f, 0.0f);
     }
 }
 

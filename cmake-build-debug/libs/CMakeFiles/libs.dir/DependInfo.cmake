@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/andrew/MY/Projects/Graphic/LionGL/libs/imgui/examples/imgui_impl_opengl3.cpp" "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_opengl3.cpp.o"
-  "/home/andrew/MY/Projects/Graphic/LionGL/libs/imgui/examples/imgui_impl_sdl.cpp" "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_sdl.cpp.o"
-  "/home/andrew/MY/Projects/Graphic/LionGL/libs/imgui/imgui.cpp" "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/CMakeFiles/libs.dir/imgui/imgui.cpp.o"
-  "/home/andrew/MY/Projects/Graphic/LionGL/libs/imgui/imgui_demo.cpp" "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/CMakeFiles/libs.dir/imgui/imgui_demo.cpp.o"
-  "/home/andrew/MY/Projects/Graphic/LionGL/libs/imgui/imgui_draw.cpp" "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/CMakeFiles/libs.dir/imgui/imgui_draw.cpp.o"
-  "/home/andrew/MY/Projects/Graphic/LionGL/libs/imgui/imgui_widgets.cpp" "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/CMakeFiles/libs.dir/imgui/imgui_widgets.cpp.o"
+  "/home/andrew/home/andrew/Projects/Graphic/LionGL/libs/imgui/examples/imgui_impl_opengl3.cpp" "/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_opengl3.cpp.o"
+  "/home/andrew/home/andrew/Projects/Graphic/LionGL/libs/imgui/examples/imgui_impl_sdl.cpp" "/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_sdl.cpp.o"
+  "/home/andrew/home/andrew/Projects/Graphic/LionGL/libs/imgui/imgui.cpp" "/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/CMakeFiles/libs.dir/imgui/imgui.cpp.o"
+  "/home/andrew/home/andrew/Projects/Graphic/LionGL/libs/imgui/imgui_demo.cpp" "/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/CMakeFiles/libs.dir/imgui/imgui_demo.cpp.o"
+  "/home/andrew/home/andrew/Projects/Graphic/LionGL/libs/imgui/imgui_draw.cpp" "/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/CMakeFiles/libs.dir/imgui/imgui_draw.cpp.o"
+  "/home/andrew/home/andrew/Projects/Graphic/LionGL/libs/imgui/imgui_widgets.cpp" "/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/CMakeFiles/libs.dir/imgui/imgui_widgets.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -1,13 +1,13 @@
-if(NOT EXISTS "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/install_manifest.txt")
-  message(FATAL_ERROR "Cannot find install manifest: /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/install_manifest.txt")
-endif(NOT EXISTS "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/install_manifest.txt")
+if(NOT EXISTS "/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/install_manifest.txt")
+  message(FATAL_ERROR "Cannot find install manifest: /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/install_manifest.txt")
+endif(NOT EXISTS "/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/install_manifest.txt")
 
 if (NOT DEFINED CMAKE_INSTALL_PREFIX)
   set (CMAKE_INSTALL_PREFIX "/usr/local")
 endif ()
  message(${CMAKE_INSTALL_PREFIX})
 
-file(READ "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/install_manifest.txt" files)
+file(READ "/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 foreach(file ${files})
   message(STATUS "Uninstalling $ENV{DESTDIR}${file}")

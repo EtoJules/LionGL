@@ -68,10 +68,10 @@ RM = /snap/clion/126/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andrew/MY/Projects/Graphic/LionGL
+CMAKE_SOURCE_DIR = /home/andrew/home/andrew/Projects/Graphic/LionGL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug
+CMAKE_BINARY_DIR = /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -146,14 +146,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/CMakeFiles/progress.marks
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles 0
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/src/CMakeFiles/progress.marks
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -163,22 +163,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/Sources.dir/rule:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/Sources.dir/rule
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/Sources.dir/rule
 .PHONY : src/CMakeFiles/Sources.dir/rule
 
 # Convenience name for target.
@@ -188,7 +188,7 @@ Sources: src/CMakeFiles/Sources.dir/rule
 
 # fast build rule for target.
 Sources/fast:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/build
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/build
 .PHONY : Sources/fast
 
 Helper/parser.o: Helper/parser.cpp.o
@@ -197,7 +197,7 @@ Helper/parser.o: Helper/parser.cpp.o
 
 # target to build an object file
 Helper/parser.cpp.o:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/Helper/parser.cpp.o
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/Helper/parser.cpp.o
 .PHONY : Helper/parser.cpp.o
 
 Helper/parser.i: Helper/parser.cpp.i
@@ -206,7 +206,7 @@ Helper/parser.i: Helper/parser.cpp.i
 
 # target to preprocess a source file
 Helper/parser.cpp.i:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/Helper/parser.cpp.i
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/Helper/parser.cpp.i
 .PHONY : Helper/parser.cpp.i
 
 Helper/parser.s: Helper/parser.cpp.s
@@ -215,7 +215,7 @@ Helper/parser.s: Helper/parser.cpp.s
 
 # target to generate assembly for a file
 Helper/parser.cpp.s:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/Helper/parser.cpp.s
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Sources.dir/build.make src/CMakeFiles/Sources.dir/Helper/parser.cpp.s
 .PHONY : Helper/parser.cpp.s
 
 # Help Target
@@ -245,6 +245,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

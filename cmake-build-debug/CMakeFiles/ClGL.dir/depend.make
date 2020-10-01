@@ -224,6 +224,7 @@ CMakeFiles/ClGL.dir/main.cpp.o: ../src/Core/Sandbox/Camera/Camera.h
 CMakeFiles/ClGL.dir/main.cpp.o: ../src/Core/Sandbox/Sandbox.h
 CMakeFiles/ClGL.dir/main.cpp.o: ../src/Helper/parser.h
 CMakeFiles/ClGL.dir/main.cpp.o: ../src/SandboxExamples/CameraSandbox/CameraSandbox.h
+CMakeFiles/ClGL.dir/main.cpp.o: ../src/SandboxExamples/LightningSandbox/LightningSandbox.h
 CMakeFiles/ClGL.dir/main.cpp.o: ../src/SandboxExamples/TriangleSandbox/TriangleSandbox.h
 CMakeFiles/ClGL.dir/main.cpp.o: ../main.cpp
 

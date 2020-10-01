@@ -225,5 +225,6 @@ CMakeFiles/ClGL.dir/main.cpp.o
  ../src/Core/Sandbox/Sandbox.h
  ../src/Helper/parser.h
  ../src/SandboxExamples/CameraSandbox/CameraSandbox.h
+ ../src/SandboxExamples/LightningSandbox/LightningSandbox.h
  ../src/SandboxExamples/TriangleSandbox/TriangleSandbox.h
- /home/andrew/MY/Projects/Graphic/LionGL/main.cpp
+ /home/andrew/home/andrew/Projects/Graphic/LionGL/main.cpp

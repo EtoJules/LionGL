@@ -3,10 +3,8 @@
 #include "Core/Renderer/Renderer.h"
 #include "Sandbox/Sandbox.h"
 #include "Core/Sandbox/Camera/Camera.h"
-
 #include "glm/gtc/matrix_transform.hpp"
 #include "glm/mat4x4.hpp"
-
 #include "Renderer/Texture/Texture.h"
 #include "imgui/imgui.h"
 #include <iostream>
@@ -43,8 +41,8 @@ public:
     CameraSandbox();
 
 public:
-    void start() final;
-    void onUpdate(double deltaTime) final;
-    void onEvent(const SDL_Event& event) final;
+    void start() override;
+    void onUpdate(double deltaTime) override;
+    void onEvent(const SDL_Event& event) override;
     void onGUI() final;
 };

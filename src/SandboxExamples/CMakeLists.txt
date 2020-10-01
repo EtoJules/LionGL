@@ -1,2 +1,4 @@
 add_library(SandboxExamples STATIC
-        TriangleSandbox/TriangleSandbox.h TriangleSandbox/TriangleSandbox.cpp CameraSandbox/CameraSandbox.cpp)
+        TriangleSandbox/TriangleSandbox.h TriangleSandbox/TriangleSandbox.cpp
+        CameraSandbox/CameraSandbox.cpp CameraSandbox/CameraSandbox.h
+        LightningSandbox/LightningSandbox.cpp LightningSandbox/LightningSandbox.h)

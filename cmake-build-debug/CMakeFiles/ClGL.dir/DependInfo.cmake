@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/andrew/MY/Projects/Graphic/LionGL/main.cpp" "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles/ClGL.dir/main.cpp.o"
+  "/home/andrew/home/andrew/Projects/Graphic/LionGL/main.cpp" "/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles/ClGL.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -24,11 +24,11 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples/CMakeFiles/SandboxExamples.dir/DependInfo.cmake"
-  "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core/CMakeFiles/Core.dir/DependInfo.cmake"
-  "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/CMakeFiles/Sources.dir/DependInfo.cmake"
-  "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/CMakeFiles/libs.dir/DependInfo.cmake"
-  "/home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/DependInfo.cmake"
+  "/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples/CMakeFiles/SandboxExamples.dir/DependInfo.cmake"
+  "/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/src/Core/CMakeFiles/Core.dir/DependInfo.cmake"
+  "/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/src/CMakeFiles/Sources.dir/DependInfo.cmake"
+  "/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/CMakeFiles/libs.dir/DependInfo.cmake"
+  "/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

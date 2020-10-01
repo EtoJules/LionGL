@@ -1,4 +1,4 @@
-# Install script for directory: /home/andrew/MY/Projects/Graphic/LionGL/src/Core
+# Install script for directory: /home/andrew/home/andrew/Projects/Graphic/LionGL/src/Core
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

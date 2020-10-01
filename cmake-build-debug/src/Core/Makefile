@@ -68,10 +68,10 @@ RM = /snap/clion/126/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andrew/MY/Projects/Graphic/LionGL
+CMAKE_SOURCE_DIR = /home/andrew/home/andrew/Projects/Graphic/LionGL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug
+CMAKE_BINARY_DIR = /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -146,14 +146,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/src/Core/CMakeFiles/progress.marks
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Core/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles 0
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/src/Core/CMakeFiles/progress.marks
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Core/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Core/clean
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Core/clean
 .PHONY : clean
 
 # The main clean target
@@ -163,22 +163,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Core/preinstall
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Core/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Core/preinstall
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Core/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/Core/CMakeFiles/Core.dir/rule:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Core/CMakeFiles/Core.dir/rule
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Core/CMakeFiles/Core.dir/rule
 .PHONY : src/Core/CMakeFiles/Core.dir/rule
 
 # Convenience name for target.
@@ -188,7 +188,7 @@ Core: src/Core/CMakeFiles/Core.dir/rule
 
 # fast build rule for target.
 Core/fast:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/build
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/build
 .PHONY : Core/fast
 
 GlWindow/GlWindow.o: GlWindow/GlWindow.cpp.o
@@ -197,7 +197,7 @@ GlWindow/GlWindow.o: GlWindow/GlWindow.cpp.o
 
 # target to build an object file
 GlWindow/GlWindow.cpp.o:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/GlWindow/GlWindow.cpp.o
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/GlWindow/GlWindow.cpp.o
 .PHONY : GlWindow/GlWindow.cpp.o
 
 GlWindow/GlWindow.i: GlWindow/GlWindow.cpp.i
@@ -206,7 +206,7 @@ GlWindow/GlWindow.i: GlWindow/GlWindow.cpp.i
 
 # target to preprocess a source file
 GlWindow/GlWindow.cpp.i:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/GlWindow/GlWindow.cpp.i
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/GlWindow/GlWindow.cpp.i
 .PHONY : GlWindow/GlWindow.cpp.i
 
 GlWindow/GlWindow.s: GlWindow/GlWindow.cpp.s
@@ -215,7 +215,7 @@ GlWindow/GlWindow.s: GlWindow/GlWindow.cpp.s
 
 # target to generate assembly for a file
 GlWindow/GlWindow.cpp.s:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/GlWindow/GlWindow.cpp.s
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/GlWindow/GlWindow.cpp.s
 .PHONY : GlWindow/GlWindow.cpp.s
 
 Renderer/IndexBuffer/IndexBuffer.o: Renderer/IndexBuffer/IndexBuffer.cpp.o
@@ -224,7 +224,7 @@ Renderer/IndexBuffer/IndexBuffer.o: Renderer/IndexBuffer/IndexBuffer.cpp.o
 
 # target to build an object file
 Renderer/IndexBuffer/IndexBuffer.cpp.o:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/IndexBuffer/IndexBuffer.cpp.o
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/IndexBuffer/IndexBuffer.cpp.o
 .PHONY : Renderer/IndexBuffer/IndexBuffer.cpp.o
 
 Renderer/IndexBuffer/IndexBuffer.i: Renderer/IndexBuffer/IndexBuffer.cpp.i
@@ -233,7 +233,7 @@ Renderer/IndexBuffer/IndexBuffer.i: Renderer/IndexBuffer/IndexBuffer.cpp.i
 
 # target to preprocess a source file
 Renderer/IndexBuffer/IndexBuffer.cpp.i:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/IndexBuffer/IndexBuffer.cpp.i
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/IndexBuffer/IndexBuffer.cpp.i
 .PHONY : Renderer/IndexBuffer/IndexBuffer.cpp.i
 
 Renderer/IndexBuffer/IndexBuffer.s: Renderer/IndexBuffer/IndexBuffer.cpp.s
@@ -242,7 +242,7 @@ Renderer/IndexBuffer/IndexBuffer.s: Renderer/IndexBuffer/IndexBuffer.cpp.s
 
 # target to generate assembly for a file
 Renderer/IndexBuffer/IndexBuffer.cpp.s:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/IndexBuffer/IndexBuffer.cpp.s
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/IndexBuffer/IndexBuffer.cpp.s
 .PHONY : Renderer/IndexBuffer/IndexBuffer.cpp.s
 
 Renderer/Renderer.o: Renderer/Renderer.cpp.o
@@ -251,7 +251,7 @@ Renderer/Renderer.o: Renderer/Renderer.cpp.o
 
 # target to build an object file
 Renderer/Renderer.cpp.o:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/Renderer.cpp.o
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/Renderer.cpp.o
 .PHONY : Renderer/Renderer.cpp.o
 
 Renderer/Renderer.i: Renderer/Renderer.cpp.i
@@ -260,7 +260,7 @@ Renderer/Renderer.i: Renderer/Renderer.cpp.i
 
 # target to preprocess a source file
 Renderer/Renderer.cpp.i:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/Renderer.cpp.i
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/Renderer.cpp.i
 .PHONY : Renderer/Renderer.cpp.i
 
 Renderer/Renderer.s: Renderer/Renderer.cpp.s
@@ -269,7 +269,7 @@ Renderer/Renderer.s: Renderer/Renderer.cpp.s
 
 # target to generate assembly for a file
 Renderer/Renderer.cpp.s:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/Renderer.cpp.s
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/Renderer.cpp.s
 .PHONY : Renderer/Renderer.cpp.s
 
 Renderer/Shader/Shader.o: Renderer/Shader/Shader.cpp.o
@@ -278,7 +278,7 @@ Renderer/Shader/Shader.o: Renderer/Shader/Shader.cpp.o
 
 # target to build an object file
 Renderer/Shader/Shader.cpp.o:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/Shader/Shader.cpp.o
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/Shader/Shader.cpp.o
 .PHONY : Renderer/Shader/Shader.cpp.o
 
 Renderer/Shader/Shader.i: Renderer/Shader/Shader.cpp.i
@@ -287,7 +287,7 @@ Renderer/Shader/Shader.i: Renderer/Shader/Shader.cpp.i
 
 # target to preprocess a source file
 Renderer/Shader/Shader.cpp.i:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/Shader/Shader.cpp.i
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/Shader/Shader.cpp.i
 .PHONY : Renderer/Shader/Shader.cpp.i
 
 Renderer/Shader/Shader.s: Renderer/Shader/Shader.cpp.s
@@ -296,7 +296,7 @@ Renderer/Shader/Shader.s: Renderer/Shader/Shader.cpp.s
 
 # target to generate assembly for a file
 Renderer/Shader/Shader.cpp.s:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/Shader/Shader.cpp.s
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/Shader/Shader.cpp.s
 .PHONY : Renderer/Shader/Shader.cpp.s
 
 Renderer/Texture/Texture.o: Renderer/Texture/Texture.cpp.o
@@ -305,7 +305,7 @@ Renderer/Texture/Texture.o: Renderer/Texture/Texture.cpp.o
 
 # target to build an object file
 Renderer/Texture/Texture.cpp.o:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.o
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.o
 .PHONY : Renderer/Texture/Texture.cpp.o
 
 Renderer/Texture/Texture.i: Renderer/Texture/Texture.cpp.i
@@ -314,7 +314,7 @@ Renderer/Texture/Texture.i: Renderer/Texture/Texture.cpp.i
 
 # target to preprocess a source file
 Renderer/Texture/Texture.cpp.i:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.i
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.i
 .PHONY : Renderer/Texture/Texture.cpp.i
 
 Renderer/Texture/Texture.s: Renderer/Texture/Texture.cpp.s
@@ -323,7 +323,7 @@ Renderer/Texture/Texture.s: Renderer/Texture/Texture.cpp.s
 
 # target to generate assembly for a file
 Renderer/Texture/Texture.cpp.s:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.s
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.s
 .PHONY : Renderer/Texture/Texture.cpp.s
 
 Renderer/VertexArray/VertexArray.o: Renderer/VertexArray/VertexArray.cpp.o
@@ -332,7 +332,7 @@ Renderer/VertexArray/VertexArray.o: Renderer/VertexArray/VertexArray.cpp.o
 
 # target to build an object file
 Renderer/VertexArray/VertexArray.cpp.o:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/VertexArray/VertexArray.cpp.o
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/VertexArray/VertexArray.cpp.o
 .PHONY : Renderer/VertexArray/VertexArray.cpp.o
 
 Renderer/VertexArray/VertexArray.i: Renderer/VertexArray/VertexArray.cpp.i
@@ -341,7 +341,7 @@ Renderer/VertexArray/VertexArray.i: Renderer/VertexArray/VertexArray.cpp.i
 
 # target to preprocess a source file
 Renderer/VertexArray/VertexArray.cpp.i:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/VertexArray/VertexArray.cpp.i
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/VertexArray/VertexArray.cpp.i
 .PHONY : Renderer/VertexArray/VertexArray.cpp.i
 
 Renderer/VertexArray/VertexArray.s: Renderer/VertexArray/VertexArray.cpp.s
@@ -350,7 +350,7 @@ Renderer/VertexArray/VertexArray.s: Renderer/VertexArray/VertexArray.cpp.s
 
 # target to generate assembly for a file
 Renderer/VertexArray/VertexArray.cpp.s:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/VertexArray/VertexArray.cpp.s
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/VertexArray/VertexArray.cpp.s
 .PHONY : Renderer/VertexArray/VertexArray.cpp.s
 
 Renderer/VertexBuffer/VertexBuffer.o: Renderer/VertexBuffer/VertexBuffer.cpp.o
@@ -359,7 +359,7 @@ Renderer/VertexBuffer/VertexBuffer.o: Renderer/VertexBuffer/VertexBuffer.cpp.o
 
 # target to build an object file
 Renderer/VertexBuffer/VertexBuffer.cpp.o:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/VertexBuffer/VertexBuffer.cpp.o
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/VertexBuffer/VertexBuffer.cpp.o
 .PHONY : Renderer/VertexBuffer/VertexBuffer.cpp.o
 
 Renderer/VertexBuffer/VertexBuffer.i: Renderer/VertexBuffer/VertexBuffer.cpp.i
@@ -368,7 +368,7 @@ Renderer/VertexBuffer/VertexBuffer.i: Renderer/VertexBuffer/VertexBuffer.cpp.i
 
 # target to preprocess a source file
 Renderer/VertexBuffer/VertexBuffer.cpp.i:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/VertexBuffer/VertexBuffer.cpp.i
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/VertexBuffer/VertexBuffer.cpp.i
 .PHONY : Renderer/VertexBuffer/VertexBuffer.cpp.i
 
 Renderer/VertexBuffer/VertexBuffer.s: Renderer/VertexBuffer/VertexBuffer.cpp.s
@@ -377,7 +377,7 @@ Renderer/VertexBuffer/VertexBuffer.s: Renderer/VertexBuffer/VertexBuffer.cpp.s
 
 # target to generate assembly for a file
 Renderer/VertexBuffer/VertexBuffer.cpp.s:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/VertexBuffer/VertexBuffer.cpp.s
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/VertexBuffer/VertexBuffer.cpp.s
 .PHONY : Renderer/VertexBuffer/VertexBuffer.cpp.s
 
 Renderer/VertexBuffer/VertexLayout.o: Renderer/VertexBuffer/VertexLayout.cpp.o
@@ -386,7 +386,7 @@ Renderer/VertexBuffer/VertexLayout.o: Renderer/VertexBuffer/VertexLayout.cpp.o
 
 # target to build an object file
 Renderer/VertexBuffer/VertexLayout.cpp.o:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/VertexBuffer/VertexLayout.cpp.o
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/VertexBuffer/VertexLayout.cpp.o
 .PHONY : Renderer/VertexBuffer/VertexLayout.cpp.o
 
 Renderer/VertexBuffer/VertexLayout.i: Renderer/VertexBuffer/VertexLayout.cpp.i
@@ -395,7 +395,7 @@ Renderer/VertexBuffer/VertexLayout.i: Renderer/VertexBuffer/VertexLayout.cpp.i
 
 # target to preprocess a source file
 Renderer/VertexBuffer/VertexLayout.cpp.i:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/VertexBuffer/VertexLayout.cpp.i
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/VertexBuffer/VertexLayout.cpp.i
 .PHONY : Renderer/VertexBuffer/VertexLayout.cpp.i
 
 Renderer/VertexBuffer/VertexLayout.s: Renderer/VertexBuffer/VertexLayout.cpp.s
@@ -404,7 +404,7 @@ Renderer/VertexBuffer/VertexLayout.s: Renderer/VertexBuffer/VertexLayout.cpp.s
 
 # target to generate assembly for a file
 Renderer/VertexBuffer/VertexLayout.cpp.s:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/VertexBuffer/VertexLayout.cpp.s
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Renderer/VertexBuffer/VertexLayout.cpp.s
 .PHONY : Renderer/VertexBuffer/VertexLayout.cpp.s
 
 Sandbox/Camera/Camera.o: Sandbox/Camera/Camera.cpp.o
@@ -413,7 +413,7 @@ Sandbox/Camera/Camera.o: Sandbox/Camera/Camera.cpp.o
 
 # target to build an object file
 Sandbox/Camera/Camera.cpp.o:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Sandbox/Camera/Camera.cpp.o
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Sandbox/Camera/Camera.cpp.o
 .PHONY : Sandbox/Camera/Camera.cpp.o
 
 Sandbox/Camera/Camera.i: Sandbox/Camera/Camera.cpp.i
@@ -422,7 +422,7 @@ Sandbox/Camera/Camera.i: Sandbox/Camera/Camera.cpp.i
 
 # target to preprocess a source file
 Sandbox/Camera/Camera.cpp.i:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Sandbox/Camera/Camera.cpp.i
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Sandbox/Camera/Camera.cpp.i
 .PHONY : Sandbox/Camera/Camera.cpp.i
 
 Sandbox/Camera/Camera.s: Sandbox/Camera/Camera.cpp.s
@@ -431,7 +431,7 @@ Sandbox/Camera/Camera.s: Sandbox/Camera/Camera.cpp.s
 
 # target to generate assembly for a file
 Sandbox/Camera/Camera.cpp.s:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Sandbox/Camera/Camera.cpp.s
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Sandbox/Camera/Camera.cpp.s
 .PHONY : Sandbox/Camera/Camera.cpp.s
 
 Sandbox/Sandbox.o: Sandbox/Sandbox.cpp.o
@@ -440,7 +440,7 @@ Sandbox/Sandbox.o: Sandbox/Sandbox.cpp.o
 
 # target to build an object file
 Sandbox/Sandbox.cpp.o:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Sandbox/Sandbox.cpp.o
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Sandbox/Sandbox.cpp.o
 .PHONY : Sandbox/Sandbox.cpp.o
 
 Sandbox/Sandbox.i: Sandbox/Sandbox.cpp.i
@@ -449,7 +449,7 @@ Sandbox/Sandbox.i: Sandbox/Sandbox.cpp.i
 
 # target to preprocess a source file
 Sandbox/Sandbox.cpp.i:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Sandbox/Sandbox.cpp.i
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Sandbox/Sandbox.cpp.i
 .PHONY : Sandbox/Sandbox.cpp.i
 
 Sandbox/Sandbox.s: Sandbox/Sandbox.cpp.s
@@ -458,7 +458,7 @@ Sandbox/Sandbox.s: Sandbox/Sandbox.cpp.s
 
 # target to generate assembly for a file
 Sandbox/Sandbox.cpp.s:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Sandbox/Sandbox.cpp.s
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Sandbox/Sandbox.cpp.s
 .PHONY : Sandbox/Sandbox.cpp.s
 
 # Help Target
@@ -515,6 +515,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

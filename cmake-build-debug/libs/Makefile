@@ -68,10 +68,10 @@ RM = /snap/clion/126/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andrew/MY/Projects/Graphic/LionGL
+CMAKE_SOURCE_DIR = /home/andrew/home/andrew/Projects/Graphic/LionGL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug
+CMAKE_BINARY_DIR = /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -146,14 +146,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/libs/CMakeFiles/progress.marks
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles 0
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/CMakeFiles/progress.marks
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/clean
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/clean
 .PHONY : clean
 
 # The main clean target
@@ -163,22 +163,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/preinstall
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/preinstall
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 libs/CMakeFiles/libs.dir/rule:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/CMakeFiles/libs.dir/rule
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/CMakeFiles/libs.dir/rule
 .PHONY : libs/CMakeFiles/libs.dir/rule
 
 # Convenience name for target.
@@ -188,7 +188,7 @@ libs: libs/CMakeFiles/libs.dir/rule
 
 # fast build rule for target.
 libs/fast:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/build
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/build
 .PHONY : libs/fast
 
 imgui/examples/imgui_impl_opengl3.o: imgui/examples/imgui_impl_opengl3.cpp.o
@@ -197,7 +197,7 @@ imgui/examples/imgui_impl_opengl3.o: imgui/examples/imgui_impl_opengl3.cpp.o
 
 # target to build an object file
 imgui/examples/imgui_impl_opengl3.cpp.o:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_opengl3.cpp.o
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_opengl3.cpp.o
 .PHONY : imgui/examples/imgui_impl_opengl3.cpp.o
 
 imgui/examples/imgui_impl_opengl3.i: imgui/examples/imgui_impl_opengl3.cpp.i
@@ -206,7 +206,7 @@ imgui/examples/imgui_impl_opengl3.i: imgui/examples/imgui_impl_opengl3.cpp.i
 
 # target to preprocess a source file
 imgui/examples/imgui_impl_opengl3.cpp.i:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_opengl3.cpp.i
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_opengl3.cpp.i
 .PHONY : imgui/examples/imgui_impl_opengl3.cpp.i
 
 imgui/examples/imgui_impl_opengl3.s: imgui/examples/imgui_impl_opengl3.cpp.s
@@ -215,7 +215,7 @@ imgui/examples/imgui_impl_opengl3.s: imgui/examples/imgui_impl_opengl3.cpp.s
 
 # target to generate assembly for a file
 imgui/examples/imgui_impl_opengl3.cpp.s:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_opengl3.cpp.s
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_opengl3.cpp.s
 .PHONY : imgui/examples/imgui_impl_opengl3.cpp.s
 
 imgui/examples/imgui_impl_sdl.o: imgui/examples/imgui_impl_sdl.cpp.o
@@ -224,7 +224,7 @@ imgui/examples/imgui_impl_sdl.o: imgui/examples/imgui_impl_sdl.cpp.o
 
 # target to build an object file
 imgui/examples/imgui_impl_sdl.cpp.o:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_sdl.cpp.o
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_sdl.cpp.o
 .PHONY : imgui/examples/imgui_impl_sdl.cpp.o
 
 imgui/examples/imgui_impl_sdl.i: imgui/examples/imgui_impl_sdl.cpp.i
@@ -233,7 +233,7 @@ imgui/examples/imgui_impl_sdl.i: imgui/examples/imgui_impl_sdl.cpp.i
 
 # target to preprocess a source file
 imgui/examples/imgui_impl_sdl.cpp.i:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_sdl.cpp.i
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_sdl.cpp.i
 .PHONY : imgui/examples/imgui_impl_sdl.cpp.i
 
 imgui/examples/imgui_impl_sdl.s: imgui/examples/imgui_impl_sdl.cpp.s
@@ -242,7 +242,7 @@ imgui/examples/imgui_impl_sdl.s: imgui/examples/imgui_impl_sdl.cpp.s
 
 # target to generate assembly for a file
 imgui/examples/imgui_impl_sdl.cpp.s:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_sdl.cpp.s
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_sdl.cpp.s
 .PHONY : imgui/examples/imgui_impl_sdl.cpp.s
 
 imgui/imgui.o: imgui/imgui.cpp.o
@@ -251,7 +251,7 @@ imgui/imgui.o: imgui/imgui.cpp.o
 
 # target to build an object file
 imgui/imgui.cpp.o:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/imgui.cpp.o
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/imgui.cpp.o
 .PHONY : imgui/imgui.cpp.o
 
 imgui/imgui.i: imgui/imgui.cpp.i
@@ -260,7 +260,7 @@ imgui/imgui.i: imgui/imgui.cpp.i
 
 # target to preprocess a source file
 imgui/imgui.cpp.i:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/imgui.cpp.i
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/imgui.cpp.i
 .PHONY : imgui/imgui.cpp.i
 
 imgui/imgui.s: imgui/imgui.cpp.s
@@ -269,7 +269,7 @@ imgui/imgui.s: imgui/imgui.cpp.s
 
 # target to generate assembly for a file
 imgui/imgui.cpp.s:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/imgui.cpp.s
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/imgui.cpp.s
 .PHONY : imgui/imgui.cpp.s
 
 imgui/imgui_demo.o: imgui/imgui_demo.cpp.o
@@ -278,7 +278,7 @@ imgui/imgui_demo.o: imgui/imgui_demo.cpp.o
 
 # target to build an object file
 imgui/imgui_demo.cpp.o:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/imgui_demo.cpp.o
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/imgui_demo.cpp.o
 .PHONY : imgui/imgui_demo.cpp.o
 
 imgui/imgui_demo.i: imgui/imgui_demo.cpp.i
@@ -287,7 +287,7 @@ imgui/imgui_demo.i: imgui/imgui_demo.cpp.i
 
 # target to preprocess a source file
 imgui/imgui_demo.cpp.i:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/imgui_demo.cpp.i
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/imgui_demo.cpp.i
 .PHONY : imgui/imgui_demo.cpp.i
 
 imgui/imgui_demo.s: imgui/imgui_demo.cpp.s
@@ -296,7 +296,7 @@ imgui/imgui_demo.s: imgui/imgui_demo.cpp.s
 
 # target to generate assembly for a file
 imgui/imgui_demo.cpp.s:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/imgui_demo.cpp.s
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/imgui_demo.cpp.s
 .PHONY : imgui/imgui_demo.cpp.s
 
 imgui/imgui_draw.o: imgui/imgui_draw.cpp.o
@@ -305,7 +305,7 @@ imgui/imgui_draw.o: imgui/imgui_draw.cpp.o
 
 # target to build an object file
 imgui/imgui_draw.cpp.o:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/imgui_draw.cpp.o
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/imgui_draw.cpp.o
 .PHONY : imgui/imgui_draw.cpp.o
 
 imgui/imgui_draw.i: imgui/imgui_draw.cpp.i
@@ -314,7 +314,7 @@ imgui/imgui_draw.i: imgui/imgui_draw.cpp.i
 
 # target to preprocess a source file
 imgui/imgui_draw.cpp.i:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/imgui_draw.cpp.i
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/imgui_draw.cpp.i
 .PHONY : imgui/imgui_draw.cpp.i
 
 imgui/imgui_draw.s: imgui/imgui_draw.cpp.s
@@ -323,7 +323,7 @@ imgui/imgui_draw.s: imgui/imgui_draw.cpp.s
 
 # target to generate assembly for a file
 imgui/imgui_draw.cpp.s:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/imgui_draw.cpp.s
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/imgui_draw.cpp.s
 .PHONY : imgui/imgui_draw.cpp.s
 
 imgui/imgui_widgets.o: imgui/imgui_widgets.cpp.o
@@ -332,7 +332,7 @@ imgui/imgui_widgets.o: imgui/imgui_widgets.cpp.o
 
 # target to build an object file
 imgui/imgui_widgets.cpp.o:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/imgui_widgets.cpp.o
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/imgui_widgets.cpp.o
 .PHONY : imgui/imgui_widgets.cpp.o
 
 imgui/imgui_widgets.i: imgui/imgui_widgets.cpp.i
@@ -341,7 +341,7 @@ imgui/imgui_widgets.i: imgui/imgui_widgets.cpp.i
 
 # target to preprocess a source file
 imgui/imgui_widgets.cpp.i:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/imgui_widgets.cpp.i
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/imgui_widgets.cpp.i
 .PHONY : imgui/imgui_widgets.cpp.i
 
 imgui/imgui_widgets.s: imgui/imgui_widgets.cpp.s
@@ -350,7 +350,7 @@ imgui/imgui_widgets.s: imgui/imgui_widgets.cpp.s
 
 # target to generate assembly for a file
 imgui/imgui_widgets.cpp.s:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/imgui_widgets.cpp.s
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/libs.dir/build.make libs/CMakeFiles/libs.dir/imgui/imgui_widgets.cpp.s
 .PHONY : imgui/imgui_widgets.cpp.s
 
 # Help Target
@@ -395,6 +395,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/andrew/MY/Projects/Graphic/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
