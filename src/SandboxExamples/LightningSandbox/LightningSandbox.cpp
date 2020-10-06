@@ -5,11 +5,7 @@ LightningSandbox::LightningSandbox()
                "../src/SandboxExamples/LightningSandbox/res/shaders/fragment.glsl"),
                m_lightShader("../src/SandboxExamples/LightningSandbox/res/shaders/vertex.glsl",
                              "../src/SandboxExamples/LightningSandbox/res/shaders/fragmentLight.glsl"),
-               m_camera(0.0f, 0.0f, -3.0f)
-    {
-        m_shader.bind();
-        m_lightShader.bind();
-    }
+               m_camera(0.0f, 0.0f, -3.0f){}
 
 void LightningSandbox::start()
 {
@@ -55,11 +51,12 @@ void LightningSandbox::start()
                 0.5f,  0.5f,  0.5f,
                 0.5f,  0.5f,  0.5f,
                 -0.5f,  0.5f,  0.5f,
-                -0.5f,  0.5f, -0.5f,
+                -0.5f,  0.5f, -0.5f
             };
     VertexBuffer::bufferData(vert, sizeof(vert));
     m_vertexLayout.push<float>(3);
     m_vertexArray.bindArray(m_vertexBuffer, m_vertexLayout);
+    m_lightVertexArray.bindArray(m_vertexBuffer, m_vertexLayout);
     unsigned int index[36];
     for (int i = 0; i < 36; i++)
     {
@@ -78,7 +75,7 @@ void LightningSandbox::start()
     m_lightShader.setUniformMat4f("u_Model", model);
     m_lightShader.setUniformMat4f("u_Projection", projection);
 
-    //SDL_SetRelativeMouseMode(SDL_TRUE);
+    SDL_SetRelativeMouseMode(SDL_TRUE);
     m_camera.setEulerAngle(90, 0);
     m_shader.setUniformMat4f("u_View", m_camera.getLookAtMatrix());
     m_lightShader.setUniformMat4f("u_View", m_camera.getLookAtMatrix());
@@ -92,7 +89,7 @@ void LightningSandbox::onUpdate(double deltaTime)
     m_camera.setEulerAngle(m_camera.getYaw() + (m_mouseX * deltaTime * 0.005f),
                            m_camera.getPitch() - (m_mouseY * deltaTime * 0.005f));
     m_shader.setUniformMat4f("u_View", m_camera.getLookAtMatrix());
-    m_lightShader.setUniformMat4f("u_View", m_camera.getLookAtMatrix());
+    m_lightShader.setUniformMat4f("u_View",m_camera.getLookAtMatrix());
     //draw cube objects
     {
         glm::mat4 nModel = glm::translate(glm::mat4(1.0f), glm::vec3(1.3f, 0.0f, 0.0f));
@@ -103,7 +100,7 @@ void LightningSandbox::onUpdate(double deltaTime)
     {
         glm::mat4 nModel = glm::translate(glm::mat4(1.0f), glm::vec3(-1.5f, 1.0f, 4.0f));
         m_lightShader.setUniformMat4f("u_Model", nModel);
-        m_renderer.draw(m_vertexArray, m_indexBuffer, m_lightShader);
+        m_renderer.draw(m_lightVertexArray, m_indexBuffer, m_lightShader);
     }
 }
 

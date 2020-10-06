@@ -13,7 +13,7 @@ VertexArray::~VertexArray()
 
 void VertexArray::bindArray(const VertexBuffer& vertexBuffer, const VertexLayout& vertexLayout) 
 {
-    vertexBuffer.bind();
+    glBindVertexArray(m_RenderId);
     const auto& elements = vertexLayout.getElements();
     unsigned int offset = 0;
     for(int i = 0; i < elements.size(); i++)

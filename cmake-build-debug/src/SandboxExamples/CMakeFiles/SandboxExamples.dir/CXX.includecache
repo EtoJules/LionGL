@@ -1703,9 +1703,9 @@ Core/Renderer/IndexBuffer/IndexBuffer.h
 ../src/Core/Renderer/Core/Renderer/IndexBuffer/IndexBuffer.h
 
 ../src/Core/Renderer/Shader/Shader.h
-GL/glew.h
--
 string
+-
+GL/glew.h
 -
 glm/mat4x4.hpp
 ../src/Core/Renderer/Shader/glm/mat4x4.hpp

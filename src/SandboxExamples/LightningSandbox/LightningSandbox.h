@@ -12,6 +12,7 @@ private:
     VertexBuffer m_vertexBuffer;
     VertexLayout m_vertexLayout;
     VertexArray m_vertexArray;
+    VertexArray m_lightVertexArray;
     IndexBuffer m_indexBuffer;
     Shader m_lightShader;
     Shader m_shader;
