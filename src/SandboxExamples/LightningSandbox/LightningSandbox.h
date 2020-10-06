@@ -13,6 +13,7 @@ private:
     VertexLayout m_vertexLayout;
     VertexArray m_vertexArray;
     IndexBuffer m_indexBuffer;
+    Shader m_lightShader;
     Shader m_shader;
 
 private:
