@@ -5,7 +5,7 @@ LightningSandbox::LightningSandbox()
                "../src/SandboxExamples/LightningSandbox/res/shaders/fragment.glsl"),
                m_lightShader("../src/SandboxExamples/LightningSandbox/res/shaders/vertex.glsl",
                              "../src/SandboxExamples/LightningSandbox/res/shaders/fragmentLight.glsl"),
-               m_camera(0.0f, 0.0f, -3.0f){}
+               m_camera(0.0f, 1.0f, -3.0f){}
 
 void LightningSandbox::start()
 {
@@ -64,6 +64,10 @@ void LightningSandbox::start()
     }
     m_indexBuffer.bufferData(index, sizeof(index));
 
+    //color
+    m_shader.setUniform4f("u_ObjectColor", 1.0f, 0.5f, 0.31f, 1.0f);
+    m_shader.setUniform4f("u_LightColor", 1.0f, 1.0f, 1.0f, 1.0f);
+
     //MVP
     glm::mat4 model(1.0f);
     glm::mat4 view(1.0f);
@@ -98,7 +102,7 @@ void LightningSandbox::onUpdate(double deltaTime)
     }
     //draw lights
     {
-        glm::mat4 nModel = glm::translate(glm::mat4(1.0f), glm::vec3(-1.5f, 1.0f, 4.0f));
+        glm::mat4 nModel = glm::translate(glm::mat4(1.0f), glm::vec3(-1.5f, 0.2f, 4.0f));
         m_lightShader.setUniformMat4f("u_Model", nModel);
         m_renderer.draw(m_lightVertexArray, m_indexBuffer, m_lightShader);
     }
