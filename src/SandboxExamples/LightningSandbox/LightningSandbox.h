@@ -24,6 +24,7 @@ private:
 private:
     int m_mouseX;
     int m_mouseY;
+    glm::vec3 cameraMoveVec;
 
 public:
     LightningSandbox();
@@ -32,4 +33,5 @@ public:
     void start() override;
     void onUpdate(double deltaTime) override;
     void onGUI() override;
+    void onEvent(const SDL_Event &event) override;
 };

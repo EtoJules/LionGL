@@ -54,10 +54,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/126/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/129/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/126/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/129/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -74,7 +74,7 @@ CMAKE_BINARY_DIR = /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-
 include libs/glew-2.1.0/build/cmake/CMakeFiles/uninstall.dir/progress.make
 
 libs/glew-2.1.0/build/cmake/CMakeFiles/uninstall:
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake && /snap/clion/126/bin/cmake/linux/bin/cmake -P /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/cmake_uninstall.cmake
+	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake && /snap/clion/129/bin/cmake/linux/bin/cmake -P /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/cmake_uninstall.cmake
 
 uninstall: libs/glew-2.1.0/build/cmake/CMakeFiles/uninstall
 uninstall: libs/glew-2.1.0/build/cmake/CMakeFiles/uninstall.dir/build.make
