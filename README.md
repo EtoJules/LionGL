@@ -1,1 +1,1 @@
-# LionGL
+# LionGL - Learning OpenGL
