@@ -17,7 +17,7 @@ int main()
                     SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE);
     if (glewInit() != GLEW_OK)
         std::cout << "Glew error!!! \n";
-
+    
     window.loadSandbox(new LightningSandbox);
     window.startGameLoop();
     return 0;
