@@ -92,17 +92,13 @@ void LightningSandbox::start()
     m_camera.setEulerAngle(90, -10);
     m_shader.setUniformMat4f("u_View", m_camera.getLookAtMatrix());
     m_lightShader.setUniformMat4f("u_View", m_camera.getLookAtMatrix());
+
+    m_shader.setUniform4f("u_LightPosition", 1.5f, -0.2f, -1.0f, 1.0f);
 }
 
 void LightningSandbox::onUpdate(double deltaTime)
 {
     m_renderer.clear();
-
-    m_shader.setUniform4f("u_LightPosition", 3.5f, -0.2f, -2.0f, 1.0f);
-    m_shader.setUniform4f("u_ViewPosition", m_camera.getPosition().x,
-                                                  m_camera.getPosition().y,
-                                                  m_camera.getPosition().z, 1.0f);
-
     SDL_GetRelativeMouseState(&m_mouseX, &m_mouseY);
     m_camera.setEulerAngle(m_camera.getYaw() + (m_mouseX * deltaTime * 0.005f),
                            m_camera.getPitch() - (m_mouseY * deltaTime * 0.005f));
@@ -111,13 +107,13 @@ void LightningSandbox::onUpdate(double deltaTime)
     m_lightShader.setUniformMat4f("u_View",m_camera.getLookAtMatrix());
     //draw cube objects
     {
-        glm::mat4 nModel = glm::translate(glm::mat4(1.0f), glm::vec3(-1.3f, -1.0f, 1.0f));
+        glm::mat4 nModel = glm::translate(glm::mat4(1.0f), glm::vec3(-1.3f, -1.0f, 2.0f));
         m_shader.setUniformMat4f("u_Model", nModel);
         m_renderer.draw(m_vertexArray, m_indexBuffer, m_shader);
     }
     //draw lights
     {
-        glm::mat4 nModel = glm::translate(glm::mat4(1.0f), glm::vec3(3.5f, -0.2f, -2.0f));
+        glm::mat4 nModel = glm::translate(glm::mat4(1.0f), glm::vec3(1.5f, -0.2f, -1.0f));
         m_lightShader.setUniformMat4f("u_Model", nModel);
         m_renderer.draw(m_lightVertexArray, m_indexBuffer, m_lightShader);
     }
