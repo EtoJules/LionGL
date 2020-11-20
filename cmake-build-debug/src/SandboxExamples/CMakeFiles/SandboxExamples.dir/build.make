@@ -63,10 +63,10 @@ RM = /snap/clion/129/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andrew/home/andrew/Projects/Graphic/LionGL
+CMAKE_SOURCE_DIR = /home/andrew/MY/Projects/LionGL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug
+CMAKE_BINARY_DIR = /home/andrew/MY/Projects/LionGL/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include src/SandboxExamples/CMakeFiles/SandboxExamples.dir/depend.make
@@ -79,42 +79,42 @@ include src/SandboxExamples/CMakeFiles/SandboxExamples.dir/flags.make
 
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o: src/SandboxExamples/CMakeFiles/SandboxExamples.dir/flags.make
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o: ../src/SandboxExamples/TriangleSandbox/TriangleSandbox.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o -c /home/andrew/home/andrew/Projects/Graphic/LionGL/src/SandboxExamples/TriangleSandbox/TriangleSandbox.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/MY/Projects/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o"
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/src/SandboxExamples && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o -c /home/andrew/MY/Projects/LionGL/src/SandboxExamples/TriangleSandbox/TriangleSandbox.cpp
 
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.i"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrew/home/andrew/Projects/Graphic/LionGL/src/SandboxExamples/TriangleSandbox/TriangleSandbox.cpp > CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.i
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/src/SandboxExamples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrew/MY/Projects/LionGL/src/SandboxExamples/TriangleSandbox/TriangleSandbox.cpp > CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.i
 
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.s"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/home/andrew/Projects/Graphic/LionGL/src/SandboxExamples/TriangleSandbox/TriangleSandbox.cpp -o CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.s
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/src/SandboxExamples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/MY/Projects/LionGL/src/SandboxExamples/TriangleSandbox/TriangleSandbox.cpp -o CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.s
 
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o: src/SandboxExamples/CMakeFiles/SandboxExamples.dir/flags.make
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o: ../src/SandboxExamples/CameraSandbox/CameraSandbox.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o -c /home/andrew/home/andrew/Projects/Graphic/LionGL/src/SandboxExamples/CameraSandbox/CameraSandbox.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/MY/Projects/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o"
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/src/SandboxExamples && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o -c /home/andrew/MY/Projects/LionGL/src/SandboxExamples/CameraSandbox/CameraSandbox.cpp
 
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.i"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrew/home/andrew/Projects/Graphic/LionGL/src/SandboxExamples/CameraSandbox/CameraSandbox.cpp > CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.i
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/src/SandboxExamples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrew/MY/Projects/LionGL/src/SandboxExamples/CameraSandbox/CameraSandbox.cpp > CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.i
 
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.s"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/home/andrew/Projects/Graphic/LionGL/src/SandboxExamples/CameraSandbox/CameraSandbox.cpp -o CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.s
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/src/SandboxExamples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/MY/Projects/LionGL/src/SandboxExamples/CameraSandbox/CameraSandbox.cpp -o CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.s
 
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.o: src/SandboxExamples/CMakeFiles/SandboxExamples.dir/flags.make
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.o: ../src/SandboxExamples/LightningSandbox/LightningSandbox.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.o"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.o -c /home/andrew/home/andrew/Projects/Graphic/LionGL/src/SandboxExamples/LightningSandbox/LightningSandbox.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/MY/Projects/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.o"
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/src/SandboxExamples && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.o -c /home/andrew/MY/Projects/LionGL/src/SandboxExamples/LightningSandbox/LightningSandbox.cpp
 
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.i"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrew/home/andrew/Projects/Graphic/LionGL/src/SandboxExamples/LightningSandbox/LightningSandbox.cpp > CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.i
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/src/SandboxExamples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrew/MY/Projects/LionGL/src/SandboxExamples/LightningSandbox/LightningSandbox.cpp > CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.i
 
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.s"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/home/andrew/Projects/Graphic/LionGL/src/SandboxExamples/LightningSandbox/LightningSandbox.cpp -o CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.s
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/src/SandboxExamples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/MY/Projects/LionGL/src/SandboxExamples/LightningSandbox/LightningSandbox.cpp -o CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.s
 
 # Object files for target SandboxExamples
 SandboxExamples_OBJECTS = \
@@ -130,9 +130,9 @@ src/SandboxExamples/libSandboxExamples.a: src/SandboxExamples/CMakeFiles/Sandbox
 src/SandboxExamples/libSandboxExamples.a: src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.o
 src/SandboxExamples/libSandboxExamples.a: src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make
 src/SandboxExamples/libSandboxExamples.a: src/SandboxExamples/CMakeFiles/SandboxExamples.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libSandboxExamples.a"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples && $(CMAKE_COMMAND) -P CMakeFiles/SandboxExamples.dir/cmake_clean_target.cmake
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SandboxExamples.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andrew/MY/Projects/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libSandboxExamples.a"
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/src/SandboxExamples && $(CMAKE_COMMAND) -P CMakeFiles/SandboxExamples.dir/cmake_clean_target.cmake
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/src/SandboxExamples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SandboxExamples.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build: src/SandboxExamples/libSandboxExamples.a
@@ -140,10 +140,10 @@ src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build: src/SandboxExamples/li
 .PHONY : src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build
 
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/clean:
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples && $(CMAKE_COMMAND) -P CMakeFiles/SandboxExamples.dir/cmake_clean.cmake
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/src/SandboxExamples && $(CMAKE_COMMAND) -P CMakeFiles/SandboxExamples.dir/cmake_clean.cmake
 .PHONY : src/SandboxExamples/CMakeFiles/SandboxExamples.dir/clean
 
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/depend:
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andrew/home/andrew/Projects/Graphic/LionGL /home/andrew/home/andrew/Projects/Graphic/LionGL/src/SandboxExamples /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples/CMakeFiles/SandboxExamples.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andrew/MY/Projects/LionGL /home/andrew/MY/Projects/LionGL/src/SandboxExamples /home/andrew/MY/Projects/LionGL/cmake-build-debug /home/andrew/MY/Projects/LionGL/cmake-build-debug/src/SandboxExamples /home/andrew/MY/Projects/LionGL/cmake-build-debug/src/SandboxExamples/CMakeFiles/SandboxExamples.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/SandboxExamples/CMakeFiles/SandboxExamples.dir/depend
 

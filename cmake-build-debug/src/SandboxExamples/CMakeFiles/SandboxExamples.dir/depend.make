@@ -431,9 +431,11 @@ src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSan
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.o: ../libs/glm/vector_relational.hpp
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.o: ../libs/imgui/imconfig.h
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.o: ../libs/imgui/imgui.h
+src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.o: ../libs/stb/stb_image.h
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.o: ../src/Core/Renderer/IndexBuffer/IndexBuffer.h
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.o: ../src/Core/Renderer/Renderer.h
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.o: ../src/Core/Renderer/Shader/Shader.h
+src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.o: ../src/Core/Renderer/Texture/Texture.h
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.o: ../src/Core/Renderer/VertexArray/VertexArray.h
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.o: ../src/Core/Renderer/VertexBuffer/VertexBuffer.h
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.o: ../src/Core/Renderer/VertexBuffer/VertexLayout.h
@@ -651,9 +653,11 @@ src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandb
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o: ../libs/glm/vector_relational.hpp
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o: ../libs/imgui/imconfig.h
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o: ../libs/imgui/imgui.h
+src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o: ../libs/stb/stb_image.h
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o: ../src/Core/Renderer/IndexBuffer/IndexBuffer.h
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o: ../src/Core/Renderer/Renderer.h
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o: ../src/Core/Renderer/Shader/Shader.h
+src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o: ../src/Core/Renderer/Texture/Texture.h
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o: ../src/Core/Renderer/VertexArray/VertexArray.h
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o: ../src/Core/Renderer/VertexBuffer/VertexBuffer.h
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o: ../src/Core/Renderer/VertexBuffer/VertexLayout.h

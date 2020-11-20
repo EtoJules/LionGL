@@ -1,13 +1,13 @@
-if (NOT EXISTS "/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: \"/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/install_manifest.txt\"")
-endif(NOT EXISTS "/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/install_manifest.txt")
+if (NOT EXISTS "/home/andrew/MY/Projects/LionGL/libs/SDL2-2.0.12/build/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"/home/andrew/MY/Projects/LionGL/libs/SDL2-2.0.12/build/install_manifest.txt\"")
+endif(NOT EXISTS "/home/andrew/MY/Projects/LionGL/libs/SDL2-2.0.12/build/install_manifest.txt")
 
-file(READ "/home/andrew/MY/Projects/Graphic/LionGL/libs/SDL2-2.0.12/build/install_manifest.txt" files)
+file(READ "/home/andrew/MY/Projects/LionGL/libs/SDL2-2.0.12/build/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 foreach (file ${files})
     message(STATUS "Uninstalling \"$ENV{DESTDIR}${file}\"")
     execute_process(
-        COMMAND /usr/bin/cmake -E remove "$ENV{DESTDIR}${file}"
+        COMMAND /snap/cmake/703/bin/cmake -E remove "$ENV{DESTDIR}${file}"
         OUTPUT_VARIABLE rm_out
         RESULT_VARIABLE rm_retval
     )

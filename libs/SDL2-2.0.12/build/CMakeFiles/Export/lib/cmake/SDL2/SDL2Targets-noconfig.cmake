@@ -9,7 +9,7 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set_property(TARGET SDL2::SDL2-static APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(SDL2::SDL2-static PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "C"
-  IMPORTED_LINK_INTERFACE_LIBRARIES_NOCONFIG "m;dl;/usr/lib/x86_64-linux-gnu/libsndio.so;dbus-1;ibus-1.0;gio-2.0;gobject-2.0;glib-2.0;-Wl,--no-undefined;-pthread"
+  IMPORTED_LINK_INTERFACE_LIBRARIES_NOCONFIG "m;dl;-Wl,--no-undefined;-pthread"
   IMPORTED_LOCATION_NOCONFIG "${_IMPORT_PREFIX}/lib/libSDL2.a"
   )
 
@@ -19,7 +19,7 @@ list(APPEND _IMPORT_CHECK_FILES_FOR_SDL2::SDL2-static "${_IMPORT_PREFIX}/lib/lib
 # Import target "SDL2::SDL2" for configuration ""
 set_property(TARGET SDL2::SDL2 APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(SDL2::SDL2 PROPERTIES
-  IMPORTED_LINK_INTERFACE_LIBRARIES_NOCONFIG "m;dl;/usr/lib/x86_64-linux-gnu/libsndio.so;dbus-1;ibus-1.0;gio-2.0;gobject-2.0;glib-2.0;-Wl,--no-undefined;-pthread"
+  IMPORTED_LINK_INTERFACE_LIBRARIES_NOCONFIG "m;dl;-Wl,--no-undefined;-pthread"
   IMPORTED_LOCATION_NOCONFIG "${_IMPORT_PREFIX}/lib/libSDL2-2.0.so.0.12.0"
   IMPORTED_SONAME_NOCONFIG "libSDL2-2.0.so.0"
   )

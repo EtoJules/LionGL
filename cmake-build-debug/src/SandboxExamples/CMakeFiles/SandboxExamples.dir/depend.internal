@@ -221,8 +221,8 @@ src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.c
  ../src/Core/Sandbox/Camera/Camera.h
  ../src/Core/Sandbox/Sandbox.h
  ../src/Helper/parser.h
- /home/andrew/home/andrew/Projects/Graphic/LionGL/src/SandboxExamples/CameraSandbox/CameraSandbox.cpp
- /home/andrew/home/andrew/Projects/Graphic/LionGL/src/SandboxExamples/CameraSandbox/CameraSandbox.h
+ /home/andrew/MY/Projects/LionGL/src/SandboxExamples/CameraSandbox/CameraSandbox.cpp
+ /home/andrew/MY/Projects/LionGL/src/SandboxExamples/CameraSandbox/CameraSandbox.h
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.o
  ../includes/GL/glew.h
  ../includes/SDL2/SDL.h
@@ -432,17 +432,19 @@ src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSan
  ../libs/glm/vector_relational.hpp
  ../libs/imgui/imconfig.h
  ../libs/imgui/imgui.h
+ ../libs/stb/stb_image.h
  ../src/Core/Renderer/IndexBuffer/IndexBuffer.h
  ../src/Core/Renderer/Renderer.h
  ../src/Core/Renderer/Shader/Shader.h
+ ../src/Core/Renderer/Texture/Texture.h
  ../src/Core/Renderer/VertexArray/VertexArray.h
  ../src/Core/Renderer/VertexBuffer/VertexBuffer.h
  ../src/Core/Renderer/VertexBuffer/VertexLayout.h
  ../src/Core/Sandbox/Camera/Camera.h
  ../src/Core/Sandbox/Sandbox.h
  ../src/Helper/parser.h
- /home/andrew/home/andrew/Projects/Graphic/LionGL/src/SandboxExamples/LightningSandbox/LightningSandbox.cpp
- /home/andrew/home/andrew/Projects/Graphic/LionGL/src/SandboxExamples/LightningSandbox/LightningSandbox.h
+ /home/andrew/MY/Projects/LionGL/src/SandboxExamples/LightningSandbox/LightningSandbox.cpp
+ /home/andrew/MY/Projects/LionGL/src/SandboxExamples/LightningSandbox/LightningSandbox.h
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o
  ../includes/GL/glew.h
  ../includes/SDL2/SDL.h
@@ -652,13 +654,15 @@ src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandb
  ../libs/glm/vector_relational.hpp
  ../libs/imgui/imconfig.h
  ../libs/imgui/imgui.h
+ ../libs/stb/stb_image.h
  ../src/Core/Renderer/IndexBuffer/IndexBuffer.h
  ../src/Core/Renderer/Renderer.h
  ../src/Core/Renderer/Shader/Shader.h
+ ../src/Core/Renderer/Texture/Texture.h
  ../src/Core/Renderer/VertexArray/VertexArray.h
  ../src/Core/Renderer/VertexBuffer/VertexBuffer.h
  ../src/Core/Renderer/VertexBuffer/VertexLayout.h
  ../src/Core/Sandbox/Sandbox.h
  ../src/Helper/parser.h
- /home/andrew/home/andrew/Projects/Graphic/LionGL/src/SandboxExamples/TriangleSandbox/TriangleSandbox.cpp
- /home/andrew/home/andrew/Projects/Graphic/LionGL/src/SandboxExamples/TriangleSandbox/TriangleSandbox.h
+ /home/andrew/MY/Projects/LionGL/src/SandboxExamples/TriangleSandbox/TriangleSandbox.cpp
+ /home/andrew/MY/Projects/LionGL/src/SandboxExamples/TriangleSandbox/TriangleSandbox.h

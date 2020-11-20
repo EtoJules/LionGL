@@ -5,6 +5,7 @@
 #include "Core/Renderer/VertexBuffer/VertexBuffer.h"
 #include "Core/Renderer/VertexArray/VertexArray.h"
 #include "Core/Renderer/IndexBuffer/IndexBuffer.h"
+#include "Core/Renderer/Texture/Texture.h"
 
 class Renderer
 {

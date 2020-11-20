@@ -6,5 +6,5 @@ C_FLAGS = -g -fPIC
 
 C_DEFINES = -DGLEW_BUILD -DGLEW_NO_GLU -Dglew_EXPORTS
 
-C_INCLUDES = -I/home/andrew/home/andrew/Projects/Graphic/LionGL/src -I/home/andrew/home/andrew/Projects/Graphic/LionGL/libs -I/home/andrew/home/andrew/Projects/Graphic/LionGL/includes -I/home/andrew/home/andrew/Projects/Graphic/LionGL/src/Core -I/usr/include/SDL2 -I/home/andrew/home/andrew/Projects/Graphic/LionGL/libs/glew-2.1.0/build/cmake/../../include 
+C_INCLUDES = -I/home/andrew/MY/Projects/LionGL/src -I/home/andrew/MY/Projects/LionGL/libs -I/home/andrew/MY/Projects/LionGL/includes -I/home/andrew/MY/Projects/LionGL/src/Core -I/usr/include/SDL2 -I/home/andrew/MY/Projects/LionGL/libs/glew-2.1.0/build/cmake/../../include 
 

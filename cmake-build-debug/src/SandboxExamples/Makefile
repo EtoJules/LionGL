@@ -68,10 +68,10 @@ RM = /snap/clion/129/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andrew/home/andrew/Projects/Graphic/LionGL
+CMAKE_SOURCE_DIR = /home/andrew/MY/Projects/LionGL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug
+CMAKE_BINARY_DIR = /home/andrew/MY/Projects/LionGL/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -146,14 +146,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples/CMakeFiles/progress.marks
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/SandboxExamples/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles 0
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/MY/Projects/LionGL/cmake-build-debug/CMakeFiles /home/andrew/MY/Projects/LionGL/cmake-build-debug/src/SandboxExamples/CMakeFiles/progress.marks
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/SandboxExamples/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/MY/Projects/LionGL/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/SandboxExamples/clean
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/SandboxExamples/clean
 .PHONY : clean
 
 # The main clean target
@@ -163,22 +163,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/SandboxExamples/preinstall
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/SandboxExamples/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/SandboxExamples/preinstall
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/SandboxExamples/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/rule:
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/rule
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/SandboxExamples/CMakeFiles/SandboxExamples.dir/rule
 .PHONY : src/SandboxExamples/CMakeFiles/SandboxExamples.dir/rule
 
 # Convenience name for target.
@@ -188,7 +188,7 @@ SandboxExamples: src/SandboxExamples/CMakeFiles/SandboxExamples.dir/rule
 
 # fast build rule for target.
 SandboxExamples/fast:
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build
 .PHONY : SandboxExamples/fast
 
 CameraSandbox/CameraSandbox.o: CameraSandbox/CameraSandbox.cpp.o
@@ -197,7 +197,7 @@ CameraSandbox/CameraSandbox.o: CameraSandbox/CameraSandbox.cpp.o
 
 # target to build an object file
 CameraSandbox/CameraSandbox.cpp.o:
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o
 .PHONY : CameraSandbox/CameraSandbox.cpp.o
 
 CameraSandbox/CameraSandbox.i: CameraSandbox/CameraSandbox.cpp.i
@@ -206,7 +206,7 @@ CameraSandbox/CameraSandbox.i: CameraSandbox/CameraSandbox.cpp.i
 
 # target to preprocess a source file
 CameraSandbox/CameraSandbox.cpp.i:
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.i
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.i
 .PHONY : CameraSandbox/CameraSandbox.cpp.i
 
 CameraSandbox/CameraSandbox.s: CameraSandbox/CameraSandbox.cpp.s
@@ -215,7 +215,7 @@ CameraSandbox/CameraSandbox.s: CameraSandbox/CameraSandbox.cpp.s
 
 # target to generate assembly for a file
 CameraSandbox/CameraSandbox.cpp.s:
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.s
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.s
 .PHONY : CameraSandbox/CameraSandbox.cpp.s
 
 LightningSandbox/LightningSandbox.o: LightningSandbox/LightningSandbox.cpp.o
@@ -224,7 +224,7 @@ LightningSandbox/LightningSandbox.o: LightningSandbox/LightningSandbox.cpp.o
 
 # target to build an object file
 LightningSandbox/LightningSandbox.cpp.o:
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.o
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.o
 .PHONY : LightningSandbox/LightningSandbox.cpp.o
 
 LightningSandbox/LightningSandbox.i: LightningSandbox/LightningSandbox.cpp.i
@@ -233,7 +233,7 @@ LightningSandbox/LightningSandbox.i: LightningSandbox/LightningSandbox.cpp.i
 
 # target to preprocess a source file
 LightningSandbox/LightningSandbox.cpp.i:
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.i
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.i
 .PHONY : LightningSandbox/LightningSandbox.cpp.i
 
 LightningSandbox/LightningSandbox.s: LightningSandbox/LightningSandbox.cpp.s
@@ -242,7 +242,7 @@ LightningSandbox/LightningSandbox.s: LightningSandbox/LightningSandbox.cpp.s
 
 # target to generate assembly for a file
 LightningSandbox/LightningSandbox.cpp.s:
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.s
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.s
 .PHONY : LightningSandbox/LightningSandbox.cpp.s
 
 TriangleSandbox/TriangleSandbox.o: TriangleSandbox/TriangleSandbox.cpp.o
@@ -251,7 +251,7 @@ TriangleSandbox/TriangleSandbox.o: TriangleSandbox/TriangleSandbox.cpp.o
 
 # target to build an object file
 TriangleSandbox/TriangleSandbox.cpp.o:
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o
 .PHONY : TriangleSandbox/TriangleSandbox.cpp.o
 
 TriangleSandbox/TriangleSandbox.i: TriangleSandbox/TriangleSandbox.cpp.i
@@ -260,7 +260,7 @@ TriangleSandbox/TriangleSandbox.i: TriangleSandbox/TriangleSandbox.cpp.i
 
 # target to preprocess a source file
 TriangleSandbox/TriangleSandbox.cpp.i:
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.i
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.i
 .PHONY : TriangleSandbox/TriangleSandbox.cpp.i
 
 TriangleSandbox/TriangleSandbox.s: TriangleSandbox/TriangleSandbox.cpp.s
@@ -269,7 +269,7 @@ TriangleSandbox/TriangleSandbox.s: TriangleSandbox/TriangleSandbox.cpp.s
 
 # target to generate assembly for a file
 TriangleSandbox/TriangleSandbox.cpp.s:
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.s
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.s
 .PHONY : TriangleSandbox/TriangleSandbox.cpp.s
 
 # Help Target
@@ -305,6 +305,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

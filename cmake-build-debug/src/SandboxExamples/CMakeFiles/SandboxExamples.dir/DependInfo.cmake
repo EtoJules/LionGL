@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/andrew/home/andrew/Projects/Graphic/LionGL/src/SandboxExamples/CameraSandbox/CameraSandbox.cpp" "/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o"
-  "/home/andrew/home/andrew/Projects/Graphic/LionGL/src/SandboxExamples/LightningSandbox/LightningSandbox.cpp" "/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.o"
-  "/home/andrew/home/andrew/Projects/Graphic/LionGL/src/SandboxExamples/TriangleSandbox/TriangleSandbox.cpp" "/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o"
+  "/home/andrew/MY/Projects/LionGL/src/SandboxExamples/CameraSandbox/CameraSandbox.cpp" "/home/andrew/MY/Projects/LionGL/cmake-build-debug/src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o"
+  "/home/andrew/MY/Projects/LionGL/src/SandboxExamples/LightningSandbox/LightningSandbox.cpp" "/home/andrew/MY/Projects/LionGL/cmake-build-debug/src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.o"
+  "/home/andrew/MY/Projects/LionGL/src/SandboxExamples/TriangleSandbox/TriangleSandbox.cpp" "/home/andrew/MY/Projects/LionGL/cmake-build-debug/src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

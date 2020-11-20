@@ -63,10 +63,10 @@ RM = /snap/clion/129/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andrew/home/andrew/Projects/Graphic/LionGL
+CMAKE_SOURCE_DIR = /home/andrew/MY/Projects/LionGL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug
+CMAKE_BINARY_DIR = /home/andrew/MY/Projects/LionGL/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/depend.make
@@ -79,16 +79,16 @@ include libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/flags.make
 
 libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.o: libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/flags.make
 libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.o: ../libs/glew-2.1.0/src/glew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.o"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glew_s.dir/__/__/src/glew.c.o   -c /home/andrew/home/andrew/Projects/Graphic/LionGL/libs/glew-2.1.0/src/glew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/MY/Projects/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.o"
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glew_s.dir/__/__/src/glew.c.o   -c /home/andrew/MY/Projects/LionGL/libs/glew-2.1.0/src/glew.c
 
 libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glew_s.dir/__/__/src/glew.c.i"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andrew/home/andrew/Projects/Graphic/LionGL/libs/glew-2.1.0/src/glew.c > CMakeFiles/glew_s.dir/__/__/src/glew.c.i
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andrew/MY/Projects/LionGL/libs/glew-2.1.0/src/glew.c > CMakeFiles/glew_s.dir/__/__/src/glew.c.i
 
 libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glew_s.dir/__/__/src/glew.c.s"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andrew/home/andrew/Projects/Graphic/LionGL/libs/glew-2.1.0/src/glew.c -o CMakeFiles/glew_s.dir/__/__/src/glew.c.s
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andrew/MY/Projects/LionGL/libs/glew-2.1.0/src/glew.c -o CMakeFiles/glew_s.dir/__/__/src/glew.c.s
 
 # Object files for target glew_s
 glew_s_OBJECTS = \
@@ -100,9 +100,9 @@ glew_s_EXTERNAL_OBJECTS =
 lib/libGLEWd.a: libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.o
 lib/libGLEWd.a: libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/build.make
 lib/libGLEWd.a: libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library ../../../../lib/libGLEWd.a"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake && $(CMAKE_COMMAND) -P CMakeFiles/glew_s.dir/cmake_clean_target.cmake
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glew_s.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andrew/MY/Projects/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library ../../../../lib/libGLEWd.a"
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake && $(CMAKE_COMMAND) -P CMakeFiles/glew_s.dir/cmake_clean_target.cmake
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glew_s.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/build: lib/libGLEWd.a
@@ -110,10 +110,10 @@ libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/build: lib/libGLEWd.a
 .PHONY : libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/build
 
 libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/clean:
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake && $(CMAKE_COMMAND) -P CMakeFiles/glew_s.dir/cmake_clean.cmake
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake && $(CMAKE_COMMAND) -P CMakeFiles/glew_s.dir/cmake_clean.cmake
 .PHONY : libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/clean
 
 libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/depend:
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andrew/home/andrew/Projects/Graphic/LionGL /home/andrew/home/andrew/Projects/Graphic/LionGL/libs/glew-2.1.0/build/cmake /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andrew/MY/Projects/LionGL /home/andrew/MY/Projects/LionGL/libs/glew-2.1.0/build/cmake /home/andrew/MY/Projects/LionGL/cmake-build-debug /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/depend
 

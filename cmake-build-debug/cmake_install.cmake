@@ -1,4 +1,4 @@
-# Install script for directory: /home/andrew/home/andrew/Projects/Graphic/LionGL
+# Install script for directory: /home/andrew/MY/Projects/LionGL
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,17 +39,17 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/src/cmake_install.cmake")
+  include("/home/andrew/MY/Projects/LionGL/cmake-build-debug/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/cmake_install.cmake")
+  include("/home/andrew/MY/Projects/LionGL/cmake-build-debug/libs/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/cmake_install.cmake")
+  include("/home/andrew/MY/Projects/LionGL/cmake-build-debug/libs/glew-2.1.0/build/cmake/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -60,5 +60,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/andrew/MY/Projects/LionGL/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

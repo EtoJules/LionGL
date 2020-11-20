@@ -206,8 +206,10 @@ src/Core/CMakeFiles/Core.dir/Renderer/Renderer.cpp.o: ../libs/glm/vec2.hpp
 src/Core/CMakeFiles/Core.dir/Renderer/Renderer.cpp.o: ../libs/glm/vec3.hpp
 src/Core/CMakeFiles/Core.dir/Renderer/Renderer.cpp.o: ../libs/glm/vec4.hpp
 src/Core/CMakeFiles/Core.dir/Renderer/Renderer.cpp.o: ../libs/glm/vector_relational.hpp
+src/Core/CMakeFiles/Core.dir/Renderer/Renderer.cpp.o: ../libs/stb/stb_image.h
 src/Core/CMakeFiles/Core.dir/Renderer/Renderer.cpp.o: ../src/Core/Renderer/IndexBuffer/IndexBuffer.h
 src/Core/CMakeFiles/Core.dir/Renderer/Renderer.cpp.o: ../src/Core/Renderer/Shader/Shader.h
+src/Core/CMakeFiles/Core.dir/Renderer/Renderer.cpp.o: ../src/Core/Renderer/Texture/Texture.h
 src/Core/CMakeFiles/Core.dir/Renderer/Renderer.cpp.o: ../src/Core/Renderer/VertexArray/VertexArray.h
 src/Core/CMakeFiles/Core.dir/Renderer/Renderer.cpp.o: ../src/Core/Renderer/VertexBuffer/VertexBuffer.h
 src/Core/CMakeFiles/Core.dir/Renderer/Renderer.cpp.o: ../src/Core/Renderer/VertexBuffer/VertexLayout.h

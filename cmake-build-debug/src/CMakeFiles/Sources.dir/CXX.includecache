@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/andrew/home/andrew/Projects/Graphic/LionGL/src/Helper/parser.cpp
+/home/andrew/MY/Projects/LionGL/src/Helper/parser.cpp
 parser.h
-/home/andrew/home/andrew/Projects/Graphic/LionGL/src/Helper/parser.h
+/home/andrew/MY/Projects/LionGL/src/Helper/parser.h
 
-/home/andrew/home/andrew/Projects/Graphic/LionGL/src/Helper/parser.h
+/home/andrew/MY/Projects/LionGL/src/Helper/parser.h
 string
 -
 fstream

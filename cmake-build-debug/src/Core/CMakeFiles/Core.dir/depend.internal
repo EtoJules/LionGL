@@ -62,12 +62,12 @@ src/Core/CMakeFiles/Core.dir/GlWindow/GlWindow.cpp.o
  ../libs/imgui/imconfig.h
  ../libs/imgui/imgui.h
  ../src/Core/Sandbox/Sandbox.h
- /home/andrew/home/andrew/Projects/Graphic/LionGL/src/Core/GlWindow/GlWindow.cpp
- /home/andrew/home/andrew/Projects/Graphic/LionGL/src/Core/GlWindow/GlWindow.h
+ /home/andrew/MY/Projects/LionGL/src/Core/GlWindow/GlWindow.cpp
+ /home/andrew/MY/Projects/LionGL/src/Core/GlWindow/GlWindow.h
 src/Core/CMakeFiles/Core.dir/Renderer/IndexBuffer/IndexBuffer.cpp.o
  ../includes/GL/glew.h
- /home/andrew/home/andrew/Projects/Graphic/LionGL/src/Core/Renderer/IndexBuffer/IndexBuffer.cpp
- /home/andrew/home/andrew/Projects/Graphic/LionGL/src/Core/Renderer/IndexBuffer/IndexBuffer.h
+ /home/andrew/MY/Projects/LionGL/src/Core/Renderer/IndexBuffer/IndexBuffer.cpp
+ /home/andrew/MY/Projects/LionGL/src/Core/Renderer/IndexBuffer/IndexBuffer.h
 src/Core/CMakeFiles/Core.dir/Renderer/Renderer.cpp.o
  ../includes/GL/glew.h
  ../libs/glm/common.hpp
@@ -207,14 +207,16 @@ src/Core/CMakeFiles/Core.dir/Renderer/Renderer.cpp.o
  ../libs/glm/vec3.hpp
  ../libs/glm/vec4.hpp
  ../libs/glm/vector_relational.hpp
+ ../libs/stb/stb_image.h
  ../src/Core/Renderer/IndexBuffer/IndexBuffer.h
  ../src/Core/Renderer/Shader/Shader.h
+ ../src/Core/Renderer/Texture/Texture.h
  ../src/Core/Renderer/VertexArray/VertexArray.h
  ../src/Core/Renderer/VertexBuffer/VertexBuffer.h
  ../src/Core/Renderer/VertexBuffer/VertexLayout.h
  ../src/Helper/parser.h
- /home/andrew/home/andrew/Projects/Graphic/LionGL/src/Core/Renderer/Renderer.cpp
- /home/andrew/home/andrew/Projects/Graphic/LionGL/src/Core/Renderer/Renderer.h
+ /home/andrew/MY/Projects/LionGL/src/Core/Renderer/Renderer.cpp
+ /home/andrew/MY/Projects/LionGL/src/Core/Renderer/Renderer.h
 src/Core/CMakeFiles/Core.dir/Renderer/Shader/Shader.cpp.o
  ../includes/GL/glew.h
  ../libs/glm/common.hpp
@@ -355,27 +357,27 @@ src/Core/CMakeFiles/Core.dir/Renderer/Shader/Shader.cpp.o
  ../libs/glm/vec4.hpp
  ../libs/glm/vector_relational.hpp
  ../src/Helper/parser.h
- /home/andrew/home/andrew/Projects/Graphic/LionGL/src/Core/Renderer/Shader/Shader.cpp
- /home/andrew/home/andrew/Projects/Graphic/LionGL/src/Core/Renderer/Shader/Shader.h
+ /home/andrew/MY/Projects/LionGL/src/Core/Renderer/Shader/Shader.cpp
+ /home/andrew/MY/Projects/LionGL/src/Core/Renderer/Shader/Shader.h
 src/Core/CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.o
  ../includes/GL/glew.h
  ../libs/stb/stb_image.h
- /home/andrew/home/andrew/Projects/Graphic/LionGL/src/Core/Renderer/Texture/Texture.cpp
- /home/andrew/home/andrew/Projects/Graphic/LionGL/src/Core/Renderer/Texture/Texture.h
+ /home/andrew/MY/Projects/LionGL/src/Core/Renderer/Texture/Texture.cpp
+ /home/andrew/MY/Projects/LionGL/src/Core/Renderer/Texture/Texture.h
 src/Core/CMakeFiles/Core.dir/Renderer/VertexArray/VertexArray.cpp.o
  ../includes/GL/glew.h
  ../src/Core/Renderer/VertexBuffer/VertexBuffer.h
  ../src/Core/Renderer/VertexBuffer/VertexLayout.h
- /home/andrew/home/andrew/Projects/Graphic/LionGL/src/Core/Renderer/VertexArray/VertexArray.cpp
- /home/andrew/home/andrew/Projects/Graphic/LionGL/src/Core/Renderer/VertexArray/VertexArray.h
+ /home/andrew/MY/Projects/LionGL/src/Core/Renderer/VertexArray/VertexArray.cpp
+ /home/andrew/MY/Projects/LionGL/src/Core/Renderer/VertexArray/VertexArray.h
 src/Core/CMakeFiles/Core.dir/Renderer/VertexBuffer/VertexBuffer.cpp.o
  ../includes/GL/glew.h
- /home/andrew/home/andrew/Projects/Graphic/LionGL/src/Core/Renderer/VertexBuffer/VertexBuffer.cpp
- /home/andrew/home/andrew/Projects/Graphic/LionGL/src/Core/Renderer/VertexBuffer/VertexBuffer.h
+ /home/andrew/MY/Projects/LionGL/src/Core/Renderer/VertexBuffer/VertexBuffer.cpp
+ /home/andrew/MY/Projects/LionGL/src/Core/Renderer/VertexBuffer/VertexBuffer.h
 src/Core/CMakeFiles/Core.dir/Renderer/VertexBuffer/VertexLayout.cpp.o
  ../includes/GL/glew.h
- /home/andrew/home/andrew/Projects/Graphic/LionGL/src/Core/Renderer/VertexBuffer/VertexLayout.cpp
- /home/andrew/home/andrew/Projects/Graphic/LionGL/src/Core/Renderer/VertexBuffer/VertexLayout.h
+ /home/andrew/MY/Projects/LionGL/src/Core/Renderer/VertexBuffer/VertexLayout.cpp
+ /home/andrew/MY/Projects/LionGL/src/Core/Renderer/VertexBuffer/VertexLayout.h
 src/Core/CMakeFiles/Core.dir/Sandbox/Camera/Camera.cpp.o
  ../libs/glm/common.hpp
  ../libs/glm/detail/_fixes.hpp
@@ -528,8 +530,8 @@ src/Core/CMakeFiles/Core.dir/Sandbox/Camera/Camera.cpp.o
  ../libs/glm/vec3.hpp
  ../libs/glm/vec4.hpp
  ../libs/glm/vector_relational.hpp
- /home/andrew/home/andrew/Projects/Graphic/LionGL/src/Core/Sandbox/Camera/Camera.cpp
- /home/andrew/home/andrew/Projects/Graphic/LionGL/src/Core/Sandbox/Camera/Camera.h
+ /home/andrew/MY/Projects/LionGL/src/Core/Sandbox/Camera/Camera.cpp
+ /home/andrew/MY/Projects/LionGL/src/Core/Sandbox/Camera/Camera.h
 src/Core/CMakeFiles/Core.dir/Sandbox/Sandbox.cpp.o
  ../includes/SDL2/SDL.h
  ../includes/SDL2/SDL_assert.h
@@ -585,5 +587,5 @@ src/Core/CMakeFiles/Core.dir/Sandbox/Sandbox.cpp.o
  ../includes/SDL2/SDL_video.h
  ../includes/SDL2/begin_code.h
  ../includes/SDL2/close_code.h
- /home/andrew/home/andrew/Projects/Graphic/LionGL/src/Core/Sandbox/Sandbox.cpp
- /home/andrew/home/andrew/Projects/Graphic/LionGL/src/Core/Sandbox/Sandbox.h
+ /home/andrew/MY/Projects/LionGL/src/Core/Sandbox/Sandbox.cpp
+ /home/andrew/MY/Projects/LionGL/src/Core/Sandbox/Sandbox.h

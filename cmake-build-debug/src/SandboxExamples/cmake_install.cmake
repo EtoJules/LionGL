@@ -1,4 +1,4 @@
-# Install script for directory: /home/andrew/home/andrew/Projects/Graphic/LionGL/src/SandboxExamples
+# Install script for directory: /home/andrew/MY/Projects/LionGL/src/SandboxExamples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

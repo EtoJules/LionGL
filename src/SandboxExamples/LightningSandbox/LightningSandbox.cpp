@@ -2,62 +2,64 @@
 #include "LightningSandbox.h"
 
 LightningSandbox::LightningSandbox()
-: m_shader("../src/SandboxExamples/LightningSandbox/res/shaders/vertex.glsl",
+:               m_shader("../src/SandboxExamples/LightningSandbox/res/shaders/vertex.glsl",
                "../src/SandboxExamples/LightningSandbox/res/shaders/fragment.glsl"),
                m_lightShader("../src/SandboxExamples/LightningSandbox/res/shaders/vertex.glsl",
                              "../src/SandboxExamples/LightningSandbox/res/shaders/fragmentLight.glsl"),
-               m_camera(-1.5f, 0.0f, -3.0f){}
+               m_camera(-1.5f, 0.0f, -3.0f),
+               m_texture("../src/SandboxExamples/LightningSandbox/res/textures/container2.png"){}
 
 void LightningSandbox::start()
 {
     float vert[] =
             {
-                //positions             //normals
-                -0.5f, -0.5f, -0.5f,    0.0f, 0.0f, -1.0f,
-                0.5f, -0.5f, -0.5f,     0.0f, 0.0f, -1.0f,
-                0.5f,  0.5f, -0.5f,     0.0f, 0.0f, -1.0f,
-                0.5f,  0.5f, -0.5f,     0.0f, 0.0f, -1.0f,
-                -0.5f,  0.5f, -0.5f,    0.0f, 0.0f, -1.0f,
-                -0.5f, -0.5f, -0.5f,    0.0f, 0.0f, -1.0f,
+                    //position             //normals            //texture coord
+                    -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.0f, 0.0f,
+                    0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  1.0f, 0.0f,
+                    0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  1.0f, 1.0f,
+                    0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  1.0f, 1.0f,
+                    -0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.0f, 1.0f,
+                    -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.0f, 0.0f,
 
-                -0.5f, -0.5f,  0.5f,    0.0f, 0.0f, 1.0f,
-                0.5f, -0.5f,  0.5f,    0.0f, 0.0f, 1.0f,
-                0.5f,  0.5f,  0.5f,    0.0f, 0.0f, 1.0f,
-                0.5f,  0.5f,  0.5f,    0.0f, 0.0f, 1.0f,
-                -0.5f,  0.5f,  0.5f,    0.0f, 0.0f, 1.0f,
-                -0.5f, -0.5f,  0.5f,    0.0f, 0.0f, 1.0f,
+                    -0.5f, -0.5f,  0.5f,  0.0f,  0.0f, 1.0f,   0.0f, 0.0f,
+                    0.5f, -0.5f,  0.5f,  0.0f,  0.0f, 1.0f,   1.0f, 0.0f,
+                    0.5f,  0.5f,  0.5f,  0.0f,  0.0f, 1.0f,   1.0f, 1.0f,
+                    0.5f,  0.5f,  0.5f,  0.0f,  0.0f, 1.0f,   1.0f, 1.0f,
+                    -0.5f,  0.5f,  0.5f,  0.0f,  0.0f, 1.0f,   0.0f, 1.0f,
+                    -0.5f, -0.5f,  0.5f,  0.0f,  0.0f, 1.0f,   0.0f, 0.0f,
 
-                -0.5f,  0.5f,  0.5f,    -1.0f, 0.0f, 0.0f,
-                -0.5f,  0.5f, -0.5f,    -1.0f, 0.0f, 0.0f,
-                -0.5f, -0.5f, -0.5f,    -1.0f, 0.0f, 0.0f,
-                -0.5f, -0.5f, -0.5f,    -1.0f, 0.0f, 0.0f,
-                -0.5f, -0.5f,  0.5f,    -1.0f, 0.0f, 0.0f,
-                -0.5f,  0.5f,  0.5f,    -1.0f, 0.0f, 0.0f,
+                    -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,  1.0f, 0.0f,
+                    -0.5f,  0.5f, -0.5f, -1.0f,  0.0f,  0.0f,  1.0f, 1.0f,
+                    -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,  0.0f, 1.0f,
+                    -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,  0.0f, 1.0f,
+                    -0.5f, -0.5f,  0.5f, -1.0f,  0.0f,  0.0f,  0.0f, 0.0f,
+                    -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,  1.0f, 0.0f,
 
-                0.5f,  0.5f,  0.5f,    1.0f, 0.0f, 0.0f,
-                0.5f,  0.5f, -0.5f,    1.0f, 0.0f, 0.0f,
-                0.5f, -0.5f, -0.5f,    1.0f, 0.0f, 0.0f,
-                0.5f, -0.5f, -0.5f,    1.0f, 0.0f, 0.0f,
-                0.5f, -0.5f,  0.5f,    1.0f, 0.0f, 0.0f,
-                0.5f,  0.5f,  0.5f,    1.0f, 0.0f, 0.0f,
+                    0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,  1.0f, 0.0f,
+                    0.5f,  0.5f, -0.5f,  1.0f,  0.0f,  0.0f,  1.0f, 1.0f,
+                    0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,  0.0f, 1.0f,
+                    0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,  0.0f, 1.0f,
+                    0.5f, -0.5f,  0.5f,  1.0f,  0.0f,  0.0f,  0.0f, 0.0f,
+                    0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,  1.0f, 0.0f,
 
-                -0.5f, -0.5f, -0.5f,    0.0f, -1.0f, 0.0f,
-                0.5f, -0.5f, -0.5f,     0.0f, -1.0f, 0.0f,
-                0.5f, -0.5f,  0.5f,     0.0f, -1.0f, 0.0f,
-                0.5f, -0.5f,  0.5f,     0.0f, -1.0f, 0.0f,
-                -0.5f, -0.5f,  0.5f,     0.0f, -1.0f, 0.0f,
-                -0.5f, -0.5f, -0.5f,     0.0f, -1.0f, 0.0f,
+                    -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,  0.0f, 1.0f,
+                    0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,  1.0f, 1.0f,
+                    0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,  1.0f, 0.0f,
+                    0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,  1.0f, 0.0f,
+                    -0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,  0.0f, 0.0f,
+                    -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,  0.0f, 1.0f,
 
-                -0.5f,  0.5f, -0.5f,     0.0f, 1.0f, 0.0f,
-                0.5f,  0.5f, -0.5f,     0.0f, 1.0f, 0.0f,
-                0.5f,  0.5f,  0.5f,     0.0f, 1.0f, 0.0f,
-                0.5f,  0.5f,  0.5f,     0.0f, 1.0f, 0.0f,
-                -0.5f,  0.5f,  0.5f,     0.0f, 1.0f, 0.0f,
-                -0.5f,  0.5f, -0.5f,     0.0f, 1.0f, 0.0f,
+                    -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,  0.0f, 1.0f,
+                    0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,  1.0f, 1.0f,
+                    0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,  1.0f, 0.0f,
+                    0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,  1.0f, 0.0f,
+                    -0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,  0.0f, 0.0f,
+                    -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,  0.0f, 1.0f
             };
     VertexBuffer::bufferData(vert, sizeof(vert));
     m_vertexLayout.push<float>(3);
     m_vertexLayout.push<float>(3);
+    m_vertexLayout.push<float>(2);
     m_vertexArray.bindArray(m_vertexBuffer, m_vertexLayout);
     m_lightVertexArray.bindArray(m_vertexBuffer, m_vertexLayout);
     unsigned int index[36];
@@ -67,14 +69,13 @@ void LightningSandbox::start()
     }
     m_indexBuffer.bufferData(index, sizeof(index));
 
+    m_texture.bind(1);
     //material setup
-    m_shader.setUniform4f("u_material.ambient", 1.0f, 0.5f, 0.31f, 1.0f );
-    m_shader.setUniform4f("u_material.diffuse", 1.0f, 0.5f, 0.31f, 1.0f );
     m_shader.setUniform4f("u_material.specular", 1.0f, 0.5f, 0.31f, 1.0f );
     m_shader.setUniform1f("u_material.shininess", 32.0f);
 
     //color
-    m_shader.setUniform4f("u_ObjectColor", 1.0f, 0.5f, 0.31f, 1.0f);
+    m_shader.setUniform4f("u_ObjectColor", 0.4f, 0.4f, 0.44f, 1.0f);
     m_shader.setUniform4f("u_LightColor", 1.0f, 1.0f, 1.0f, 1.0f);
 
     //MVP

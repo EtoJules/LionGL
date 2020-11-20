@@ -16,6 +16,7 @@ private:
     IndexBuffer m_indexBuffer;
     Shader m_lightShader;
     Shader m_shader;
+    Texture m_texture;
 
 private:
     Renderer m_renderer{};

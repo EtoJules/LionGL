@@ -19,8 +19,6 @@ Availability.h
 -
 OpenGL/glu.h
 -
-GL/glu.h
--
 
 ../includes/SDL2/SDL.h
 SDL_main.h
@@ -1759,6 +1757,8 @@ Core/Renderer/VertexArray/VertexArray.h
 ../src/Core/Renderer/Core/Renderer/VertexArray/VertexArray.h
 Core/Renderer/IndexBuffer/IndexBuffer.h
 ../src/Core/Renderer/Core/Renderer/IndexBuffer/IndexBuffer.h
+Core/Renderer/Texture/Texture.h
+../src/Core/Renderer/Core/Renderer/Texture/Texture.h
 
 ../src/Core/Renderer/Shader/Shader.h
 string
@@ -1860,17 +1860,17 @@ glm/gtc/matrix_transform.hpp
 iostream
 -
 
-/home/andrew/home/andrew/Projects/Graphic/LionGL/main.cpp
+/home/andrew/MY/Projects/LionGL/main.cpp
 GL/glew.h
 -
 iostream
 -
 SandboxExamples/LightningSandbox/LightningSandbox.h
-/home/andrew/home/andrew/Projects/Graphic/LionGL/SandboxExamples/LightningSandbox/LightningSandbox.h
+/home/andrew/MY/Projects/LionGL/SandboxExamples/LightningSandbox/LightningSandbox.h
 SandboxExamples/TriangleSandbox/TriangleSandbox.h
-/home/andrew/home/andrew/Projects/Graphic/LionGL/SandboxExamples/TriangleSandbox/TriangleSandbox.h
+/home/andrew/MY/Projects/LionGL/SandboxExamples/TriangleSandbox/TriangleSandbox.h
 SandboxExamples/CameraSandbox/CameraSandbox.h
-/home/andrew/home/andrew/Projects/Graphic/LionGL/SandboxExamples/CameraSandbox/CameraSandbox.h
+/home/andrew/MY/Projects/LionGL/SandboxExamples/CameraSandbox/CameraSandbox.h
 GlWindow/GlWindow.h
-/home/andrew/home/andrew/Projects/Graphic/LionGL/GlWindow/GlWindow.h
+/home/andrew/MY/Projects/LionGL/GlWindow/GlWindow.h
 

@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="ClGL" targetName="visualinfo" />
+      <config projectName="ClGL" targetName="Sources" />
+      <config projectName="ClGL" targetName="glew" />
+      <config projectName="ClGL" targetName="ClGL" />
+      <config projectName="ClGL" targetName="uninstall" />
+      <config projectName="ClGL" targetName="glewinfo" />
+      <config projectName="ClGL" targetName="libs" />
+      <config projectName="ClGL" targetName="glew_s" />
+      <config projectName="ClGL" targetName="SandboxExamples" />
+      <config projectName="ClGL" targetName="Core" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1735abda-9f68-49d6-be3d-0e6addcf9431" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ClGL.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ClGL.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ClGL.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ClGL.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ClGL.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ClGL.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ClGL.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ClGL.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ClGL.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ClGL.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ClGL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ClGL.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SDL2ConfigVersion.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/bin/glewinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/bin/visualinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/imgui.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libGLEWd.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libGLEWd.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libGLEWd.so.2.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libGLEWd.so.2.1.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/imGUI.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/imGUI.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/imGUI.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/imGUI.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/imGUI.dir/cmake_clean_target.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/imGUI.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/imGUI.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/imGUI.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/imGUI.dir/imgui/examples/imgui_impl_opengl3.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/imGUI.dir/imgui/examples/imgui_impl_sdl.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/imGUI.dir/imgui/imgui.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/imGUI.dir/imgui/imgui_demo.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/imGUI.dir/imgui/imgui_draw.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/imGUI.dir/imgui/imgui_widgets.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/imGUI.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/imGUI.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/libs.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/libs.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/libs.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/libs.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/libs.dir/cmake_clean_target.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/libs.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/libs.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/libs.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_opengl3.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_sdl.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/libs.dir/imgui/imgui.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/libs.dir/imgui/imgui_demo.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/libs.dir/imgui/imgui_draw.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/libs.dir/imgui/imgui_widgets.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/libs.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/libs.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/CMakeFiles/Export/lib/cmake/SDL2/SDL2Targets-debug.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/CMakeFiles/Export/lib/cmake/SDL2/SDL2Targets.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/CMakeFiles/SDL2-static.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/CMakeFiles/SDL2-static.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/CMakeFiles/SDL2-static.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/CMakeFiles/SDL2-static.dir/cmake_clean_target.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/CMakeFiles/SDL2-static.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/CMakeFiles/SDL2-static.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/CMakeFiles/SDL2-static.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/CMakeFiles/SDL2-static.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/CMakeFiles/SDL2main.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/CMakeFiles/SDL2main.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/CMakeFiles/SDL2main.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/CMakeFiles/SDL2main.dir/cmake_clean_target.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/CMakeFiles/SDL2main.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/CMakeFiles/SDL2main.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/CMakeFiles/SDL2main.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/CMakeFiles/SDL2main.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/CMakeFiles/uninstall.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/CMakeFiles/uninstall.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/CMakeFiles/uninstall.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/CMakeFiles/uninstall.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/SDL2.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/SDL2.spec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/cmake_uninstall.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/include/SDL_config.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/sdl2-config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/SDL2-2.0.12/sdl2.pc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/Export/lib/cmake/glew/glew-targets-debug.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/Export/lib/cmake/glew/glew-targets.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/cmake_clean_target.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/__/__/src/glewinfo.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/uninstall.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/uninstall.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/uninstall.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/uninstall.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/__/__/src/visualinfo.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/cmake_uninstall.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glew-2.1.0/build/cmake/glew.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/CMakeFiles/Export/lib/cmake/glfw3/glfw3Targets-debug.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/CMakeFiles/Export/lib/cmake/glfw3/glfw3Targets.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/CMakeFiles/uninstall.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/CMakeFiles/uninstall.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/CMakeFiles/uninstall.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/CMakeFiles/uninstall.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/GLFW.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/cmake_uninstall.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/cmake_clean_target.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/context.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/egl_context.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/glx_context.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/init.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/input.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/linux_joystick.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/monitor.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/osmesa_context.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/posix_thread.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/posix_time.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/vulkan.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/window.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/x11_init.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/x11_monitor.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/x11_window.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/CMakeFiles/glfw.dir/xkb_unicode.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/glfw3.pc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/glfw3Config.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/glfw3ConfigVersion.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/glfw_config.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/glfw-3.3.2/src/libglfw3.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/libimGUI.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libs/liblibs.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Sources.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Sources.dir/Core/Renderer/IndexBuffer/IndexBuffer.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Sources.dir/Core/Renderer/Renderer.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Sources.dir/Core/Renderer/Shader/Shader.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Sources.dir/Core/Renderer/VertexArray/VertexArray.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Sources.dir/Core/Renderer/VertexBuffer/VertexBuffer.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Sources.dir/Core/Renderer/VertexBuffer/VertexLayout.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Sources.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Sources.dir/Helper/parser.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Sources.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Sources.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Sources.dir/cmake_clean_target.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Sources.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Sources.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Sources.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Sources.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Sources.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Core/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Core/CMakeFiles/Core.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Core/CMakeFiles/Core.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Core/CMakeFiles/Core.dir/GlWindow/GlWindow.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Core/CMakeFiles/Core.dir/Renderer/IndexBuffer/IndexBuffer.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Core/CMakeFiles/Core.dir/Renderer/Renderer.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Core/CMakeFiles/Core.dir/Renderer/Shader/Shader.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Core/CMakeFiles/Core.dir/Renderer/Texture/Texture.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Core/CMakeFiles/Core.dir/Renderer/VertexArray/VertexArray.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Core/CMakeFiles/Core.dir/Renderer/VertexBuffer/VertexBuffer.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Core/CMakeFiles/Core.dir/Renderer/VertexBuffer/VertexLayout.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Core/CMakeFiles/Core.dir/Sandbox/Camera/Camera.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Core/CMakeFiles/Core.dir/Sandbox/Sandbox.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Core/CMakeFiles/Core.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Core/CMakeFiles/Core.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Core/CMakeFiles/Core.dir/cmake_clean_target.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Core/CMakeFiles/Core.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Core/CMakeFiles/Core.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Core/CMakeFiles/Core.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Core/CMakeFiles/Core.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Core/CMakeFiles/Core.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Core/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Core/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Core/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Core/libCore.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/SandboxExamples/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/SandboxExamples/CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/SandboxExamples/CMakeFiles/SandboxExamples.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/SandboxExamples/CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/SandboxExamples/CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/SandboxExamples/CMakeFiles/SandboxExamples.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/SandboxExamples/CMakeFiles/SandboxExamples.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/SandboxExamples/CMakeFiles/SandboxExamples.dir/cmake_clean_target.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/SandboxExamples/CMakeFiles/SandboxExamples.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/SandboxExamples/CMakeFiles/SandboxExamples.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/SandboxExamples/CMakeFiles/SandboxExamples.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/SandboxExamples/CMakeFiles/SandboxExamples.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/SandboxExamples/CMakeFiles/SandboxExamples.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/SandboxExamples/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/SandboxExamples/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/SandboxExamples/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/SandboxExamples/libSandboxExamples.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/libSources.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/GL/glew.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/GL/glew.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/3.16.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/3.16.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/3.16.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/3.16.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/3.16.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/3.16.3/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/3.16.3/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/CMakeError.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/CMakeRuleHashes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/CheckTypeSize/SIZEOF_SIZE_T.bin" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/CheckTypeSize/SIZEOF_SIZE_T.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/CheckTypeSize/SIZEOF_SIZE_T.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/CheckTypeSize/SIZEOF_SIZE_T.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/Export/lib/cmake/SDL2/SDL2Targets-noconfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/Export/lib/cmake/SDL2/SDL2Targets-noconfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/Export/lib/cmake/SDL2/SDL2Targets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/Export/lib/cmake/SDL2/SDL2Targets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/SDL.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/SDL_assert.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/SDL_dataqueue.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/SDL_error.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/SDL_hints.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/SDL_log.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/atomic/SDL_atomic.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/atomic/SDL_spinlock.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/audio/SDL_audio.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/audio/SDL_audiocvt.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/audio/SDL_audiodev.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/audio/SDL_audiotypecvt.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/audio/SDL_mixer.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/audio/SDL_wave.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/audio/alsa/SDL_alsa_audio.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/audio/disk/SDL_diskaudio.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/audio/dsp/SDL_dspaudio.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/audio/dummy/SDL_dummyaudio.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/audio/pulseaudio/SDL_pulseaudio.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/audio/sndio/SDL_sndioaudio.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/core/linux/SDL_dbus.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/core/linux/SDL_evdev.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/core/linux/SDL_evdev_kbd.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/core/linux/SDL_fcitx.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/core/linux/SDL_ibus.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/core/linux/SDL_ime.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/core/linux/SDL_threadprio.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/core/linux/SDL_udev.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/core/unix/SDL_poll.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/cpuinfo/SDL_cpuinfo.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/dynapi/SDL_dynapi.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/events/SDL_clipboardevents.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/events/SDL_displayevents.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/events/SDL_dropevents.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/events/SDL_events.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/events/SDL_gesture.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/events/SDL_keyboard.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/events/SDL_mouse.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/events/SDL_quit.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/events/SDL_touch.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/events/SDL_windowevents.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/file/SDL_rwops.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/filesystem/unix/SDL_sysfilesystem.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/haptic/SDL_haptic.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/haptic/linux/SDL_syshaptic.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/joystick/SDL_gamecontroller.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/joystick/SDL_joystick.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/joystick/linux/SDL_sysjoystick.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/joystick/steam/SDL_steamcontroller.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/libm/e_atan2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/libm/e_exp.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/libm/e_fmod.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/libm/e_log.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/libm/e_log10.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/libm/e_pow.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/libm/e_rem_pio2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/libm/e_sqrt.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/libm/k_cos.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/libm/k_rem_pio2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/libm/k_sin.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/libm/k_tan.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/libm/s_atan.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/libm/s_copysign.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/libm/s_cos.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/libm/s_fabs.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/libm/s_floor.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/libm/s_scalbn.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/libm/s_sin.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/libm/s_tan.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/loadso/dlopen/SDL_sysloadso.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/power/SDL_power.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/power/linux/SDL_syspower.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/render/SDL_d3dmath.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/render/SDL_render.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/render/SDL_yuv_sw.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/render/direct3d/SDL_render_d3d.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/render/direct3d/SDL_shaders_d3d.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/render/direct3d11/SDL_render_d3d11.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/render/direct3d11/SDL_shaders_d3d11.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/render/opengl/SDL_render_gl.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/render/opengl/SDL_shaders_gl.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/render/opengles/SDL_render_gles.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/render/opengles2/SDL_render_gles2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/render/opengles2/SDL_shaders_gles2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/render/psp/SDL_render_psp.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/render/software/SDL_blendfillrect.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/render/software/SDL_blendline.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/render/software/SDL_blendpoint.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/render/software/SDL_drawline.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/render/software/SDL_drawpoint.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/render/software/SDL_render_sw.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/render/software/SDL_rotate.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/sensor/SDL_sensor.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/sensor/dummy/SDL_dummysensor.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_getenv.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_iconv.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_malloc.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_qsort.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_stdlib.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_string.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_strtokr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/thread/SDL_thread.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/thread/pthread/SDL_syscond.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/thread/pthread/SDL_sysmutex.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/thread/pthread/SDL_syssem.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/thread/pthread/SDL_systhread.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/thread/pthread/SDL_systls.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/timer/SDL_timer.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/timer/unix/SDL_systimer.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/SDL_RLEaccel.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/SDL_blit.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/SDL_blit_0.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/SDL_blit_1.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/SDL_blit_A.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/SDL_blit_N.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/SDL_blit_auto.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/SDL_blit_copy.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/SDL_blit_slow.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/SDL_bmp.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/SDL_clipboard.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/SDL_egl.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/SDL_fillrect.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/SDL_pixels.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/SDL_rect.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/SDL_shape.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/SDL_stretch.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/SDL_surface.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/SDL_video.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/SDL_vulkan_utils.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/SDL_yuv.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/dummy/SDL_nullevents.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/dummy/SDL_nullframebuffer.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/dummy/SDL_nullvideo.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11clipboard.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11dyn.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11events.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11framebuffer.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11keyboard.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11messagebox.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11modes.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11mouse.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11opengl.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11opengles.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11shape.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11touch.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11video.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11vulkan.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11window.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11xinput2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/x11/edid-parse.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/x11/imKStoUCS.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2-static.dir/src/video/yuv2rgb/yuv_rgb.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/SDL.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/SDL_assert.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/SDL_dataqueue.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/SDL_error.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/SDL_hints.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/SDL_log.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/atomic/SDL_atomic.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/atomic/SDL_spinlock.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/audio/SDL_audio.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/audio/SDL_audiocvt.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/audio/SDL_audiodev.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/audio/SDL_audiotypecvt.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/audio/SDL_mixer.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/audio/SDL_wave.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/audio/alsa/SDL_alsa_audio.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/audio/disk/SDL_diskaudio.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/audio/dsp/SDL_dspaudio.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/audio/dummy/SDL_dummyaudio.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/audio/pulseaudio/SDL_pulseaudio.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/audio/sndio/SDL_sndioaudio.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/core/linux/SDL_dbus.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/core/linux/SDL_evdev.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/core/linux/SDL_evdev_kbd.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/core/linux/SDL_fcitx.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/core/linux/SDL_ibus.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/core/linux/SDL_ime.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/core/linux/SDL_threadprio.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/core/linux/SDL_udev.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/core/unix/SDL_poll.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/cpuinfo/SDL_cpuinfo.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/dynapi/SDL_dynapi.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/events/SDL_clipboardevents.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/events/SDL_displayevents.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/events/SDL_dropevents.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/events/SDL_events.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/events/SDL_gesture.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/events/SDL_keyboard.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/events/SDL_mouse.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/events/SDL_quit.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/events/SDL_touch.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/events/SDL_windowevents.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/file/SDL_rwops.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/filesystem/unix/SDL_sysfilesystem.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/haptic/SDL_haptic.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/haptic/linux/SDL_syshaptic.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/joystick/SDL_gamecontroller.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/joystick/SDL_joystick.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/joystick/linux/SDL_sysjoystick.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/joystick/steam/SDL_steamcontroller.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/libm/e_atan2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/libm/e_exp.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/libm/e_fmod.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/libm/e_log.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/libm/e_log10.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/libm/e_pow.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/libm/e_rem_pio2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/libm/e_sqrt.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/libm/k_cos.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/libm/k_rem_pio2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/libm/k_sin.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/libm/k_tan.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/libm/s_atan.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/libm/s_copysign.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/libm/s_cos.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/libm/s_fabs.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/libm/s_floor.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/libm/s_scalbn.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/libm/s_sin.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/libm/s_tan.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/loadso/dlopen/SDL_sysloadso.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/power/SDL_power.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/power/linux/SDL_syspower.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/render/SDL_d3dmath.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/render/SDL_render.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/render/SDL_yuv_sw.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/render/direct3d/SDL_render_d3d.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/render/direct3d/SDL_shaders_d3d.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/render/direct3d11/SDL_render_d3d11.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/render/direct3d11/SDL_shaders_d3d11.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/render/opengl/SDL_render_gl.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/render/opengl/SDL_shaders_gl.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/render/opengles/SDL_render_gles.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/render/opengles2/SDL_render_gles2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/render/opengles2/SDL_shaders_gles2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/render/psp/SDL_render_psp.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/render/software/SDL_blendfillrect.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/render/software/SDL_blendline.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/render/software/SDL_blendpoint.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/render/software/SDL_drawline.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/render/software/SDL_drawpoint.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/render/software/SDL_render_sw.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/render/software/SDL_rotate.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/sensor/SDL_sensor.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/sensor/dummy/SDL_dummysensor.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/stdlib/SDL_getenv.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/stdlib/SDL_iconv.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/stdlib/SDL_malloc.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/stdlib/SDL_qsort.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/stdlib/SDL_stdlib.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/stdlib/SDL_string.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/stdlib/SDL_strtokr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/thread/SDL_thread.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/thread/pthread/SDL_syscond.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/thread/pthread/SDL_sysmutex.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/thread/pthread/SDL_syssem.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/thread/pthread/SDL_systhread.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/thread/pthread/SDL_systls.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/timer/SDL_timer.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/timer/unix/SDL_systimer.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/SDL_RLEaccel.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/SDL_blit.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/SDL_blit_0.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/SDL_blit_1.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/SDL_blit_A.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/SDL_blit_N.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/SDL_blit_auto.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/SDL_blit_copy.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/SDL_blit_slow.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/SDL_bmp.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/SDL_clipboard.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/SDL_egl.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/SDL_fillrect.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/SDL_pixels.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/SDL_rect.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/SDL_shape.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/SDL_stretch.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/SDL_surface.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/SDL_video.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/SDL_vulkan_utils.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/SDL_yuv.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/dummy/SDL_nullevents.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/dummy/SDL_nullframebuffer.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/dummy/SDL_nullvideo.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/x11/SDL_x11clipboard.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/x11/SDL_x11dyn.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/x11/SDL_x11events.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/x11/SDL_x11framebuffer.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/x11/SDL_x11keyboard.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/x11/SDL_x11messagebox.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/x11/SDL_x11modes.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/x11/SDL_x11mouse.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/x11/SDL_x11opengl.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/x11/SDL_x11opengles.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/x11/SDL_x11shape.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/x11/SDL_x11touch.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/x11/SDL_x11video.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/x11/SDL_x11vulkan.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/x11/SDL_x11window.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/x11/SDL_x11xinput2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/x11/edid-parse.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/x11/imKStoUCS.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2.dir/src/video/yuv2rgb/yuv_rgb.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2main.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2main.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2main.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2main.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2main.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2main.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2main.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2main.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2main.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2main.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2main.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2main.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/uninstall.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/CMakeFiles/uninstall.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/SDL2ConfigVersion.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/SDL2ConfigVersion.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/cmake_uninstall.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/cmake_uninstall.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/include/SDL_config.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/include/SDL_config.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/libSDL2-2.0.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/libSDL2-2.0.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/libSDL2-2.0.so.0.12.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/libSDL2.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/libSDL2main.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/sdl2-config" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/sdl2-config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/sdl2.pc" beforeDir="false" afterPath="$PROJECT_DIR$/libs/SDL2-2.0.12/build/sdl2.pc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Renderer/Renderer.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Renderer/Renderer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Renderer/Texture/Texture.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Renderer/Texture/Texture.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SandboxExamples/CameraSandbox/CameraSandbox.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/SandboxExamples/CameraSandbox/CameraSandbox.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SandboxExamples/LightningSandbox/LightningSandbox.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/SandboxExamples/LightningSandbox/LightningSandbox.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SandboxExamples/LightningSandbox/LightningSandbox.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/SandboxExamples/LightningSandbox/LightningSandbox.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SandboxExamples/LightningSandbox/res/shaders/fragment.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/src/SandboxExamples/LightningSandbox/res/shaders/fragment.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SandboxExamples/LightningSandbox/res/shaders/vertex.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/src/SandboxExamples/LightningSandbox/res/shaders/vertex.glsl" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1kYMTj1P7qeIN3ckh2AzFL4Z3hI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="CMake Application.ClGL">
+    <configuration name="ClGL" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ClGL" TARGET_NAME="ClGL" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ClGL" RUN_TARGET_NAME="ClGL">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Core" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ClGL" TARGET_NAME="Core" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SandboxExamples" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ClGL" TARGET_NAME="SandboxExamples" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sources" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ClGL" TARGET_NAME="Sources" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="glew" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ClGL" TARGET_NAME="glew" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="glew_s" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ClGL" TARGET_NAME="glew_s" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="glewinfo" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ClGL" TARGET_NAME="glewinfo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ClGL" RUN_TARGET_NAME="glewinfo">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="libs" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ClGL" TARGET_NAME="libs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="uninstall" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ClGL" TARGET_NAME="uninstall" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="visualinfo" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ClGL" TARGET_NAME="visualinfo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ClGL" RUN_TARGET_NAME="visualinfo">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.ClGL" />
+      <item itemvalue="CMake Application.Core" />
+      <item itemvalue="CMake Application.SandboxExamples" />
+      <item itemvalue="CMake Application.Sources" />
+      <item itemvalue="CMake Application.glew" />
+      <item itemvalue="CMake Application.glew_s" />
+      <item itemvalue="CMake Application.glewinfo" />
+      <item itemvalue="CMake Application.libs" />
+      <item itemvalue="CMake Application.uninstall" />
+      <item itemvalue="CMake Application.visualinfo" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1735abda-9f68-49d6-be3d-0e6addcf9431" name="Default Changelist" comment="" />
+      <created>1605873082909</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605873082909</updated>
+      <workItem from="1605873084477" duration="294000" />
+      <workItem from="1605873388031" duration="115000" />
+      <workItem from="1605873511679" duration="4435000" />
+      <workItem from="1605889753092" duration="28000" />
+      <workItem from="1605907146181" duration="1613000" />
+      <workItem from="1605908777695" duration="1888000" />
+      <workItem from="1605910678399" duration="650000" />
+      <workItem from="1605911397118" duration="1056000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2545" y="324" width="424" height="515" key="FileChooserDialogImpl" timestamp="1605889769687">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2545" y="324" width="424" height="515" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1605889769687" />
+    <state width="1288" height="87" key="GridCell.Tab.0.bottom" timestamp="1605912442511">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1288" height="87" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1605912442511" />
+    <state width="1288" height="87" key="GridCell.Tab.0.center" timestamp="1605912442511">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1288" height="87" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1605912442511" />
+    <state width="1288" height="87" key="GridCell.Tab.0.left" timestamp="1605912442511">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1288" height="87" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1605912442511" />
+    <state width="1288" height="87" key="GridCell.Tab.0.right" timestamp="1605912442511">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1288" height="87" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1605912442511" />
+    <state x="2087" y="181" width="1221" height="765" key="SettingsEditor" timestamp="1605908918913">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2087" y="181" width="1221" height="765" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1605908918913" />
+    <state x="3031" y="27" width="809" height="956" key="dock-window-1" timestamp="1605912325520">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="3031" y="27" width="809" height="956" key="dock-window-1/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1605912325520" />
+  </component>
+</project>

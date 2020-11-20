@@ -63,10 +63,10 @@ RM = /snap/clion/129/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andrew/home/andrew/Projects/Graphic/LionGL
+CMAKE_SOURCE_DIR = /home/andrew/MY/Projects/LionGL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug
+CMAKE_BINARY_DIR = /home/andrew/MY/Projects/LionGL/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include libs/CMakeFiles/libs.dir/depend.make
@@ -79,81 +79,81 @@ include libs/CMakeFiles/libs.dir/flags.make
 
 libs/CMakeFiles/libs.dir/imgui/imgui.cpp.o: libs/CMakeFiles/libs.dir/flags.make
 libs/CMakeFiles/libs.dir/imgui/imgui.cpp.o: ../libs/imgui/imgui.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/CMakeFiles/libs.dir/imgui/imgui.cpp.o"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libs.dir/imgui/imgui.cpp.o -c /home/andrew/home/andrew/Projects/Graphic/LionGL/libs/imgui/imgui.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/MY/Projects/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/CMakeFiles/libs.dir/imgui/imgui.cpp.o"
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libs.dir/imgui/imgui.cpp.o -c /home/andrew/MY/Projects/LionGL/libs/imgui/imgui.cpp
 
 libs/CMakeFiles/libs.dir/imgui/imgui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libs.dir/imgui/imgui.cpp.i"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrew/home/andrew/Projects/Graphic/LionGL/libs/imgui/imgui.cpp > CMakeFiles/libs.dir/imgui/imgui.cpp.i
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrew/MY/Projects/LionGL/libs/imgui/imgui.cpp > CMakeFiles/libs.dir/imgui/imgui.cpp.i
 
 libs/CMakeFiles/libs.dir/imgui/imgui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libs.dir/imgui/imgui.cpp.s"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/home/andrew/Projects/Graphic/LionGL/libs/imgui/imgui.cpp -o CMakeFiles/libs.dir/imgui/imgui.cpp.s
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/MY/Projects/LionGL/libs/imgui/imgui.cpp -o CMakeFiles/libs.dir/imgui/imgui.cpp.s
 
 libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_opengl3.cpp.o: libs/CMakeFiles/libs.dir/flags.make
 libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_opengl3.cpp.o: ../libs/imgui/examples/imgui_impl_opengl3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_opengl3.cpp.o"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libs.dir/imgui/examples/imgui_impl_opengl3.cpp.o -c /home/andrew/home/andrew/Projects/Graphic/LionGL/libs/imgui/examples/imgui_impl_opengl3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/MY/Projects/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_opengl3.cpp.o"
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libs.dir/imgui/examples/imgui_impl_opengl3.cpp.o -c /home/andrew/MY/Projects/LionGL/libs/imgui/examples/imgui_impl_opengl3.cpp
 
 libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_opengl3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libs.dir/imgui/examples/imgui_impl_opengl3.cpp.i"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrew/home/andrew/Projects/Graphic/LionGL/libs/imgui/examples/imgui_impl_opengl3.cpp > CMakeFiles/libs.dir/imgui/examples/imgui_impl_opengl3.cpp.i
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrew/MY/Projects/LionGL/libs/imgui/examples/imgui_impl_opengl3.cpp > CMakeFiles/libs.dir/imgui/examples/imgui_impl_opengl3.cpp.i
 
 libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_opengl3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libs.dir/imgui/examples/imgui_impl_opengl3.cpp.s"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/home/andrew/Projects/Graphic/LionGL/libs/imgui/examples/imgui_impl_opengl3.cpp -o CMakeFiles/libs.dir/imgui/examples/imgui_impl_opengl3.cpp.s
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/MY/Projects/LionGL/libs/imgui/examples/imgui_impl_opengl3.cpp -o CMakeFiles/libs.dir/imgui/examples/imgui_impl_opengl3.cpp.s
 
 libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_sdl.cpp.o: libs/CMakeFiles/libs.dir/flags.make
 libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_sdl.cpp.o: ../libs/imgui/examples/imgui_impl_sdl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_sdl.cpp.o"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libs.dir/imgui/examples/imgui_impl_sdl.cpp.o -c /home/andrew/home/andrew/Projects/Graphic/LionGL/libs/imgui/examples/imgui_impl_sdl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/MY/Projects/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_sdl.cpp.o"
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libs.dir/imgui/examples/imgui_impl_sdl.cpp.o -c /home/andrew/MY/Projects/LionGL/libs/imgui/examples/imgui_impl_sdl.cpp
 
 libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_sdl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libs.dir/imgui/examples/imgui_impl_sdl.cpp.i"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrew/home/andrew/Projects/Graphic/LionGL/libs/imgui/examples/imgui_impl_sdl.cpp > CMakeFiles/libs.dir/imgui/examples/imgui_impl_sdl.cpp.i
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrew/MY/Projects/LionGL/libs/imgui/examples/imgui_impl_sdl.cpp > CMakeFiles/libs.dir/imgui/examples/imgui_impl_sdl.cpp.i
 
 libs/CMakeFiles/libs.dir/imgui/examples/imgui_impl_sdl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libs.dir/imgui/examples/imgui_impl_sdl.cpp.s"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/home/andrew/Projects/Graphic/LionGL/libs/imgui/examples/imgui_impl_sdl.cpp -o CMakeFiles/libs.dir/imgui/examples/imgui_impl_sdl.cpp.s
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/MY/Projects/LionGL/libs/imgui/examples/imgui_impl_sdl.cpp -o CMakeFiles/libs.dir/imgui/examples/imgui_impl_sdl.cpp.s
 
 libs/CMakeFiles/libs.dir/imgui/imgui_demo.cpp.o: libs/CMakeFiles/libs.dir/flags.make
 libs/CMakeFiles/libs.dir/imgui/imgui_demo.cpp.o: ../libs/imgui/imgui_demo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object libs/CMakeFiles/libs.dir/imgui/imgui_demo.cpp.o"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libs.dir/imgui/imgui_demo.cpp.o -c /home/andrew/home/andrew/Projects/Graphic/LionGL/libs/imgui/imgui_demo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/MY/Projects/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object libs/CMakeFiles/libs.dir/imgui/imgui_demo.cpp.o"
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libs.dir/imgui/imgui_demo.cpp.o -c /home/andrew/MY/Projects/LionGL/libs/imgui/imgui_demo.cpp
 
 libs/CMakeFiles/libs.dir/imgui/imgui_demo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libs.dir/imgui/imgui_demo.cpp.i"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrew/home/andrew/Projects/Graphic/LionGL/libs/imgui/imgui_demo.cpp > CMakeFiles/libs.dir/imgui/imgui_demo.cpp.i
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrew/MY/Projects/LionGL/libs/imgui/imgui_demo.cpp > CMakeFiles/libs.dir/imgui/imgui_demo.cpp.i
 
 libs/CMakeFiles/libs.dir/imgui/imgui_demo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libs.dir/imgui/imgui_demo.cpp.s"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/home/andrew/Projects/Graphic/LionGL/libs/imgui/imgui_demo.cpp -o CMakeFiles/libs.dir/imgui/imgui_demo.cpp.s
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/MY/Projects/LionGL/libs/imgui/imgui_demo.cpp -o CMakeFiles/libs.dir/imgui/imgui_demo.cpp.s
 
 libs/CMakeFiles/libs.dir/imgui/imgui_draw.cpp.o: libs/CMakeFiles/libs.dir/flags.make
 libs/CMakeFiles/libs.dir/imgui/imgui_draw.cpp.o: ../libs/imgui/imgui_draw.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object libs/CMakeFiles/libs.dir/imgui/imgui_draw.cpp.o"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libs.dir/imgui/imgui_draw.cpp.o -c /home/andrew/home/andrew/Projects/Graphic/LionGL/libs/imgui/imgui_draw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/MY/Projects/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object libs/CMakeFiles/libs.dir/imgui/imgui_draw.cpp.o"
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libs.dir/imgui/imgui_draw.cpp.o -c /home/andrew/MY/Projects/LionGL/libs/imgui/imgui_draw.cpp
 
 libs/CMakeFiles/libs.dir/imgui/imgui_draw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libs.dir/imgui/imgui_draw.cpp.i"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrew/home/andrew/Projects/Graphic/LionGL/libs/imgui/imgui_draw.cpp > CMakeFiles/libs.dir/imgui/imgui_draw.cpp.i
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrew/MY/Projects/LionGL/libs/imgui/imgui_draw.cpp > CMakeFiles/libs.dir/imgui/imgui_draw.cpp.i
 
 libs/CMakeFiles/libs.dir/imgui/imgui_draw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libs.dir/imgui/imgui_draw.cpp.s"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/home/andrew/Projects/Graphic/LionGL/libs/imgui/imgui_draw.cpp -o CMakeFiles/libs.dir/imgui/imgui_draw.cpp.s
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/MY/Projects/LionGL/libs/imgui/imgui_draw.cpp -o CMakeFiles/libs.dir/imgui/imgui_draw.cpp.s
 
 libs/CMakeFiles/libs.dir/imgui/imgui_widgets.cpp.o: libs/CMakeFiles/libs.dir/flags.make
 libs/CMakeFiles/libs.dir/imgui/imgui_widgets.cpp.o: ../libs/imgui/imgui_widgets.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object libs/CMakeFiles/libs.dir/imgui/imgui_widgets.cpp.o"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libs.dir/imgui/imgui_widgets.cpp.o -c /home/andrew/home/andrew/Projects/Graphic/LionGL/libs/imgui/imgui_widgets.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/MY/Projects/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object libs/CMakeFiles/libs.dir/imgui/imgui_widgets.cpp.o"
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libs.dir/imgui/imgui_widgets.cpp.o -c /home/andrew/MY/Projects/LionGL/libs/imgui/imgui_widgets.cpp
 
 libs/CMakeFiles/libs.dir/imgui/imgui_widgets.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libs.dir/imgui/imgui_widgets.cpp.i"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrew/home/andrew/Projects/Graphic/LionGL/libs/imgui/imgui_widgets.cpp > CMakeFiles/libs.dir/imgui/imgui_widgets.cpp.i
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrew/MY/Projects/LionGL/libs/imgui/imgui_widgets.cpp > CMakeFiles/libs.dir/imgui/imgui_widgets.cpp.i
 
 libs/CMakeFiles/libs.dir/imgui/imgui_widgets.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libs.dir/imgui/imgui_widgets.cpp.s"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/home/andrew/Projects/Graphic/LionGL/libs/imgui/imgui_widgets.cpp -o CMakeFiles/libs.dir/imgui/imgui_widgets.cpp.s
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/MY/Projects/LionGL/libs/imgui/imgui_widgets.cpp -o CMakeFiles/libs.dir/imgui/imgui_widgets.cpp.s
 
 # Object files for target libs
 libs_OBJECTS = \
@@ -175,9 +175,9 @@ libs/liblibs.a: libs/CMakeFiles/libs.dir/imgui/imgui_draw.cpp.o
 libs/liblibs.a: libs/CMakeFiles/libs.dir/imgui/imgui_widgets.cpp.o
 libs/liblibs.a: libs/CMakeFiles/libs.dir/build.make
 libs/liblibs.a: libs/CMakeFiles/libs.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library liblibs.a"
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs && $(CMAKE_COMMAND) -P CMakeFiles/libs.dir/cmake_clean_target.cmake
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libs.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andrew/MY/Projects/LionGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library liblibs.a"
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs && $(CMAKE_COMMAND) -P CMakeFiles/libs.dir/cmake_clean_target.cmake
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libs.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 libs/CMakeFiles/libs.dir/build: libs/liblibs.a
@@ -185,10 +185,10 @@ libs/CMakeFiles/libs.dir/build: libs/liblibs.a
 .PHONY : libs/CMakeFiles/libs.dir/build
 
 libs/CMakeFiles/libs.dir/clean:
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs && $(CMAKE_COMMAND) -P CMakeFiles/libs.dir/cmake_clean.cmake
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs && $(CMAKE_COMMAND) -P CMakeFiles/libs.dir/cmake_clean.cmake
 .PHONY : libs/CMakeFiles/libs.dir/clean
 
 libs/CMakeFiles/libs.dir/depend:
-	cd /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andrew/home/andrew/Projects/Graphic/LionGL /home/andrew/home/andrew/Projects/Graphic/LionGL/libs /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs /home/andrew/home/andrew/Projects/Graphic/LionGL/cmake-build-debug/libs/CMakeFiles/libs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/andrew/MY/Projects/LionGL/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andrew/MY/Projects/LionGL /home/andrew/MY/Projects/LionGL/libs /home/andrew/MY/Projects/LionGL/cmake-build-debug /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs /home/andrew/MY/Projects/LionGL/cmake-build-debug/libs/CMakeFiles/libs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : libs/CMakeFiles/libs.dir/depend
 
