@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no m_event will the authors be held liable for any damages
+  warranty.  In no event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -51,15 +51,11 @@
 
 /* Some compilers use a special export keyword */
 #ifndef DECLSPEC
-# if defined(__WIN32__) || defined(__WINRT__)
-#  ifdef __BORLANDC__
-#   ifdef BUILD_SDL
-#    define DECLSPEC
-#   else
-#    define DECLSPEC    __declspec(dllimport)
-#   endif
-#  else
+# if defined(__WIN32__) || defined(__WINRT__) || defined(__CYGWIN__)
+#  ifdef DLL_EXPORT
 #   define DECLSPEC __declspec(dllexport)
+#  else
+#   define DECLSPEC
 #  endif
 # elif defined(__OS2__)
 #   ifdef BUILD_SDL
@@ -76,7 +72,7 @@
 # endif
 #endif
 
-/* By default SDL2 uses the C calling convention */
+/* By default SDL uses the C calling convention */
 #ifndef SDLCALL
 #if (defined(__WIN32__) || defined(__WINRT__)) && !defined(__GNUC__)
 #define SDLCALL __cdecl
@@ -90,7 +86,7 @@
 #endif
 #endif /* SDLCALL */
 
-/* Removed DECLSPEC on Symbian OS because SDL2 cannot be a DLL in EPOC */
+/* Removed DECLSPEC on Symbian OS because SDL cannot be a DLL in EPOC */
 #ifdef __SYMBIAN32__
 #undef DECLSPEC
 #define DECLSPEC

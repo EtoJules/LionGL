@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no m_event will the authors be held liable for any damages
+  warranty.  In no event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -101,7 +101,7 @@ typedef union {
 typedef struct SDL_WindowShapeMode {
     /** \brief The mode of these window-shape parameters. */
     WindowShapeMode mode;
-    /** \brief GlWindow-shape parameters. */
+    /** \brief Window-shape parameters. */
     SDL_WindowShapeParams parameters;
 } SDL_WindowShapeMode;
 

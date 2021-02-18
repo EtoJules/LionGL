@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no m_event will the authors be held liable for any damages
+  warranty.  In no event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -22,7 +22,7 @@
 /**
  *  \file SDL_quit.h
  *
- *  Include file for SDL2 quit m_event handling.
+ *  Include file for SDL quit event handling.
  */
 
 #ifndef SDL_quit_h_
@@ -34,7 +34,7 @@
 /**
  *  \file SDL_quit.h
  *
- *  An ::SDL_QUIT m_event is generated when the user tries to close the application
+ *  An ::SDL_QUIT event is generated when the user tries to close the application
  *  window.  If it is ignored or filtered out, the window will remain open.
  *  If it is not ignored or filtered, it is queued normally and the window
  *  is allowed to close.  When the window is closed, screen updates will
@@ -43,14 +43,14 @@
  *  SDL_Init() installs signal handlers for SIGINT (keyboard interrupt)
  *  and SIGTERM (system termination request), if handlers do not already
  *  exist, that generate ::SDL_QUIT events as well.  There is no way
- *  to determine the cause of an ::SDL_QUIT m_event, but setting a signal
+ *  to determine the cause of an ::SDL_QUIT event, but setting a signal
  *  handler in your application will override the default generation of
  *  quit events for that signal.
  *
  *  \sa SDL_Quit()
  */
 
-/* There are no functions directly affecting the quit m_event */
+/* There are no functions directly affecting the quit event */
 
 #define SDL_QuitRequested() \
         (SDL_PumpEvents(), (SDL_PeepEvents(NULL,0,SDL_PEEKEVENT,SDL_QUIT,SDL_QUIT) > 0))

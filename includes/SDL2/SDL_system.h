@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no m_event will the authors be held liable for any damages
+  warranty.  In no event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -22,7 +22,7 @@
 /**
  *  \file SDL_system.h
  *
- *  Include file for platform specific SDL2 API functions
+ *  Include file for platform specific SDL API functions
  */
 
 #ifndef SDL_system_h_
@@ -111,7 +111,7 @@ extern DECLSPEC void SDLCALL SDL_iPhoneSetEventPump(SDL_bool enabled);
 extern DECLSPEC void * SDLCALL SDL_AndroidGetJNIEnv(void);
 
 /**
-   \brief Get the SDL2 Activity object for the application
+   \brief Get the SDL Activity object for the application
 
    This returns jobject, but the prototype is void* so we don't need jni.h
    The jobject returned by SDL_AndroidGetActivity is a local reference.
@@ -123,6 +123,7 @@ extern DECLSPEC void * SDLCALL SDL_AndroidGetActivity(void);
 /**
    \brief Return API level of the current device
 
+    API level 30: Android 11
     API level 29: Android 10
     API level 28: Android 9
     API level 27: Android 8.1
@@ -197,6 +198,14 @@ extern DECLSPEC int SDLCALL SDL_AndroidGetExternalStorageState(void);
    written to by other applications.
  */
 extern DECLSPEC const char * SDLCALL SDL_AndroidGetExternalStoragePath(void);
+
+/**
+   \brief Request permissions at runtime.
+
+   This blocks the calling thread until the permission is granted or
+   denied. Returns SDL_TRUE if the permission was granted.
+ */
+extern DECLSPEC SDL_bool SDLCALL SDL_AndroidRequestPermission(const char *permission);
 
 #endif /* __ANDROID__ */
 
@@ -294,7 +303,7 @@ extern DECLSPEC SDL_WinRT_DeviceFamily SDLCALL SDL_WinRTGetDeviceFamily();
  */
 extern DECLSPEC SDL_bool SDLCALL SDL_IsTablet(void);
 
-/* Functions used by iOS application delegates to notify SDL2 about state changes */
+/* Functions used by iOS application delegates to notify SDL about state changes */
 extern DECLSPEC void SDLCALL SDL_OnApplicationWillTerminate(void);
 extern DECLSPEC void SDLCALL SDL_OnApplicationDidReceiveMemoryWarning(void);
 extern DECLSPEC void SDLCALL SDL_OnApplicationWillResignActive(void);

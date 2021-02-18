@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no m_event will the authors be held liable for any damages
+  warranty.  In no event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -22,7 +22,7 @@
 /**
  *  \file SDL_version.h
  *
- *  This header defines the current SDL2 version.
+ *  This header defines the current SDL version.
  */
 
 #ifndef SDL_version_h_
@@ -37,7 +37,7 @@ extern "C" {
 #endif
 
 /**
- *  \brief Information the version of SDL2 in use.
+ *  \brief Information the version of SDL in use.
  *
  *  Represents the library's version as three levels: major revision
  *  (increments with massive changes, additions, and enhancements),
@@ -59,10 +59,10 @@ typedef struct SDL_version
 */
 #define SDL_MAJOR_VERSION   2
 #define SDL_MINOR_VERSION   0
-#define SDL_PATCHLEVEL      12
+#define SDL_PATCHLEVEL      14
 
 /**
- *  \brief Macro to determine SDL2 version program was compiled against.
+ *  \brief Macro to determine SDL version program was compiled against.
  *
  *  This macro fills in a SDL_version structure with the version of the
  *  library you compiled against. This is determined by what header the
@@ -95,21 +95,21 @@ typedef struct SDL_version
     ((X)*1000 + (Y)*100 + (Z))
 
 /**
- *  This is the version number macro for the current SDL2 version.
+ *  This is the version number macro for the current SDL version.
  */
 #define SDL_COMPILEDVERSION \
     SDL_VERSIONNUM(SDL_MAJOR_VERSION, SDL_MINOR_VERSION, SDL_PATCHLEVEL)
 
 /**
- *  This macro will evaluate to true if compiled with SDL2 at least X.Y.Z.
+ *  This macro will evaluate to true if compiled with SDL at least X.Y.Z.
  */
 #define SDL_VERSION_ATLEAST(X, Y, Z) \
     (SDL_COMPILEDVERSION >= SDL_VERSIONNUM(X, Y, Z))
 
 /**
- *  \brief Get the version of SDL2 that is linked against your program.
+ *  \brief Get the version of SDL that is linked against your program.
  *
- *  If you are linking to SDL2 dynamically, then it is possible that the
+ *  If you are linking to SDL dynamically, then it is possible that the
  *  current version will be different than the version you compiled against.
  *  This function returns the current version, while SDL_VERSION() is a
  *  macro that tells you what version you compiled with.
@@ -120,9 +120,9 @@ typedef struct SDL_version
  *
  *  SDL_VERSION(&compiled);
  *  SDL_GetVersion(&linked);
- *  printf("We compiled against SDL2 version %d.%d.%d ...\n",
+ *  printf("We compiled against SDL version %d.%d.%d ...\n",
  *         compiled.major, compiled.minor, compiled.patch);
- *  printf("But we linked against SDL2 version %d.%d.%d.\n",
+ *  printf("But we linked against SDL version %d.%d.%d.\n",
  *         linked.major, linked.minor, linked.patch);
  *  \endcode
  *
@@ -133,18 +133,18 @@ typedef struct SDL_version
 extern DECLSPEC void SDLCALL SDL_GetVersion(SDL_version * ver);
 
 /**
- *  \brief Get the code revision of SDL2 that is linked against your program.
+ *  \brief Get the code revision of SDL that is linked against your program.
  *
  *  Returns an arbitrary string (a hash value) uniquely identifying the
- *  exact revision of the SDL2 library in use, and is only useful in comparing
+ *  exact revision of the SDL library in use, and is only useful in comparing
  *  against other revisions. It is NOT an incrementing number.
  */
 extern DECLSPEC const char *SDLCALL SDL_GetRevision(void);
 
 /**
- *  \brief Get the revision number of SDL2 that is linked against your program.
+ *  \brief Get the revision number of SDL that is linked against your program.
  *
- *  Returns a number uniquely identifying the exact revision of the SDL2
+ *  Returns a number uniquely identifying the exact revision of the SDL
  *  library in use. It is an incrementing number based on commits to
  *  hg.libsdl.org.
  */

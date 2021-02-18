@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no m_event will the authors be held liable for any damages
+  warranty.  In no event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -22,7 +22,7 @@
 /**
  *  \file SDL_haptic.h
  *
- *  \brief The SDL2 haptic subsystem allows you to control haptic (force feedback)
+ *  \brief The SDL haptic subsystem allows you to control haptic (force feedback)
  *         devices.
  *
  *  The basic usage is as follows:
@@ -117,7 +117,7 @@
 extern "C" {
 #endif /* __cplusplus */
 
-/* FIXME: For SDL2 2.1, adjust all the magnitude variables to be Uint16 (0xFFFF).
+/* FIXME: For SDL 2.1, adjust all the magnitude variables to be Uint16 (0xFFFF).
  *
  * At the moment the magnitude variables are mixed between signed/unsigned, and
  * it is also not made clear that ALL of those variables expect a max of 0x7FFF.
@@ -131,7 +131,7 @@ extern "C" {
 /**
  *  \typedef SDL_Haptic
  *
- *  \brief The haptic structure used to identify an SDL2 haptic.
+ *  \brief The haptic structure used to identify an SDL haptic.
  *
  *  \sa SDL_HapticOpen
  *  \sa SDL_HapticOpenFromJoystick
@@ -186,7 +186,7 @@ typedef struct _SDL_Haptic SDL_Haptic;
 /* #define SDL_HAPTIC_SQUARE     (1<<2) */
 
 /**
- *  \brief TriangleSadbox wave effect supported.
+ *  \brief Triangle wave effect supported.
  *
  *  Periodic haptic effect that simulates triangular waves.
  *
@@ -336,6 +336,14 @@ typedef struct _SDL_Haptic SDL_Haptic;
  */
 #define SDL_HAPTIC_SPHERICAL  2
 
+/**
+ *  \brief Use this value to play an effect on the steering wheel axis. This 
+ *  provides better compatibility across platforms and devices as SDL will guess 
+ *  the correct axis.
+ *  \sa SDL_HapticDirection
+ */
+#define SDL_HAPTIC_STEERING_AXIS 3
+
 /* @} *//* Direction encodings */
 
 /* @} *//* Haptic features */
@@ -444,6 +452,7 @@ typedef struct _SDL_Haptic SDL_Haptic;
  *  \sa SDL_HAPTIC_POLAR
  *  \sa SDL_HAPTIC_CARTESIAN
  *  \sa SDL_HAPTIC_SPHERICAL
+ *  \sa SDL_HAPTIC_STEERING_AXIS
  *  \sa SDL_HapticEffect
  *  \sa SDL_HapticNumAxes
  */
@@ -511,7 +520,7 @@ typedef struct SDL_HapticConstant
  *   - 27000: Displaced 75% of its period.
  *   - 36000: Displaced 100% of its period, same as 0, but 0 is preferred.
  *
- *  SandboxExamples:
+ *  Examples:
  *  \verbatim
     SDL_HAPTIC_SINE
       __      __      __      __

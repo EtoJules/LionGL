@@ -22,9 +22,9 @@
 /**
  *  \file SDL_test.h
  *
- *  Include file for SDL2 test framework.
+ *  Include file for SDL test framework.
  *
- *  This code is a part of the SDL2_test library, not the main SDL2 library.
+ *  This code is a part of the SDL2_test library, not the main SDL library.
  */
 
 #ifndef SDL_test_h_
@@ -53,7 +53,7 @@ extern "C" {
 /* Global definitions */
 
 /*
- * Note: Maximum size of SDLTest log message is less than SDL2's limit
+ * Note: Maximum size of SDLTest log message is less than SDL's limit
  * to ensure we can fit additional information such as the timestamp.
  */
 #define SDLTEST_MAX_LOGMESSAGE_LENGTH   3584

@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no m_event will the authors be held liable for any damages
+  warranty.  In no event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -70,7 +70,7 @@ extern "C" {
 #endif
 
 /**
- * \name SDL2 AtomicLock
+ * \name SDL AtomicLock
  *
  * The atomic locks are efficient spinlocks using CPU instructions,
  * but are vulnerable to starvation and can spin forever if a thread
@@ -111,7 +111,7 @@ extern DECLSPEC void SDLCALL SDL_AtomicLock(SDL_SpinLock *lock);
  */
 extern DECLSPEC void SDLCALL SDL_AtomicUnlock(SDL_SpinLock *lock);
 
-/* @} *//* SDL2 AtomicLock */
+/* @} *//* SDL AtomicLock */
 
 
 /**

@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no m_event will the authors be held liable for any damages
+  warranty.  In no event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -22,7 +22,7 @@
 /**
  *  \file SDL_sensor.h
  *
- *  Include file for SDL2 sensor m_event handling
+ *  Include file for SDL sensor event handling
  *
  */
 
@@ -44,7 +44,7 @@ extern "C" {
  *  \brief SDL_sensor.h
  *
  *  In order to use these functions, SDL_Init() must have been called
- *  with the ::SDL_INIT_SENSOR flag.  This causes SDL2 to scan the system
+ *  with the ::SDL_INIT_SENSOR flag.  This causes SDL to scan the system
  *  for sensors, and load appropriate drivers.
  */
 
@@ -59,7 +59,7 @@ typedef struct _SDL_Sensor SDL_Sensor;
  */
 typedef Sint32 SDL_SensorID;
 
-/* The different sensors defined by SDL2
+/* The different sensors defined by SDL
  *
  * Additional sensors may be available, using platform dependent semantics.
  *
@@ -78,14 +78,16 @@ typedef enum
  * Accelerometer sensor
  *
  * The accelerometer returns the current acceleration in SI meters per
- * second squared. This includes gravity, so a device at rest will have
- * an acceleration of SDL_STANDARD_GRAVITY straight down.
+ * second squared. This measurement includes the force of gravity, so
+ * a device at rest will have an value of SDL_STANDARD_GRAVITY away
+ * from the center of the earth.
  *
  * values[0]: Acceleration on the x axis
  * values[1]: Acceleration on the y axis
  * values[2]: Acceleration on the z axis
  *
- * For phones held in portrait mode, the axes are defined as follows:
+ * For phones held in portrait mode and game controllers held in front of you,
+ * the axes are defined as follows:
  * -X ... +X : left ... right
  * -Y ... +Y : bottom ... top
  * -Z ... +Z : farther ... closer
@@ -105,21 +107,35 @@ typedef enum
  * see positive rotation on that axis when it appeared to be rotating
  * counter-clockwise.
  *
- * values[0]: Angular speed around the x axis
- * values[1]: Angular speed around the y axis
- * values[2]: Angular speed around the z axis
+ * values[0]: Angular speed around the x axis (pitch)
+ * values[1]: Angular speed around the y axis (yaw)
+ * values[2]: Angular speed around the z axis (roll)
  *
- * For phones held in portrait mode, the axes are defined as follows:
+ * For phones held in portrait mode and game controllers held in front of you,
+ * the axes are defined as follows:
  * -X ... +X : left ... right
  * -Y ... +Y : bottom ... top
  * -Z ... +Z : farther ... closer
  * 
- * The axis data is not changed when the phone is rotated.
+ * The axis data is not changed when the phone or controller is rotated.
  *
  * \sa SDL_GetDisplayOrientation()
  */
 
 /* Function prototypes */
+
+/**
+ * Locking for multi-threaded access to the sensor API
+ *
+ * If you are using the sensor API or handling events from multiple threads
+ * you should use these locking functions to protect access to the sensors.
+ *
+ * In particular, you are guaranteed that the sensor list won't change, so
+ * the API functions that take a sensor index will be valid, and sensor
+ * events will not be delivered.
+ */
+extern DECLSPEC void SDLCALL SDL_LockSensors(void);
+extern DECLSPEC void SDLCALL SDL_UnlockSensors(void);
 
 /**
  *  \brief Count the number of sensors attached to the system right now
@@ -231,7 +247,7 @@ extern DECLSPEC void SDLCALL SDL_SensorClose(SDL_Sensor * sensor);
 /**
  *  Update the current state of the open sensors.
  *
- *  This is called automatically by the m_event loop if sensor events are enabled.
+ *  This is called automatically by the event loop if sensor events are enabled.
  *
  *  This needs to be called from the thread that initialized the sensor subsystem.
  */

@@ -5,6 +5,4 @@ add_library(libs STATIC
         imgui/imconfig.h imgui/imgui_demo.cpp
         imgui/imgui_draw.cpp imgui/imgui_internal.h
         imgui/imgui_widgets.cpp imgui/imstb_rectpack.h
-        imgui/imstb_textedit.h imgui/imstb_truetype.h
-
-        stb/stb_image.h)
+        imgui/imstb_textedit.h imgui/imstb_truetype.h)

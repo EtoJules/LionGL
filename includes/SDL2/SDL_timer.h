@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no m_event will the authors be held liable for any damages
+  warranty.  In no event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -25,7 +25,7 @@
 /**
  *  \file SDL_timer.h
  *
- *  Header for the SDL2 time management routines.
+ *  Header for the SDL time management routines.
  */
 
 #include "SDL_stdinc.h"
@@ -38,16 +38,16 @@ extern "C" {
 #endif
 
 /**
- * \brief Get the number of milliseconds since the SDL2 library initialization.
+ * \brief Get the number of milliseconds since the SDL library initialization.
  *
  * \note This value wraps if the program runs for more than ~49 days.
  */
 extern DECLSPEC Uint32 SDLCALL SDL_GetTicks(void);
 
 /**
- * \brief Compare SDL2 ticks values, and return true if A has passed B
+ * \brief Compare SDL ticks values, and return true if A has passed B
  *
- * m_event.g. if you want to wait 100 ms, you could do this:
+ * e.g. if you want to wait 100 ms, you could do this:
  *  Uint32 timeout = SDL_GetTicks() + 100;
  *  while (!SDL_TICKS_PASSED(SDL_GetTicks(), timeout)) {
  *      ... do work until timeout has elapsed

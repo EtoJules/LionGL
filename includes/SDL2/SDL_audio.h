@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no m_event will the authors be held liable for any damages
+  warranty.  In no event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -22,7 +22,7 @@
 /**
  *  \file SDL_audio.h
  *
- *  Access to the raw audio mixing buffer for the SDL2 library.
+ *  Access to the raw audio mixing buffer for the SDL library.
  */
 
 #ifndef SDL_audio_h_
@@ -59,7 +59,7 @@ extern "C" {
     15 14 13 12 11 10 09 08 07 06 05 04 03 02 01 00
     \endverbatim
  *
- *  There are macros in SDL2 2.0 and later to query these bits.
+ *  There are macros in SDL 2.0 and later to query these bits.
  */
 typedef Uint16 SDL_AudioFormat;
 
@@ -166,7 +166,7 @@ typedef void (SDLCALL * SDL_AudioCallback) (void *userdata, Uint8 * stream,
 /**
  *  The calculated values in this structure are calculated by SDL_OpenAudio().
  *
- *  For multi-channel audio, the default SDL2 channel mapping is:
+ *  For multi-channel audio, the default SDL channel mapping is:
  *  2:  FL FR                       (stereo)
  *  3:  FL FR LFE                   (2.1 surround)
  *  4:  FL FR BL BR                 (quad)
@@ -319,10 +319,10 @@ extern DECLSPEC int SDLCALL SDL_OpenAudio(SDL_AudioSpec * desired,
                                           SDL_AudioSpec * obtained);
 
 /**
- *  SDL2 Audio Device IDs.
+ *  SDL Audio Device IDs.
  *
  *  A successful call to SDL_OpenAudio() is always device id 1, and legacy
- *  SDL2 audio APIs assume you want this device ID. SDL_OpenAudioDevice() calls
+ *  SDL audio APIs assume you want this device ID. SDL_OpenAudioDevice() calls
  *  always returns devices >= 2 on success. The legacy calls are good both
  *  for backwards compatibility and when you don't care about multiple,
  *  specific, or capture devices.
@@ -333,7 +333,7 @@ typedef Uint32 SDL_AudioDeviceID;
  *  Get the number of available devices exposed by the current driver.
  *  Only valid after a successfully initializing the audio subsystem.
  *  Returns -1 if an explicit list of devices can't be determined; this is
- *  not an error. For example, if SDL2 is set up to talk to a remote audio
+ *  not an error. For example, if SDL is set up to talk to a remote audio
  *  server, it can't list every one available on the Internet, but it will
  *  still allow a specific host to be specified to SDL_OpenAudioDevice().
  *
@@ -354,7 +354,7 @@ extern DECLSPEC int SDLCALL SDL_GetNumAudioDevices(int iscapture);
  *  The string returned by this function is UTF-8 encoded, read-only, and
  *  managed internally. You are not to free it. If you need to keep the
  *  string for any length of time, you should make your own copy of it, as it
- *  will be invalid next time any of several other SDL2 functions is called.
+ *  will be invalid next time any of several other SDL functions is called.
  */
 extern DECLSPEC const char *SDLCALL SDL_GetAudioDeviceName(int index,
                                                            int iscapture);
@@ -674,9 +674,9 @@ extern DECLSPEC void SDLCALL SDL_MixAudioFormat(Uint8 * dst,
  *  device, you want SDL_DequeueAudio() instead. This will return -1 to
  *  signify an error if you use it with capture devices.)
  *
- *  SDL2 offers two ways to feed audio to the device: you can either supply a
- *  callback that SDL2 triggers with some frequency to obtain more audio
- *  (pull method), or you can supply no callback, and then SDL2 will expect
+ *  SDL offers two ways to feed audio to the device: you can either supply a
+ *  callback that SDL triggers with some frequency to obtain more audio
+ *  (pull method), or you can supply no callback, and then SDL will expect
  *  you to supply data at regular intervals (push method) with this function.
  *
  *  There are no limits on the amount of data you can queue, short of
@@ -695,7 +695,7 @@ extern DECLSPEC void SDLCALL SDL_MixAudioFormat(Uint8 * dst,
  *  callback; doing so returns an error. You have to use the audio callback
  *  or queue audio with this function, but not both.
  *
- *  You should not call SDL_LockAudio() on the device before queueing; SDL2
+ *  You should not call SDL_LockAudio() on the device before queueing; SDL
  *  handles locking internally for this function.
  *
  *  \param dev The device ID to which we will queue audio.
@@ -715,10 +715,10 @@ extern DECLSPEC int SDLCALL SDL_QueueAudio(SDL_AudioDeviceID dev, const void *da
  *  device, you want SDL_QueueAudio() instead. This will always return 0
  *  if you use it with playback devices.)
  *
- *  SDL2 offers two ways to retrieve audio from a capture device: you can
- *  either supply a callback that SDL2 triggers with some frequency as the
+ *  SDL offers two ways to retrieve audio from a capture device: you can
+ *  either supply a callback that SDL triggers with some frequency as the
  *  device records more audio data, (push method), or you can supply no
- *  callback, and then SDL2 will expect you to retrieve data at regular
+ *  callback, and then SDL will expect you to retrieve data at regular
  *  intervals (pull method) with this function.
  *
  *  There are no limits on the amount of data you can queue, short of
@@ -741,7 +741,7 @@ extern DECLSPEC int SDLCALL SDL_QueueAudio(SDL_AudioDeviceID dev, const void *da
  *  application-supplied callback; doing so returns an error. You have to use
  *  the audio callback, or dequeue audio with this function, but not both.
  *
- *  You should not call SDL_LockAudio() on the device before queueing; SDL2
+ *  You should not call SDL_LockAudio() on the device before queueing; SDL
  *  handles locking internally for this function.
  *
  *  \param dev The device ID from which we will dequeue audio.
@@ -779,7 +779,7 @@ extern DECLSPEC Uint32 SDLCALL SDL_DequeueAudio(SDL_AudioDeviceID dev, void *dat
  *  You have to queue audio with SDL_QueueAudio()/SDL_DequeueAudio(), or use
  *  the audio callback, but not both.
  *
- *  You should not call SDL_LockAudio() on the device before querying; SDL2
+ *  You should not call SDL_LockAudio() on the device before querying; SDL
  *  handles locking internally for this function.
  *
  *  \param dev The device ID of which we will query queued audio size.
@@ -815,7 +815,7 @@ extern DECLSPEC Uint32 SDLCALL SDL_GetQueuedAudioSize(SDL_AudioDeviceID dev);
  *  the audio callback, but not both.
  *
  *  You should not call SDL_LockAudio() on the device before clearing the
- *  queue; SDL2 handles locking internally for this function.
+ *  queue; SDL handles locking internally for this function.
  *
  *  This function always succeeds and thus returns void.
  *

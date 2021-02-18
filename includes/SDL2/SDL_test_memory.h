@@ -22,9 +22,9 @@
 /**
  *  \file SDL_test_memory.h
  *
- *  Include file for SDL2 test framework.
+ *  Include file for SDL test framework.
  *
- *  This code is a part of the SDL2_test library, not the main SDL2 library.
+ *  This code is a part of the SDL2_test library, not the main SDL library.
  */
 
 #ifndef SDL_test_memory_h_
@@ -38,9 +38,9 @@ extern "C" {
 
 
 /**
- * \brief Start tracking SDL2 memory allocations
+ * \brief Start tracking SDL memory allocations
  * 
- * \note This should be called before any other SDL2 functions for complete tracking coverage
+ * \note This should be called before any other SDL functions for complete tracking coverage
  */
 int SDLTest_TrackAllocations(void);
 

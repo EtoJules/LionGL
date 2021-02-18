@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no m_event will the authors be held liable for any damages
+  warranty.  In no event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -25,7 +25,7 @@
 /**
  *  \file SDL_thread.h
  *
- *  Header for the SDL2 thread management routines.
+ *  Header for the SDL thread management routines.
  */
 
 #include "SDL_stdinc.h"
@@ -41,18 +41,23 @@
 extern "C" {
 #endif
 
-/* The SDL2 thread structure, defined in SDL_thread.c */
+/* The SDL thread structure, defined in SDL_thread.c */
 struct SDL_Thread;
 typedef struct SDL_Thread SDL_Thread;
 
-/* The SDL2 thread ID */
+/* The SDL thread ID */
 typedef unsigned long SDL_threadID;
 
 /* Thread local storage ID, 0 is the invalid ID */
 typedef unsigned int SDL_TLSID;
 
 /**
- *  The SDL2 thread priority.
+ *  The SDL thread priority.
+ *
+ *  SDL will make system changes as necessary in order to apply the thread priority.
+ *  Code which attempts to control thread state related to priority should be aware
+ *  that calling SDL_SetThreadPriority may alter such state.
+ *  SDL_HINT_THREAD_PRIORITY_POLICY can be used to control aspects of this behavior.
  *
  *  \note On many systems you require special privileges to set high or time critical priority.
  */
@@ -73,7 +78,7 @@ typedef int (SDLCALL * SDL_ThreadFunction) (void *data);
 /**
  *  \file SDL_thread.h
  *
- *  We compile SDL2 into a DLL. This means, that it's the DLL which
+ *  We compile SDL into a DLL. This means, that it's the DLL which
  *  creates a new thread for the calling process with the SDL_CreateThread()
  *  API. There is a problem with this, that only the RTL of the SDL2.DLL will
  *  be initialized for those threads, and not the RTL of the calling
@@ -200,7 +205,7 @@ SDL_CreateThread(SDL_ThreadFunction fn, const char *name, void *data);
  *
  *    http://stackoverflow.com/questions/149932/naming-conventions-for-threads
  *
- *   If a system imposes requirements, SDL2 will try to munge the string for
+ *   If a system imposes requirements, SDL will try to munge the string for
  *    it (truncate, etc), but the original string contents will be available
  *    from SDL_GetThreadName().
  *
@@ -209,7 +214,7 @@ SDL_CreateThread(SDL_ThreadFunction fn, const char *name, void *data);
  *    (x86 Linux generally defaults to eight megabytes, an embedded device
  *    might be a few kilobytes instead).
  *
- *   In SDL2 2.1, stacksize will be folded into the original SDL_CreateThread
+ *   In SDL 2.1, stacksize will be folded into the original SDL_CreateThread
  *    function.
  */
 extern DECLSPEC SDL_Thread *SDLCALL

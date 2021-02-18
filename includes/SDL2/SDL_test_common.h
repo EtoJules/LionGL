@@ -22,9 +22,9 @@
 /**
  *  \file SDL_test_common.h
  *
- *  Include file for SDL2 test framework.
+ *  Include file for SDL test framework.
  *
- *  This code is a part of the SDL2_test library, not the main SDL2 library.
+ *  This code is a part of the SDL2_test library, not the main SDL library.
  */
 
 /* Ported from original test\common.h file. */
@@ -50,7 +50,7 @@
 
 typedef struct
 {
-    /* SDL2 init flags */
+    /* SDL init flags */
     char **argv;
     Uint32 flags;
     Uint32 verbose;

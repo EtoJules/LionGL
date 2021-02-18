@@ -22,9 +22,9 @@
 /**
  *  \file SDL_test_font.h
  *
- *  Include file for SDL2 test framework.
+ *  Include file for SDL test framework.
  *
- *  This code is a part of the SDL2_test library, not the main SDL2 library.
+ *  This code is a part of the SDL2_test library, not the main SDL library.
  */
 
 #ifndef SDL_test_font_h_

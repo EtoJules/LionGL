@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no m_event will the authors be held liable for any damages
+  warranty.  In no event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -24,7 +24,7 @@
  *
  *  Simple log messages with categories and priorities.
  *
- *  By default logs are quiet, but if you're debugging SDL2 you might want:
+ *  By default logs are quiet, but if you're debugging SDL you might want:
  *
  *      SDL_LogSetAllPriority(SDL_LOG_PRIORITY_WARN);
  *
@@ -73,7 +73,7 @@ typedef enum
     SDL_LOG_CATEGORY_INPUT,
     SDL_LOG_CATEGORY_TEST,
 
-    /* Reserved for future SDL2 library use */
+    /* Reserved for future SDL library use */
     SDL_LOG_CATEGORY_RESERVED1,
     SDL_LOG_CATEGORY_RESERVED2,
     SDL_LOG_CATEGORY_RESERVED3,
@@ -85,7 +85,7 @@ typedef enum
     SDL_LOG_CATEGORY_RESERVED9,
     SDL_LOG_CATEGORY_RESERVED10,
 
-    /* Beyond this point is reserved for application use, m_event.g.
+    /* Beyond this point is reserved for application use, e.g.
        enum {
            MYAPP_CATEGORY_AWESOME1 = SDL_LOG_CATEGORY_CUSTOM,
            MYAPP_CATEGORY_AWESOME2,

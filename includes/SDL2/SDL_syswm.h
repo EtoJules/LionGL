@@ -22,7 +22,7 @@
 /**
  *  \file SDL_syswm.h
  *
- *  Include file for SDL2 custom system window manager hooks.
+ *  Include file for SDL custom system window manager hooks.
  */
 
 #ifndef SDL_syswm_h_
@@ -106,6 +106,11 @@ typedef void *EGLSurface;
 #if defined(SDL_VIDEO_DRIVER_VIVANTE)
 #include "SDL_egl.h"
 #endif
+
+#if defined(SDL_VIDEO_DRIVER_OS2)
+#define INCL_WIN
+#include <os2.h>
+#endif
 #endif /* SDL_PROTOTYPES_ONLY */
 
 
@@ -186,6 +191,16 @@ struct SDL_SysWMmsg
             int dummy;
             /* No Vivante window events yet */
         } vivante;
+#endif
+#if defined(SDL_VIDEO_DRIVER_OS2)
+        struct
+        {
+            BOOL fFrame;                /**< TRUE if hwnd is a frame window */
+            HWND hwnd;                  /**< The window receiving the message */
+            ULONG msg;                  /**< The message identifier */
+            MPARAM mp1;                 /**< The first first message parameter */
+            MPARAM mp2;                 /**< The second first message parameter */
+        } os2;
 #endif
         /* Can't have an empty union */
         int dummy;
@@ -280,6 +295,14 @@ struct SDL_SysWMinfo
         } android;
 #endif
 
+#if defined(SDL_VIDEO_DRIVER_OS2)
+        struct
+        {
+            HWND hwnd;                  /**< The window handle */
+            HWND hwndFrame;             /**< The frame window handle */
+        } os2;
+#endif
+
 #if defined(SDL_VIDEO_DRIVER_VIVANTE)
         struct
         {
@@ -303,7 +326,7 @@ typedef struct SDL_SysWMinfo SDL_SysWMinfo;
  *  \brief This function allows access to driver-dependent window information.
  *
  *  \param window The window about which information is being requested
- *  \param info This structure must be initialized with the SDL2 version, and is
+ *  \param info This structure must be initialized with the SDL version, and is
  *              then filled in with information about the given window.
  *
  *  \return SDL_TRUE if the function is implemented and the version member of

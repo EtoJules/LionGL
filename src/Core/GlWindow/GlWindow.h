@@ -1,8 +1,8 @@
 #pragma  once
 #include "Core/Sandbox/Sandbox.h"
 #include "SDL2/SDL.h"
-#include <string>
 #include "GL/glew.h"
+#include <string>
 
 #include "imgui/imgui.h"
 #include "imgui/examples/imgui_impl_opengl3.h"

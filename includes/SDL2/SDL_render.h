@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no m_event will the authors be held liable for any damages
+  warranty.  In no event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -22,7 +22,7 @@
 /**
  *  \file SDL_render.h
  *
- *  Header file for SDL2 2D rendering functions.
+ *  Header file for SDL 2D rendering functions.
  *
  *  This API supports the following features:
  *      * single pixel points
@@ -38,7 +38,7 @@
  *
  *  This API is designed to accelerate simple 2D operations. You may
  *  want more functionality such as polygons and particle effects and
- *  in that case you should use SDL2's OpenGL/Direct3D support or one
+ *  in that case you should use SDL's OpenGL/Direct3D support or one
  *  of the many good 3D engines.
  *
  *  These functions must be called from the main thread.
@@ -471,13 +471,13 @@ extern DECLSPEC int SDLCALL SDL_LockTexture(SDL_Texture * texture,
 
 /**
  *  \brief Lock a portion of the texture for write-only pixel access.
- *         Expose it as a SDL2 surface.
+ *         Expose it as a SDL surface.
  *
  *  \param texture   The texture to lock for access, which was created with
  *                   ::SDL_TEXTUREACCESS_STREAMING.
  *  \param rect      A pointer to the rectangle to lock for access. If the rect
  *                   is NULL, the entire texture will be locked.
- *  \param surface   This is filled in with a SDL2 surface representing the locked area
+ *  \param surface   This is filled in with a SDL surface representing the locked area
  *                   Surface is freed internally after calling SDL_UnlockTexture or SDL_DestroyTexture.
  *
  *  \return 0 on success, or -1 if the texture is not valid or was not created with ::SDL_TEXTUREACCESS_STREAMING.
@@ -490,7 +490,7 @@ extern DECLSPEC int SDLCALL SDL_LockTextureToSurface(SDL_Texture *texture,
 
 /**
  *  \brief Unlock a texture, uploading the changes to video memory, if needed.
- *         If SDL_LockTextureToSurface() was called for locking, the SDL2 surface is freed.
+ *         If SDL_LockTextureToSurface() was called for locking, the SDL surface is freed.
  *
  *  \sa SDL_LockTexture()
  *  \sa SDL_LockTextureToSurface()
@@ -1086,18 +1086,18 @@ extern DECLSPEC void SDLCALL SDL_DestroyRenderer(SDL_Renderer * renderer);
  *  you are planning to call into OpenGL/Direct3D/Metal/whatever directly
  *  in addition to using an SDL_Renderer.
  *
- *  This is for a very-specific case: if you are using SDL2's render API,
+ *  This is for a very-specific case: if you are using SDL's render API,
  *  you asked for a specific renderer backend (OpenGL, Direct3D, etc),
  *  you set SDL_HINT_RENDER_BATCHING to "1", and you plan to make
- *  OpenGL/D3D/whatever calls in addition to SDL2 render API calls. If all of
- *  this applies, you should call SDL_RenderFlush() between calls to SDL2's
+ *  OpenGL/D3D/whatever calls in addition to SDL render API calls. If all of
+ *  this applies, you should call SDL_RenderFlush() between calls to SDL's
  *  render API and the low-level API you're using in cooperation.
  *
  *  In all other cases, you can ignore this function. This is only here to
  *  get maximum performance out of a specific situation. In all other cases,
- *  SDL2 will do the right thing, perhaps at a performance loss.
+ *  SDL will do the right thing, perhaps at a performance loss.
  *
- *  This function is first available in SDL2 2.0.10, and is not needed in
+ *  This function is first available in SDL 2.0.10, and is not needed in
  *  2.0.9 and earlier, as earlier versions did not queue rendering commands
  *  at all, instead flushing them to the OS immediately.
  */
@@ -1108,7 +1108,7 @@ extern DECLSPEC int SDLCALL SDL_RenderFlush(SDL_Renderer * renderer);
  *  \brief Bind the texture to the current OpenGL/ES/ES2 context for use with
  *         OpenGL instructions.
  *
- *  \param texture  The SDL2 texture to bind
+ *  \param texture  The SDL texture to bind
  *  \param texw     A pointer to a float that will be filled with the texture width
  *  \param texh     A pointer to a float that will be filled with the texture height
  *
@@ -1119,7 +1119,7 @@ extern DECLSPEC int SDLCALL SDL_GL_BindTexture(SDL_Texture *texture, float *texw
 /**
  *  \brief Unbind a texture from the current OpenGL/ES/ES2 context.
  *
- *  \param texture  The SDL2 texture to unbind
+ *  \param texture  The SDL texture to unbind
  *
  *  \return 0 on success, or -1 if the operation is not supported
  */

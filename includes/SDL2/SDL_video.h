@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no m_event will the authors be held liable for any damages
+  warranty.  In no event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -22,7 +22,7 @@
 /**
  *  \file SDL_video.h
  *
- *  Header file for SDL2 video functions.
+ *  Header file for SDL video functions.
  */
 
 #ifndef SDL_video_h_
@@ -108,7 +108,7 @@ typedef enum
     SDL_WINDOW_INPUT_FOCUS = 0x00000200,        /**< window has input focus */
     SDL_WINDOW_MOUSE_FOCUS = 0x00000400,        /**< window has mouse focus */
     SDL_WINDOW_FULLSCREEN_DESKTOP = ( SDL_WINDOW_FULLSCREEN | 0x00001000 ),
-    SDL_WINDOW_FOREIGN = 0x00000800,            /**< window not created by SDL2 */
+    SDL_WINDOW_FOREIGN = 0x00000800,            /**< window not created by SDL */
     SDL_WINDOW_ALLOW_HIGHDPI = 0x00002000,      /**< window should be created in high-DPI mode if supported.
                                                      On macOS NSHighResolutionCapable must be set true in the
                                                      application's Info.plist for this to have any effect. */
@@ -118,7 +118,8 @@ typedef enum
     SDL_WINDOW_UTILITY       = 0x00020000,      /**< window should be treated as a utility window */
     SDL_WINDOW_TOOLTIP       = 0x00040000,      /**< window should be treated as a tooltip */
     SDL_WINDOW_POPUP_MENU    = 0x00080000,      /**< window should be treated as a popup menu */
-    SDL_WINDOW_VULKAN        = 0x10000000       /**< window usable for Vulkan surface */
+    SDL_WINDOW_VULKAN        = 0x10000000,      /**< window usable for Vulkan surface */
+    SDL_WINDOW_METAL         = 0x20000000       /**< window usable for Metal view */
 } SDL_WindowFlags;
 
 /**
@@ -145,27 +146,27 @@ typedef enum
 typedef enum
 {
     SDL_WINDOWEVENT_NONE,           /**< Never used */
-    SDL_WINDOWEVENT_SHOWN,          /**< GlWindow has been shown */
-    SDL_WINDOWEVENT_HIDDEN,         /**< GlWindow has been hidden */
-    SDL_WINDOWEVENT_EXPOSED,        /**< GlWindow has been exposed and should be
+    SDL_WINDOWEVENT_SHOWN,          /**< Window has been shown */
+    SDL_WINDOWEVENT_HIDDEN,         /**< Window has been hidden */
+    SDL_WINDOWEVENT_EXPOSED,        /**< Window has been exposed and should be
                                          redrawn */
-    SDL_WINDOWEVENT_MOVED,          /**< GlWindow has been moved to data1, data2
+    SDL_WINDOWEVENT_MOVED,          /**< Window has been moved to data1, data2
                                      */
-    SDL_WINDOWEVENT_RESIZED,        /**< GlWindow has been resized to data1xdata2 */
+    SDL_WINDOWEVENT_RESIZED,        /**< Window has been resized to data1xdata2 */
     SDL_WINDOWEVENT_SIZE_CHANGED,   /**< The window size has changed, either as
                                          a result of an API call or through the
                                          system or user changing the window size. */
-    SDL_WINDOWEVENT_MINIMIZED,      /**< GlWindow has been minimized */
-    SDL_WINDOWEVENT_MAXIMIZED,      /**< GlWindow has been maximized */
-    SDL_WINDOWEVENT_RESTORED,       /**< GlWindow has been restored to normal size
+    SDL_WINDOWEVENT_MINIMIZED,      /**< Window has been minimized */
+    SDL_WINDOWEVENT_MAXIMIZED,      /**< Window has been maximized */
+    SDL_WINDOWEVENT_RESTORED,       /**< Window has been restored to normal size
                                          and position */
-    SDL_WINDOWEVENT_ENTER,          /**< GlWindow has gained mouse focus */
-    SDL_WINDOWEVENT_LEAVE,          /**< GlWindow has lost mouse focus */
-    SDL_WINDOWEVENT_FOCUS_GAINED,   /**< GlWindow has gained keyboard focus */
-    SDL_WINDOWEVENT_FOCUS_LOST,     /**< GlWindow has lost keyboard focus */
+    SDL_WINDOWEVENT_ENTER,          /**< Window has gained mouse focus */
+    SDL_WINDOWEVENT_LEAVE,          /**< Window has lost mouse focus */
+    SDL_WINDOWEVENT_FOCUS_GAINED,   /**< Window has gained keyboard focus */
+    SDL_WINDOWEVENT_FOCUS_LOST,     /**< Window has lost keyboard focus */
     SDL_WINDOWEVENT_CLOSE,          /**< The window manager requests that the window be closed */
-    SDL_WINDOWEVENT_TAKE_FOCUS,     /**< GlWindow is being offered a focus (should SetWindowInputFocus() on itself or a subwindow, or ignore) */
-    SDL_WINDOWEVENT_HIT_TEST        /**< GlWindow had a hit test that wasn't SDL_HITTEST_NORMAL. */
+    SDL_WINDOWEVENT_TAKE_FOCUS,     /**< Window is being offered a focus (should SetWindowInputFocus() on itself or a subwindow, or ignore) */
+    SDL_WINDOWEVENT_HIT_TEST        /**< Window had a hit test that wasn't SDL_HITTEST_NORMAL. */
 } SDL_WindowEventID;
 
 /**
@@ -174,7 +175,9 @@ typedef enum
 typedef enum
 {
     SDL_DISPLAYEVENT_NONE,          /**< Never used */
-    SDL_DISPLAYEVENT_ORIENTATION    /**< Display orientation has changed to data1 */
+    SDL_DISPLAYEVENT_ORIENTATION,   /**< Display orientation has changed to data1 */
+    SDL_DISPLAYEVENT_CONNECTED,     /**< Display has been added to the system */
+    SDL_DISPLAYEVENT_DISCONNECTED   /**< Display has been removed from the system */
 } SDL_DisplayEventID;
 
 typedef enum
@@ -255,7 +258,7 @@ typedef enum
 /* Function prototypes */
 
 /**
- *  \brief Get the number of video drivers compiled into SDL2
+ *  \brief Get the number of video drivers compiled into SDL
  *
  *  \sa SDL_GetVideoDriver()
  */
@@ -484,13 +487,14 @@ extern DECLSPEC Uint32 SDLCALL SDL_GetWindowPixelFormat(SDL_Window * window);
  *               ::SDL_WINDOW_HIDDEN,        ::SDL_WINDOW_BORDERLESS,
  *               ::SDL_WINDOW_RESIZABLE,     ::SDL_WINDOW_MAXIMIZED,
  *               ::SDL_WINDOW_MINIMIZED,     ::SDL_WINDOW_INPUT_GRABBED,
- *               ::SDL_WINDOW_ALLOW_HIGHDPI, ::SDL_WINDOW_VULKAN.
+ *               ::SDL_WINDOW_ALLOW_HIGHDPI, ::SDL_WINDOW_VULKAN
+ *               ::SDL_WINDOW_METAL.
  *
  *  \return The created window, or NULL if window creation failed.
  *
  *  If the window is created with the SDL_WINDOW_ALLOW_HIGHDPI flag, its size
  *  in pixels may differ from its size in screen coordinates on platforms with
- *  high-DPI support (m_event.g. iOS and Mac OS X). Use SDL_GetWindowSize() to query
+ *  high-DPI support (e.g. iOS and Mac OS X). Use SDL_GetWindowSize() to query
  *  the client area's size in screen coordinates, and SDL_GL_GetDrawableSize(),
  *  SDL_Vulkan_GetDrawableSize(), or SDL_GetRendererOutputSize() to query the
  *  drawable size in pixels.
@@ -503,9 +507,12 @@ extern DECLSPEC Uint32 SDLCALL SDL_GetWindowPixelFormat(SDL_Window * window);
  *  If SDL_WINDOW_VULKAN is specified and there isn't a working Vulkan driver,
  *  SDL_CreateWindow() will fail because SDL_Vulkan_LoadLibrary() will fail.
  *
- *  \note On non-Apple devices, SDL2 requires you to either not link to the
+ *  If SDL_WINDOW_METAL is specified on an OS that does not support Metal,
+ *  SDL_CreateWindow() will fail.
+ *
+ *  \note On non-Apple devices, SDL requires you to either not link to the
  *        Vulkan loader or link to a dynamic library version. This limitation
- *        may be removed in a future version of SDL2.
+ *        may be removed in a future version of SDL.
  *
  *  \sa SDL_DestroyWindow()
  *  \sa SDL_GL_LoadLibrary()
@@ -516,7 +523,7 @@ extern DECLSPEC SDL_Window * SDLCALL SDL_CreateWindow(const char *title,
                                                       int h, Uint32 flags);
 
 /**
- *  \brief Create an SDL2 window from an existing native window.
+ *  \brief Create an SDL window from an existing native window.
  *
  *  \param data A pointer to driver-dependent window creation data
  *
@@ -637,7 +644,7 @@ extern DECLSPEC void SDLCALL SDL_GetWindowPosition(SDL_Window * window,
  *
  *  The window size in screen coordinates may differ from the size in pixels, if
  *  the window was created with SDL_WINDOW_ALLOW_HIGHDPI on a platform with
- *  high-dpi support (m_event.g. iOS or OS X). Use SDL_GL_GetDrawableSize() or
+ *  high-dpi support (e.g. iOS or OS X). Use SDL_GL_GetDrawableSize() or
  *  SDL_GetRendererOutputSize() to get the real client area size in pixels.
  *
  *  \sa SDL_GetWindowSize()
@@ -657,7 +664,7 @@ extern DECLSPEC void SDLCALL SDL_SetWindowSize(SDL_Window * window, int w,
  *
  *  The window size in screen coordinates may differ from the size in pixels, if
  *  the window was created with SDL_WINDOW_ALLOW_HIGHDPI on a platform with
- *  high-dpi support (m_event.g. iOS or OS X). Use SDL_GL_GetDrawableSize() or
+ *  high-dpi support (e.g. iOS or OS X). Use SDL_GL_GetDrawableSize() or
  *  SDL_GetRendererOutputSize() to get the real client area size in pixels.
  *
  *  \sa SDL_SetWindowSize()
@@ -829,7 +836,7 @@ extern DECLSPEC int SDLCALL SDL_SetWindowFullscreen(SDL_Window * window,
                                                     Uint32 flags);
 
 /**
- *  \brief Get the SDL2 surface associated with the window.
+ *  \brief Get the SDL surface associated with the window.
  *
  *  \return The window's framebuffer surface, or NULL on error.
  *
@@ -1049,7 +1056,7 @@ typedef SDL_HitTestResult (SDLCALL *SDL_HitTest)(SDL_Window *win,
  *  from any part, or simulate its own title bar, etc.
  *
  *  This function lets the app provide a callback that designates pieces of
- *  a given window as special. This callback is run during m_event processing
+ *  a given window as special. This callback is run during event processing
  *  if we need to tell the OS to treat a region of the window specially; the
  *  use of this callback is known as "hit testing."
  *
@@ -1206,12 +1213,12 @@ extern DECLSPEC SDL_GLContext SDLCALL SDL_GL_GetCurrentContext(void);
  *  \brief Get the size of a window's underlying drawable in pixels (for use
  *         with glViewport).
  *
- *  \param window   GlWindow from which the drawable size should be queried
+ *  \param window   Window from which the drawable size should be queried
  *  \param w        Pointer to variable for storing the width in pixels, may be NULL
  *  \param h        Pointer to variable for storing the height in pixels, may be NULL
  *
  * This may differ from SDL_GetWindowSize() if we're rendering to a high-DPI
- * drawable, i.m_event. the window was created with SDL_WINDOW_ALLOW_HIGHDPI on a
+ * drawable, i.e. the window was created with SDL_WINDOW_ALLOW_HIGHDPI on a
  * platform with high-DPI support (Apple calls this "Retina"), and not disabled
  * by the SDL_HINT_VIDEO_HIGHDPI_DISABLED hint.
  *

@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no m_event will the authors be held liable for any damages
+  warranty.  In no event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -20,9 +20,9 @@
 */
 
 /**
- *  \file SDL2.h
+ *  \file SDL.h
  *
- *  Main include header for the SDL2 library
+ *  Main include header for the SDL library
  */
 
 
@@ -59,6 +59,8 @@
 #include "SDL_timer.h"
 #include "SDL_version.h"
 #include "SDL_video.h"
+#include "SDL_locale.h"
+#include "SDL_misc.h"
 
 #include "begin_code.h"
 /* Set up for C function definitions, even when using C++ */
@@ -66,7 +68,7 @@
 extern "C" {
 #endif
 
-/* As of version 0.5, SDL2 is loaded dynamically into the application */
+/* As of version 0.5, SDL is loaded dynamically into the application */
 
 /**
  *  \name SDL_INIT_*
@@ -96,7 +98,7 @@ extern "C" {
 extern DECLSPEC int SDLCALL SDL_Init(Uint32 flags);
 
 /**
- *  This function initializes specific SDL2 subsystems
+ *  This function initializes specific SDL subsystems
  *
  *  Subsystem initialization is ref-counted, you must call
  *  SDL_QuitSubSystem() for each SDL_InitSubSystem() to correctly
@@ -107,7 +109,7 @@ extern DECLSPEC int SDLCALL SDL_Init(Uint32 flags);
 extern DECLSPEC int SDLCALL SDL_InitSubSystem(Uint32 flags);
 
 /**
- *  This function cleans up specific SDL2 subsystems
+ *  This function cleans up specific SDL subsystems
  */
 extern DECLSPEC void SDLCALL SDL_QuitSubSystem(Uint32 flags);
 

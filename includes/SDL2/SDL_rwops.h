@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no m_event will the authors be held liable for any damages
+  warranty.  In no event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -22,7 +22,7 @@
 /**
  *  \file SDL_rwops.h
  *
- *  This file provides a general interface for SDL2 to read and write
+ *  This file provides a general interface for SDL to read and write
  *  data streams.  It can easily be extended to files, memory, etc.
  */
 
@@ -96,15 +96,7 @@ typedef struct SDL_RWops
 #if defined(__ANDROID__)
         struct
         {
-            void *fileNameRef;
-            void *inputStreamRef;
-            void *readableByteChannelRef;
-            void *readMethod;
-            void *assetFileDescriptorRef;
-            long position;
-            long size;
-            long offset;
-            int fd;
+            void *asset;
         } androidio;
 #elif defined(__WIN32__)
         struct
@@ -220,7 +212,7 @@ extern DECLSPEC size_t SDLCALL SDL_RWwrite(SDL_RWops *context,
 extern DECLSPEC int SDLCALL SDL_RWclose(SDL_RWops *context);
 
 /**
- *  Load all the data from an SDL2 data stream.
+ *  Load all the data from an SDL data stream.
  *
  *  The data is allocated with a zero byte at the end (null terminated)
  *

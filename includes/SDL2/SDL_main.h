@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no m_event will the authors be held liable for any damages
+  warranty.  In no event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -27,12 +27,12 @@
 /**
  *  \file SDL_main.h
  *
- *  Redefine main() on some platforms so that it is called by SDL2.
+ *  Redefine main() on some platforms so that it is called by SDL.
  */
 
 #ifndef SDL_MAIN_HANDLED
 #if defined(__WIN32__)
-/* On Windows SDL2 provides WinMain(), which parses the command line and passes
+/* On Windows SDL provides WinMain(), which parses the command line and passes
    the arguments to your main function.
 
    If you provide your own WinMain(), you may define SDL_MAIN_HANDLED
@@ -40,7 +40,7 @@
 #define SDL_MAIN_AVAILABLE
 
 #elif defined(__WINRT__)
-/* On WinRT, SDL2 provides a main function that initializes CoreApplication,
+/* On WinRT, SDL provides a main function that initializes CoreApplication,
    creating an instance of IFrameworkView in the process.
 
    Please note that #include'ing SDL_main.h is not enough to get a main()
@@ -52,10 +52,10 @@
 #define SDL_MAIN_NEEDED
 
 #elif defined(__IPHONEOS__)
-/* On iOS SDL2 provides a main function that creates an application delegate
+/* On iOS SDL provides a main function that creates an application delegate
    and starts the iOS application run loop.
 
-   If you link with SDL2 dynamically on iOS, the main function can't be in a
+   If you link with SDL dynamically on iOS, the main function can't be in a
    shared library, so you need to link with libSDLmain.a, which includes a
    stub main function that calls into the shared library to start execution.
 
@@ -64,7 +64,7 @@
 #define SDL_MAIN_NEEDED
 
 #elif defined(__ANDROID__)
-/* On Android SDL2 provides a Java class in SDLActivity.java that is the
+/* On Android SDL provides a Java class in SDLActivity.java that is the
    main activity entry point.
 
    See docs/README-android.md for more details on extending that class.
@@ -76,7 +76,7 @@
 
 #elif defined(__NACL__)
 /* On NACL we use ppapi_simple to set up the application helper code,
-   then wait for the first PSE_INSTANCE_DIDCHANGEVIEW m_event before
+   then wait for the first PSE_INSTANCE_DIDCHANGEVIEW event before 
    starting the user main function.
    All user code is run in a separate thread by ppapi_simple, thus 
    allowing for blocking io to take place via nacl_io
@@ -122,7 +122,7 @@ extern SDLMAIN_DECLSPEC int SDL_main(int argc, char *argv[]);
 
 
 /**
- *  This is called by the real SDL2 main function to let the rest of the
+ *  This is called by the real SDL main function to let the rest of the
  *  library know that initialization was done properly.
  *
  *  Calling this yourself without knowing what you're doing can cause
@@ -144,9 +144,9 @@ extern DECLSPEC void SDLCALL SDL_UnregisterApp(void);
 #ifdef __WINRT__
 
 /**
- *  \brief Initializes and launches an SDL2/WinRT application.
+ *  \brief Initializes and launches an SDL/WinRT application.
  *
- *  \param mainFunction The SDL2 app's C-style main().
+ *  \param mainFunction The SDL app's C-style main().
  *  \param reserved Reserved for future use; should be NULL
  *  \return 0 on success, -1 on failure.  On failure, use SDL_GetError to retrieve more
  *      information on the failure.
@@ -158,11 +158,11 @@ extern DECLSPEC int SDLCALL SDL_WinRTRunApp(SDL_main_func mainFunction, void * r
 #if defined(__IPHONEOS__)
 
 /**
- *  \brief Initializes and launches an SDL2 application.
+ *  \brief Initializes and launches an SDL application.
  *
  *  \param argc The argc parameter from the application's main() function
  *  \param argv The argv parameter from the application's main() function
- *  \param mainFunction The SDL2 app's C-style main().
+ *  \param mainFunction The SDL app's C-style main().
  *  \return the return value from mainFunction
  */
 extern DECLSPEC int SDLCALL SDL_UIKitRunApp(int argc, char *argv[], SDL_main_func mainFunction);

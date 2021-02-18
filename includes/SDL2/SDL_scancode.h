@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no m_event will the authors be held liable for any damages
+  warranty.  In no event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -31,7 +31,7 @@
 #include "SDL_stdinc.h"
 
 /**
- *  \brief The SDL2 keyboard scancode representation.
+ *  \brief The SDL keyboard scancode representation.
  *
  *  Values of this type are used to represent keyboard keys, among other places
  *  in the \link SDL_Keysym::scancode key.keysym.scancode \endlink field of the
@@ -121,7 +121,7 @@ typedef enum
                                   *   codes and your OS treats them differently,
                                   *   you should generate SDL_SCANCODE_BACKSLASH
                                   *   instead of this code. As a user, you
-                                  *   should not rely on this code because SDL2
+                                  *   should not rely on this code because SDL
                                   *   will never generate it with most (all?)
                                   *   keyboards.
                                   */

@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no m_event will the authors be held liable for any damages
+  warranty.  In no event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -43,7 +43,7 @@ extern "C" {
 
 /*
 These are macros and not first class functions so that the debugger breaks
-on the assertion line and not in some random guts of SDL2, and so each
+on the assertion line and not in some random guts of SDL, and so each
 assert can have unique static variables associated with it.
 */
 
@@ -53,6 +53,8 @@ assert can have unique static variables associated with it.
     #define SDL_TriggerBreakpoint() __debugbreak()
 #elif ( (!defined(__NACL__)) && ((defined(__GNUC__) || defined(__clang__)) && (defined(__i386__) || defined(__x86_64__))) )
     #define SDL_TriggerBreakpoint() __asm__ __volatile__ ( "int $3\n\t" )
+#elif ( defined(__APPLE__) && defined(__arm64__) )  /* this might work on other ARM targets, but this is a known quantity... */
+    #define SDL_TriggerBreakpoint() __asm__ __volatile__ ( "brk #22\n\t" )
 #elif defined(__386__) && defined(__WATCOMC__)
     #define SDL_TriggerBreakpoint() { _asm { int 0x03 } }
 #elif defined(HAVE_SIGNAL_H) && !defined(__WATCOMC__)
@@ -192,16 +194,16 @@ typedef SDL_AssertState (SDLCALL *SDL_AssertionHandler)(
  *  \brief Set an application-defined assertion handler.
  *
  *  This allows an app to show its own assertion UI and/or force the
- *  response to an assertion failure. If the app doesn't provide this, SDL2
+ *  response to an assertion failure. If the app doesn't provide this, SDL
  *  will try to do the right thing, popping up a system-specific GUI dialog,
  *  and probably minimizing any fullscreen windows.
  *
  *  This callback may fire from any thread, but it runs wrapped in a mutex, so
  *  it will only fire from one thread at a time.
  *
- *  Setting the callback to NULL restores SDL2's original internal handler.
+ *  Setting the callback to NULL restores SDL's original internal handler.
  *
- *  This callback is NOT reset to SDL2's internal handler upon SDL_Quit()!
+ *  This callback is NOT reset to SDL's internal handler upon SDL_Quit()!
  *
  *  Return SDL_AssertState value of how to handle the assertion failure.
  *
@@ -216,7 +218,7 @@ extern DECLSPEC void SDLCALL SDL_SetAssertionHandler(
  *  \brief Get the default assertion handler.
  *
  *  This returns the function pointer that is called by default when an
- *   assertion is triggered. This is an internal function provided by SDL2,
+ *   assertion is triggered. This is an internal function provided by SDL,
  *   that is used for assertions when SDL_SetAssertionHandler() hasn't been
  *   used to provide a different function.
  *

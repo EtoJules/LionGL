@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no m_event will the authors be held liable for any damages
+  warranty.  In no event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -80,7 +80,9 @@ typedef struct SDL_Surface
 
     /** information needed for surfaces requiring locks */
     int locked;                 /**< Read-only */
-    void *lock_data;            /**< Read-only */
+
+    /** list of BlitMap that hold a reference to this surface */
+    void *list_blitmap;         /**< Private */
 
     /** clipping information */
     SDL_Rect clip_rect;         /**< Read-only */
@@ -182,7 +184,7 @@ extern DECLSPEC int SDLCALL SDL_LockSurface(SDL_Surface * surface);
 extern DECLSPEC void SDLCALL SDL_UnlockSurface(SDL_Surface * surface);
 
 /**
- *  Load a surface from a seekable SDL2 data stream (memory or file).
+ *  Load a surface from a seekable SDL data stream (memory or file).
  *
  *  If \c freesrc is non-zero, the stream will be closed after being read.
  *
@@ -201,7 +203,7 @@ extern DECLSPEC SDL_Surface *SDLCALL SDL_LoadBMP_RW(SDL_RWops * src,
 #define SDL_LoadBMP(file)   SDL_LoadBMP_RW(SDL_RWFromFile(file, "rb"), 1)
 
 /**
- *  Save a surface to a seekable SDL2 data stream (memory or file).
+ *  Save a surface to a seekable SDL data stream (memory or file).
  *
  *  Surfaces with a 24-bit, 32-bit and paletted 8-bit format get saved in the
  *  BMP directly. Other RGB formats with 8-bit or higher get converted to a
@@ -234,6 +236,13 @@ extern DECLSPEC int SDLCALL SDL_SaveBMP_RW
  */
 extern DECLSPEC int SDLCALL SDL_SetSurfaceRLE(SDL_Surface * surface,
                                               int flag);
+
+/**
+ *  \brief Returns whether the surface is RLE enabled
+ *
+ *  \return SDL_TRUE if the surface is RLE enabled, or SDL_FALSE if the surface is NULL or not RLE enabled
+ */
+extern DECLSPEC SDL_bool SDLCALL SDL_HasSurfaceRLE(SDL_Surface * surface);
 
 /**
  *  \brief Sets the color key (transparent pixel) in a blittable surface.
@@ -390,7 +399,7 @@ extern DECLSPEC SDL_Surface *SDLCALL SDL_DuplicateSurface(SDL_Surface * surface)
  *
  *  The \c flags parameter is passed to SDL_CreateRGBSurface() and has those
  *  semantics.  You can also pass ::SDL_RLEACCEL in the flags parameter and
- *  SDL2 will try to RLE accelerate colorkey and alpha blits in the resulting
+ *  SDL will try to RLE accelerate colorkey and alpha blits in the resulting
  *  surface.
  */
 extern DECLSPEC SDL_Surface *SDLCALL SDL_ConvertSurface
@@ -478,7 +487,7 @@ extern DECLSPEC int SDLCALL SDL_FillRects
         source color key.
     \endverbatim
  *
- *  You should call SDL_BlitSurface() unless you know exactly how SDL2
+ *  You should call SDL_BlitSurface() unless you know exactly how SDL
  *  blitting works internally and how to use the other blit functions.
  */
 #define SDL_BlitSurface SDL_UpperBlit

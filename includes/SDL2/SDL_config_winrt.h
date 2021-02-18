@@ -26,11 +26,11 @@
 #include "SDL_platform.h"
 
 /* Make sure the Windows SDK's NTDDI_VERSION macro gets defined.  This is used
-   by SDL2 to determine which version of the Windows SDK is being used.
+   by SDL to determine which version of the Windows SDK is being used.
 */
 #include <sdkddkver.h>
 
-/* Define possibly-undefined NTDDI values (used when compiling SDL2 against
+/* Define possibly-undefined NTDDI values (used when compiling SDL against
    older versions of the Windows SDK.
 */
 #ifndef NTDDI_WINBLUE
@@ -40,7 +40,7 @@
 #define NTDDI_WIN10 0x0A000000
 #endif
 
-/* This is a set of defines to configure the SDL2 features */
+/* This is a set of defines to configure the SDL features */
 
 #if !defined(_STDINT_H_) && (!defined(HAVE_STDINT_H) || !_HAVE_STDINT_H)
 #if defined(__GNUC__) || defined(__DMC__) || defined(__WATCOMC__)
@@ -181,6 +181,8 @@ typedef unsigned int uintptr_t;
 #define HAVE_SQRTF  1
 #define HAVE_TAN    1
 #define HAVE_TANF   1
+#define HAVE_TRUNC  1
+#define HAVE_TRUNCF 1
 #define HAVE__FSEEKI64 1
 
 /* Enable various audio drivers */
@@ -193,6 +195,7 @@ typedef unsigned int uintptr_t;
 #define SDL_JOYSTICK_DISABLED 1
 #define SDL_HAPTIC_DISABLED 1
 #else
+#define SDL_JOYSTICK_VIRTUAL    1
 #define SDL_JOYSTICK_XINPUT 1
 #define SDL_HAPTIC_XINPUT   1
 #endif

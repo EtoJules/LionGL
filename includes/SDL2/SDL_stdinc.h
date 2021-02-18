@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no m_event will the authors be held liable for any damages
+  warranty.  In no event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -29,6 +29,12 @@
 #define SDL_stdinc_h_
 
 #include "SDL_config.h"
+
+#ifdef __APPLE__
+#ifndef _DARWIN_C_SOURCE
+#define _DARWIN_C_SOURCE 1 /* for memset_pattern4() */
+#endif
+#endif
 
 #ifdef HAVE_SYS_TYPES_H
 #include <sys/types.h>
@@ -118,7 +124,7 @@ char *alloca();
 /**
  *  Macro useful for building other macros with strings in them
  *
- *  m_event.g. #define LOG_ERROR(X) OutputDebugString(SDL_STRINGIFY_ARG(__FUNCTION__) ": " X "\n")
+ *  e.g. #define LOG_ERROR(X) OutputDebugString(SDL_STRINGIFY_ARG(__FUNCTION__) ": " X "\n")
  */
 #define SDL_STRINGIFY_ARG(arg)  #arg
 
@@ -369,7 +375,7 @@ typedef void *(SDLCALL *SDL_realloc_func)(void *mem, size_t size);
 typedef void (SDLCALL *SDL_free_func)(void *mem);
 
 /**
- *  \brief Get the current set of SDL2 memory functions
+ *  \brief Get the current set of SDL memory functions
  */
 extern DECLSPEC void SDLCALL SDL_GetMemoryFunctions(SDL_malloc_func *malloc_func,
                                                     SDL_calloc_func *calloc_func,
@@ -377,9 +383,9 @@ extern DECLSPEC void SDLCALL SDL_GetMemoryFunctions(SDL_malloc_func *malloc_func
                                                     SDL_free_func *free_func);
 
 /**
- *  \brief Replace SDL2's memory allocation functions with a custom set
+ *  \brief Replace SDL's memory allocation functions with a custom set
  *
- *  \note If you are replacing SDL2's memory functions, you should call
+ *  \note If you are replacing SDL's memory functions, you should call
  *        SDL_GetNumAllocations() and be very careful if it returns non-zero.
  *        That means that your free function will be called with memory
  *        allocated by the previous memory allocation functions.
@@ -412,6 +418,8 @@ extern DECLSPEC int SDLCALL SDL_isupper(int x);
 extern DECLSPEC int SDLCALL SDL_islower(int x);
 extern DECLSPEC int SDLCALL SDL_toupper(int x);
 extern DECLSPEC int SDLCALL SDL_tolower(int x);
+
+extern DECLSPEC Uint32 SDLCALL SDL_crc32(Uint32 crc, const void *data, size_t len);
 
 extern DECLSPEC void *SDLCALL SDL_memset(SDL_OUT_BYTECAP(len) void *dst, int c, size_t len);
 
@@ -463,6 +471,8 @@ extern DECLSPEC wchar_t *SDLCALL SDL_wcsstr(const wchar_t *haystack, const wchar
 
 extern DECLSPEC int SDLCALL SDL_wcscmp(const wchar_t *str1, const wchar_t *str2);
 extern DECLSPEC int SDLCALL SDL_wcsncmp(const wchar_t *str1, const wchar_t *str2, size_t maxlen);
+extern DECLSPEC int SDLCALL SDL_wcscasecmp(const wchar_t *str1, const wchar_t *str2);
+extern DECLSPEC int SDLCALL SDL_wcsncasecmp(const wchar_t *str1, const wchar_t *str2, size_t len);
 
 extern DECLSPEC size_t SDLCALL SDL_strlen(const char *str);
 extern DECLSPEC size_t SDLCALL SDL_strlcpy(SDL_OUT_Z_CAP(maxlen) char *dst, const char *src, size_t maxlen);
@@ -529,6 +539,8 @@ extern DECLSPEC double SDLCALL SDL_fabs(double x);
 extern DECLSPEC float SDLCALL SDL_fabsf(float x);
 extern DECLSPEC double SDLCALL SDL_floor(double x);
 extern DECLSPEC float SDLCALL SDL_floorf(float x);
+extern DECLSPEC double SDLCALL SDL_trunc(double x);
+extern DECLSPEC float SDLCALL SDL_truncf(float x);
 extern DECLSPEC double SDLCALL SDL_fmod(double x, double y);
 extern DECLSPEC float SDLCALL SDL_fmodf(float x, float y);
 extern DECLSPEC double SDLCALL SDL_log(double x);
@@ -546,7 +558,7 @@ extern DECLSPEC float SDLCALL SDL_sqrtf(float x);
 extern DECLSPEC double SDLCALL SDL_tan(double x);
 extern DECLSPEC float SDLCALL SDL_tanf(float x);
 
-/* The SDL2 implementation of iconv() returns these error codes */
+/* The SDL implementation of iconv() returns these error codes */
 #define SDL_ICONV_ERROR     (size_t)-1
 #define SDL_ICONV_E2BIG     (size_t)-2
 #define SDL_ICONV_EILSEQ    (size_t)-3
@@ -575,6 +587,17 @@ extern DECLSPEC char *SDLCALL SDL_iconv_string(const char *tocode,
 /* force builds using Clang's static analysis tools to use literal C runtime
    here, since there are possibly tests that are ineffective otherwise. */
 #if defined(__clang_analyzer__) && !defined(SDL_DISABLE_ANALYZE_MACROS)
+
+/* The analyzer knows about strlcpy even when the system doesn't provide it */
+#ifndef HAVE_STRLCPY
+size_t strlcpy(char* dst, const char* src, size_t size);
+#endif
+
+/* The analyzer knows about strlcat even when the system doesn't provide it */
+#ifndef HAVE_STRLCAT
+size_t strlcat(char* dst, const char* src, size_t size);
+#endif
+
 #define SDL_malloc malloc
 #define SDL_calloc calloc
 #define SDL_realloc realloc
@@ -583,16 +606,23 @@ extern DECLSPEC char *SDLCALL SDL_iconv_string(const char *tocode,
 #define SDL_memcpy memcpy
 #define SDL_memmove memmove
 #define SDL_memcmp memcmp
-#define SDL_strlen strlen
 #define SDL_strlcpy strlcpy
 #define SDL_strlcat strlcat
+#define SDL_strlen strlen
+#define SDL_wcslen wcslen
+#define SDL_wcslcpy wcslcpy
+#define SDL_wcslcat wcslcat
 #define SDL_strdup strdup
+#define SDL_wcsdup wcsdup
 #define SDL_strchr strchr
 #define SDL_strrchr strrchr
 #define SDL_strstr strstr
+#define SDL_wcsstr wcsstr
 #define SDL_strtokr strtok_r
 #define SDL_strcmp strcmp
+#define SDL_wcscmp wcscmp
 #define SDL_strncmp strncmp
+#define SDL_wcsncmp wcsncmp
 #define SDL_strcasecmp strcasecmp
 #define SDL_strncasecmp strncasecmp
 #define SDL_sscanf sscanf

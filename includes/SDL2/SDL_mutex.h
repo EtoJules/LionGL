@@ -3,7 +3,7 @@
   Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
-  warranty.  In no m_event will the authors be held liable for any damages
+  warranty.  In no event will the authors be held liable for any damages
   arising from the use of this software.
 
   Permission is granted to anyone to use this software for any purpose,
@@ -54,7 +54,7 @@ extern "C" {
  */
 /* @{ */
 
-/* The SDL2 mutex structure, defined in SDL_sysmutex.c */
+/* The SDL mutex structure, defined in SDL_sysmutex.c */
 struct SDL_mutex;
 typedef struct SDL_mutex SDL_mutex;
 
@@ -102,7 +102,7 @@ extern DECLSPEC void SDLCALL SDL_DestroyMutex(SDL_mutex * mutex);
  */
 /* @{ */
 
-/* The SDL2 semaphore structure, defined in SDL_syssem.c */
+/* The SDL semaphore structure, defined in SDL_syssem.c */
 struct SDL_semaphore;
 typedef struct SDL_semaphore SDL_sem;
 
@@ -162,7 +162,7 @@ extern DECLSPEC Uint32 SDLCALL SDL_SemValue(SDL_sem * sem);
  */
 /* @{ */
 
-/* The SDL2 condition variable structure, defined in SDL_syscond.c */
+/* The SDL condition variable structure, defined in SDL_syscond.c */
 struct SDL_cond;
 typedef struct SDL_cond SDL_cond;
 
