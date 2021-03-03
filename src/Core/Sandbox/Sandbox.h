@@ -9,4 +9,5 @@ public:
     virtual void onUpdate(double deltaTime){}
     virtual void onEvent(const SDL_Event& event){}
     virtual void onGUI(){}
+    virtual ~Sandbox() {};
 };

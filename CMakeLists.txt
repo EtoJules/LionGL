@@ -10,7 +10,6 @@ include_directories(includes)
 include_directories(src/Core)
 
 find_package(SDL2 CONFIG REQUIRED)
-find_package(glm CONFIG REQUIRED)
 find_package(GLEW REQUIRED)
 find_path(STB_INCLUDE_DIRS "stb.h")
 
@@ -25,7 +24,6 @@ target_link_libraries(ClGL Core)
 target_link_libraries(ClGL Sources)
 
 target_link_libraries(ClGL SDL2::SDL2main SDL2::SDL2-static)
-target_link_libraries(ClGL glm)
 target_link_libraries(ClGL libs)
 target_include_directories(ClGL PRIVATE ${STB_INCLUDE_DIRS})
 target_link_libraries(ClGL GLEW::GLEW)
