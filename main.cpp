@@ -2,6 +2,7 @@
 
 #include <GL/glew.h>
 #include <iostream>
+#include "assimp/BaseImporter.h"
 
 #include "SandboxExamples/LightningSandbox/LightningSandbox.h"
 #include "SandboxExamples/TriangleSandbox/TriangleSandbox.h"
@@ -17,7 +18,7 @@ int main()
                     SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE);
     if (glewInit() != GLEW_OK)
         std::cout << "Glew error!!! \n";
-    
+
     window.loadSandbox(new LightningSandbox);
     window.startGameLoop();
     return 0;
