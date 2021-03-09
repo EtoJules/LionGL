@@ -4,8 +4,7 @@ CameraSandbox::CameraSandbox()
         : m_shader("../src/SandboxExamples/CameraSandbox/res/shaders/vertex.glsl",
                    "../src/SandboxExamples/CameraSandbox/res/shaders/fragment.glsl"),
           m_model(1.0f), m_view(1.0f), m_projection(1.0f), m_camera(0.0f, 0.0f, 3.0f)
-{
-}
+        {}
 
 void CameraSandbox::start()
 {

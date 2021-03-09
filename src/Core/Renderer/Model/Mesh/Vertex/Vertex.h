@@ -1,8 +1,8 @@
-//
-// Created by andrew on 3/9/21.
-//
+#pragma once
 
-#ifndef CLGL_VERTEX_H
-#define CLGL_VERTEX_H
+#include "glm/glm.hpp"
 
-#endif //CLGL_VERTEX_H
+struct Vertex{
+    glm::vec3 position;
+    glm::vec3 color;
+};

@@ -4,6 +4,7 @@
 #include <iostream>
 #include "assimp/BaseImporter.h"
 
+#include "SandboxExamples/MeshSandbox/MeshSandbox.h"
 #include "SandboxExamples/LightningSandbox/LightningSandbox.h"
 #include "SandboxExamples/TriangleSandbox/TriangleSandbox.h"
 #include "SandboxExamples/CameraSandbox/CameraSandbox.h"
@@ -19,7 +20,7 @@ int main()
     if (glewInit() != GLEW_OK)
         std::cout << "Glew error!!! \n";
 
-    window.loadSandbox(new LightningSandbox);
+    window.loadSandbox(new MeshSandbox);
     window.startGameLoop();
     return 0;
 }

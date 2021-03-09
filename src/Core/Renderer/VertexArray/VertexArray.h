@@ -11,8 +11,6 @@ private:
 public:
     VertexArray();
     ~VertexArray();
-
-public:
     void bindArray(const VertexBuffer& vertexBuffer, const VertexLayout& vertexLayout);
     void bind() const;
     void unbind() const;
