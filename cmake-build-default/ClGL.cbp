@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="ClGL"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\vcpkg\;CMake Files\vcpkg\scripts\;CMake Files\vcpkg\scripts\buildsystems\;CMake Files\vcpkg\installed\;CMake Files\vcpkg\installed\x64-linux\;CMake Files\vcpkg\installed\x64-linux\share\;CMake Files\vcpkg\installed\x64-linux\share\sdl2\;CMake Files\vcpkg\installed\x64-linux\share\glew\;CMake Files\src\;CMake Files\src\SandboxExamples\;CMake Files\src\Core\;CMake Files\libs\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/andrew/MY/Projects/LionGL/cmake-build-default"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/andrew/MY/Projects/LionGL/cmake-build-default"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/andrew/MY/Projects/LionGL/cmake-build-default"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ClGL">
+				<Option output="/home/andrew/MY/Projects/LionGL/cmake-build-default/ClGL" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andrew/MY/Projects/LionGL/cmake-build-default"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/src"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/includes"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/src/Core"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/vcpkg/installed/x64-linux/include"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/vcpkg/installed/x64-linux/include/SDL2"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/Makefile&quot;  VERBOSE=1 ClGL"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ClGL/fast">
+				<Option output="/home/andrew/MY/Projects/LionGL/cmake-build-default/ClGL" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andrew/MY/Projects/LionGL/cmake-build-default"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/src"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/includes"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/src/Core"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/vcpkg/installed/x64-linux/include"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/vcpkg/installed/x64-linux/include/SDL2"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/Makefile&quot;  VERBOSE=1 ClGL/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Sources">
+				<Option output="/home/andrew/MY/Projects/LionGL/cmake-build-default/src/libSources.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andrew/MY/Projects/LionGL/cmake-build-default/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/andrew/MY/Projects/LionGL/src"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/includes"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/src/Core"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/src/Makefile&quot;  VERBOSE=1 Sources"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Sources/fast">
+				<Option output="/home/andrew/MY/Projects/LionGL/cmake-build-default/src/libSources.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andrew/MY/Projects/LionGL/cmake-build-default/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/andrew/MY/Projects/LionGL/src"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/includes"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/src/Core"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/src/Makefile&quot;  VERBOSE=1 Sources/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SandboxExamples">
+				<Option output="/home/andrew/MY/Projects/LionGL/cmake-build-default/src/SandboxExamples/libSandboxExamples.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andrew/MY/Projects/LionGL/cmake-build-default/src/SandboxExamples"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/andrew/MY/Projects/LionGL/src"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/includes"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/src/Core"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/src/SandboxExamples/Makefile&quot;  VERBOSE=1 SandboxExamples"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/src/SandboxExamples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/src/SandboxExamples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/src/SandboxExamples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SandboxExamples/fast">
+				<Option output="/home/andrew/MY/Projects/LionGL/cmake-build-default/src/SandboxExamples/libSandboxExamples.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andrew/MY/Projects/LionGL/cmake-build-default/src/SandboxExamples"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/andrew/MY/Projects/LionGL/src"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/includes"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/src/Core"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/src/SandboxExamples/Makefile&quot;  VERBOSE=1 SandboxExamples/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/src/SandboxExamples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/src/SandboxExamples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/src/SandboxExamples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Core">
+				<Option output="/home/andrew/MY/Projects/LionGL/cmake-build-default/src/Core/libCore.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andrew/MY/Projects/LionGL/cmake-build-default/src/Core"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/andrew/MY/Projects/LionGL/src"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/includes"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/src/Core"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/src/Core/Makefile&quot;  VERBOSE=1 Core"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/src/Core/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/src/Core/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/src/Core/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Core/fast">
+				<Option output="/home/andrew/MY/Projects/LionGL/cmake-build-default/src/Core/libCore.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andrew/MY/Projects/LionGL/cmake-build-default/src/Core"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/andrew/MY/Projects/LionGL/src"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/includes"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/src/Core"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/src/Core/Makefile&quot;  VERBOSE=1 Core/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/src/Core/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/src/Core/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/src/Core/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libs">
+				<Option output="/home/andrew/MY/Projects/LionGL/cmake-build-default/libs/liblibs.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andrew/MY/Projects/LionGL/cmake-build-default/libs"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/andrew/MY/Projects/LionGL/src"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/includes"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/src/Core"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/libs/Makefile&quot;  VERBOSE=1 libs"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/libs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/libs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/libs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libs/fast">
+				<Option output="/home/andrew/MY/Projects/LionGL/cmake-build-default/libs/liblibs.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andrew/MY/Projects/LionGL/cmake-build-default/libs"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/andrew/MY/Projects/LionGL/src"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/libs"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/includes"/>
+					<Add directory="/home/andrew/MY/Projects/LionGL/src/Core"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/libs/Makefile&quot;  VERBOSE=1 libs/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/libs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/libs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/andrew/MY/Projects/LionGL/cmake-build-default/libs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/libs/imgui/examples/imgui_impl_opengl3.cpp">
+			<Option target="libs"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/libs/imgui/examples/imgui_impl_opengl3.h">
+			<Option target="libs"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/libs/imgui/examples/imgui_impl_sdl.cpp">
+			<Option target="libs"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/libs/imgui/examples/imgui_impl_sdl.h">
+			<Option target="libs"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/libs/imgui/imconfig.h">
+			<Option target="libs"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/libs/imgui/imgui.cpp">
+			<Option target="libs"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/libs/imgui/imgui.h">
+			<Option target="libs"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/libs/imgui/imgui_demo.cpp">
+			<Option target="libs"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/libs/imgui/imgui_draw.cpp">
+			<Option target="libs"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/libs/imgui/imgui_internal.h">
+			<Option target="libs"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/libs/imgui/imgui_widgets.cpp">
+			<Option target="libs"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/libs/imgui/imstb_rectpack.h">
+			<Option target="libs"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/libs/imgui/imstb_textedit.h">
+			<Option target="libs"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/libs/imgui/imstb_truetype.h">
+			<Option target="libs"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/main.cpp">
+			<Option target="ClGL"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/Core/GlWindow/GlWindow.cpp">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/Core/GlWindow/GlWindow.h">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/Core/Renderer/IndexBuffer/IndexBuffer.cpp">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/Core/Renderer/IndexBuffer/IndexBuffer.h">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/Core/Renderer/Model/Mesh/Mesh.cpp">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/Core/Renderer/Model/Mesh/Mesh.h">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/Core/Renderer/Model/Mesh/Vertex/Vertex.h">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/Core/Renderer/Model/Model.cpp">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/Core/Renderer/Model/Model.h">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/Core/Renderer/Renderer.cpp">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/Core/Renderer/Renderer.h">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/Core/Renderer/Shader/Shader.cpp">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/Core/Renderer/Shader/Shader.h">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/Core/Renderer/Texture/Texture.cpp">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/Core/Renderer/Texture/Texture.h">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/Core/Renderer/VertexArray/VertexArray.cpp">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/Core/Renderer/VertexArray/VertexArray.h">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/Core/Renderer/VertexBuffer/VertexBuffer.cpp">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/Core/Renderer/VertexBuffer/VertexBuffer.h">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/Core/Renderer/VertexBuffer/VertexLayout.cpp">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/Core/Renderer/VertexBuffer/VertexLayout.h">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/Core/Sandbox/Camera/Camera.cpp">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/Core/Sandbox/Camera/Camera.h">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/Core/Sandbox/Sandbox.cpp">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/Core/Sandbox/Sandbox.h">
+			<Option target="Core"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/Helper/parser.cpp">
+			<Option target="Sources"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/Helper/parser.h">
+			<Option target="Sources"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/SandboxExamples/CameraSandbox/CameraSandbox.cpp">
+			<Option target="SandboxExamples"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/SandboxExamples/CameraSandbox/CameraSandbox.h">
+			<Option target="SandboxExamples"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/SandboxExamples/LightningSandbox/LightningSandbox.cpp">
+			<Option target="SandboxExamples"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/SandboxExamples/LightningSandbox/LightningSandbox.h">
+			<Option target="SandboxExamples"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/SandboxExamples/MeshSandbox/MeshSandbox.cpp">
+			<Option target="SandboxExamples"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/SandboxExamples/MeshSandbox/MeshSandbox.h">
+			<Option target="SandboxExamples"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/SandboxExamples/TriangleSandbox/TriangleSandbox.cpp">
+			<Option target="SandboxExamples"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/SandboxExamples/TriangleSandbox/TriangleSandbox.h">
+			<Option target="SandboxExamples"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/vcpkg/scripts/buildsystems/vcpkg.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\scripts\buildsystems\"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/vcpkg/installed/x64-linux/share/sdl2/SDL2Config.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-linux\share\sdl2\"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/vcpkg/installed/x64-linux/share/sdl2/SDL2ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-linux\share\sdl2\"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/vcpkg/installed/x64-linux/share/sdl2/SDL2Targets-debug.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-linux\share\sdl2\"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/vcpkg/installed/x64-linux/share/sdl2/SDL2Targets-release.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-linux\share\sdl2\"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/vcpkg/installed/x64-linux/share/sdl2/SDL2Targets.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-linux\share\sdl2\"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/vcpkg/installed/x64-linux/share/sdl2/vcpkg-cmake-wrapper.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-linux\share\sdl2\"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/vcpkg/installed/x64-linux/share/glew/CopyImportedTargetProperties.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-linux\share\glew\"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/vcpkg/installed/x64-linux/share/glew/glew-config.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-linux\share\glew\"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/vcpkg/installed/x64-linux/share/glew/glew-targets-debug.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-linux\share\glew\"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/vcpkg/installed/x64-linux/share/glew/glew-targets-release.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-linux\share\glew\"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/vcpkg/installed/x64-linux/share/glew/glew-targets.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-linux\share\glew\"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/vcpkg/installed/x64-linux/share/glew/vcpkg-cmake-wrapper.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-linux\share\glew\"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/SandboxExamples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\SandboxExamples\"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/src/Core/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\Core\"/>
+		</Unit>
+		<Unit filename="/home/andrew/MY/Projects/LionGL/libs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

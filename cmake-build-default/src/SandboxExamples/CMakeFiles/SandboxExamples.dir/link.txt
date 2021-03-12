@@ -1,0 +1,2 @@
+/usr/bin/ar qc libSandboxExamples.a  CMakeFiles/SandboxExamples.dir/TriangleSandbox/TriangleSandbox.cpp.o CMakeFiles/SandboxExamples.dir/CameraSandbox/CameraSandbox.cpp.o CMakeFiles/SandboxExamples.dir/LightningSandbox/LightningSandbox.cpp.o CMakeFiles/SandboxExamples.dir/MeshSandbox/MeshSandbox.cpp.o
+/usr/bin/ranlib libSandboxExamples.a

@@ -1,19 +1,21 @@
 #pragma once
 
+#include <iostream>
+
 #include "Sandbox/Sandbox.h"
 #include "Core/Renderer/Renderer.h"
 #include "Core/Sandbox/Camera/Camera.h"
 #include "Core/Renderer/Model/Mesh/Mesh.h"
+#include "Core/Renderer/Model/Model.h"
 #include "imgui/imgui.h"
-#include "glm/mat4x4.hpp"
 #include "glm/gtc/matrix_transform.hpp"
-#include <iostream>
+#include "glm/mat4x4.hpp"
 
 class MeshSandbox : public Sandbox{
 private:
     Renderer m_renderer{};
     Shader m_shader;
-    Mesh m_mesh;
+    Model m_modelObject;
 
     Camera m_camera;
     int m_mouseX;

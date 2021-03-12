@@ -1,32 +1,17 @@
 #include "MeshSandbox.h"
 
 MeshSandbox::MeshSandbox()
-    : m_shader("../src/SandboxExamples/TriangleSandbox/res/shaders/vertex.glsl",
-               "../src/SandboxExamples/TriangleSandbox/res/shaders/fragment.glsl"),
-      m_model(1.0f), m_view(1.0f), m_projection(1.0f), m_camera(0.0f, 0.0f, 2.0f),
-      m_mouseX(0), m_mouseY(0), cameraMoveVec(0.0f,0.0f,0.0f), m_mesh()
-    {}
+    : m_shader("../src/SandboxExamples/MeshSandbox/res/shaders/vertex.glsl",
+               "../src/SandboxExamples/MeshSandbox/res/shaders/fragment.glsl"),
+      m_model(1.0f), m_view(1.0f), m_projection(1.0f), m_camera(0.0f, 0.0f, 4.0f),
+      m_mouseX(0), m_mouseY(0), cameraMoveVec(0.0f,0.0f,0.0f),
+      m_modelObject("../src/SandboxExamples/MeshSandbox/res/models/backpack.obj"){}
 
 void MeshSandbox::start(){
-    //drawing triangle
-    std::vector<Vertex> vertices = {
-       {glm::vec3(0.5f, -0.5f, 0.0f), glm::vec3(1.0f, 0.0f, 0.0f)},
-       {glm::vec3(-0.5f, -0.5f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f)},
-       {glm::vec3(0.0f,  0.5f, 0.0f), glm::vec3(0.0f, 0.0f, 1.0f)}
-    };
-
-    std::vector<uint> index = {
-            0, 1, 2,
-            2, 1, 2
-    };
-
-    m_mesh.loadMesh(vertices, index);
-    m_mesh.bind();
-
     //setting up mvp
     m_model = glm::rotate(m_model, 0.0f, glm::vec3(1.0f, 0.0f, 0.0f));
     m_view = glm::translate(m_view, glm::vec3(0.0f, 0.0f, -3.0f));
-    m_projection = glm::perspective(45.0f, 1280.0f/720.0f, 0.1f, 100.0f);
+    m_projection = glm::perspective(45.0f, 1280.0f/720.0f, 0.1f, 10000.0f);
     m_shader.setUniformMat4f("u_Model", m_model);
     m_shader.setUniformMat4f("u_View", m_view);
     m_shader.setUniformMat4f("u_Projection", m_projection);
@@ -51,7 +36,9 @@ void MeshSandbox::onUpdate(double deltaTime){
         m_mouseX = 0;
         m_mouseY = 0;
     }
-    m_renderer.draw(m_mesh, m_shader);
+    for(auto &mesh : m_modelObject) {
+        m_renderer.draw(mesh, m_shader);
+    }
 }
 
 void MeshSandbox::onGUI(){
@@ -60,6 +47,7 @@ void MeshSandbox::onGUI(){
                 1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
     ImGui::Text("Camera position:\n x %f y %f z %f",
                 m_camera.getPosition().x, m_camera.getPosition().y, m_camera.getPosition().z);
+    ImGui::Text("Press F to use mouse");
     ImGui::End();
 }
 

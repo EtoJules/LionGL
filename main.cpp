@@ -2,7 +2,6 @@
 
 #include <GL/glew.h>
 #include <iostream>
-#include "assimp/BaseImporter.h"
 
 #include "SandboxExamples/MeshSandbox/MeshSandbox.h"
 #include "SandboxExamples/LightningSandbox/LightningSandbox.h"

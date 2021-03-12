@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/andrew/MY/Projects/LionGL/src/Helper/parser.cpp
+parser.h
+/home/andrew/MY/Projects/LionGL/src/Helper/parser.h
+
+/home/andrew/MY/Projects/LionGL/src/Helper/parser.h
+string
+-
+fstream
+-
+
