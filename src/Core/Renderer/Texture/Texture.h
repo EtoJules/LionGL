@@ -7,7 +7,8 @@
 class Texture
 {
 private:
-    unsigned int m_RenderId;
+    std::string m_filePath;
+    uint m_RenderId;
     int m_width;
     int m_height;
     int m_channels;
@@ -16,8 +17,7 @@ public:
     Texture();
     explicit Texture(const std::string& filePath);
     ~Texture();
-
-public:
+    std::string getFilePath();
     void loadTexture(const std::string& filePath);
     void bind(unsigned int slot);
     void unbind();

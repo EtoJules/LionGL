@@ -12,8 +12,7 @@ namespace parser
 				(std::istreambuf_iterator<char>()));
 			file.close();
 			return res;
-		}
-		else {
+		}else{
 			throw std::exception();
 		}
 	}

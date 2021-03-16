@@ -5,7 +5,7 @@ MeshSandbox::MeshSandbox()
                "../src/SandboxExamples/MeshSandbox/res/shaders/fragment.glsl"),
       m_model(1.0f), m_view(1.0f), m_projection(1.0f), m_camera(0.0f, 0.0f, 4.0f),
       m_mouseX(0), m_mouseY(0), cameraMoveVec(0.0f,0.0f,0.0f),
-      m_modelObject("../src/SandboxExamples/MeshSandbox/res/models/backpack.obj"){}
+      m_modelObject("../src/SandboxExamples/MeshSandbox/res/models/backpack/backpack.obj"){}
 
 void MeshSandbox::start(){
     //setting up mvp
@@ -26,7 +26,7 @@ void MeshSandbox::onUpdate(double deltaTime){
     //camera movement
     m_camera.setEulerAngle(m_camera.getYaw() + (m_mouseX * deltaTime * 0.005f),
                            m_camera.getPitch() - (m_mouseY * deltaTime * 0.005f));
-    m_camera.setPosition(m_camera.getPosition() + cameraMoveVec * (float)deltaTime);
+    m_camera.setPosition(m_camera.getPosition() + cameraMoveVec * (float)deltaTime * 1.5f);
     m_shader.setUniformMat4f("u_View", m_camera.getLookAtMatrix());
 
     //mouse
@@ -36,9 +36,8 @@ void MeshSandbox::onUpdate(double deltaTime){
         m_mouseX = 0;
         m_mouseY = 0;
     }
-    for(auto &mesh : m_modelObject) {
-        m_renderer.draw(mesh, m_shader);
-    }
+
+    m_renderer.draw(m_modelObject, m_shader);
 }
 
 void MeshSandbox::onGUI(){
@@ -51,32 +50,17 @@ void MeshSandbox::onGUI(){
     ImGui::End();
 }
 
-void MeshSandbox::onEvent(const SDL_Event &event) {
-    if(event.type == SDL_KEYDOWN)
-    {
-        switch (event.key.keysym.sym)
-        {
-            case SDLK_w:
-                cameraMoveVec = 0.01f * m_camera.getCameraFront();
-                break;
-            case SDLK_s:
-                cameraMoveVec = -0.01f * m_camera.getCameraFront();
-                break;
-            case SDLK_a:
-                cameraMoveVec = -0.01f * glm::normalize(glm::cross(m_camera.getCameraFront(), m_camera.getCameraUp()));
-                break;
-            case SDLK_d:
-                cameraMoveVec = 0.01f * glm::normalize(glm::cross(m_camera.getCameraFront(), m_camera.getCameraUp()));
-                break;
-            case SDLK_f:
-                SDL_SetRelativeMouseMode((bool)SDL_GetRelativeMouseMode() ? SDL_FALSE : SDL_TRUE);
-                break;
-            default:
-                break;
+void MeshSandbox::onEvent(const SDL_Event &event){
+    if(event.type == SDL_KEYDOWN){
+        switch (event.key.keysym.sym){
+            case SDLK_w: cameraMoveVec = 0.01f * m_camera.getCameraFront(); break;
+            case SDLK_s: cameraMoveVec = -0.01f * m_camera.getCameraFront(); break;
+            case SDLK_a: cameraMoveVec = -0.01f * glm::normalize(glm::cross(m_camera.getCameraFront(), m_camera.getCameraUp())); break;
+            case SDLK_d: cameraMoveVec = 0.01f * glm::normalize(glm::cross(m_camera.getCameraFront(), m_camera.getCameraUp())); break;
+            case SDLK_f: SDL_SetRelativeMouseMode((bool)SDL_GetRelativeMouseMode() ? SDL_FALSE : SDL_TRUE); break;
+            default: break;
         }
     }
     if(event.type == SDL_KEYUP)
-    {
         cameraMoveVec = glm::vec3(0.0f, 0.0f, 0.0f);
-    }
 }

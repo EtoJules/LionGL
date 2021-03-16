@@ -5,6 +5,7 @@ void Renderer::clear() const{
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glEnable(GL_DEPTH_TEST);
 }
+
 void Renderer::draw(const VertexArray& vertexArray, const IndexBuffer& indexBuffer, const Shader& shader) const{
     vertexArray.bind();
     indexBuffer.bind();
@@ -13,8 +14,10 @@ void Renderer::draw(const VertexArray& vertexArray, const IndexBuffer& indexBuff
 }
 
 void Renderer::draw(const Mesh &mesh, const Shader &shader) const{
-    mesh.getVertexArray().bind();
-    mesh.getIndexBuffer().bind();
-    shader.bind();
-    glDrawElements(GL_TRIANGLES, mesh.getIndexBuffer().getCount(), GL_UNSIGNED_INT, nullptr);
+    draw(mesh.getVertexArray(), mesh.getIndexBuffer(), shader);
+}
+
+void Renderer::draw(Model &model, const Shader &shader) const{
+    for(auto &mesh : model)
+        draw(mesh, shader);
 }

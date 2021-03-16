@@ -2,8 +2,10 @@
 
 out vec4 color;
 
-in vec3 oColor;
+in vec2 oTexCoord;
+
+uniform sampler2D u_DiffuseTexture;
 
 void main() {
-    color = vec4(oColor, 1.0f);
+    color = vec4(texture(u_DiffuseTexture, oTexCoord));
 }

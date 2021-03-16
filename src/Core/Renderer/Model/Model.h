@@ -4,14 +4,15 @@
 #include <string>
 
 #include "Mesh/Mesh.h"
+#include "assimp/postprocess.h"
 #include "assimp/Importer.hpp"
 #include "assimp/scene.h"
-#include "assimp/postprocess.h"
 
 class Model {
 private:
     using ModelType = std::vector<Mesh>;
     ModelType m_meshes;
+    std::string m_directory;
 
 public:
     explicit Model(const std::string &filePath);
@@ -22,6 +23,10 @@ public:
 
 private:
     void loadModel(const std::string &filePath);
-    void processNode(aiNode *node, const aiScene *scene);
-    Mesh processMesh(aiMesh *mesh, const aiScene *scene);
+    void processNode(aiNode &node, const aiScene &scene);
+    Mesh processMesh(aiMesh &mesh, const aiScene &scene);
+    static glm::vec3 getVertices(const aiMesh &mesh, uint i);
+    static glm::vec3 getNormals(const aiMesh &mesh, uint i);
+    static glm::vec2 getTexCoords(const aiMesh &mesh, uint i);
+    std::vector<Texture> loadMaterialTextures(aiMaterial &material, aiTextureType textureType);
 };

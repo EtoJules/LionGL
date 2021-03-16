@@ -9,8 +9,7 @@
 #include "SandboxExamples/CameraSandbox/CameraSandbox.h"
 #include "GlWindow/GlWindow.h"
 
-int main()
-{
+int main(){
     if(SDL_Init(SDL_INIT_VIDEO) < 0)
         return -1;
     GlWindow window("LionGL",

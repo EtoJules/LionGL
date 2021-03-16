@@ -7,6 +7,7 @@
 #include "Core/Renderer/IndexBuffer/IndexBuffer.h"
 #include "Core/Renderer/Texture/Texture.h"
 #include "Renderer/Model/Mesh/Mesh.h"
+#include "Renderer/Model/Model.h"
 
 class Renderer
 {
@@ -16,5 +17,6 @@ private:
 public:
     void draw(const VertexArray &vertexArray, const IndexBuffer &vertexBuffer, const Shader &shader) const;
     void draw(const Mesh &mesh, const Shader &shader) const;
+    void draw(Model &model, const Shader &shader) const;
     void clear() const;
 };

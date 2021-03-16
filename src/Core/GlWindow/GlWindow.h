@@ -13,9 +13,9 @@ class GlWindow
 private:
     SDL_Window *m_window;
     SDL_Event m_event{};
+    SDL_GLContext m_glContext;
     Sandbox *m_sandbox;
     bool m_isWindowOpen;
-    SDL_GLContext m_glContext;
 
 public:
     GlWindow() = delete;

@@ -1,20 +1,18 @@
 #include "Texture.h"
 
-Texture::Texture() {}
+Texture::Texture() : m_filePath("") {}
 
-Texture::Texture(const std::string& filePath)
-{
+Texture::Texture(const std::string& filePath) : m_filePath(filePath){
     loadTexture(filePath);
 }
 
-Texture::~Texture()
-{
+Texture::~Texture(){
     glDeleteTextures(1, &m_RenderId);
 }
 
-void Texture::loadTexture(const std::string &filePath)
-{
+void Texture::loadTexture(const std::string &filePath){
     unsigned char* image = stbi_load(filePath.c_str(), &m_width, &m_height, &m_channels, 0);
+    m_filePath = filePath;
 
     glGenTextures(1, &m_RenderId);
 
@@ -31,13 +29,15 @@ void Texture::loadTexture(const std::string &filePath)
         stbi_image_free(image);
 }
 
-void Texture::bind(unsigned int slot)
-{
+void Texture::bind(unsigned int slot){
     glActiveTexture(GL_TEXTURE0 + slot);
     glBindTexture(GL_TEXTURE_2D, m_RenderId);
 }
 
-void Texture::unbind()
-{
+void Texture::unbind(){
     glBindTexture(GL_TEXTURE_2D, 0);
+}
+
+std::string Texture::getFilePath() {
+    return m_filePath;
 }

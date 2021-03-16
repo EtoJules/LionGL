@@ -1,7 +1,7 @@
 #include "GlWindow.h"
 
 GlWindow::GlWindow(const std::string& name, unsigned int width, unsigned int height, Uint32 flags)
-    : m_isWindowOpen(true)
+    : m_isWindowOpen(true), m_sandbox(new Sandbox)
 {
     m_window = SDL_CreateWindow(name.c_str(),
                                 SDL_WINDOWPOS_CENTERED,
@@ -10,9 +10,7 @@ GlWindow::GlWindow(const std::string& name, unsigned int width, unsigned int hei
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 3);
-
     m_glContext = SDL_GL_CreateContext(m_window);
-    m_sandbox = new Sandbox();
 
     SDL_GL_SetSwapInterval(1);
 
