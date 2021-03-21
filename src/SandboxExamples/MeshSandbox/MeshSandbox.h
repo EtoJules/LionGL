@@ -15,8 +15,8 @@ class MeshSandbox : public Sandbox{
 private:
     Renderer m_renderer{};
     Shader m_shader;
-    Model m_modelMatilda;
-    Texture m_texture;
+    Model m_matildaModel;
+    Texture m_matildaTexture;
 
     Camera m_camera;
     int m_mouseX;

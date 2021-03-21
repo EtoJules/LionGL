@@ -3,10 +3,10 @@
 MeshSandbox::MeshSandbox()
     : m_shader("../src/SandboxExamples/MeshSandbox/res/shaders/vertex.glsl",
                "../src/SandboxExamples/MeshSandbox/res/shaders/fragment.glsl"),
-      m_model(1.0f), m_view(1.0f), m_projection(1.0f), m_camera(0.0f, 0.0f, 4.0f),
+      m_model(1.0f), m_view(1.0f), m_projection(1.0f), m_camera(0.0f, 100.0f, 220.0f),
       m_mouseX(0), m_mouseY(0), cameraMoveVec(0.0f,0.0f,0.0f),
-      m_texture("../src/SandboxExamples/MeshSandbox/res/models/backpack/diffuse.jpg"),
-      m_modelMatilda("../src/SandboxExamples/MeshSandbox/res/models/backpack/backpack.obj"){}
+      m_matildaModel("../src/SandboxExamples/MeshSandbox/res/models/matilda/matilda.fbx"),
+      m_matildaTexture("../src/SandboxExamples/MeshSandbox/res/models/matilda/matilda.png"){}
 
 void MeshSandbox::start(){
     //setting up mvp
@@ -16,7 +16,7 @@ void MeshSandbox::start(){
     m_shader.setUniformMat4f("u_Model", m_model);
     m_shader.setUniformMat4f("u_View", m_view);
     m_shader.setUniformMat4f("u_Projection", m_projection);
-    m_modelMatilda.addTexture(m_texture);
+    m_matildaModel.addTexture(m_matildaTexture);
 
     SDL_SetRelativeMouseMode(SDL_TRUE);
     m_camera.setEulerAngle(-90, 0);
@@ -28,7 +28,7 @@ void MeshSandbox::onUpdate(double deltaTime){
     //camera movement
     m_camera.setEulerAngle(m_camera.getYaw() + (m_mouseX * deltaTime * 0.005f),
                            m_camera.getPitch() - (m_mouseY * deltaTime * 0.005f));
-    m_camera.setPosition(m_camera.getPosition() + cameraMoveVec * (float)deltaTime * 2.0f);
+    m_camera.setPosition(m_camera.getPosition() + cameraMoveVec * (float)deltaTime * 20.0f);
     m_shader.setUniformMat4f("u_View", m_camera.getLookAtMatrix());
 
     //mouse
@@ -39,7 +39,7 @@ void MeshSandbox::onUpdate(double deltaTime){
         m_mouseY = 0;
     }
 
-    m_renderer.draw(m_modelMatilda, m_shader);
+    m_renderer.draw(m_matildaModel, m_shader);
 }
 
 void MeshSandbox::onGUI(){

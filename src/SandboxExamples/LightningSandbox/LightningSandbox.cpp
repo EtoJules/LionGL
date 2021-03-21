@@ -69,7 +69,7 @@ void LightningSandbox::start()
     }
     m_indexBuffer.bufferData(index, sizeof(index));
 
-    //m_texture.bind(1);
+    //m_textureMatilda.bind(1);
     //material setup
     m_shader.setUniform4f("u_material.specular", 1.0f, 0.5f, 0.31f, 1.0f );
     m_shader.setUniform1f("u_material.shininess", 32.0f);
