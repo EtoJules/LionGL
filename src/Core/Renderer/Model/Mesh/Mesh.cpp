@@ -1,12 +1,12 @@
 #include "Mesh.h"
 
-Mesh::Mesh() : m_vertex(0), m_index(0), m_texture(0){
+Mesh::Mesh() : m_vertex(0), m_index(0){
     initPointers();
     bind();
 }
 
-Mesh::Mesh(std::vector<Vertex> vertex, std::vector<uint> index, std::vector<Texture> texture)
-: m_vertex(std::move(vertex)), m_index(std::move(index)), m_texture(std::move(texture)){
+Mesh::Mesh(std::vector<Vertex> vertex, std::vector<uint> index)
+: m_vertex(std::move(vertex)), m_index(std::move(index)){
     initPointers();
     bind();
 }

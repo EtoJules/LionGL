@@ -18,6 +18,9 @@ void Renderer::draw(const Mesh &mesh, const Shader &shader) const{
 }
 
 void Renderer::draw(Model &model, const Shader &shader) const{
+    for(size_t i = 0; i < model.Textures().size(); i++)
+        model.Textures()[i].bind(i);
     for(auto &mesh : model)
         draw(mesh, shader);
+    Texture::unbind();
 }

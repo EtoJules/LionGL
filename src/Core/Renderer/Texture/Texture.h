@@ -17,8 +17,8 @@ public:
     Texture();
     explicit Texture(const std::string& filePath);
     ~Texture();
-    std::string getFilePath();
+    std::string getFilePath() const;
     void loadTexture(const std::string& filePath);
-    void bind(unsigned int slot);
-    void unbind();
+    void bind(unsigned int slot = 0) const;
+    static void unbind();
 };

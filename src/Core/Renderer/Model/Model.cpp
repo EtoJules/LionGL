@@ -4,10 +4,18 @@ Model::Model(const std::string &filePath) : m_directory(filePath) {
     loadModel(filePath);
 }
 
+void Model::addTexture(const Texture &texture) {
+    m_textures.emplace_back(texture);
+}
+
+const std::vector<Texture> &Model::Textures() const {
+    return m_textures;
+}
+
 void Model::loadModel(const std::string &filePath) {
     Assimp::Importer importer;
     const aiScene *scene = importer.ReadFile(filePath, aiProcess_Triangulate | aiProcess_GenSmoothNormals |
-     aiProcess_CalcTangentSpace);
+      aiProcess_CalcTangentSpace);
 
     if(!scene || scene->mFlags == AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode){
         throw std::exception();
@@ -32,12 +40,10 @@ Mesh Model::processMesh(aiMesh &mesh, const aiScene &scene) {
     std::vector<Vertex> vertices;
     std::vector<uint> indices;
     std::vector<Texture> texture;
-
     //process vertex data
     for(unsigned int i = 0; i < mesh.mNumVertices; i++)
         vertices.emplace_back(
                 Vertex {getVertices(mesh, i), getNormals(mesh, i), getTexCoords(mesh, i)});
-
     // process indices
     for(unsigned int i = 0; i < mesh.mNumFaces; i++){
         aiFace face = mesh.mFaces[i];
@@ -45,15 +51,7 @@ Mesh Model::processMesh(aiMesh &mesh, const aiScene &scene) {
             indices.push_back(face.mIndices[j]);
         }
     }
-
-    //process textures
-    if(mesh.mMaterialIndex >= 0){
-        aiMaterial *material = scene.mMaterials[mesh.mMaterialIndex];
-        std::vector<Texture> diffuseMap = loadMaterialTextures(*material, aiTextureType_DIFFUSE);
-        texture.insert(texture.end(), diffuseMap.begin(), diffuseMap.end());
-    }
-
-    return Mesh(vertices, indices, texture);
+    return Mesh(vertices, indices);
 }
 
 glm::vec3 Model::getVertices(const aiMesh &mesh, uint i) {
@@ -105,4 +103,3 @@ std::vector<Texture> Model::loadMaterialTextures(aiMaterial &material, aiTexture
     }
     return textures;
 }
-

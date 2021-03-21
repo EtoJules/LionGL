@@ -12,10 +12,13 @@ class Model {
 private:
     using ModelType = std::vector<Mesh>;
     ModelType m_meshes;
+    std::vector<Texture> m_textures;
     std::string m_directory;
 
 public:
     explicit Model(const std::string &filePath);
+    void addTexture(const Texture &texture);
+    const std::vector<Texture> &Textures() const;
     Mesh& operator[](int i){return m_meshes[i];}
     size_t size() {return m_meshes.size();}
     ModelType::iterator begin(){return m_meshes.begin();}

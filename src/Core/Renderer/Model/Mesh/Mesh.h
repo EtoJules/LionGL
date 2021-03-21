@@ -13,7 +13,6 @@
 class Mesh {
 private:
     std::vector<Vertex> m_vertex;
-    std::vector<Texture> m_texture;
     std::vector<uint> m_index;
 
     std::unique_ptr<VertexBuffer> m_vertexBuffer;
@@ -23,7 +22,8 @@ private:
 
 public:
     Mesh();
-    Mesh(std::vector<Vertex> vertex, std::vector<uint> index, std::vector<Texture> texture);
+    Mesh(std::vector<Vertex> vertex, std::vector<uint> index);
+
     VertexArray& getVertexArray() const;
     IndexBuffer& getIndexBuffer() const;
 
