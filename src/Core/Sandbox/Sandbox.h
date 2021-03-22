@@ -2,8 +2,7 @@
 
 #include "SDL2/SDL.h"
 
-class Sandbox
-{
+class Sandbox{
 public:
     virtual void start(){}
     virtual void onUpdate(double deltaTime){}

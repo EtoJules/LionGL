@@ -5,6 +5,7 @@
 #include "Sandbox/Sandbox.h"
 #include "Core/Renderer/Renderer.h"
 #include "Core/Sandbox/Camera/Camera.h"
+#include "Sandbox/Camera/MVP.h"
 #include "Core/Renderer/Model/Mesh/Mesh.h"
 #include "Core/Renderer/Model/Model.h"
 #include "imgui/imgui.h"
@@ -13,19 +14,17 @@
 
 class MeshSandbox : public Sandbox{
 private:
-    Renderer m_renderer{};
-    Shader m_shader;
     Model m_matildaModel;
     Texture m_matildaTexture;
+    Shader m_shader;
+    Renderer m_renderer;
 
     Camera m_camera;
+    MVP m_mvp;
+
+    glm::vec3 m_cameraMoveVec;
     int m_mouseX;
     int m_mouseY;
-    glm::vec3 cameraMoveVec;
-
-    glm::mat4 m_model;
-    glm::mat4 m_view;
-    glm::mat4 m_projection;
 
 public:
     MeshSandbox();

@@ -81,7 +81,7 @@ void CameraSandbox::start()
 
     //texture
     m_texture.loadTexture("../src/SandboxExamples/CameraSandbox/res/textures/box.jpg");
-    m_texture.bind(1);
+    m_texture.bind();
 
     //mvp
     m_model = glm::rotate(m_model, 0.0f, glm::vec3(1.0f, 0.0f, 0.0f));

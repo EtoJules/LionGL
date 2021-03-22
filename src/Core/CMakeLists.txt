@@ -9,4 +9,4 @@ add_library(Core STATIC
         Renderer/Texture/Texture.cpp Renderer/Texture/Texture.h
         Sandbox/Camera/Camera.cpp Sandbox/Camera/Camera.h
         Renderer/Model/Mesh/Mesh.cpp Renderer/Model/Mesh/Mesh.h
-        Renderer/Model/Mesh/Vertex/Vertex.h Renderer/Model/Model.cpp Renderer/Model/Model.h)
+        Renderer/Model/Mesh/Vertex/Vertex.h Renderer/Model/Model.cpp Renderer/Model/Model.h Sandbox/Camera/MVP.h)
