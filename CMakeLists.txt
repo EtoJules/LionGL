@@ -9,9 +9,8 @@ include_directories(libs)
 include_directories(includes)
 include_directories(src/Core)
 
-find_package(SDL2 CONFIG REQUIRED)
+link_directories(${CMAKE_BINARY_DIR}/bin/*/)
 find_package(GLEW REQUIRED)
-find_path(STB_INCLUDE_DIRS "stb.h")
 
 add_subdirectory(src)
 add_subdirectory(libs)
@@ -24,9 +23,9 @@ target_link_libraries(ClGL Core)
 target_link_libraries(ClGL Sources)
 
 if(UNIX)
-    target_link_libraries(ClGL ${CMAKE_CURRENT_SOURCE_DIR}/bin/libassimp.so)
+target_link_libraries(ClGL ${CMAKE_CURRENT_SOURCE_DIR}/bin/assimp/libassimp.so)
+target_link_libraries(ClGL ${CMAKE_CURRENT_SOURCE_DIR}/bin/SDL2/libSDL2-2.0.so)
 endif(UNIX)
-target_link_libraries(ClGL SDL2::SDL2main SDL2::SDL2-static)
+
 target_link_libraries(ClGL libs)
-target_include_directories(ClGL PRIVATE ${STB_INCLUDE_DIRS})
 target_link_libraries(ClGL GLEW::GLEW)
