@@ -9,6 +9,8 @@
 #include "Renderer/Model/Mesh/Mesh.h"
 #include "Renderer/Model/Model.h"
 
+using uint = unsigned int;
+
 class Renderer
 {
 private:

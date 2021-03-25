@@ -1,4 +1,3 @@
-#include <X11/Xmd.h>
 #include "LightningSandbox.h"
 
 LightningSandbox::LightningSandbox()

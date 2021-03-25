@@ -10,6 +10,8 @@
 #include "Core/Renderer/Texture/Texture.h"
 #include <Renderer/VertexBuffer/VertexBuffer.h>
 
+using uint = unsigned int;
+
 class Mesh {
 private:
     std::vector<Vertex> m_vertex;

@@ -3,16 +3,16 @@
 MeshSandbox::MeshSandbox()
     : m_shader("../src/SandboxExamples/MeshSandbox/res/shaders/vertex.glsl",
                "../src/SandboxExamples/MeshSandbox/res/shaders/fragment.glsl"),
-      m_camera(0.0f, 100.0f, 220.0f),
+      m_camera(0.0f, 100.0f, 150.0f),
       m_mouseX(0), m_mouseY(0), m_cameraMoveVec(0.0f, 0.0f, 0.0f),
-      m_matildaModel("../src/SandboxExamples/MeshSandbox/res/models/matilda/matilda.fbx"),
-      m_matildaTexture("../src/SandboxExamples/MeshSandbox/res/models/matilda/matilda.png"){}
+      m_matildaModel("../../src/SandboxExamples/MeshSandbox/res/models/matilda/matilda.fbx"),
+      m_matildaTexture("../../src/SandboxExamples/MeshSandbox/res/models/matilda/matilda.png"){}
 
 void MeshSandbox::start(){
     //setting up mvp
     m_mvp.model = glm::rotate(m_mvp.model, 0.0f, glm::vec3(1.0f, 0.0f, 0.0f));
     m_mvp.view = glm::translate(m_mvp.view, glm::vec3(0.0f, 0.0f, -3.0f));
-    m_mvp.projection = glm::perspective(45.0f, 1280.0f/720.0f, 0.1f, 10000.0f);
+    m_mvp.projection = glm::perspective(70.0f, 1920.0f/1080.0f, 0.1f, 10000.0f);
     m_shader.setUniformMat4f("u_Model", m_mvp.model);
     m_shader.setUniformMat4f("u_View", m_mvp.view);
     m_shader.setUniformMat4f("u_Projection", m_mvp.projection);

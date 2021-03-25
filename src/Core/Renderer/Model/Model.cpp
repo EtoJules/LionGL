@@ -15,7 +15,7 @@ const std::vector<Texture> &Model::Textures() const {
 void Model::loadModel(const std::string &filePath) {
     Assimp::Importer importer;
     const aiScene *scene = importer.ReadFile(filePath, aiProcess_Triangulate | aiProcess_GenSmoothNormals |
-      aiProcess_FlipUVs |aiProcess_CalcTangentSpace);
+      aiProcess_FlipUVs | aiProcess_CalcTangentSpace);
 
     if(!scene || scene->mFlags == AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode){
         throw std::exception();

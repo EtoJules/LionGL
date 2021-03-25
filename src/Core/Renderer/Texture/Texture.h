@@ -3,6 +3,7 @@
 
 #include "GL/glew.h"
 #include <string>
+using uint = unsigned int;
 
 class Texture
 {
