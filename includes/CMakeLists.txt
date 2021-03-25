@@ -1,4 +1,4 @@
-add_library(libs STATIC
+add_library(imGUI STATIC
         imgui/imgui.cpp imgui/imgui.h
         imgui/examples/imgui_impl_opengl3.cpp imgui/examples/imgui_impl_opengl3.h
         imgui/examples/imgui_impl_sdl.cpp imgui/examples/imgui_impl_sdl.h

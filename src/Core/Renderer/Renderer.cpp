@@ -3,6 +3,7 @@
 void Renderer::clear() const{
     glClearColor(0.2f, 0.23f, 0.25f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glEnd();
     glEnable(GL_DEPTH_TEST);
 }
 
