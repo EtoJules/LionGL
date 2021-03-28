@@ -1,8 +1,7 @@
 #include "GlWindow.h"
 
 GlWindow::GlWindow(const std::string& name, unsigned int width, unsigned int height, Uint32 flags)
-    : m_isWindowOpen(true), m_sandbox(new Sandbox)
-{
+    : m_isWindowOpen(true), m_sandbox(new Sandbox){
     m_window = SDL_CreateWindow(name.c_str(),
                                 SDL_WINDOWPOS_CENTERED,
                                 SDL_WINDOWPOS_CENTERED, width, height, flags);
@@ -10,6 +9,7 @@ GlWindow::GlWindow(const std::string& name, unsigned int width, unsigned int hei
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 3);
+    SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 24);
     m_glContext = SDL_GL_CreateContext(m_window);
 
     SDL_GL_SetSwapInterval(1);
@@ -17,15 +17,15 @@ GlWindow::GlWindow(const std::string& name, unsigned int width, unsigned int hei
     // setting up imgui
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
-    ImGuiIO& io = ImGui::GetIO(); (void)io;
-    ImGui::StyleColorsDark();
+    ImGuiIO& io = ImGui::GetIO();
+    ImGui::StyleColorsClassic();
     ImGui_ImplSDL2_InitForOpenGL(m_window, m_glContext);
     ImGui_ImplOpenGL3_Init("#version 150");
 }
 
-GlWindow::~GlWindow()
-{
+GlWindow::~GlWindow(){
     delete m_sandbox;
+    m_sandbox = nullptr;
 
     ImGui_ImplOpenGL3_Shutdown();
     ImGui_ImplSDL2_Shutdown();
@@ -36,14 +36,12 @@ GlWindow::~GlWindow()
     SDL_Quit();
 }
 
-void GlWindow::loadSandbox(Sandbox* sandbox)
-{
+void GlWindow::loadSandbox(Sandbox* sandbox){
     delete m_sandbox;
     m_sandbox = sandbox;
 }
 
-void GlWindow::startGameLoop()
-{
+void GlWindow::startGameLoop(){
     Uint64 now = SDL_GetPerformanceCounter();
     Uint64 last = 0;
     double deltaTime = 0;

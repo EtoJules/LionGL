@@ -12,7 +12,7 @@
 #include "glm/gtc/matrix_transform.hpp"
 #include "glm/mat4x4.hpp"
 
-class MeshSandbox : public Sandbox{
+class MeshSandbox: public Sandbox{
 private:
     Model m_matildaModel;
     Texture m_matildaTexture;

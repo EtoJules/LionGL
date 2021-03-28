@@ -75,7 +75,7 @@ void CameraSandbox::start()
     m_vertexArray.bindArray(m_vertexBuffer, m_vertexLayout);
 
     unsigned int index[36];
-    for (int i = 0; i < sizeof(index); i++)
+    for (auto i = 0; i < sizeof(index); i++)
         index[i] = i;
     m_indexBuffer.bufferData(index, sizeof(index));
 

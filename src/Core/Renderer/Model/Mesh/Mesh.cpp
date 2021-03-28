@@ -27,11 +27,3 @@ void Mesh::initPointers() {
     m_vertexArray = std::make_unique<VertexArray>();
     m_indexBuffer = std::make_unique<IndexBuffer>();
 }
-
-VertexArray& Mesh::getVertexArray() const {
-    return *m_vertexArray;
-}
-
-IndexBuffer& Mesh::getIndexBuffer() const {
-    return *m_indexBuffer;
-}

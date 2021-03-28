@@ -20,9 +20,9 @@ public:
     void addTexture(const Texture &texture);
     const std::vector<Texture> &Textures() const;
     Mesh& operator[](int i){return m_meshes[i];}
-    size_t size() {return m_meshes.size();}
-    ModelType::iterator begin(){return m_meshes.begin();}
+    size_t size() const {return m_meshes.size();}
     ModelType::iterator end(){return m_meshes.end();}
+    ModelType::iterator begin(){return m_meshes.begin();}
 
 private:
     void loadModel(const std::string &filePath);

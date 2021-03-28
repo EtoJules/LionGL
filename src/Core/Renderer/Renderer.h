@@ -11,8 +11,7 @@
 
 using uint = unsigned int;
 
-class Renderer
-{
+class Renderer{
 private:
     unsigned int m_RenderId;
 

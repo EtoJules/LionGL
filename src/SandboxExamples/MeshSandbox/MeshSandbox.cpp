@@ -5,8 +5,8 @@ MeshSandbox::MeshSandbox()
                "../src/SandboxExamples/MeshSandbox/res/shaders/fragment.glsl"),
       m_camera(0.0f, 100.0f, 150.0f),
       m_mouseX(0), m_mouseY(0), m_cameraMoveVec(0.0f, 0.0f, 0.0f),
-      m_matildaModel("../../src/SandboxExamples/MeshSandbox/res/models/matilda/matilda.fbx"),
-      m_matildaTexture("../../src/SandboxExamples/MeshSandbox/res/models/matilda/matilda.png"){}
+      m_matildaModel("../src/SandboxExamples/MeshSandbox/res/models/matilda/matilda.fbx"),
+      m_matildaTexture("../src/SandboxExamples/MeshSandbox/res/models/matilda/matilda.png"){}
 
 void MeshSandbox::start(){
     //setting up mvp
@@ -63,6 +63,7 @@ void MeshSandbox::onEvent(const SDL_Event &event){
             default: break;
         }
     }
-    if(event.type == SDL_KEYUP)
+    if(event.type == SDL_KEYUP){
         m_cameraMoveVec = glm::vec3(0.0f, 0.0f, 0.0f);
+    }
 }

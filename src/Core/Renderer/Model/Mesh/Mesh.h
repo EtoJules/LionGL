@@ -25,9 +25,8 @@ private:
 public:
     Mesh();
     Mesh(std::vector<Vertex> vertex, std::vector<uint> index);
-
-    VertexArray& getVertexArray() const;
-    IndexBuffer& getIndexBuffer() const;
+    inline VertexArray& getVertexArray() const{return *m_vertexArray;}
+    inline IndexBuffer& getIndexBuffer() const{return *m_indexBuffer;}
 
 private:
     void bind();
