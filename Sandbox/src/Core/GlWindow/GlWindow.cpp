@@ -2,6 +2,9 @@
 
 GlWindow::GlWindow(const std::string& name, unsigned int width, unsigned int height, Uint32 flags)
     : m_isWindowOpen(true), m_sandbox(new Sandbox){
+    if(SDL_Init(SDL_INIT_VIDEO) < 0)
+        throw std::exception();
+
     m_window = SDL_CreateWindow(name.c_str(),
                                 SDL_WINDOWPOS_CENTERED,
                                 SDL_WINDOWPOS_CENTERED, width, height, flags);
@@ -21,6 +24,9 @@ GlWindow::GlWindow(const std::string& name, unsigned int width, unsigned int hei
     ImGui::StyleColorsClassic();
     ImGui_ImplSDL2_InitForOpenGL(m_window, m_glContext);
     ImGui_ImplOpenGL3_Init("#version 150");
+
+    if (glewInit() != GLEW_OK)
+        throw std::exception();
 }
 
 GlWindow::~GlWindow(){

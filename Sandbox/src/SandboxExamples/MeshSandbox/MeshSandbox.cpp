@@ -3,7 +3,7 @@
 MeshSandbox::MeshSandbox()
     : m_shader("../Sandbox/src/SandboxExamples/MeshSandbox/res/shaders/vertex.glsl",
                "../Sandbox/src/SandboxExamples/MeshSandbox/res/shaders/fragment.glsl"),
-      m_camera(0.0f, 100.0f, 150.0f),
+      m_camera(0.0f, 100.0f, 260.0f),
       m_mouseX(0), m_mouseY(0), m_cameraMoveVec(0.0f, 0.0f, 0.0f),
       m_matildaModel("../Sandbox/src/SandboxExamples/MeshSandbox/res/models/matilda/matilda.fbx"),
       m_matildaTexture("../Sandbox/src/SandboxExamples/MeshSandbox/res/models/matilda/matilda.png"){}
