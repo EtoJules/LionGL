@@ -10,9 +10,9 @@ include_directories(include)
 add_subdirectory(src)
 
 if(UNIX)
-target_link_libraries(oglite ${CMAKE_CURRENT_SOURCE_DIR}/bin/glew/linux/libGLEWd.a)
+target_link_libraries(oglite ${CMAKE_CURRENT_SOURCE_DIR}/bin/linux/libGLEWd.a)
 endif(UNIX)
 
 if(WIN32)
-target_link_libraries(oglite ${CMAKE_CURRENT_SOURCE_DIR}/bin/glew/windows/glew32.lib)
+target_link_libraries(oglite ${CMAKE_CURRENT_SOURCE_DIR}/bin/windows/glew32.lib)
 endif(WIN32)
